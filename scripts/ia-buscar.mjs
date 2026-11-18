@@ -70,7 +70,10 @@ Reglas:
 - Es mejor devolver pocos eventos seguros que muchos dudosos.`;
 
 // --- Llamada a Claude, con búsqueda web en el servidor -----------------------------------------
-const cliente = new Anthropic();
+// Con una clave de usuario (sk-ant-usr-…) hay que decir de qué workspace se cobra; con una clave de
+// workspace no hace falta. El id va en el secreto ANTHROPIC_WORKSPACE_ID (no es secreto, pero así va junto).
+const workspace = process.env.ANTHROPIC_WORKSPACE_ID;
+const cliente = new Anthropic(workspace ? { defaultHeaders: { 'anthropic-workspace-id': workspace } } : {});
 const mensajes = [{ role: 'user', content: peticion }];
 const uso = { entrada: 0, salida: 0, busquedas: 0, coste: 0 };
 let respuesta;

@@ -39,6 +39,7 @@ jobs:
       - name: Buscar con Claude
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
           IA_MAX_BUSQUEDAS: ${{ inputs.busquedas || '8' }}
         run: node scripts/ia-buscar.mjs
 
