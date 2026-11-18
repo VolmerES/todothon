@@ -7,7 +7,7 @@ X-WR-CALNAME:Codegeist 2026: Build with context. Ship with confidence.
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31572@todothon.es
-DTSTAMP:20261118T155901Z
+DTSTAMP:20261118T160101Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261223
 SUMMARY:Codegeist 2026: Build with context. Ship with confidence.
