@@ -1,6 +1,7 @@
 {
- "fecha": "2026-11-18T15:55:05.598Z",
+ "fecha": "2026-11-18T16:00:49.938Z",
  "fuentes": {
+  "42": 0,
   "devpost": 81,
   "mlh": 1,
   "ctftime": 21,
@@ -11,7 +12,8 @@
   "Búsqueda IA": 4
  },
  "avisos": [
-  "devevents ha fallado: https://dev.events/hackathons/EU/ES → HTTP 403"
+  "devevents ha fallado: https://dev.events/hackathons/EU/ES → HTTP 403",
+  "42 ha fallado: token de 42 → HTTP 403"
  ],
  "total": 121,
  "espana": 4
