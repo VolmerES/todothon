@@ -71,6 +71,7 @@ async function main() {
   await mkdir(ruta('data/'), { recursive: true });
   await mkdir(ruta('src/data/'), { recursive: true });
   const informePrevio = await leerJson('data/informe.json', { fuentes: {} });
+  const previos = await leerJson('src/data/eventos.json', []);
   const informe = { fecha: new Date().toISOString(), fuentes: {}, avisos: [] };
   let todos = [];
 
@@ -87,6 +88,11 @@ async function main() {
     }
     if (informe.fuentes[f.nombre] === 0 && (informePrevio.fuentes[f.nombre] || 0) > 0) {
       informe.avisos.push(`${f.nombre} ha pasado de ${informePrevio.fuentes[f.nombre]} eventos a 0`);
+      // Para no perder sus eventos mientras se arregla, se reutilizan los de la última vez
+      // (los ids de cada fuente empiezan por su nombre). El aviso salta igual.
+      const deAntes = previos.filter((e) => String(e.id).startsWith(`${f.nombre}-`));
+      todos.push(...deAntes);
+      if (deAntes.length) console.error(`${f.nombre}: se reutilizan ${deAntes.length} eventos de la última vez`);
     }
   }
 
