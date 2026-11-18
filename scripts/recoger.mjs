@@ -100,6 +100,11 @@ async function main() {
   informe.fuentes.manuales = manuales.length;
   todos.push(...manuales.map((e) => ({ fuente: 'Todothon', ...e })));
 
+  // Los que encuentra la búsqueda con IA (scripts/ia-buscar.mjs, una vez por semana), ya comprobados.
+  const deIa = await leerJson('data/ia.json', []);
+  informe.fuentes['Búsqueda IA'] = deIa.length;
+  todos.push(...deIa);
+
   const hoy = new Date().toISOString().slice(0, 10);
   todos = todos.filter((e) => e.nombre && (e.fin || e.inicio || hoy) >= hoy);
   todos = juntarDuplicados(todos);

@@ -12,8 +12,10 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
     "astro": "^7.4.12",
     "leaflet": "^1.9.4",
-    "leaflet.markercluster": "^1.5.3"
+    "leaflet.markercluster": "^1.5.3",
+    "zod": "^4.6.7"
   }
 }

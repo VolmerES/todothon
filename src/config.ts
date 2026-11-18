@@ -32,6 +32,7 @@ export const FUENTES: { fuente: string; url: string }[] = [
   { fuente: '42', url: 'https://www.42network.org' },
   { fuente: 'Taikai', url: 'https://taikai.network' },
   { fuente: 'Global Game Jam', url: 'https://globalgamejam.org' },
+  { fuente: 'Búsqueda IA', url: '/sobre' },
   { fuente: 'Todothon', url: '/publicar' },
 ];
 

@@ -1,0 +1,56 @@
+# Una vez por semana: Claude busca en la web hackathones de España que no traen las fuentes
+# automáticas. Lo encontrado (ya comprobado) va a data/ia.json y luego se lanza la publicación diaria
+# (un push hecho con el token de la Action no lanza otras Actions).
+# Necesita el secreto ANTHROPIC_API_KEY; sin él no hace nada. Coste por pasada: céntimos
+# (se apunta en data/ia-informe.json).
+name: Búsqueda semanal con IA
+
+on:
+  schedule:
+    - cron: '41 4 * * 1'   # lunes, 05:41 en España (invierno)
+  workflow_dispatch:
+    inputs:
+      busquedas:
+        description: Búsquedas web como mucho (cada una cuesta 1 céntimo)
+        default: '8'
+
+permissions:
+  contents: write
+  actions: write   # para lanzar la publicación diaria al terminar
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Buscar con Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IA_MAX_BUSQUEDAS: ${{ inputs.busquedas || '8' }}
+        run: node scripts/ia-buscar.mjs
+
+      - name: Guardar lo encontrado y publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "todothon-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ia.json data/ia-informe.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -qm "Búsqueda con IA del $(date -u +%F)"
+            git push -q origin HEAD:main
+            gh workflow run diario.yml --ref main
+          fi
