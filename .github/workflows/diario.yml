@@ -72,15 +72,23 @@ jobs:
 
       - run: npm run build
 
+      # La rama `web` solo crece (un commit encima del anterior, nunca se reescribe):
+      # el hosting hace `git pull` y no admite historias que no encajan.
       - name: Subir la web a la rama web
         working-directory: dist
         run: |
           git init -q -b web
           git config user.name "todothon-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
           git add -A
+          if git fetch -q --depth=1 origin web; then git reset -q --soft FETCH_HEAD; fi
+          if git rev-parse -q --verify HEAD >/dev/null && git diff --cached --quiet; then
+            echo "La web no ha cambiado."
+            exit 0
+          fi
           git commit -qm "Web del $(date -u '+%F %H:%M') (${GITHUB_SHA::7})"
-          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" web
+          git push -q origin web
 
       - name: Avisar si alguna fuente ha fallado
         if: steps.recoger.outcome == 'failure'
