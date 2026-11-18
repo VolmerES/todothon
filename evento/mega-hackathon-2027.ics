@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MEGA Hackathon 2027
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-30110@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270222
+SUMMARY:MEGA Hackathon 2027
+LOCATION:Online
+DESCRIPTION:https://megahackathon-27.devpost.com/\n\nMás información: htt
+ ps://todothon.volmer.es/evento/mega-hackathon-2027
+URL:https://megahackathon-27.devpost.com/
+END:VEVENT
+END:VCALENDAR

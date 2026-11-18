@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:checkpoint 1 — games for good
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31222@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270111
+SUMMARY:checkpoint 1 — games for good
+LOCATION:Online
+DESCRIPTION:https://checkpoint-1.devpost.com/\n\nMás información: https:/
+ /todothon.volmer.es/evento/checkpoint-1-games-for-good-2027
+URL:https://checkpoint-1.devpost.com/
+END:VEVENT
+END:VCALENDAR

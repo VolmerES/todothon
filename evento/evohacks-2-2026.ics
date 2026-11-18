@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EvoHacks 2
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31721@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261123
+SUMMARY:EvoHacks 2
+LOCATION:Online
+DESCRIPTION:https://evohacks2.devpost.com/\n\nMás información: https://to
+ dothon.volmer.es/evento/evohacks-2-2026
+URL:https://evohacks2.devpost.com/
+END:VEVENT
+END:VCALENDAR

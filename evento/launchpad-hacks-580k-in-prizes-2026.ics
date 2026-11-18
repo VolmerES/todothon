@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LaunchPad Hacks (580k In Prizes!)
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31773@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261205
+SUMMARY:LaunchPad Hacks (580k In Prizes!)
+LOCATION:Online
+DESCRIPTION:https://launchpad-hacks.devpost.com/\n\nMás información: http
+ s://todothon.volmer.es/evento/launchpad-hacks-580k-in-prizes-2026
+URL:https://launchpad-hacks.devpost.com/
+END:VEVENT
+END:VCALENDAR

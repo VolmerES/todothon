@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31571@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20270113
+SUMMARY:Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+LOCATION:Online
+DESCRIPTION:https://cloud9.devpost.com/\n\nMás información: https://todot
+ hon.volmer.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026
+URL:https://cloud9.devpost.com/
+END:VEVENT
+END:VCALENDAR

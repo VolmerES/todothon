@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Code For DFW
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31504@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261126
+SUMMARY:Code For DFW
+LOCATION:Online
+DESCRIPTION:https://code-for-dfw.devpost.com/\n\nMás información: https:/
+ /todothon.volmer.es/evento/code-for-dfw-2026
+URL:https://code-for-dfw.devpost.com/
+END:VEVENT
+END:VCALENDAR

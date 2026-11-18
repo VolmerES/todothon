@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI OpenBuild
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31994@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261211
+SUMMARY:AI OpenBuild
+LOCATION:Online
+DESCRIPTION:https://ai-openbuild.devpost.com/\n\nMás información: https:/
+ /todothon.volmer.es/evento/ai-openbuild-2026
+URL:https://ai-openbuild.devpost.com/
+END:VEVENT
+END:VCALENDAR

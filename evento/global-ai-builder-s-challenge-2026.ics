@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Global AI Builder’s Challenge
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31826@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261129
+SUMMARY:Global AI Builder’s Challenge
+LOCATION:Online
+DESCRIPTION:https://global-ai-builders-challenge.devpost.com/\n\nMás infor
+ mación: https://todothon.volmer.es/evento/global-ai-builder-s-challenge-2
+ 026
+URL:https://global-ai-builders-challenge.devpost.com/
+END:VEVENT
+END:VCALENDAR

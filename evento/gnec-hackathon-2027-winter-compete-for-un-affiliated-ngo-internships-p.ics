@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NGO Int
+ ernships & Prizes
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31800@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270327
+SUMMARY:GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NGO Internsh
+ ips & Prizes
+LOCATION:Online
+DESCRIPTION:https://gnec-hackathon-2027-winter.devpost.com/\n\nMás informa
+ ción: https://todothon.volmer.es/evento/gnec-hackathon-2027-winter-compet
+ e-for-un-affiliated-ngo-internships-p
+URL:https://gnec-hackathon-2027-winter.devpost.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:#BuildHybridAI 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31808@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261201
+SUMMARY:#BuildHybridAI 2026
+LOCATION:Online
+DESCRIPTION:https://firebasehybridaihackathon.devpost.com/\n\nMás informac
+ ión: https://todothon.volmer.es/evento/buildhybridai-2026
+URL:https://firebasehybridaihackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR

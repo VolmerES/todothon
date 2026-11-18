@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PhysTech 2027: Physical Activity and Technology Hack Day
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31974@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20270627
+SUMMARY:PhysTech 2027: Physical Activity and Technology Hack Day
+LOCATION:Online
+DESCRIPTION:https://phystech2027.devpost.com/\n\nMás información: https:/
+ /todothon.volmer.es/evento/phystech-2027-physical-activity-and-technology-
+ hack-day-2026
+URL:https://phystech2027.devpost.com/
+END:VEVENT
+END:VCALENDAR

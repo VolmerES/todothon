@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackTitan
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-30340@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270205
+SUMMARY:HackTitan
+LOCATION:Online
+DESCRIPTION:https://hacktitan.devpost.com/\n\nMás información: https://to
+ dothon.volmer.es/evento/hacktitan-2027
+URL:https://hacktitan.devpost.com/
+END:VEVENT
+END:VCALENDAR

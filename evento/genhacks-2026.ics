@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GenHacks
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31787@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261227
+SUMMARY:GenHacks
+LOCATION:Online
+DESCRIPTION:https://genhacks-open.devpost.com/\n\nMás información: https:
+ //todothon.volmer.es/evento/genhacks-2026
+URL:https://genhacks-open.devpost.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The MFG Gambler&#039\;s Jam
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-the-mfg-gamblers-jam@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261213
+SUMMARY:The MFG Gambler&#039\;s Jam
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/the-mfg-gamblers-jam\n\nMás información: 
+ https://todothon.volmer.es/evento/the-mfg-gambler-039-s-jam-2026
+URL:https://itch.io/jam/the-mfg-gamblers-jam
+END:VEVENT
+END:VCALENDAR

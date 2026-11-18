@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI for Human Impact: A Global BASIS Hackathon
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31827@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270214
+SUMMARY:AI for Human Impact: A Global BASIS Hackathon
+LOCATION:Online
+DESCRIPTION:https://basisglobalhackathon.devpost.com/\n\nMás información:
+  https://todothon.volmer.es/evento/ai-for-human-impact-a-global-basis-hack
+ athon-2027
+URL:https://basisglobalhackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR

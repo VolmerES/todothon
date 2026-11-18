@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackathon - PMI Barcelona
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:eventbrite-2003206203680@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Hackathon - PMI Barcelona
+LOCATION:NTT DATA Barcelona\, 211 Avinguda d'Icària\, 08005\, Barcelona
+DESCRIPTION:https://www.eventbrite.es/e/hackathon-pmi-barcelona-tickets-200
+ 3206203680\n\nMás información: https://todothon.volmer.es/evento/hackath
+ on-pmi-barcelona-2026
+URL:https://www.eventbrite.es/e/hackathon-pmi-barcelona-tickets-20032062036
+ 80
+END:VEVENT
+END:VCALENDAR

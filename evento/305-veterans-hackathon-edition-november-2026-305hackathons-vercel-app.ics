@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:305 Veterans Hackathon Edition November 2026 — 305Hackathons
+ .vercel.app
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31733@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261201
+SUMMARY:305 Veterans Hackathon Edition November 2026 — 305Hackathons.verc
+ el.app
+LOCATION:Online
+DESCRIPTION:https://305veteransnov2026.devpost.com/\n\nMás información: h
+ ttps://todothon.volmer.es/evento/305-veterans-hackathon-edition-november-2
+ 026-305hackathons-vercel-app
+URL:https://305veteransnov2026.devpost.com/
+END:VEVENT
+END:VCALENDAR

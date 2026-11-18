@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Cosmo Hacks 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-30455@todothon.es
+DTSTAMP:20261118T122842Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20270119
+SUMMARY:Cosmo Hacks 2026
+LOCATION:Online
+DESCRIPTION:https://cosmohacks.devpost.com/\n\nMás información: https://t
+ odothon.volmer.es/evento/cosmo-hacks-2026
+URL:https://cosmohacks.devpost.com/
+END:VEVENT
+END:VCALENDAR

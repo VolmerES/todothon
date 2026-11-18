@@ -1,0 +1,6 @@
+# La carpeta privado/ (límite de envíos por IP) no se sirve nunca.
+RedirectMatch 404 ^/api/privado/
+<Files "pendientes.json">
+  Header set X-Robots-Tag "noindex"
+  Header set Cache-Control "no-store"
+</Files>
