@@ -1,0 +1,45 @@
+---
+// El cartel del evento, tal cual lo hizo el organizador, «pegado» como una pegatina.
+// Se muestra entero (contain); si no hay imagen, va una portada automática con el tipo.
+import { TIPOS } from '../config';
+import { inclinacion, type Evento } from '../lib/formato';
+
+interface Props { evento: Evento; grande?: boolean }
+const { evento: e, grande = false } = Astro.props;
+const tipo = TIPOS[e.tipo] || TIPOS.otro;
+---
+<div class:list={['cartel', { 'cartel--grande': grande }]} style={`--giro: ${inclinacion(e.id)}`}>
+  <span class="cartel__cinta" aria-hidden="true"></span>
+  <div class="cartel__marco">
+    {e.imagen ? (
+      <div class="cartel__imagen">
+        <img src={e.imagen} alt={`Cartel de ${e.nombre}`} loading={grande ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" />
+      </div>
+    ) : (
+      <div class="cartel__auto" style={`background: ${tipo.color}`}>
+        <span>{tipo.nombre}</span>
+      </div>
+    )}
+  </div>
+</div>
+
+<style>
+  .cartel { position: relative; padding-top: 6px; }
+  .cartel__marco {
+    background: #FFFFFF; padding: 8px;
+    border: 2px solid var(--linea); box-shadow: 3px 3px 0 var(--sombra);
+    transform: rotate(var(--giro));
+  }
+  .cartel__imagen, .cartel__auto { aspect-ratio: 16 / 10; overflow: hidden; }
+  .cartel__imagen { background: #F1ECE0; display: flex; align-items: center; justify-content: center; }
+  .cartel__imagen img { width: 100%; height: 100%; object-fit: contain; }
+  .cartel__auto {
+    display: flex; align-items: flex-end; padding: 14px; color: var(--sobre-color);
+    font-weight: 800; font-size: 44px; line-height: .95; letter-spacing: -1px; text-transform: uppercase;
+  }
+  .cartel--grande .cartel__auto { font-size: 72px; }
+  .cartel__cinta {
+    position: absolute; z-index: 1; top: -6px; left: 50%; width: 84px; height: 22px; margin-left: -42px;
+    background: var(--cinta); transform: rotate(-4deg);
+  }
+</style>

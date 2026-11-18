@@ -1,0 +1,101 @@
+---
+import '../styles/global.css';
+import { URL_DONAR, URL_TELEGRAM, URL_REPO, PALABRAS, AUTOR } from '../config';
+
+interface Props {
+  titulo?: string;
+  descripcion?: string;
+  imagen?: string | null;
+}
+const {
+  titulo = 'Todothon · Hackathones, datathones, game jams y CTF de España',
+  descripcion = 'Todos los hackathones, datathones, ideatones, game jams y CTF de España y online, en un solo buscador. Sin ánimo de lucro y de la comunidad.',
+  imagen = null,
+} = Astro.props;
+const canonica = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="es" data-theme="pegatina">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{titulo}</title>
+  <meta name="description" content={descripcion} />
+  <link rel="canonical" href={canonica} />
+  <meta property="og:title" content={titulo} />
+  <meta property="og:description" content={descripcion} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonica} />
+  {imagen && <meta property="og:image" content={imagen} />}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@600;800&display=swap" />
+  <slot name="head" />
+</head>
+<body>
+  <header class="cabecera">
+    <div class="envoltorio cabecera__fila">
+      <a class="logo" href="/" aria-label="Todothon, inicio">
+        <span class="logo__palabra" data-rota="palabras" aria-hidden="true">{PALABRAS[0]}</span><span class="logo__resto" aria-hidden="true">thon</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="/#buscar">Explorar</a>
+        <a href="/?vista=mapa#resultados">Mapa</a>
+        <a href={URL_TELEGRAM} rel="noopener">Telegram</a>
+        <a class="boton boton--negro" href="/publicar">Publica tu evento</a>
+        <button type="button" class="boton-terminal" data-terminal>&gt;_ modo terminal</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="pie">
+    <div class="envoltorio pie__fila">
+      <p>Todothon es un proyecto sin ánimo de lucro, hecho por y para la comunidad. Los datos salen de las webs de cada evento: comprueba siempre la información en la web oficial.</p>
+      <p><a href={URL_DONAR} rel="noopener">Invitar a 1 €</a> · <a href={URL_REPO} rel="noopener">Código en GitHub</a> · <a href="/publicar">Publicar un evento</a></p>
+    </div>
+    <div class="envoltorio pie__firma">
+      <p>Desarrollado con cariño (y pocas horas de sueño) por <a class="firma" href={AUTOR.url} rel="author noopener">{AUTOR.nombre}</a></p>
+    </div>
+  </footer>
+
+  <div class="aviso" role="status" aria-live="polite" hidden data-aviso></div>
+
+  <script>
+    import { PALABRAS, PLURALES } from '../config';
+
+    // La palabra que va cambiando: Hack·thon → Data·thon → Idea·thon…
+    const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!quieto) {
+      let i = 0;
+      setInterval(() => {
+        i++;
+        document.querySelectorAll<HTMLElement>('[data-rota="palabras"]').forEach((el) => { el.textContent = PALABRAS[i % PALABRAS.length]; });
+        document.querySelectorAll<HTMLElement>('[data-rota="plurales"]').forEach((el) => { el.textContent = PLURALES[i % PLURALES.length]; });
+      }, 1600);
+    }
+
+    // Modo terminal: el botón existe, pero de momento solo avisa de que está en construcción.
+    const aviso = document.querySelector<HTMLElement>('[data-aviso]');
+    let temporizador: ReturnType<typeof setTimeout> | undefined;
+    function avisar(texto: string) {
+      if (!aviso) return;
+      aviso.textContent = texto;
+      aviso.hidden = false;
+      clearTimeout(temporizador);
+      temporizador = setTimeout(() => { aviso.hidden = true; }, 3500);
+    }
+    document.querySelectorAll('[data-terminal]').forEach((b) =>
+      b.addEventListener('click', () => avisar('> modo terminal: en construcción. Vuelve pronto_')));
+    // Huevo de pascua: escribir «sudo» en cualquier buscador.
+    document.addEventListener('input', (ev) => {
+      const t = ev.target as HTMLInputElement;
+      if (t?.tagName === 'INPUT' && /sudo/i.test(t.value)) avisar('> sudo: permiso denegado. El modo terminal está en construcción_');
+    });
+  </script>
+</body>
+</html>

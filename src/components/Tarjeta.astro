@@ -1,0 +1,58 @@
+---
+import Cartel from './Cartel.astro';
+import { TIPOS } from '../config';
+import { rangoFechas, ciudadCorta, modalidadTexto, type Evento } from '../lib/formato';
+
+interface Props { evento: Evento }
+const { evento: e } = Astro.props;
+const tipo = TIPOS[e.tipo] || TIPOS.otro;
+const texto = [e.nombre, e.organizador, e.ciudad, ...(e.temas || []), tipo.nombre].filter(Boolean).join(' ').toLowerCase();
+---
+<a
+  class="tarjeta"
+  href={`/evento/${e.slug}`}
+  data-evento
+  data-tipo={e.tipo}
+  data-modalidad={e.modalidad}
+  data-ciudad={ciudadCorta(e).toLowerCase()}
+  data-es={e.pais === 'ES' ? '1' : '0'}
+  data-inicio={e.inicio || ''}
+  data-fin={e.fin || e.inicio || ''}
+  data-gratis={e.gratis === true ? '1' : '0'}
+  data-premio={e.premio ? '1' : '0'}
+  data-texto={texto}
+>
+  <div class="tarjeta__cartel">
+    <Cartel evento={e} />
+    <span class="tarjeta__tipo" style={`background: ${tipo.color}`}>{tipo.nombre}</span>
+  </div>
+  <div class="tarjeta__datos">
+    <h3>{e.nombre}</h3>
+    <p class="tarjeta__cuando">{rangoFechas(e.inicio, e.fin)} · {ciudadCorta(e)}</p>
+    <p class="tarjeta__extra">
+      {modalidadTexto(e.modalidad)}{e.premio && <> · Premios: {e.premio}</>}{e.gratis && <> · Gratis</>}
+    </p>
+  </div>
+</a>
+
+<style>
+  .tarjeta {
+    display: flex; flex-direction: column; gap: 18px; padding: 18px;
+    background: var(--tarjeta); color: var(--texto); text-decoration: none;
+    border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .tarjeta:hover { transform: translate(-2px, -2px) rotate(-.4deg); box-shadow: 9px 9px 0 var(--sombra); }
+  .tarjeta[hidden] { display: none; }
+  .tarjeta__cartel { position: relative; }
+  .tarjeta__tipo {
+    position: absolute; z-index: 2; right: -6px; bottom: -12px;
+    border: 2px solid var(--linea); border-radius: 999px; padding: 4px 12px;
+    font-weight: 800; font-size: 14px; color: var(--sobre-color); transform: rotate(5deg);
+  }
+  .tarjeta__datos { display: flex; flex-direction: column; gap: 6px; }
+  h3 { margin: 0; font-size: 21px; line-height: 1.2; font-weight: 800; overflow-wrap: anywhere; }
+  p { margin: 0; }
+  .tarjeta__cuando { color: var(--suave); font-size: 15px; }
+  .tarjeta__extra { color: var(--caliente); font-weight: 700; font-size: 14px; }
+</style>

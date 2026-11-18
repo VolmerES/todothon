@@ -1,0 +1,133 @@
+/* Todothon · estilo pegatina.
+   Todos los colores y radios son variables: el modo terminal (en construcción)
+   solo tendrá que redefinirlas bajo [data-theme="terminal"]. */
+
+:root {
+  --fondo: #FFF8E7;
+  --texto: #111111;
+  --tarjeta: #FFFFFF;
+  --linea: #111111;
+  --sombra: #111111;
+  --rosa: #FF4FA3;
+  --lima: #C6F432;
+  --ambar: #FFB000;
+  --azul: #7FB2FF;
+  --sobre-color: #111111;
+  --suave: #3A3A3A;
+  --caliente: #B3006B;
+  --cinta: rgba(255, 214, 0, 0.8);
+  --radio: 14px;
+  --radio-grande: 22px;
+  --letra: 'Bricolage Grotesque', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--letra);
+  font-size: 17px;
+  line-height: 1.5;
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
+
+.envoltorio { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 720px) { .envoltorio { padding: 0 24px; } }
+
+.oculto-visual {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* Pegatinas reutilizables ------------------------------------------------- */
+.pegatina {
+  display: inline-block;
+  border: 3px solid var(--linea);
+  box-shadow: 4px 4px 0 var(--sombra);
+  background: var(--tarjeta);
+  color: var(--sobre-color);
+  font-weight: 800;
+}
+.boton {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 44px; padding: 10px 18px;
+  border: 2px solid var(--linea); border-radius: 999px;
+  background: var(--tarjeta); color: var(--texto);
+  font-weight: 700; text-decoration: none; cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.boton:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--sombra); }
+.boton--negro { background: var(--texto); color: var(--fondo); }
+.boton--rosa { background: var(--rosa); color: var(--sobre-color); border-width: 3px; }
+.boton[aria-pressed="true"] { background: var(--texto); color: var(--fondo); }
+
+/* Cabecera --------------------------------------------------------------- */
+.cabecera { padding: 18px 0; }
+.cabecera__fila { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.logo { display: inline-flex; align-items: center; font-size: 28px; font-weight: 800; letter-spacing: -1px; text-decoration: none; }
+.logo__palabra {
+  display: inline-block; min-width: 2.9em; text-align: center;
+  background: var(--rosa); color: var(--sobre-color);
+  border: 3px solid var(--linea); box-shadow: 3px 3px 0 var(--sombra);
+  padding: 0 8px; transform: rotate(-3deg);
+}
+.logo__resto { margin-left: 4px; }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-weight: 600; }
+.nav a { text-decoration: none; padding: 10px 4px; }
+.nav a:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 4px; }
+.boton-terminal {
+  min-height: 44px; padding: 8px 14px; cursor: pointer;
+  background: var(--lima); color: var(--sobre-color);
+  border: 3px solid var(--linea); box-shadow: 4px 4px 0 var(--sombra);
+  font-family: var(--mono); font-weight: 800; font-size: 15px;
+  transform: rotate(3deg);
+}
+
+/* Aviso flotante («en construcción») -------------------------------------- */
+.aviso {
+  position: fixed; left: 50%; bottom: 24px; z-index: 1000;
+  transform: translateX(-50%) rotate(-1.5deg);
+  max-width: calc(100% - 32px);
+  background: var(--ambar); color: var(--sobre-color);
+  border: 3px solid var(--linea); box-shadow: 6px 6px 0 var(--sombra);
+  border-radius: var(--radio); padding: 14px 18px;
+  font-weight: 700; font-family: var(--mono); font-size: 15px;
+}
+.aviso[hidden] { display: none; }
+
+/* Banner de donación ------------------------------------------------------ */
+.donar {
+  margin: 8px 0 0;
+  background: var(--lima); color: var(--sobre-color);
+  border: 3px solid var(--linea); border-radius: var(--radio);
+  padding: 14px 18px;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+  transform: rotate(-0.5deg);
+}
+.donar p { margin: 0; font-weight: 600; max-width: 780px; }
+.donar a {
+  background: var(--texto); color: var(--lima); text-decoration: none;
+  font-weight: 800; padding: 12px 20px; border-radius: 999px; min-height: 44px;
+  display: inline-flex; align-items: center;
+}
+
+/* Pie --------------------------------------------------------------------- */
+.pie { margin-top: 72px; border-top: 3px solid var(--linea); padding: 28px 0 48px; font-size: 15px; color: var(--suave); }
+.pie__fila { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
+.pie a { color: var(--texto); }
+.pie__firma p { margin: 20px 0 0; font-weight: 600; color: var(--texto); }
+.firma {
+  display: inline-block; text-decoration: none; font-weight: 800;
+  background: var(--rosa); color: var(--sobre-color);
+  border: 2px solid var(--linea); border-radius: 8px; padding: 2px 10px;
+  box-shadow: 3px 3px 0 var(--sombra); transform: rotate(-2deg);
+  transition: transform .12s ease;
+}
+.firma:hover { transform: rotate(0) scale(1.05); }

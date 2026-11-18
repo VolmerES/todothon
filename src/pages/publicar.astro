@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+import { TIPOS } from '../config';
+
+// PENDIENTE: el formulario aún no envía a ningún sitio. Opciones: un PHP pequeño en el hosting
+// que mande un correo y guarde el evento para revisarlo, o un servicio de formularios gratuito.
+const ACCION = '';
+---
+<Base titulo="Publica tu evento · Todothon" descripcion="¿Organizas un hackathon, datathon, ideatón, game jam o CTF? Publícalo gratis en Todothon. Sin cuenta.">
+  <section class="envoltorio publicar">
+    <h1>Publica tu <span class="resalte" data-rota="plurales">hackathon</span></h1>
+    <p class="entradilla">Gratis y sin crear cuenta. Lo revisamos y sale en Todothon, en el canal de Telegram y en los calendarios.</p>
+
+    <form class="formulario" method="post" action={ACCION || undefined} data-formulario>
+      <label>Nombre del evento *<input name="nombre" required maxlength="140" /></label>
+      <label>Web oficial *<input name="url" type="url" required placeholder="https://" /></label>
+      <div class="dos">
+        <label>Tipo *
+          <select name="tipo" required>
+            {Object.entries(TIPOS).map(([k, t]) => <option value={k}>{t.nombre}</option>)}
+          </select>
+        </label>
+        <label>Formato *
+          <select name="modalidad" required>
+            <option value="presencial">Presencial</option>
+            <option value="online">Online</option>
+            <option value="hibrido">Híbrido</option>
+          </select>
+        </label>
+      </div>
+      <div class="dos">
+        <label>Empieza *<input name="inicio" type="date" required /></label>
+        <label>Termina<input name="fin" type="date" /></label>
+      </div>
+      <label>Cierre de inscripción<input name="plazo" type="date" /></label>
+      <label>Dirección (si es presencial)<input name="direccion" placeholder="Calle, número, ciudad" /></label>
+      <label>Imagen o cartel (enlace)<input name="imagen" type="url" placeholder="https://… (opcional)" /></label>
+      <div class="dos">
+        <label>Premios<input name="premio" placeholder="p. ej. 3.000 € en total" /></label>
+        <label>Precio
+          <select name="gratis">
+            <option value="">No lo sé</option>
+            <option value="1">Gratis</option>
+            <option value="0">De pago</option>
+          </select>
+        </label>
+      </div>
+      <label>¿Para quién es?<input name="requisitos" placeholder="Estudiantes, abierto a todos, sin programar…" /></label>
+      <label>Tu correo (no se publica)<input name="correo" type="email" placeholder="por si hay que preguntarte algo" /></label>
+      <button class="boton boton--rosa" type="submit">Enviar evento</button>
+      <p class="nota" data-nota hidden>El envío todavía no está activo. Mientras tanto, abre una incidencia en GitHub o escríbenos.</p>
+    </form>
+
+    <h2>Recibe los eventos sin entrar en la web</h2>
+    <ul class="calendarios">
+      <li><a class="boton" href="/calendario/todo.ics">Calendario con todo</a></li>
+      <li><a class="boton" href="/calendario/espana.ics">Solo España</a></li>
+      <li><a class="boton" href="/calendario/online.ics">Solo online</a></li>
+      <li><a class="boton" href="/calendario/gamejam.ics">Solo game jams</a></li>
+    </ul>
+    <p class="nota">Copia el enlace y añádelo en Google Calendar → «Otros calendarios» → «Desde URL». Se actualiza solo.</p>
+  </section>
+</Base>
+
+<style>
+  .publicar { padding-top: 24px; max-width: 860px; }
+  h1 { margin: 0 0 12px; font-size: clamp(38px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; font-weight: 800; }
+  h2 { margin: 56px 0 16px; font-size: 30px; letter-spacing: -.5px; }
+  .resalte {
+    display: inline-block; background: var(--lima); border: 3px solid var(--linea); border-radius: var(--radio);
+    padding: 0 12px; box-shadow: 5px 5px 0 var(--sombra); transform: rotate(1.5deg);
+  }
+  .entradilla { font-size: 19px; color: var(--suave); margin: 0 0 28px; }
+  .formulario {
+    display: grid; gap: 16px; padding: 24px;
+    background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 8px 8px 0 var(--sombra);
+  }
+  .dos { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+  label { display: grid; gap: 6px; font-weight: 800; font-size: 14px; letter-spacing: .5px; }
+  input, select {
+    font-weight: 400; font-size: 17px; letter-spacing: 0; min-height: 46px; padding: 8px 12px;
+    background: var(--fondo); border: 2px solid var(--linea); border-radius: 12px;
+  }
+  .nota { color: var(--suave); font-size: 15px; margin: 0; }
+  .calendarios { list-style: none; padding: 0; margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 10px; }
+</style>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('[data-formulario]');
+  form?.addEventListener('submit', (ev) => {
+    if (!form.getAttribute('action')) {
+      ev.preventDefault();
+      form.querySelector<HTMLElement>('[data-nota]')!.hidden = false;
+    }
+  });
+</script>

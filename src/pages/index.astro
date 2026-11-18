@@ -1,0 +1,256 @@
+---
+import Base from '../layouts/Base.astro';
+import Tarjeta from '../components/Tarjeta.astro';
+import Fuentes from '../components/Fuentes.astro';
+import { PLURALES, TIPOS, URL_DONAR } from '../config';
+import { ciudadCorta, type Evento } from '../lib/formato';
+import datos from '../data/eventos.json';
+
+const eventos = datos as unknown as Evento[];
+// Primero lo de España; luego lo online, cada grupo por fecha.
+const ordenados = [...eventos].sort((a, b) =>
+  (a.pais === 'ES' ? 0 : 1) - (b.pais === 'ES' ? 0 : 1) || (a.inicio || '9').localeCompare(b.inicio || '9'));
+const ciudades = [...new Set(eventos.filter((e) => e.modalidad !== 'online').map(ciudadCorta))].sort((a, b) => a.localeCompare(b, 'es'));
+const tiposPresentes = Object.entries(TIPOS).filter(([k]) => eventos.some((e) => e.tipo === k));
+const puntos = eventos
+  .filter((e) => e.lat != null && e.lon != null)
+  .map((e) => ({ slug: e.slug, nombre: e.nombre, ciudad: ciudadCorta(e), lat: e.lat, lon: e.lon, tipo: TIPOS[e.tipo]?.nombre || 'Evento' }));
+---
+<Base>
+  <section class="envoltorio portada">
+    <p class="antetitulo">España + online · se actualiza cada día</p>
+    <h1>¿A qué <span class="resalte" data-rota="plurales">{PLURALES[0]}</span> te apuntas este finde?</h1>
+    <p class="entradilla">Todos los hackathones, datathones, ideatones, game jams y CTF de España (y los online), en un solo buscador.</p>
+  </section>
+
+  <section class="envoltorio" id="buscar" aria-label="Buscador">
+    <form class="buscador" data-buscador role="search">
+      <label class="campo">
+        <span>Dónde</span>
+        <input name="donde" list="ciudades" placeholder="Madrid, online…" autocomplete="off" />
+        <datalist id="ciudades">
+          <option value="Online"></option>
+          <option value="España"></option>
+          {ciudades.map((c) => <option value={c}></option>)}
+        </datalist>
+      </label>
+      <label class="campo">
+        <span>Cuándo</span>
+        <select name="cuando">
+          <option value="">Cuando sea</option>
+          <option value="finde">Este finde</option>
+          <option value="mes">Próximos 30 días</option>
+          <option value="tres">Próximos 3 meses</option>
+        </select>
+      </label>
+      <label class="campo">
+        <span>Qué</span>
+        <select name="que">
+          <option value="">Todo vale</option>
+          {tiposPresentes.map(([k, t]) => <option value={k}>{t.nombre}</option>)}
+        </select>
+      </label>
+      <label class="campo">
+        <span>Tema</span>
+        <input name="tema" placeholder="IA, salud, juegos…" autocomplete="off" />
+      </label>
+      <button class="buscador__boton" type="submit">Buscar</button>
+    </form>
+
+    <div class="chips" role="group" aria-label="Filtros">
+      <button type="button" class="boton" aria-pressed="false" data-chip="espana">En España</button>
+      <button type="button" class="boton" aria-pressed="false" data-chip="presencial">Presencial</button>
+      <button type="button" class="boton" aria-pressed="false" data-chip="online">Online</button>
+      <button type="button" class="boton" aria-pressed="false" data-chip="gratis">Gratis</button>
+      <button type="button" class="boton" aria-pressed="false" data-chip="premio">Con premios</button>
+      <button type="button" class="boton" aria-pressed="false" data-chip="futuro">Aún no ha empezado</button>
+    </div>
+
+    <aside class="donar">
+      <p>Todothon es sin ánimo de lucro y de la comunidad. Si te ha salvado un finde, invita a 1 € para servidor, dominios y API.</p>
+      <a href={URL_DONAR} rel="noopener">Invitar a 1 €</a>
+    </aside>
+  </section>
+
+  <Fuentes eventos={eventos} />
+
+  <section class="envoltorio resultados" id="resultados" aria-label="Resultados">
+    <div class="resultados__barra">
+      <p class="resultados__cuenta" aria-live="polite"><strong data-cuenta>{eventos.length}</strong> eventos encontrados</p>
+      <div class="vistas" role="group" aria-label="Vista">
+        <button type="button" aria-pressed="true" data-vista="tarjetas">Tarjetas</button>
+        <button type="button" aria-pressed="false" data-vista="mapa">Mapa</button>
+      </div>
+    </div>
+
+    <div class="rejilla" data-panel="tarjetas">
+      {ordenados.map((e) => <Tarjeta evento={e} />)}
+    </div>
+    <p class="vacio" data-vacio hidden>No hay nada con esos filtros. Prueba a quitar alguno, o <a href="/publicar">publica tú el evento</a>.</p>
+
+    <div class="mapa" data-panel="mapa" hidden>
+      <div id="mapa" data-puntos={JSON.stringify(puntos)} aria-label="Mapa de eventos presenciales"></div>
+      <p class="mapa__nota">Solo los presenciales. Al alejar se agrupan por ciudad; al acercar, cada uno en su dirección.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .portada { padding: 32px 16px 12px; display: flex; flex-direction: column; gap: 16px; }
+  .antetitulo { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); }
+  h1 { margin: 0; font-size: clamp(40px, 7vw, 76px); line-height: 1; font-weight: 800; letter-spacing: -2px; max-width: 1000px; }
+  .resalte {
+    display: inline-block; background: var(--lima); color: var(--sobre-color);
+    border: 3px solid var(--linea); border-radius: var(--radio); padding: 0 12px;
+    box-shadow: 5px 5px 0 var(--sombra); transform: rotate(1.5deg);
+  }
+  .entradilla { margin: 0; font-size: 20px; color: var(--suave); max-width: 680px; }
+
+  .buscador {
+    margin-top: 24px; display: flex; flex-wrap: wrap; overflow: hidden;
+    background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande);
+    box-shadow: 8px 8px 0 var(--sombra);
+  }
+  .campo {
+    flex: 1 1 200px; display: flex; flex-direction: column; gap: 2px; padding: 14px 20px;
+    border-right: 2px solid var(--linea); border-bottom: 2px solid var(--linea); margin-bottom: -2px;
+  }
+  .campo span { font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+  .campo input, .campo select { border: 0; background: transparent; font-size: 19px; padding: 4px 0; min-height: 36px; outline-offset: 4px; }
+  .buscador__boton {
+    flex: 1 0 140px; min-height: 76px; border: 0; cursor: pointer;
+    background: var(--rosa); color: var(--sobre-color); font-size: 20px; font-weight: 800;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+  .resultados { margin-top: 32px; }
+  .resultados__barra { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .resultados__cuenta { margin: 0; font-size: 18px; font-weight: 600; }
+  .vistas { display: flex; border: 2px solid var(--linea); border-radius: 999px; overflow: hidden; }
+  .vistas button { border: 0; background: var(--tarjeta); padding: 10px 20px; min-height: 44px; font-weight: 700; cursor: pointer; }
+  .vistas button[aria-pressed="true"] { background: var(--texto); color: var(--fondo); }
+  .rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 32px 28px; }
+  .vacio { font-size: 18px; font-weight: 600; }
+  #mapa { height: min(70vh, 620px); border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 8px 8px 0 var(--sombra); }
+  .mapa__nota { color: var(--suave); font-size: 15px; }
+</style>
+
+<script>
+  const tarjetas = [...document.querySelectorAll<HTMLElement>('[data-evento]')];
+  const form = document.querySelector<HTMLFormElement>('[data-buscador]')!;
+  const cuenta = document.querySelector('[data-cuenta]')!;
+  const vacio = document.querySelector<HTMLElement>('[data-vacio]')!;
+  const chips = new Set<string>();
+  const sinTildes = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+
+  function hoyMas(dias: number) { const d = new Date(); d.setUTCDate(d.getUTCDate() + dias); return d.toISOString().slice(0, 10); }
+  function rangoCuando(v: string): [string, string] | null {
+    const hoy = hoyMas(0);
+    if (v === 'mes') return [hoy, hoyMas(30)];
+    if (v === 'tres') return [hoy, hoyMas(90)];
+    if (v === 'finde') {
+      // De viernes a domingo; si ya es finde, desde hoy hasta el domingo.
+      const dow = new Date().getUTCDay(); // 0 = domingo, 6 = sábado
+      if (dow === 0) return [hoy, hoy];
+      if (dow >= 5) return [hoy, hoyMas(7 - dow)];
+      return [hoyMas(5 - dow), hoyMas(7 - dow)];
+    }
+    return null;
+  }
+
+  function filtrar() {
+    const f = new FormData(form);
+    const donde = sinTildes(String(f.get('donde') || ''));
+    const tema = sinTildes(String(f.get('tema') || ''));
+    const que = String(f.get('que') || '');
+    const rango = rangoCuando(String(f.get('cuando') || ''));
+    const hoy = hoyMas(0);
+    let n = 0;
+    for (const t of tarjetas) {
+      const d = t.dataset;
+      let ok = true;
+      if (donde) {
+        if (donde === 'online') ok &&= d.modalidad !== 'presencial';
+        else if (donde === 'espana') ok &&= d.es === '1';
+        else ok &&= sinTildes(d.ciudad || '').includes(donde) || sinTildes(d.texto || '').includes(donde);
+      }
+      if (tema) ok &&= sinTildes(d.texto || '').includes(tema);
+      if (que) ok &&= d.tipo === que;
+      if (rango) ok &&= (d.inicio || '') <= rango[1] && (d.fin || '') >= rango[0];
+      if (chips.has('espana')) ok &&= d.es === '1';
+      if (chips.has('presencial')) ok &&= d.modalidad !== 'online';
+      if (chips.has('online')) ok &&= d.modalidad !== 'presencial';
+      if (chips.has('gratis')) ok &&= d.gratis === '1';
+      if (chips.has('premio')) ok &&= d.premio === '1';
+      if (chips.has('futuro')) ok &&= (d.inicio || '') > hoy;
+      t.hidden = !ok;
+      if (ok) n++;
+    }
+    cuenta.textContent = String(n);
+    vacio.hidden = n > 0;
+  }
+
+  form.addEventListener('submit', (ev) => { ev.preventDefault(); filtrar(); document.getElementById('resultados')?.scrollIntoView({ behavior: 'smooth' }); });
+  form.addEventListener('input', filtrar);
+  document.querySelectorAll<HTMLButtonElement>('[data-chip]').forEach((b) => b.addEventListener('click', () => {
+    const k = b.dataset.chip!;
+    const activo = !chips.has(k);
+    activo ? chips.add(k) : chips.delete(k);
+    b.setAttribute('aria-pressed', String(activo));
+    filtrar();
+  }));
+
+  // Vistas: tarjetas o mapa. El mapa se carga solo cuando hace falta.
+  let mapaListo = false;
+  async function verMapa() {
+    if (mapaListo) return;
+    mapaListo = true;
+    const [{ default: L }] = await Promise.all([
+      import('leaflet'),
+      import('leaflet/dist/leaflet.css'),
+    ]);
+    (window as unknown as { L: typeof L }).L = L;
+    await Promise.all([
+      import('leaflet.markercluster'),
+      import('leaflet.markercluster/dist/MarkerCluster.css'),
+      import('leaflet.markercluster/dist/MarkerCluster.Default.css'),
+    ]);
+    const el = document.getElementById('mapa')!;
+    const puntos = JSON.parse(el.dataset.puntos || '[]');
+    const mapa = L.map(el).setView([40.2, -3.7], 6);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(mapa);
+    const grupo = (L as any).markerClusterGroup({ showCoverageOnHover: false });
+    const icono = L.divIcon({ className: 'chincheta', html: '<span></span>', iconSize: [28, 28], iconAnchor: [14, 14] });
+    for (const p of puntos) {
+      const enlace = document.createElement('a');
+      enlace.href = `/evento/${p.slug}`;
+      enlace.textContent = p.nombre;
+      const caja = document.createElement('div');
+      caja.append(enlace, document.createElement('br'), `${p.tipo} · ${p.ciudad}`);
+      grupo.addLayer(L.marker([p.lat, p.lon], { icon: icono }).bindPopup(caja));
+    }
+    mapa.addLayer(grupo);
+  }
+
+  function cambiarVista(v: string) {
+    document.querySelectorAll<HTMLButtonElement>('[data-vista]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.vista === v)));
+    document.querySelectorAll<HTMLElement>('[data-panel]').forEach((p) => { p.hidden = p.dataset.panel !== v; });
+    if (v === 'mapa') vacio.hidden = true; else filtrar();
+    if (v === 'mapa') verMapa();
+  }
+  document.querySelectorAll<HTMLButtonElement>('[data-vista]').forEach((b) => b.addEventListener('click', () => cambiarVista(b.dataset.vista!)));
+  if (new URLSearchParams(location.search).get('vista') === 'mapa') cambiarVista('mapa');
+</script>
+
+<style is:global>
+  .chincheta span {
+    display: block; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--rosa); border: 3px solid var(--linea); box-shadow: 2px 2px 0 var(--sombra);
+  }
+  .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large { background: rgba(17, 17, 17, .25); }
+  .marker-cluster div { background: var(--lima); border: 3px solid var(--linea); color: var(--sobre-color); font-weight: 800; font-family: var(--letra); }
+  .leaflet-popup-content { font-family: var(--letra); font-size: 15px; }
+  .leaflet-popup-content a { font-weight: 800; color: var(--texto); }
+</style>
