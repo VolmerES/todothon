@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-18T14:48:50.740Z",
+ "fecha": "2026-11-18T15:55:05.598Z",
  "fuentes": {
   "devpost": 81,
   "mlh": 1,
@@ -7,13 +7,12 @@
   "itch": 14,
   "eventbrite": 0,
   "devevents": 0,
-  "manuales": 0
+  "manuales": 0,
+  "Búsqueda IA": 4
  },
  "avisos": [
-  "eventbrite ha pasado de 2 eventos a 0",
-  "devevents ha fallado: https://dev.events/hackathons/EU/ES → HTTP 403",
-  "devevents ha pasado de 1 eventos a 0"
+  "devevents ha fallado: https://dev.events/hackathons/EU/ES → HTTP 403"
  ],
- "total": 120,
+ "total": 121,
  "espana": 4
 }

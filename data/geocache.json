@@ -4,5 +4,16 @@
   "lon": 0.6267842,
   "nombre": "Lleida, Segrià, Lleida, Catalunya, España"
  },
- "Barcelona, Spain, Barcelona": null
+ "Barcelona, Spain, Barcelona": null,
+ "Parque Científico de Alicante": {
+  "lat": 38.3830166,
+  "lon": -0.5263359,
+  "nombre": "Parque Cientifico de la Universidad de Alicante, A-77a, Velódormo, Alacant / Alicante, l'Alacantí, Alacant / Alicante, Comunitat Valenciana, 03690, España"
+ },
+ "Hospital Universitario Ramón y Cajal, Madrid": {
+  "lat": 40.4873281,
+  "lon": -3.6938661,
+  "nombre": "Hospital Universitario Ramón y Cajal., Calle de Antoniorrobles, Begoña, Valverde, Fuencarral, Fuencarral-El Pardo, Madrid, Comunidad de Madrid, 28034, España"
+ },
+ "CEEIM, C. Campus Universitario, 7, 30100 Espinardo, Murcia": null
 }
