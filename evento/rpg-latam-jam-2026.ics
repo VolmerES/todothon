@@ -7,13 +7,13 @@ X-WR-CALNAME:RPG LATAM JAM 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:itch-rpg-latam-jam-2026@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261231
 SUMMARY:RPG LATAM JAM 2026
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/rpg-latam-jam-2026\n\nMás información: ht
- tps://todothon.volmer.es/evento/rpg-latam-jam-2026
+ tps://todothon.es/evento/rpg-latam-jam-2026
 URL:https://itch.io/jam/rpg-latam-jam-2026
 END:VEVENT
 END:VCALENDAR

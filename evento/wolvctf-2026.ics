@@ -7,13 +7,13 @@ X-WR-CALNAME:WolvCTF 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3049@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:WolvCTF 2026
 LOCATION:Online
-DESCRIPTION:https://wolvctf.io/\n\nMás información: https://todothon.volm
- er.es/evento/wolvctf-2026
+DESCRIPTION:https://wolvctf.io/\n\nMás información: https://todothon.es/e
+ vento/wolvctf-2026
 URL:https://wolvctf.io/
 END:VEVENT
 END:VCALENDAR

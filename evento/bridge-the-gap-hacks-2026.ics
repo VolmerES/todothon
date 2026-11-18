@@ -7,13 +7,13 @@ X-WR-CALNAME:Bridge The Gap Hacks
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-30456@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261122
 SUMMARY:Bridge The Gap Hacks
 LOCATION:Online
 DESCRIPTION:https://sq-hacks.devpost.com/\n\nMás información: https://tod
- othon.volmer.es/evento/bridge-the-gap-hacks-2026
+ othon.es/evento/bridge-the-gap-hacks-2026
 URL:https://sq-hacks.devpost.com/
 END:VEVENT
 END:VCALENDAR

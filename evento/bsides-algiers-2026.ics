@@ -7,13 +7,13 @@ X-WR-CALNAME:BSides Algiers 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3475@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261220
 SUMMARY:BSides Algiers 2026
 LOCATION:Online
 DESCRIPTION:https://shellmates.club/\n\nMás información: https://todothon
- .volmer.es/evento/bsides-algiers-2026
+ .es/evento/bsides-algiers-2026
 URL:https://shellmates.club/
 END:VEVENT
 END:VCALENDAR

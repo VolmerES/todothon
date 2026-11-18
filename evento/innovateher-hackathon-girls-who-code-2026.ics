@@ -7,14 +7,13 @@ X-WR-CALNAME:InnovateHER Hackathon: Girls Who Code
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32072@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261214
 SUMMARY:InnovateHER Hackathon: Girls Who Code
 LOCATION:Online
 DESCRIPTION:https://hackathon-girls-who-code.devpost.com/\n\nMás informaci
- ón: https://todothon.volmer.es/evento/innovateher-hackathon-girls-who-cod
- e-2026
+ ón: https://todothon.es/evento/innovateher-hackathon-girls-who-code-2026
 URL:https://hackathon-girls-who-code.devpost.com/
 END:VEVENT
 END:VCALENDAR

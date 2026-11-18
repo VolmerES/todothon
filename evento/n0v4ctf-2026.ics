@@ -7,13 +7,13 @@ X-WR-CALNAME:N0v4CTF 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3512@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:N0v4CTF 2026
 LOCATION:Online
 DESCRIPTION:https://n0v4ctf.devs.surf/\n\nMás información: https://todoth
- on.volmer.es/evento/n0v4ctf-2026
+ on.es/evento/n0v4ctf-2026
 URL:https://n0v4ctf.devs.surf/
 END:VEVENT
 END:VCALENDAR

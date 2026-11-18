@@ -7,1345 +7,1302 @@ X-WR-CALNAME:Todothon · todos los eventos
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-30740@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20260716
 DTEND;VALUE=DATE:20270116
 SUMMARY:Code for Humanity
 LOCATION:Online
 DESCRIPTION:https://code-for-humanity.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/code-for-humanity-2026
+ tps://todothon.es/evento/code-for-humanity-2026
 URL:https://code-for-humanity.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-30764@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20260718
 DTEND;VALUE=DATE:20270115
 SUMMARY:Syntax Summit
 LOCATION:Online
 DESCRIPTION:https://syntax-summit.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/syntax-summit-2026
+ //todothon.es/evento/syntax-summit-2026
 URL:https://syntax-summit.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31108@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20260823
 DTEND;VALUE=DATE:20270103
 SUMMARY:InnovArt 2027: Art and Technology Hack Day
 LOCATION:Online
 DESCRIPTION:https://innovart2027.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/innovart-2027-art-and-technology-hack-day-2026
+ /todothon.es/evento/innovart-2027-art-and-technology-hack-day-2026
 URL:https://innovart2027.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31024@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20261119
 SUMMARY:Meta VR Start Developer Competition 2026
 LOCATION:Online
 DESCRIPTION:https://start-developer-competition-26.devpost.com/\n\nMás inf
- ormación: https://todothon.volmer.es/evento/meta-vr-start-developer-compe
- tition-2026
+ ormación: https://todothon.es/evento/meta-vr-start-developer-competition-
+ 2026
 URL:https://start-developer-competition-26.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31773@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261205
 SUMMARY:LaunchPad Hacks (580k In Prizes!)
 LOCATION:Online
 DESCRIPTION:https://launchpad-hacks.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/launchpad-hacks-580k-in-prizes-2026
+ s://todothon.es/evento/launchpad-hacks-580k-in-prizes-2026
 URL:https://launchpad-hacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31737@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261126
 SUMMARY:HackWithAditya
 LOCATION:Online
 DESCRIPTION:https://hackwithaditya.devpost.com/\n\nMás información: https
- ://todothon.volmer.es/evento/hackwithaditya-2026
+ ://todothon.es/evento/hackwithaditya-2026
 URL:https://hackwithaditya.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31789@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261122
 SUMMARY:STEM2Connect AI Hackathon
 LOCATION:Online
 DESCRIPTION:https://stem2connect-online-hackathon.devpost.com/\n\nMás info
- rmación: https://todothon.volmer.es/evento/stem2connect-ai-hackathon-2026
+ rmación: https://todothon.es/evento/stem2connect-ai-hackathon-2026
 URL:https://stem2connect-online-hackathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31796@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261210
 SUMMARY:SafeSpace Hacks - Judges Needed
 LOCATION:Online
 DESCRIPTION:https://safespace-hacks.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/safespace-hacks-judges-needed-2026
+ s://todothon.es/evento/safespace-hacks-judges-needed-2026
 URL:https://safespace-hacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31795@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261221
 SUMMARY:AccessED Hacks
 LOCATION:Online
 DESCRIPTION:https://accessed-hacks.devpost.com/\n\nMás información: https
- ://todothon.volmer.es/evento/accessed-hacks-2026
+ ://todothon.es/evento/accessed-hacks-2026
 URL:https://accessed-hacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31798@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261125
 SUMMARY:Taskforge
 LOCATION:Online
 DESCRIPTION:https://taskforge.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/taskforge-2026
+ dothon.es/evento/taskforge-2026
 URL:https://taskforge.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31797@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261211
 SUMMARY:Green Shift Hacks
 LOCATION:Online
 DESCRIPTION:https://green-shift-hacks.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/green-shift-hacks-2026
+ tps://todothon.es/evento/green-shift-hacks-2026
 URL:https://green-shift-hacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-30789@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261222
 SUMMARY:Arbiter Hacks V1
 LOCATION:Online
 DESCRIPTION:https://arbiter-hacks-v1.devpost.com/\n\nMás información: htt
- ps://todothon.volmer.es/evento/arbiter-hacks-v1-2026
+ ps://todothon.es/evento/arbiter-hacks-v1-2026
 URL:https://arbiter-hacks-v1.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31504@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261126
 SUMMARY:Code For DFW
 LOCATION:Online
 DESCRIPTION:https://code-for-dfw.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/code-for-dfw-2026
+ /todothon.es/evento/code-for-dfw-2026
 URL:https://code-for-dfw.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-26475@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261121
 SUMMARY:Dakar Bitcoin Hack by BTrust
 LOCATION:Online
 DESCRIPTION:https://dakar-bitcoin-hack-2026.devpost.com/\n\nMás informaci
- ón: https://todothon.volmer.es/evento/dakar-bitcoin-hack-by-btrust-2026
+ ón: https://todothon.es/evento/dakar-bitcoin-hack-by-btrust-2026
 URL:https://dakar-bitcoin-hack-2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31572@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261223
 SUMMARY:Codegeist 2026: Build with context. Ship with confidence.
 LOCATION:Online
 DESCRIPTION:https://codegeist2026.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/codegeist-2026-build-with-context-ship-with-co
- nfidence
+ //todothon.es/evento/codegeist-2026-build-with-context-ship-with-confidenc
+ e
 URL:https://codegeist2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31907@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261128
 SUMMARY:Build Your First AI App
 LOCATION:Online
 DESCRIPTION:https://build-your-first-ai-app.devpost.com/\n\nMás informaci
- ón: https://todothon.volmer.es/evento/build-your-first-ai-app-2026
+ ón: https://todothon.es/evento/build-your-first-ai-app-2026
 URL:https://build-your-first-ai-app.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31682@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261201
 SUMMARY:CSC Winter Sparkathon
 LOCATION:Online
 DESCRIPTION:https://csc-winter-sparkathon.devpost.com/\n\nMás información
- : https://todothon.volmer.es/evento/csc-winter-sparkathon-2026
+ : https://todothon.es/evento/csc-winter-sparkathon-2026
 URL:https://csc-winter-sparkathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31667@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261205
 SUMMARY:Kiroween 2026
 LOCATION:Online
 DESCRIPTION:https://kiroween.devpost.com/\n\nMás información: https://tod
- othon.volmer.es/evento/kiroween-2026
+ othon.es/evento/kiroween-2026
 URL:https://kiroween.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31787@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261227
 SUMMARY:GenHacks
 LOCATION:Online
 DESCRIPTION:https://genhacks-open.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/genhacks-2026
+ //todothon.es/evento/genhacks-2026
 URL:https://genhacks-open.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31960@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261203
 SUMMARY:ML Empowerment Build Challenge 4.0 - Prizes and Certificates for EV
  ERYONE
 LOCATION:Online
 DESCRIPTION:https://ml-build-challenge-4.devpost.com/\n\nMás información:
-  https://todothon.volmer.es/evento/ml-empowerment-build-challenge-4-0-priz
- es-and-certificates-for-everyon
+  https://todothon.es/evento/ml-empowerment-build-challenge-4-0-prizes-and-
+ certificates-for-everyon
 URL:https://ml-build-challenge-4.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31733@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261201
 SUMMARY:305 Veterans Hackathon Edition November 2026 — 305Hackathons.verc
  el.app
 LOCATION:Online
 DESCRIPTION:https://305veteransnov2026.devpost.com/\n\nMás información: h
- ttps://todothon.volmer.es/evento/305-veterans-hackathon-edition-november-2
- 026-305hackathons-vercel-app
+ ttps://todothon.es/evento/305-veterans-hackathon-edition-november-2026-305
+ hackathons-vercel-app
 URL:https://305veteransnov2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31083@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261216
 SUMMARY:QNX Global Hackathon
 LOCATION:Online
 DESCRIPTION:https://qnx.devpost.com/\n\nMás información: https://todothon
- .volmer.es/evento/qnx-global-hackathon-2026
+ .es/evento/qnx-global-hackathon-2026
 URL:https://qnx.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31642@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261212
 SUMMARY:AWS MSP AI Hackathon
 LOCATION:Online
 DESCRIPTION:https://aws-agentic-msp.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/aws-msp-ai-hackathon-2026
+ s://todothon.es/evento/aws-msp-ai-hackathon-2026
 URL:https://aws-agentic-msp.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31873@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20270202
 SUMMARY:HackOut! 2027
 LOCATION:Online
 DESCRIPTION:https://hackout-branchout.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/hackout-2027-2026
+ tps://todothon.es/evento/hackout-2027-2026
 URL:https://hackout-branchout.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31480@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261219
 SUMMARY:AI Agents for Founders Challenge — HETIC 2026
 LOCATION:Online
 DESCRIPTION:https://ai-agents-founders-hetic-26.devpost.com/\n\nMás inform
- ación: https://todothon.volmer.es/evento/ai-agents-for-founders-challenge
- -hetic-2026
+ ación: https://todothon.es/evento/ai-agents-for-founders-challenge-hetic-
+ 2026
 URL:https://ai-agents-founders-hetic-26.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32009@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261205
 SUMMARY:AI for Medicine: A Global Student Hackathon on the Future of Care
 LOCATION:Online
 DESCRIPTION:https://ai-for-medicine.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/ai-for-medicine-a-global-student-hackathon-o
- n-the-future-of-care-2026
+ s://todothon.es/evento/ai-for-medicine-a-global-student-hackathon-on-the-f
+ uture-of-care-2026
 URL:https://ai-for-medicine.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31993@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261201
 SUMMARY:IdeaLab Hacks
 LOCATION:Online
 DESCRIPTION:https://idealab-hacks.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/idealab-hacks-2026
+ //todothon.es/evento/idealab-hacks-2026
 URL:https://idealab-hacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31974@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20270627
 SUMMARY:PhysTech 2027: Physical Activity and Technology Hack Day
 LOCATION:Online
 DESCRIPTION:https://phystech2027.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/phystech-2027-physical-activity-and-technology-
- hack-day-2026
+ /todothon.es/evento/phystech-2027-physical-activity-and-technology-hack-da
+ y-2026
 URL:https://phystech2027.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31994@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261211
 SUMMARY:AI OpenBuild
 LOCATION:Online
 DESCRIPTION:https://ai-openbuild.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/ai-openbuild-2026
+ /todothon.es/evento/ai-openbuild-2026
 URL:https://ai-openbuild.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31794@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261202
 SUMMARY:Code for Change
 LOCATION:Online
 DESCRIPTION:https://code-for-change-global.devpost.com/\n\nMás informació
- n: https://todothon.volmer.es/evento/code-for-change-2026
+ n: https://todothon.es/evento/code-for-change-2026
 URL:https://code-for-change-global.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32017@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261225
 SUMMARY:Inceptrix 3.0
 LOCATION:Online
 DESCRIPTION:https://inceptrix-hackathon.devpost.com/\n\nMás información: 
- https://todothon.volmer.es/evento/inceptrix-3-0-2026
+ https://todothon.es/evento/inceptrix-3-0-2026
 URL:https://inceptrix-hackathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31972@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261208
 SUMMARY:SLAY HACKS
 LOCATION:Online
 DESCRIPTION:https://slayy-hacks.devpost.com/\n\nMás información: https://
- todothon.volmer.es/evento/slay-hacks-2026
+ todothon.es/evento/slay-hacks-2026
 URL:https://slayy-hacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32044@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261120
 SUMMARY:WQCC Qiskit Fall Fest 2026
 LOCATION:Online
 DESCRIPTION:https://wqcc-qiskit-fall-fest-2026.devpost.com/\n\nMás informa
- ción: https://todothon.volmer.es/evento/wqcc-qiskit-fall-fest-2026
+ ción: https://todothon.es/evento/wqcc-qiskit-fall-fest-2026
 URL:https://wqcc-qiskit-fall-fest-2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32060@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261216
 SUMMARY:Silicon Valley Buildathon
 LOCATION:Online
 DESCRIPTION:https://silicon-valley-buildathon.devpost.com/\n\nMás informac
- ión: https://todothon.volmer.es/evento/silicon-valley-buildathon-2026
+ ión: https://todothon.es/evento/silicon-valley-buildathon-2026
 URL:https://silicon-valley-buildathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31973@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261208
 SUMMARY:Deck the Pixels
 LOCATION:Online
 DESCRIPTION:https://deckthepixels.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/deck-the-pixels-2026
+ //todothon.es/evento/deck-the-pixels-2026
 URL:https://deckthepixels.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32079@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261208
 SUMMARY:Learn AR with SPECS
 LOCATION:Online
 DESCRIPTION:https://learn-specs.devpost.com/\n\nMás información: https://
- todothon.volmer.es/evento/learn-ar-with-specs-2026
+ todothon.es/evento/learn-ar-with-specs-2026
 URL:https://learn-specs.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32072@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261214
 SUMMARY:InnovateHER Hackathon: Girls Who Code
 LOCATION:Online
 DESCRIPTION:https://hackathon-girls-who-code.devpost.com/\n\nMás informaci
- ón: https://todothon.volmer.es/evento/innovateher-hackathon-girls-who-cod
- e-2026
+ ón: https://todothon.es/evento/innovateher-hackathon-girls-who-code-2026
 URL:https://hackathon-girls-who-code.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32061@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261211
 SUMMARY:Peninsula Innovation Hackathon
 LOCATION:Online
 DESCRIPTION:https://peninsula-innovation-hackathon.devpost.com/\n\nMás inf
- ormación: https://todothon.volmer.es/evento/peninsula-innovation-hackatho
- n-2026
+ ormación: https://todothon.es/evento/peninsula-innovation-hackathon-2026
 URL:https://peninsula-innovation-hackathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31808@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261201
 SUMMARY:#BuildHybridAI 2026
 LOCATION:Online
 DESCRIPTION:https://firebasehybridaihackathon.devpost.com/\n\nMás informac
- ión: https://todothon.volmer.es/evento/buildhybridai-2026
+ ión: https://todothon.es/evento/buildhybridai-2026
 URL:https://firebasehybridaihackathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31644@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261209
 SUMMARY:Reddit’s Game of the Day Hackathon
 LOCATION:Online
 DESCRIPTION:https://redditgameofday2026.devpost.com/\n\nMás información: 
- https://todothon.volmer.es/evento/reddit-s-game-of-the-day-hackathon-2026
+ https://todothon.es/evento/reddit-s-game-of-the-day-hackathon-2026
 URL:https://redditgameofday2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32026@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20270112
 SUMMARY:Open Agentic Web Challenge
 LOCATION:Online
 DESCRIPTION:https://cognizant-agenticweb.devpost.com/\n\nMás información:
-  https://todothon.volmer.es/evento/open-agentic-web-challenge-2026
+  https://todothon.es/evento/open-agentic-web-challenge-2026
 URL:https://cognizant-agenticweb.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32024@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261212
 SUMMARY:Relate by Neo4j Hackathon
 LOCATION:Online
 DESCRIPTION:https://relate.devpost.com/\n\nMás información: https://todot
- hon.volmer.es/evento/relate-by-neo4j-hackathon-2026
+ hon.es/evento/relate-by-neo4j-hackathon-2026
 URL:https://relate.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32106@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261120
 SUMMARY:ESE1110 Fall 2026
 LOCATION:Online
 DESCRIPTION:https://ese1110f26.devpost.com/\n\nMás información: https://t
- odothon.volmer.es/evento/ese1110-fall-2026
+ odothon.es/evento/ese1110-fall-2026
 URL:https://ese1110f26.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-30657@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261122
 SUMMARY:Teens Hack Houston Hackathon
 LOCATION:Online
 DESCRIPTION:https://tripleh.devpost.com/\n\nMás información: https://todo
- thon.volmer.es/evento/teens-hack-houston-hackathon-2026
+ thon.es/evento/teens-hack-houston-hackathon-2026
 URL:https://tripleh.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-30456@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261122
 SUMMARY:Bridge The Gap Hacks
 LOCATION:Online
 DESCRIPTION:https://sq-hacks.devpost.com/\n\nMás información: https://tod
- othon.volmer.es/evento/bridge-the-gap-hacks-2026
+ othon.es/evento/bridge-the-gap-hacks-2026
 URL:https://sq-hacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31549@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261123
 SUMMARY:KUK VIRTUAL HACKATHON
 LOCATION:Online
 DESCRIPTION:https://kuk-virtual-hackathon.devpost.com/\n\nMás información
- : https://todothon.volmer.es/evento/kuk-virtual-hackathon-2026
+ : https://todothon.es/evento/kuk-virtual-hackathon-2026
 URL:https://kuk-virtual-hackathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31905@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20270216
 SUMMARY:Teens in AI Global Challenge 2027
 LOCATION:Online
 DESCRIPTION:https://teens-in-ai.devpost.com/\n\nMás información: https://
- todothon.volmer.es/evento/teens-in-ai-global-challenge-2027-2026
+ todothon.es/evento/teens-in-ai-global-challenge-2027-2026
 URL:https://teens-in-ai.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32141@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20270126
 SUMMARY:unihacks
 LOCATION:Online
 DESCRIPTION:https://unihacks-youth.devpost.com/\n\nMás información: https
- ://todothon.volmer.es/evento/unihacks-2026
+ ://todothon.es/evento/unihacks-2026
 URL:https://unihacks-youth.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31683@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261126
 SUMMARY:BuildyourOwnWebsite
 LOCATION:Online
 DESCRIPTION:https://buildyourownwebsite.devpost.com/\n\nMás información: 
- https://todothon.volmer.es/evento/buildyourownwebsite-2026
+ https://todothon.es/evento/buildyourownwebsite-2026
 URL:https://buildyourownwebsite.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31571@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20270113
 SUMMARY:Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
 LOCATION:Online
 DESCRIPTION:https://cloud9.devpost.com/\n\nMás información: https://todot
- hon.volmer.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026
+ hon.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026
 URL:https://cloud9.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32158@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261121
 SUMMARY:AI@UCF Semester Sprint
 LOCATION:Online
 DESCRIPTION:https://semester-sprint.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/ai-ucf-semester-sprint-2026
+ s://todothon.es/evento/ai-ucf-semester-sprint-2026
 URL:https://semester-sprint.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31886@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20270202
 SUMMARY:Build with AI - Pico Space Program
 LOCATION:Online
 DESCRIPTION:https://pico-space-program.devpost.com/\n\nMás información: h
- ttps://todothon.volmer.es/evento/build-with-ai-pico-space-program-2026
+ ttps://todothon.es/evento/build-with-ai-pico-space-program-2026
 URL:https://pico-space-program.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31775@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261125
 SUMMARY:OBSCURA: Satellite AI Research Challenge
 LOCATION:Online
 DESCRIPTION:https://obscura.devpost.com/\n\nMás información: https://todo
- thon.volmer.es/evento/obscura-satellite-ai-research-challenge-2026
+ thon.es/evento/obscura-satellite-ai-research-challenge-2026
 URL:https://obscura.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32155@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261121
 SUMMARY:SMBP FinHack
 LOCATION:Online
 DESCRIPTION:https://smbp-finhack.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/smbp-finhack-2026
+ /todothon.es/evento/smbp-finhack-2026
 URL:https://smbp-finhack.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-month-of-horror-3@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261221
 SUMMARY:Month of Horror #3: Endless Ocean
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/month-of-horror-3\n\nMás información: htt
- ps://todothon.volmer.es/evento/month-of-horror-3-endless-ocean-2026
+ ps://todothon.es/evento/month-of-horror-3-endless-ocean-2026
 URL:https://itch.io/jam/month-of-horror-3
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31620@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:CrossPointX 2026
 LOCATION:Online
 DESCRIPTION:https://cpx2026.devpost.com/\n\nMás información: https://todo
- thon.volmer.es/evento/crosspointx-2026
+ thon.es/evento/crosspointx-2026
 URL:https://cpx2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3419@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:EyesOpenCTF 7th edition
 LOCATION:Online
 DESCRIPTION:https://eyesopensecurity.com/ctf-briefing.html\n\nMás informac
- ión: https://todothon.volmer.es/evento/eyesopenctf-7th-edition-2026
+ ión: https://todothon.es/evento/eyesopenctf-7th-edition-2026
 URL:https://eyesopensecurity.com/ctf-briefing.html
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3337@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261122
 SUMMARY:GlacierCTF 2026
 LOCATION:Online
 DESCRIPTION:https://glacierctf.com/\n\nMás información: https://todothon.
- volmer.es/evento/glacierctf-2026
+ es/evento/glacierctf-2026
 URL:https://glacierctf.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3049@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:WolvCTF 2026
 LOCATION:Online
-DESCRIPTION:https://wolvctf.io/\n\nMás información: https://todothon.volm
- er.es/evento/wolvctf-2026
+DESCRIPTION:https://wolvctf.io/\n\nMás información: https://todothon.es/e
+ vento/wolvctf-2026
 URL:https://wolvctf.io/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3425@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261122
 SUMMARY:Outback Overflow
 LOCATION:Online
 DESCRIPTION:http://ctf.hscyber.org/\n\nMás información: https://todothon.
- volmer.es/evento/outback-overflow-2026
+ es/evento/outback-overflow-2026
 URL:http://ctf.hscyber.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-harvest@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261208
 SUMMARY:Harvest
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/harvest\n\nMás información: https://todot
- hon.volmer.es/evento/harvest-2026
+ hon.es/evento/harvest-2026
 URL:https://itch.io/jam/harvest
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-game-writing-sig-arcjam-2026@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261124
 SUMMARY:Arcjam 2026
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/game-writing-sig-arcjam-2026\n\nMás inform
- ación: https://todothon.volmer.es/evento/arcjam-2026
+ ación: https://todothon.es/evento/arcjam-2026
 URL:https://itch.io/jam/game-writing-sig-arcjam-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31826@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261129
 SUMMARY:Global AI Builder’s Challenge
 LOCATION:Online
 DESCRIPTION:https://global-ai-builders-challenge.devpost.com/\n\nMás infor
- mación: https://todothon.volmer.es/evento/global-ai-builder-s-challenge-2
- 026
+ mación: https://todothon.es/evento/global-ai-builder-s-challenge-2026
 URL:https://global-ai-builders-challenge.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31721@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261123
 SUMMARY:EvoHacks 2
 LOCATION:Online
 DESCRIPTION:https://evohacks2.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/evohacks-2-2026
+ dothon.es/evento/evohacks-2-2026
 URL:https://evohacks2.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32137@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Game On Night – Imagine the Impossible
 LOCATION:Online
 DESCRIPTION:https://game-on-night.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/game-on-night-imagine-the-impossible-2026
+ //todothon.es/evento/game-on-night-imagine-the-impossible-2026
 URL:https://game-on-night.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3336@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Crate-CTF 2026
 LOCATION:Online
 DESCRIPTION:https://foi.se/cratectf\n\nMás información: https://todothon.
- volmer.es/evento/crate-ctf-2026
+ es/evento/crate-ctf-2026
 URL:https://foi.se/cratectf
 END:VEVENT
 BEGIN:VEVENT
-UID:eventbrite-2003206203680@todothon.es
-DTSTAMP:20261118T144904Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Hackathon - PMI Barcelona
-LOCATION:NTT DATA Barcelona\, 211 Avinguda d'Icària\, 08005\, Barcelona
-DESCRIPTION:https://www.eventbrite.es/e/hackathon-pmi-barcelona-tickets-200
- 3206203680\n\nMás información: https://todothon.volmer.es/evento/hackath
- on-pmi-barcelona-2026
-URL:https://www.eventbrite.es/e/hackathon-pmi-barcelona-tickets-20032062036
- 80
-END:VEVENT
-BEGIN:VEVENT
 UID:ctftime-3502@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:RedReaper CTF
 LOCATION:Online
 DESCRIPTION:https://qualification.redx.site/\n\nMás información: https://
- todothon.volmer.es/evento/redreaper-ctf-2026
+ todothon.es/evento/redreaper-ctf-2026
 URL:https://qualification.redx.site/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3512@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:N0v4CTF 2026
 LOCATION:Online
 DESCRIPTION:https://n0v4ctf.devs.surf/\n\nMás información: https://todoth
- on.volmer.es/evento/n0v4ctf-2026
+ on.es/evento/n0v4ctf-2026
 URL:https://n0v4ctf.devs.surf/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3474@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:LakeCTF Quals 26-27
 LOCATION:Online
 DESCRIPTION:https://lakectf.epfl.ch/\n\nMás información: https://todothon
- .volmer.es/evento/lakectf-quals-26-27-2026
+ .es/evento/lakectf-quals-26-27-2026
 URL:https://lakectf.epfl.ch/
 END:VEVENT
 BEGIN:VEVENT
 UID:mlh-01a1169b-c4ad-5d41-61cf-deccaa37655c@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:HackEPS
 LOCATION:Lleida\, Lleida\, Spain
-DESCRIPTION:https://hackeps.dev/\n\nMás información: https://todothon.vol
- mer.es/evento/hackeps-2026
+DESCRIPTION:https://hackeps.dev/\n\nMás información: https://todothon.es/
+ evento/hackeps-2026
 URL:https://hackeps.dev/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3485@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:L3m0n CTF 2026 (Quals)
 LOCATION:Online
-DESCRIPTION:https://l3m0nctf.xyz/\n\nMás información: https://todothon.vo
- lmer.es/evento/l3m0n-ctf-2026-quals
+DESCRIPTION:https://l3m0nctf.xyz/\n\nMás información: https://todothon.es
+ /evento/l3m0n-ctf-2026-quals
 URL:https://l3m0nctf.xyz/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3510@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:Black Hat India 2026 Official CTF
 LOCATION:Online
 DESCRIPTION:https://ctf.blackhat-india.com/\n\nMás información: https://t
- odothon.volmer.es/evento/black-hat-india-2026-official-ctf
+ odothon.es/evento/black-hat-india-2026-official-ctf
 URL:https://ctf.blackhat-india.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-pixel-forge-mega-jam@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261209
 SUMMARY:Pixel Forge MEGA JAM | $30k Prizes + Cash !
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/pixel-forge-mega-jam\n\nMás información: 
- https://todothon.volmer.es/evento/pixel-forge-mega-jam-30k-prizes-cash-202
- 6
+ https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026
 URL:https://itch.io/jam/pixel-forge-mega-jam
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31924@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20270201
 SUMMARY:HACKRISE'26 
 LOCATION:Online
 DESCRIPTION:https://hackrise-26.devpost.com/\n\nMás información: https://
- todothon.volmer.es/evento/hackrise-26-2026
+ todothon.es/evento/hackrise-26-2026
 URL:https://hackrise-26.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-3x3x3-jam@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261204
 SUMMARY:3x3x3 Jam
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/3x3x3-jam\n\nMás información: https://tod
- othon.volmer.es/evento/3x3x3-jam-2026
+ othon.es/evento/3x3x3-jam-2026
 URL:https://itch.io/jam/3x3x3-jam
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31734@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20270101
 SUMMARY:305 CodeFest Edition December 2026 — 305Hackathons.vercel.app
 LOCATION:Online
 DESCRIPTION:https://305codefestdec2026.devpost.com/\n\nMás información: h
- ttps://todothon.volmer.es/evento/305-codefest-edition-december-2026-305hac
- kathons-vercel-app
+ ttps://todothon.es/evento/305-codefest-edition-december-2026-305hackathons
+ -vercel-app
 URL:https://305codefestdec2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-rpg-latam-jam-2026@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261231
 SUMMARY:RPG LATAM JAM 2026
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/rpg-latam-jam-2026\n\nMás información: ht
- tps://todothon.volmer.es/evento/rpg-latam-jam-2026
+ tps://todothon.es/evento/rpg-latam-jam-2026
 URL:https://itch.io/jam/rpg-latam-jam-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-the-eye-jam3@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261214
 SUMMARY:The Eye Jam III: Folk Horror
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/the-eye-jam3\n\nMás información: https://
- todothon.volmer.es/evento/the-eye-jam-iii-folk-horror-2026
+ todothon.es/evento/the-eye-jam-iii-folk-horror-2026
 URL:https://itch.io/jam/the-eye-jam3
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32093@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261212
 SUMMARY:FRONTIER//26
 LOCATION:Online
 DESCRIPTION:https://frontier26.devpost.com/\n\nMás información: https://t
- odothon.volmer.es/evento/frontier-26-2026
+ odothon.es/evento/frontier-26-2026
 URL:https://frontier26.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3450@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:x3CTF 2026
 LOCATION:Online
-DESCRIPTION:https://x3c.tf/\n\nMás información: https://todothon.volmer.e
- s/evento/x3ctf-2026
+DESCRIPTION:https://x3c.tf/\n\nMás información: https://todothon.es/event
+ o/x3ctf-2026
 URL:https://x3c.tf/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-procjam@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261214
 SUMMARY:PROCJAM - The Procedural Generation Jam
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/procjam\n\nMás información: https://todot
- hon.volmer.es/evento/procjam-the-procedural-generation-jam-2026
+ hon.es/evento/procjam-the-procedural-generation-jam-2026
 URL:https://itch.io/jam/procjam
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-gamedevtv-holiday-jam-2026@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261215
 SUMMARY:GameDev.tv Holiday Jam 2026
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/gamedevtv-holiday-jam-2026\n\nMás informac
- ión: https://todothon.volmer.es/evento/gamedev-tv-holiday-jam-2026
+ ión: https://todothon.es/evento/gamedev-tv-holiday-jam-2026
 URL:https://itch.io/jam/gamedevtv-holiday-jam-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31297@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261213
 SUMMARY:BUILD 4 ALL
 LOCATION:Online
 DESCRIPTION:https://build4all.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/build-4-all-2026
+ dothon.es/evento/build-4-all-2026
 URL:https://build4all.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3480@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261207
 SUMMARY:bi0sCTF 2026
 LOCATION:Online
-DESCRIPTION:https://ctf.bi0s.in/\n\nMás información: https://todothon.vol
- mer.es/evento/bi0sctf-2026
+DESCRIPTION:https://ctf.bi0s.in/\n\nMás información: https://todothon.es/
+ evento/bi0sctf-2026
 URL:https://ctf.bi0s.in/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-the-mfg-gamblers-jam@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261213
 SUMMARY:The MFG Gambler&#039\;s Jam
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/the-mfg-gamblers-jam\n\nMás información: 
- https://todothon.volmer.es/evento/the-mfg-gambler-039-s-jam-2026
+ https://todothon.es/evento/the-mfg-gambler-039-s-jam-2026
 URL:https://itch.io/jam/the-mfg-gamblers-jam
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32057@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261219
 SUMMARY:Ryze Hacks 2026
 LOCATION:Online
 DESCRIPTION:https://ryzehacks.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/ryze-hacks-2026
+ dothon.es/evento/ryze-hacks-2026
 URL:https://ryzehacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32066@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261218
 SUMMARY:Arioron Think 2026
 LOCATION:Online
 DESCRIPTION:https://arioron-think-2026.devpost.com/\n\nMás información: h
- ttps://todothon.volmer.es/evento/arioron-think-2026
+ ttps://todothon.es/evento/arioron-think-2026
 URL:https://arioron-think-2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3367@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:niteCTF 2026
 LOCATION:Online
 DESCRIPTION:https://nitectf.cryptonitemit.in/\n\nMás información: https:/
- /todothon.volmer.es/evento/nitectf-2026
+ /todothon.es/evento/nitectf-2026
 URL:https://nitectf.cryptonitemit.in/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-godot-wild-jam-100@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261221
 SUMMARY:Godot Wild Jam #100
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/godot-wild-jam-100\n\nMás información: ht
- tps://todothon.volmer.es/evento/godot-wild-jam-100-2026
+ tps://todothon.es/evento/godot-wild-jam-100-2026
 URL:https://itch.io/jam/godot-wild-jam-100
 END:VEVENT
 BEGIN:VEVENT
-UID:devevents-barcelona-hackathon-2026-2026-12-11@todothon.es
-DTSTAMP:20261118T144904Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261214
-SUMMARY:Barcelona Hackathon 2026
-LOCATION:Barcelona\, Spain\, Barcelona
-DESCRIPTION:https://dev.events/conferences/barcelona-hackathon-2026-8m03sfm
- f\n\nMás información: https://todothon.volmer.es/evento/barcelona-hackat
- hon-2026
-URL:https://dev.events/conferences/barcelona-hackathon-2026-8m03sfmf
-END:VEVENT
-BEGIN:VEVENT
 UID:devpost-32103@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20270118
 SUMMARY:Syntax Hacks 2026
 LOCATION:Online
 DESCRIPTION:https://syntax-hacks-2026.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/syntax-hacks-2026
+ tps://todothon.es/evento/syntax-hacks-2026
 URL:https://syntax-hacks-2026.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3475@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261220
 SUMMARY:BSides Algiers 2026
 LOCATION:Online
 DESCRIPTION:https://shellmates.club/\n\nMás información: https://todothon
- .volmer.es/evento/bsides-algiers-2026
+ .es/evento/bsides-algiers-2026
 URL:https://shellmates.club/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32132@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261221
 SUMMARY:OVO Hack 48
 LOCATION:Online
 DESCRIPTION:https://ovo-hack-48.devpost.com/\n\nMás información: https://
- todothon.volmer.es/evento/ovo-hack-48-2026
+ todothon.es/evento/ovo-hack-48-2026
 URL:https://ovo-hack-48.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-30455@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20270119
 SUMMARY:Cosmo Hacks 2026
 LOCATION:Online
 DESCRIPTION:https://cosmohacks.devpost.com/\n\nMás información: https://t
- odothon.volmer.es/evento/cosmo-hacks-2026
+ odothon.es/evento/cosmo-hacks-2026
 URL:https://cosmohacks.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3472@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261221
 SUMMARY:BackdoorCTF 2026
 LOCATION:Online
 DESCRIPTION:https://backdoor.infoseciitr.in/\n\nMás información: https://
- todothon.volmer.es/evento/backdoorctf-2026
+ todothon.es/evento/backdoorctf-2026
 URL:https://backdoor.infoseciitr.in/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3429@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261229
 SUMMARY:idktheCTF 2026
 LOCATION:Online
 DESCRIPTION:http://ctf.idktheflag.sh/\n\nMás información: https://todotho
- n.volmer.es/evento/idkthectf-2026
+ n.es/evento/idkthectf-2026
 URL:http://ctf.idktheflag.sh/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3062@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261229
 SUMMARY:ASIS CTF Finals 2026
 LOCATION:Online
-DESCRIPTION:https://asisctf.com/\n\nMás información: https://todothon.vol
- mer.es/evento/asis-ctf-finals-2026
+DESCRIPTION:https://asisctf.com/\n\nMás información: https://todothon.es/
+ evento/asis-ctf-finals-2026
 URL:https://asisctf.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3511@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261229
 DTEND;VALUE=DATE:20270101
 SUMMARY:THE FINAL EXPLOIT CTF 2026—QUALIFIERS
 LOCATION:Online
 DESCRIPTION:https://0xv01d-ctf.xyz/\n\nMás información: https://todothon.
- volmer.es/evento/the-final-exploit-ctf-2026-qualifiers
+ es/evento/the-final-exploit-ctf-2026-qualifiers
 URL:https://0xv01d-ctf.xyz/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-27097@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:evensonarisnord
 LOCATION:Online
 DESCRIPTION:https://evensonarisnord.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/evensonarisnord-2026
+ s://todothon.es/evento/evensonarisnord-2026
 URL:https://evensonarisnord.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3492@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270104
 SUMMARY:GaianSpace Perihelion CTF 2027
 LOCATION:Online
 DESCRIPTION:https://gaian.space/ctf\n\nMás información: https://todothon.
- volmer.es/evento/gaianspace-perihelion-ctf-2027
+ es/evento/gaianspace-perihelion-ctf-2027
 URL:https://gaian.space/ctf
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-30819@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270111
 SUMMARY:United Hacks V8
 LOCATION:Online
 DESCRIPTION:https://unitedhacksv8.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/united-hacks-v8-2027
+ //todothon.es/evento/united-hacks-v8-2027
 URL:https://unitedhacksv8.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31222@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270111
 SUMMARY:checkpoint 1 — games for good
 LOCATION:Online
 DESCRIPTION:https://checkpoint-1.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/checkpoint-1-games-for-good-2027
+ /todothon.es/evento/checkpoint-1-games-for-good-2027
 URL:https://checkpoint-1.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31882@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270112
 SUMMARY:CSAIC Hack-AI-Thon
 LOCATION:Online
 DESCRIPTION:https://csaic-hackaithon.devpost.com/\n\nMás información: htt
- ps://todothon.volmer.es/evento/csaic-hack-ai-thon-2027
+ ps://todothon.es/evento/csaic-hack-ai-thon-2027
 URL:https://csaic-hackaithon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3508@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270112
 SUMMARY:UofTCTF 2027
 LOCATION:Online
 DESCRIPTION:https://ctf.uoftctf.org/\n\nMás información: https://todothon
- .volmer.es/evento/uoftctf-2027
+ .es/evento/uoftctf-2027
 URL:https://ctf.uoftctf.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31800@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270327
 SUMMARY:GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NGO Internsh
  ips & Prizes
 LOCATION:Online
 DESCRIPTION:https://gnec-hackathon-2027-winter.devpost.com/\n\nMás informa
- ción: https://todothon.volmer.es/evento/gnec-hackathon-2027-winter-compet
- e-for-un-affiliated-ngo-internships-p
+ ción: https://todothon.es/evento/gnec-hackathon-2027-winter-compete-for-u
+ n-affiliated-ngo-internships-p
 URL:https://gnec-hackathon-2027-winter.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32166@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270225
 SUMMARY:Launchly Project Sprint
 LOCATION:Online
 DESCRIPTION:https://launchlyp.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/launchly-project-sprint-2027
+ dothon.es/evento/launchly-project-sprint-2027
 URL:https://launchlyp.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
-UID:eventbrite-2004863390370@todothon.es
-DTSTAMP:20261118T144904Z
-DTSTART;VALUE=DATE:20270129
-DTEND;VALUE=DATE:20270201
-SUMMARY:Gamejam Alicante 2027
-LOCATION:Parque Científico de la Universidad Alicante\, San Vicente del Ra
- speig\, 03690\, San Vicente del Raspeig
-DESCRIPTION:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tick
- ets-2004863390370\n\nMás información: https://todothon.volmer.es/evento/
- gamejam-alicante-2027
-URL:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tickets-2004
- 863390370
-END:VEVENT
-BEGIN:VEVENT
 UID:devpost-30340@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270202
 DTEND;VALUE=DATE:20270205
 SUMMARY:HackTitan
 LOCATION:Online
 DESCRIPTION:https://hacktitan.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/hacktitan-2027
+ dothon.es/evento/hacktitan-2027
 URL:https://hacktitan.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31827@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270214
 SUMMARY:AI for Human Impact: A Global BASIS Hackathon
 LOCATION:Online
 DESCRIPTION:https://basisglobalhackathon.devpost.com/\n\nMás información:
-  https://todothon.volmer.es/evento/ai-for-human-impact-a-global-basis-hack
- athon-2027
+  https://todothon.es/evento/ai-for-human-impact-a-global-basis-hackathon-2
+ 027
 URL:https://basisglobalhackathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-30110@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270222
 SUMMARY:MEGA Hackathon 2027
 LOCATION:Online
 DESCRIPTION:https://megahackathon-27.devpost.com/\n\nMás información: htt
- ps://todothon.volmer.es/evento/mega-hackathon-2027
+ ps://todothon.es/evento/mega-hackathon-2027
 URL:https://megahackathon-27.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-brackeys-17@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270222
 SUMMARY:Brackeys Game Jam 2027.1
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/brackeys-17\n\nMás información: https://t
- odothon.volmer.es/evento/brackeys-game-jam-2027-1
+ odothon.es/evento/brackeys-game-jam-2027-1
 URL:https://itch.io/jam/brackeys-17
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31522@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270303
 SUMMARY:WiCS Hackathon
 LOCATION:Online
 DESCRIPTION:https://wics-hackathon.devpost.com/\n\nMás información: https
- ://todothon.volmer.es/evento/wics-hackathon-2027
+ ://todothon.es/evento/wics-hackathon-2027
 URL:https://wics-hackathon.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31535@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270316
 SUMMARY:Build Beyond Hackathon
 LOCATION:Online
 DESCRIPTION:https://build-beyond.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/build-beyond-hackathon-2027
+ /todothon.es/evento/build-beyond-hackathon-2027
 URL:https://build-beyond.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3458@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270315
 SUMMARY:JerseyCTF VII
 LOCATION:Online
 DESCRIPTION:https://ctf.jerseyctf.com/\n\nMás información: https://todoth
- on.volmer.es/evento/jerseyctf-vii-2027
+ on.es/evento/jerseyctf-vii-2027
 URL:https://ctf.jerseyctf.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-31148@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270404
 SUMMARY:KeanUHackThis 2027
 LOCATION:Online
 DESCRIPTION:https://keauhackthis-2027.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/keanuhackthis-2027
+ tps://todothon.es/evento/keanuhackthis-2027
 URL:https://keauhackthis-2027.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-32149@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270412
 SUMMARY:Knightlytics
 LOCATION:Online
 DESCRIPTION:https://knightlytics.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/knightlytics-2027
+ /todothon.es/evento/knightlytics-2027
 URL:https://knightlytics.devpost.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-gmtk-2027@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270811
 DTEND;VALUE=DATE:20270816
 SUMMARY:GMTK Game Jam 2027
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/gmtk-2027\n\nMás información: https://tod
- othon.volmer.es/evento/gmtk-game-jam-2027
+ othon.es/evento/gmtk-game-jam-2027
 URL:https://itch.io/jam/gmtk-2027
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-gbjam-15@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270910
 DTEND;VALUE=DATE:20270921
 SUMMARY:GBJAM 15
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/gbjam-15\n\nMás información: https://todo
- thon.volmer.es/evento/gbjam-15-2027
+ thon.es/evento/gbjam-15-2027
 URL:https://itch.io/jam/gbjam-15
 END:VEVENT
 BEGIN:VEVENT
 UID:devpost-29135@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20280312
 DTEND;VALUE=DATE:20280328
 SUMMARY:Brewing Codes 4.0
 LOCATION:Online
 DESCRIPTION:https://brewing-codes-4-0.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/brewing-codes-4-0-2028
+ tps://todothon.es/evento/brewing-codes-4-0-2028
 URL:https://brewing-codes-4-0.devpost.com/
 END:VEVENT
 END:VCALENDAR

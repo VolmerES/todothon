@@ -7,13 +7,13 @@ X-WR-CALNAME:EyesOpenCTF 7th edition
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3419@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:EyesOpenCTF 7th edition
 LOCATION:Online
 DESCRIPTION:https://eyesopensecurity.com/ctf-briefing.html\n\nMás informac
- ión: https://todothon.volmer.es/evento/eyesopenctf-7th-edition-2026
+ ión: https://todothon.es/evento/eyesopenctf-7th-edition-2026
 URL:https://eyesopensecurity.com/ctf-briefing.html
 END:VEVENT
 END:VCALENDAR

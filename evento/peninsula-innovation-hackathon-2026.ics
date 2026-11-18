@@ -7,14 +7,13 @@ X-WR-CALNAME:Peninsula Innovation Hackathon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32061@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261211
 SUMMARY:Peninsula Innovation Hackathon
 LOCATION:Online
 DESCRIPTION:https://peninsula-innovation-hackathon.devpost.com/\n\nMás inf
- ormación: https://todothon.volmer.es/evento/peninsula-innovation-hackatho
- n-2026
+ ormación: https://todothon.es/evento/peninsula-innovation-hackathon-2026
 URL:https://peninsula-innovation-hackathon.devpost.com/
 END:VEVENT
 END:VCALENDAR

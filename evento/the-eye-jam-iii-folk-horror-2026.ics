@@ -7,13 +7,13 @@ X-WR-CALNAME:The Eye Jam III: Folk Horror
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:itch-the-eye-jam3@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261214
 SUMMARY:The Eye Jam III: Folk Horror
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/the-eye-jam3\n\nMás información: https://
- todothon.volmer.es/evento/the-eye-jam-iii-folk-horror-2026
+ todothon.es/evento/the-eye-jam-iii-folk-horror-2026
 URL:https://itch.io/jam/the-eye-jam3
 END:VEVENT
 END:VCALENDAR

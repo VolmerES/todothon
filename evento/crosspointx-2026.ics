@@ -7,13 +7,13 @@ X-WR-CALNAME:CrossPointX 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31620@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:CrossPointX 2026
 LOCATION:Online
 DESCRIPTION:https://cpx2026.devpost.com/\n\nMás información: https://todo
- thon.volmer.es/evento/crosspointx-2026
+ thon.es/evento/crosspointx-2026
 URL:https://cpx2026.devpost.com/
 END:VEVENT
 END:VCALENDAR

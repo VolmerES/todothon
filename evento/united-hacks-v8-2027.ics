@@ -7,13 +7,13 @@ X-WR-CALNAME:United Hacks V8
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-30819@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270111
 SUMMARY:United Hacks V8
 LOCATION:Online
 DESCRIPTION:https://unitedhacksv8.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/united-hacks-v8-2027
+ //todothon.es/evento/united-hacks-v8-2027
 URL:https://unitedhacksv8.devpost.com/
 END:VEVENT
 END:VCALENDAR

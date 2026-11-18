@@ -7,13 +7,13 @@ X-WR-CALNAME:Relate by Neo4j Hackathon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32024@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261212
 SUMMARY:Relate by Neo4j Hackathon
 LOCATION:Online
 DESCRIPTION:https://relate.devpost.com/\n\nMás información: https://todot
- hon.volmer.es/evento/relate-by-neo4j-hackathon-2026
+ hon.es/evento/relate-by-neo4j-hackathon-2026
 URL:https://relate.devpost.com/
 END:VEVENT
 END:VCALENDAR

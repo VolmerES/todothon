@@ -8,14 +8,14 @@ X-WR-CALNAME:AI for Medicine: A Global Student Hackathon on the Future of C
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32009@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261205
 SUMMARY:AI for Medicine: A Global Student Hackathon on the Future of Care
 LOCATION:Online
 DESCRIPTION:https://ai-for-medicine.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/ai-for-medicine-a-global-student-hackathon-o
- n-the-future-of-care-2026
+ s://todothon.es/evento/ai-for-medicine-a-global-student-hackathon-on-the-f
+ uture-of-care-2026
 URL:https://ai-for-medicine.devpost.com/
 END:VEVENT
 END:VCALENDAR

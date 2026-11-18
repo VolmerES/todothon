@@ -7,13 +7,13 @@ X-WR-CALNAME:CSAIC Hack-AI-Thon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31882@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270112
 SUMMARY:CSAIC Hack-AI-Thon
 LOCATION:Online
 DESCRIPTION:https://csaic-hackaithon.devpost.com/\n\nMás información: htt
- ps://todothon.volmer.es/evento/csaic-hack-ai-thon-2027
+ ps://todothon.es/evento/csaic-hack-ai-thon-2027
 URL:https://csaic-hackaithon.devpost.com/
 END:VEVENT
 END:VCALENDAR

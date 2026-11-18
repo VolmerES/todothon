@@ -7,233 +7,233 @@ X-WR-CALNAME:Todothon · CTF
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3419@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:EyesOpenCTF 7th edition
 LOCATION:Online
 DESCRIPTION:https://eyesopensecurity.com/ctf-briefing.html\n\nMás informac
- ión: https://todothon.volmer.es/evento/eyesopenctf-7th-edition-2026
+ ión: https://todothon.es/evento/eyesopenctf-7th-edition-2026
 URL:https://eyesopensecurity.com/ctf-briefing.html
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3337@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261122
 SUMMARY:GlacierCTF 2026
 LOCATION:Online
 DESCRIPTION:https://glacierctf.com/\n\nMás información: https://todothon.
- volmer.es/evento/glacierctf-2026
+ es/evento/glacierctf-2026
 URL:https://glacierctf.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3049@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:WolvCTF 2026
 LOCATION:Online
-DESCRIPTION:https://wolvctf.io/\n\nMás información: https://todothon.volm
- er.es/evento/wolvctf-2026
+DESCRIPTION:https://wolvctf.io/\n\nMás información: https://todothon.es/e
+ vento/wolvctf-2026
 URL:https://wolvctf.io/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3425@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261122
 SUMMARY:Outback Overflow
 LOCATION:Online
 DESCRIPTION:http://ctf.hscyber.org/\n\nMás información: https://todothon.
- volmer.es/evento/outback-overflow-2026
+ es/evento/outback-overflow-2026
 URL:http://ctf.hscyber.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3336@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Crate-CTF 2026
 LOCATION:Online
 DESCRIPTION:https://foi.se/cratectf\n\nMás información: https://todothon.
- volmer.es/evento/crate-ctf-2026
+ es/evento/crate-ctf-2026
 URL:https://foi.se/cratectf
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3502@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:RedReaper CTF
 LOCATION:Online
 DESCRIPTION:https://qualification.redx.site/\n\nMás información: https://
- todothon.volmer.es/evento/redreaper-ctf-2026
+ todothon.es/evento/redreaper-ctf-2026
 URL:https://qualification.redx.site/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3512@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:N0v4CTF 2026
 LOCATION:Online
 DESCRIPTION:https://n0v4ctf.devs.surf/\n\nMás información: https://todoth
- on.volmer.es/evento/n0v4ctf-2026
+ on.es/evento/n0v4ctf-2026
 URL:https://n0v4ctf.devs.surf/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3474@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:LakeCTF Quals 26-27
 LOCATION:Online
 DESCRIPTION:https://lakectf.epfl.ch/\n\nMás información: https://todothon
- .volmer.es/evento/lakectf-quals-26-27-2026
+ .es/evento/lakectf-quals-26-27-2026
 URL:https://lakectf.epfl.ch/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3485@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:L3m0n CTF 2026 (Quals)
 LOCATION:Online
-DESCRIPTION:https://l3m0nctf.xyz/\n\nMás información: https://todothon.vo
- lmer.es/evento/l3m0n-ctf-2026-quals
+DESCRIPTION:https://l3m0nctf.xyz/\n\nMás información: https://todothon.es
+ /evento/l3m0n-ctf-2026-quals
 URL:https://l3m0nctf.xyz/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3510@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:Black Hat India 2026 Official CTF
 LOCATION:Online
 DESCRIPTION:https://ctf.blackhat-india.com/\n\nMás información: https://t
- odothon.volmer.es/evento/black-hat-india-2026-official-ctf
+ odothon.es/evento/black-hat-india-2026-official-ctf
 URL:https://ctf.blackhat-india.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3450@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:x3CTF 2026
 LOCATION:Online
-DESCRIPTION:https://x3c.tf/\n\nMás información: https://todothon.volmer.e
- s/evento/x3ctf-2026
+DESCRIPTION:https://x3c.tf/\n\nMás información: https://todothon.es/event
+ o/x3ctf-2026
 URL:https://x3c.tf/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3480@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261207
 SUMMARY:bi0sCTF 2026
 LOCATION:Online
-DESCRIPTION:https://ctf.bi0s.in/\n\nMás información: https://todothon.vol
- mer.es/evento/bi0sctf-2026
+DESCRIPTION:https://ctf.bi0s.in/\n\nMás información: https://todothon.es/
+ evento/bi0sctf-2026
 URL:https://ctf.bi0s.in/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3367@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:niteCTF 2026
 LOCATION:Online
 DESCRIPTION:https://nitectf.cryptonitemit.in/\n\nMás información: https:/
- /todothon.volmer.es/evento/nitectf-2026
+ /todothon.es/evento/nitectf-2026
 URL:https://nitectf.cryptonitemit.in/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3475@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261220
 SUMMARY:BSides Algiers 2026
 LOCATION:Online
 DESCRIPTION:https://shellmates.club/\n\nMás información: https://todothon
- .volmer.es/evento/bsides-algiers-2026
+ .es/evento/bsides-algiers-2026
 URL:https://shellmates.club/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3472@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261221
 SUMMARY:BackdoorCTF 2026
 LOCATION:Online
 DESCRIPTION:https://backdoor.infoseciitr.in/\n\nMás información: https://
- todothon.volmer.es/evento/backdoorctf-2026
+ todothon.es/evento/backdoorctf-2026
 URL:https://backdoor.infoseciitr.in/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3429@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261229
 SUMMARY:idktheCTF 2026
 LOCATION:Online
 DESCRIPTION:http://ctf.idktheflag.sh/\n\nMás información: https://todotho
- n.volmer.es/evento/idkthectf-2026
+ n.es/evento/idkthectf-2026
 URL:http://ctf.idktheflag.sh/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3062@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261229
 SUMMARY:ASIS CTF Finals 2026
 LOCATION:Online
-DESCRIPTION:https://asisctf.com/\n\nMás información: https://todothon.vol
- mer.es/evento/asis-ctf-finals-2026
+DESCRIPTION:https://asisctf.com/\n\nMás información: https://todothon.es/
+ evento/asis-ctf-finals-2026
 URL:https://asisctf.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3511@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261229
 DTEND;VALUE=DATE:20270101
 SUMMARY:THE FINAL EXPLOIT CTF 2026—QUALIFIERS
 LOCATION:Online
 DESCRIPTION:https://0xv01d-ctf.xyz/\n\nMás información: https://todothon.
- volmer.es/evento/the-final-exploit-ctf-2026-qualifiers
+ es/evento/the-final-exploit-ctf-2026-qualifiers
 URL:https://0xv01d-ctf.xyz/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3492@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270104
 SUMMARY:GaianSpace Perihelion CTF 2027
 LOCATION:Online
 DESCRIPTION:https://gaian.space/ctf\n\nMás información: https://todothon.
- volmer.es/evento/gaianspace-perihelion-ctf-2027
+ es/evento/gaianspace-perihelion-ctf-2027
 URL:https://gaian.space/ctf
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3508@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270112
 SUMMARY:UofTCTF 2027
 LOCATION:Online
 DESCRIPTION:https://ctf.uoftctf.org/\n\nMás información: https://todothon
- .volmer.es/evento/uoftctf-2027
+ .es/evento/uoftctf-2027
 URL:https://ctf.uoftctf.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:ctftime-3458@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270315
 SUMMARY:JerseyCTF VII
 LOCATION:Online
 DESCRIPTION:https://ctf.jerseyctf.com/\n\nMás información: https://todoth
- on.volmer.es/evento/jerseyctf-vii-2027
+ on.es/evento/jerseyctf-vii-2027
 URL:https://ctf.jerseyctf.com/
 END:VEVENT
 END:VCALENDAR

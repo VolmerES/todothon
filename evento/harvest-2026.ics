@@ -7,13 +7,13 @@ X-WR-CALNAME:Harvest
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:itch-harvest@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261208
 SUMMARY:Harvest
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/harvest\n\nMás información: https://todot
- hon.volmer.es/evento/harvest-2026
+ hon.es/evento/harvest-2026
 URL:https://itch.io/jam/harvest
 END:VEVENT
 END:VCALENDAR

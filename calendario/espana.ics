@@ -6,53 +6,14 @@ METHOD:PUBLISH
 X-WR-CALNAME:Todothon · España
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
-UID:eventbrite-2003206203680@todothon.es
-DTSTAMP:20261118T144904Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Hackathon - PMI Barcelona
-LOCATION:NTT DATA Barcelona\, 211 Avinguda d'Icària\, 08005\, Barcelona
-DESCRIPTION:https://www.eventbrite.es/e/hackathon-pmi-barcelona-tickets-200
- 3206203680\n\nMás información: https://todothon.volmer.es/evento/hackath
- on-pmi-barcelona-2026
-URL:https://www.eventbrite.es/e/hackathon-pmi-barcelona-tickets-20032062036
- 80
-END:VEVENT
-BEGIN:VEVENT
 UID:mlh-01a1169b-c4ad-5d41-61cf-deccaa37655c@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:HackEPS
 LOCATION:Lleida\, Lleida\, Spain
-DESCRIPTION:https://hackeps.dev/\n\nMás información: https://todothon.vol
- mer.es/evento/hackeps-2026
+DESCRIPTION:https://hackeps.dev/\n\nMás información: https://todothon.es/
+ evento/hackeps-2026
 URL:https://hackeps.dev/
-END:VEVENT
-BEGIN:VEVENT
-UID:devevents-barcelona-hackathon-2026-2026-12-11@todothon.es
-DTSTAMP:20261118T144904Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261214
-SUMMARY:Barcelona Hackathon 2026
-LOCATION:Barcelona\, Spain\, Barcelona
-DESCRIPTION:https://dev.events/conferences/barcelona-hackathon-2026-8m03sfm
- f\n\nMás información: https://todothon.volmer.es/evento/barcelona-hackat
- hon-2026
-URL:https://dev.events/conferences/barcelona-hackathon-2026-8m03sfmf
-END:VEVENT
-BEGIN:VEVENT
-UID:eventbrite-2004863390370@todothon.es
-DTSTAMP:20261118T144904Z
-DTSTART;VALUE=DATE:20270129
-DTEND;VALUE=DATE:20270201
-SUMMARY:Gamejam Alicante 2027
-LOCATION:Parque Científico de la Universidad Alicante\, San Vicente del Ra
- speig\, 03690\, San Vicente del Raspeig
-DESCRIPTION:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tick
- ets-2004863390370\n\nMás información: https://todothon.volmer.es/evento/
- gamejam-alicante-2027
-URL:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tickets-2004
- 863390370
 END:VEVENT
 END:VCALENDAR

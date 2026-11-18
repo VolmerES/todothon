@@ -7,13 +7,13 @@ X-WR-CALNAME:3x3x3 Jam
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:itch-3x3x3-jam@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261204
 SUMMARY:3x3x3 Jam
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/3x3x3-jam\n\nMás información: https://tod
- othon.volmer.es/evento/3x3x3-jam-2026
+ othon.es/evento/3x3x3-jam-2026
 URL:https://itch.io/jam/3x3x3-jam
 END:VEVENT
 END:VCALENDAR

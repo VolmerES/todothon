@@ -7,13 +7,13 @@ X-WR-CALNAME:UofTCTF 2027
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3508@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270112
 SUMMARY:UofTCTF 2027
 LOCATION:Online
 DESCRIPTION:https://ctf.uoftctf.org/\n\nMás información: https://todothon
- .volmer.es/evento/uoftctf-2027
+ .es/evento/uoftctf-2027
 URL:https://ctf.uoftctf.org/
 END:VEVENT
 END:VCALENDAR

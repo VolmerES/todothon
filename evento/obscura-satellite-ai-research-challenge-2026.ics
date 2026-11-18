@@ -7,13 +7,13 @@ X-WR-CALNAME:OBSCURA: Satellite AI Research Challenge
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31775@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261125
 SUMMARY:OBSCURA: Satellite AI Research Challenge
 LOCATION:Online
 DESCRIPTION:https://obscura.devpost.com/\n\nMás información: https://todo
- thon.volmer.es/evento/obscura-satellite-ai-research-challenge-2026
+ thon.es/evento/obscura-satellite-ai-research-challenge-2026
 URL:https://obscura.devpost.com/
 END:VEVENT
 END:VCALENDAR

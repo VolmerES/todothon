@@ -7,13 +7,13 @@ X-WR-CALNAME:InnovArt 2027: Art and Technology Hack Day
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31108@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20260823
 DTEND;VALUE=DATE:20270103
 SUMMARY:InnovArt 2027: Art and Technology Hack Day
 LOCATION:Online
 DESCRIPTION:https://innovart2027.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/innovart-2027-art-and-technology-hack-day-2026
+ /todothon.es/evento/innovart-2027-art-and-technology-hack-day-2026
 URL:https://innovart2027.devpost.com/
 END:VEVENT
 END:VCALENDAR

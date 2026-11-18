@@ -7,13 +7,13 @@ X-WR-CALNAME:Arcjam 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:itch-game-writing-sig-arcjam-2026@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261124
 SUMMARY:Arcjam 2026
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/game-writing-sig-arcjam-2026\n\nMás inform
- ación: https://todothon.volmer.es/evento/arcjam-2026
+ ación: https://todothon.es/evento/arcjam-2026
 URL:https://itch.io/jam/game-writing-sig-arcjam-2026
 END:VEVENT
 END:VCALENDAR

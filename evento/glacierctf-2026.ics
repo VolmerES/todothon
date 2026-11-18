@@ -7,13 +7,13 @@ X-WR-CALNAME:GlacierCTF 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3337@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261122
 SUMMARY:GlacierCTF 2026
 LOCATION:Online
 DESCRIPTION:https://glacierctf.com/\n\nMás información: https://todothon.
- volmer.es/evento/glacierctf-2026
+ es/evento/glacierctf-2026
 URL:https://glacierctf.com/
 END:VEVENT
 END:VCALENDAR

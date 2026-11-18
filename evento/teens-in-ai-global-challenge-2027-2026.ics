@@ -7,13 +7,13 @@ X-WR-CALNAME:Teens in AI Global Challenge 2027
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31905@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20270216
 SUMMARY:Teens in AI Global Challenge 2027
 LOCATION:Online
 DESCRIPTION:https://teens-in-ai.devpost.com/\n\nMás información: https://
- todothon.volmer.es/evento/teens-in-ai-global-challenge-2027-2026
+ todothon.es/evento/teens-in-ai-global-challenge-2027-2026
 URL:https://teens-in-ai.devpost.com/
 END:VEVENT
 END:VCALENDAR

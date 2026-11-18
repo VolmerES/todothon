@@ -7,13 +7,13 @@ X-WR-CALNAME:Launchly Project Sprint
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32166@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270225
 SUMMARY:Launchly Project Sprint
 LOCATION:Online
 DESCRIPTION:https://launchlyp.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/launchly-project-sprint-2027
+ dothon.es/evento/launchly-project-sprint-2027
 URL:https://launchlyp.devpost.com/
 END:VEVENT
 END:VCALENDAR

@@ -7,13 +7,13 @@ X-WR-CALNAME:RedReaper CTF
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3502@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:RedReaper CTF
 LOCATION:Online
 DESCRIPTION:https://qualification.redx.site/\n\nMás información: https://
- todothon.volmer.es/evento/redreaper-ctf-2026
+ todothon.es/evento/redreaper-ctf-2026
 URL:https://qualification.redx.site/
 END:VEVENT
 END:VCALENDAR

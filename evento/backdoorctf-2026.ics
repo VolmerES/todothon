@@ -7,13 +7,13 @@ X-WR-CALNAME:BackdoorCTF 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3472@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261221
 SUMMARY:BackdoorCTF 2026
 LOCATION:Online
 DESCRIPTION:https://backdoor.infoseciitr.in/\n\nMás información: https://
- todothon.volmer.es/evento/backdoorctf-2026
+ todothon.es/evento/backdoorctf-2026
 URL:https://backdoor.infoseciitr.in/
 END:VEVENT
 END:VCALENDAR

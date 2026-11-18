@@ -7,13 +7,13 @@ X-WR-CALNAME:STEM2Connect AI Hackathon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31789@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261122
 SUMMARY:STEM2Connect AI Hackathon
 LOCATION:Online
 DESCRIPTION:https://stem2connect-online-hackathon.devpost.com/\n\nMás info
- rmación: https://todothon.volmer.es/evento/stem2connect-ai-hackathon-2026
+ rmación: https://todothon.es/evento/stem2connect-ai-hackathon-2026
 URL:https://stem2connect-online-hackathon.devpost.com/
 END:VEVENT
 END:VCALENDAR

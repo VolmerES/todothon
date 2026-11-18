@@ -7,13 +7,13 @@ X-WR-CALNAME:Godot Wild Jam #100
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:itch-godot-wild-jam-100@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261221
 SUMMARY:Godot Wild Jam #100
 LOCATION:Online
 DESCRIPTION:https://itch.io/jam/godot-wild-jam-100\n\nMás información: ht
- tps://todothon.volmer.es/evento/godot-wild-jam-100-2026
+ tps://todothon.es/evento/godot-wild-jam-100-2026
 URL:https://itch.io/jam/godot-wild-jam-100
 END:VEVENT
 END:VCALENDAR

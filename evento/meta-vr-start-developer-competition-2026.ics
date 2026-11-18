@@ -7,14 +7,14 @@ X-WR-CALNAME:Meta VR Start Developer Competition 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31024@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20261119
 SUMMARY:Meta VR Start Developer Competition 2026
 LOCATION:Online
 DESCRIPTION:https://start-developer-competition-26.devpost.com/\n\nMás inf
- ormación: https://todothon.volmer.es/evento/meta-vr-start-developer-compe
- tition-2026
+ ormación: https://todothon.es/evento/meta-vr-start-developer-competition-
+ 2026
 URL:https://start-developer-competition-26.devpost.com/
 END:VEVENT
 END:VCALENDAR

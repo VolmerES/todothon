@@ -7,13 +7,13 @@ X-WR-CALNAME:Black Hat India 2026 Official CTF
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3510@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:Black Hat India 2026 Official CTF
 LOCATION:Online
 DESCRIPTION:https://ctf.blackhat-india.com/\n\nMás información: https://t
- odothon.volmer.es/evento/black-hat-india-2026-official-ctf
+ odothon.es/evento/black-hat-india-2026-official-ctf
 URL:https://ctf.blackhat-india.com/
 END:VEVENT
 END:VCALENDAR

@@ -8,14 +8,14 @@ X-WR-CALNAME:305 CodeFest Edition December 2026 — 305Hackathons.vercel.ap
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31734@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20270101
 SUMMARY:305 CodeFest Edition December 2026 — 305Hackathons.vercel.app
 LOCATION:Online
 DESCRIPTION:https://305codefestdec2026.devpost.com/\n\nMás información: h
- ttps://todothon.volmer.es/evento/305-codefest-edition-december-2026-305hac
- kathons-vercel-app
+ ttps://todothon.es/evento/305-codefest-edition-december-2026-305hackathons
+ -vercel-app
 URL:https://305codefestdec2026.devpost.com/
 END:VEVENT
 END:VCALENDAR

@@ -7,13 +7,13 @@ X-WR-CALNAME:ESE1110 Fall 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32106@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261120
 SUMMARY:ESE1110 Fall 2026
 LOCATION:Online
 DESCRIPTION:https://ese1110f26.devpost.com/\n\nMás información: https://t
- odothon.volmer.es/evento/ese1110-fall-2026
+ odothon.es/evento/ese1110-fall-2026
 URL:https://ese1110f26.devpost.com/
 END:VEVENT
 END:VCALENDAR

@@ -7,13 +7,13 @@ X-WR-CALNAME:AWS MSP AI Hackathon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31642@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261212
 SUMMARY:AWS MSP AI Hackathon
 LOCATION:Online
 DESCRIPTION:https://aws-agentic-msp.devpost.com/\n\nMás información: http
- s://todothon.volmer.es/evento/aws-msp-ai-hackathon-2026
+ s://todothon.es/evento/aws-msp-ai-hackathon-2026
 URL:https://aws-agentic-msp.devpost.com/
 END:VEVENT
 END:VCALENDAR

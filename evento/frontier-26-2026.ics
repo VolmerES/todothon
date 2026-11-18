@@ -7,13 +7,13 @@ X-WR-CALNAME:FRONTIER//26
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32093@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261212
 SUMMARY:FRONTIER//26
 LOCATION:Online
 DESCRIPTION:https://frontier26.devpost.com/\n\nMás información: https://t
- odothon.volmer.es/evento/frontier-26-2026
+ odothon.es/evento/frontier-26-2026
 URL:https://frontier26.devpost.com/
 END:VEVENT
 END:VCALENDAR

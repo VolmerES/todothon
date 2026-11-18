@@ -7,13 +7,13 @@ X-WR-CALNAME:LakeCTF Quals 26-27
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3474@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:LakeCTF Quals 26-27
 LOCATION:Online
 DESCRIPTION:https://lakectf.epfl.ch/\n\nMás información: https://todothon
- .volmer.es/evento/lakectf-quals-26-27-2026
+ .es/evento/lakectf-quals-26-27-2026
 URL:https://lakectf.epfl.ch/
 END:VEVENT
 END:VCALENDAR

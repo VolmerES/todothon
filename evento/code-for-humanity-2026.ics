@@ -7,13 +7,13 @@ X-WR-CALNAME:Code for Humanity
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-30740@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20260716
 DTEND;VALUE=DATE:20270116
 SUMMARY:Code for Humanity
 LOCATION:Online
 DESCRIPTION:https://code-for-humanity.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/code-for-humanity-2026
+ tps://todothon.es/evento/code-for-humanity-2026
 URL:https://code-for-humanity.devpost.com/
 END:VEVENT
 END:VCALENDAR

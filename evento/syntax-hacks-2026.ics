@@ -7,13 +7,13 @@ X-WR-CALNAME:Syntax Hacks 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32103@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20270118
 SUMMARY:Syntax Hacks 2026
 LOCATION:Online
 DESCRIPTION:https://syntax-hacks-2026.devpost.com/\n\nMás información: ht
- tps://todothon.volmer.es/evento/syntax-hacks-2026
+ tps://todothon.es/evento/syntax-hacks-2026
 URL:https://syntax-hacks-2026.devpost.com/
 END:VEVENT
 END:VCALENDAR

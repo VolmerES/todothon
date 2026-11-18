@@ -8,15 +8,15 @@ X-WR-CALNAME:ML Empowerment Build Challenge 4.0 - Prizes and Certificates f
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31960@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261203
 SUMMARY:ML Empowerment Build Challenge 4.0 - Prizes and Certificates for EV
  ERYONE
 LOCATION:Online
 DESCRIPTION:https://ml-build-challenge-4.devpost.com/\n\nMás información:
-  https://todothon.volmer.es/evento/ml-empowerment-build-challenge-4-0-priz
- es-and-certificates-for-everyon
+  https://todothon.es/evento/ml-empowerment-build-challenge-4-0-prizes-and-
+ certificates-for-everyon
 URL:https://ml-build-challenge-4.devpost.com/
 END:VEVENT
 END:VCALENDAR

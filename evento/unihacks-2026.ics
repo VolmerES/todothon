@@ -7,13 +7,13 @@ X-WR-CALNAME:unihacks
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32141@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20270126
 SUMMARY:unihacks
 LOCATION:Online
 DESCRIPTION:https://unihacks-youth.devpost.com/\n\nMás información: https
- ://todothon.volmer.es/evento/unihacks-2026
+ ://todothon.es/evento/unihacks-2026
 URL:https://unihacks-youth.devpost.com/
 END:VEVENT
 END:VCALENDAR

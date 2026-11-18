@@ -7,13 +7,13 @@ X-WR-CALNAME:QNX Global Hackathon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31083@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261216
 SUMMARY:QNX Global Hackathon
 LOCATION:Online
 DESCRIPTION:https://qnx.devpost.com/\n\nMás información: https://todothon
- .volmer.es/evento/qnx-global-hackathon-2026
+ .es/evento/qnx-global-hackathon-2026
 URL:https://qnx.devpost.com/
 END:VEVENT
 END:VCALENDAR

@@ -7,13 +7,13 @@ X-WR-CALNAME:bi0sCTF 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3480@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261207
 SUMMARY:bi0sCTF 2026
 LOCATION:Online
-DESCRIPTION:https://ctf.bi0s.in/\n\nMás información: https://todothon.vol
- mer.es/evento/bi0sctf-2026
+DESCRIPTION:https://ctf.bi0s.in/\n\nMás información: https://todothon.es/
+ evento/bi0sctf-2026
 URL:https://ctf.bi0s.in/
 END:VEVENT
 END:VCALENDAR

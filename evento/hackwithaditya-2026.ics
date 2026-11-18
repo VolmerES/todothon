@@ -7,13 +7,13 @@ X-WR-CALNAME:HackWithAditya
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31737@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261126
 SUMMARY:HackWithAditya
 LOCATION:Online
 DESCRIPTION:https://hackwithaditya.devpost.com/\n\nMás información: https
- ://todothon.volmer.es/evento/hackwithaditya-2026
+ ://todothon.es/evento/hackwithaditya-2026
 URL:https://hackwithaditya.devpost.com/
 END:VEVENT
 END:VCALENDAR

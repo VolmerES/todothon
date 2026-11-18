@@ -7,13 +7,13 @@ X-WR-CALNAME:Outback Overflow
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3425@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261122
 SUMMARY:Outback Overflow
 LOCATION:Online
 DESCRIPTION:http://ctf.hscyber.org/\n\nMás información: https://todothon.
- volmer.es/evento/outback-overflow-2026
+ es/evento/outback-overflow-2026
 URL:http://ctf.hscyber.org/
 END:VEVENT
 END:VCALENDAR

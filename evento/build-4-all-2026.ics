@@ -7,13 +7,13 @@ X-WR-CALNAME:BUILD 4 ALL
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31297@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261213
 SUMMARY:BUILD 4 ALL
 LOCATION:Online
 DESCRIPTION:https://build4all.devpost.com/\n\nMás información: https://to
- dothon.volmer.es/evento/build-4-all-2026
+ dothon.es/evento/build-4-all-2026
 URL:https://build4all.devpost.com/
 END:VEVENT
 END:VCALENDAR

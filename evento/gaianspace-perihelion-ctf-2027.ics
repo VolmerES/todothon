@@ -7,13 +7,13 @@ X-WR-CALNAME:GaianSpace Perihelion CTF 2027
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3492@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270104
 SUMMARY:GaianSpace Perihelion CTF 2027
 LOCATION:Online
 DESCRIPTION:https://gaian.space/ctf\n\nMás información: https://todothon.
- volmer.es/evento/gaianspace-perihelion-ctf-2027
+ es/evento/gaianspace-perihelion-ctf-2027
 URL:https://gaian.space/ctf
 END:VEVENT
 END:VCALENDAR

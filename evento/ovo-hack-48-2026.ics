@@ -7,13 +7,13 @@ X-WR-CALNAME:OVO Hack 48
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32132@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261221
 SUMMARY:OVO Hack 48
 LOCATION:Online
 DESCRIPTION:https://ovo-hack-48.devpost.com/\n\nMás información: https://
- todothon.volmer.es/evento/ovo-hack-48-2026
+ todothon.es/evento/ovo-hack-48-2026
 URL:https://ovo-hack-48.devpost.com/
 END:VEVENT
 END:VCALENDAR

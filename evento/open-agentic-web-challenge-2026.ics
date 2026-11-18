@@ -7,13 +7,13 @@ X-WR-CALNAME:Open Agentic Web Challenge
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-32026@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20270112
 SUMMARY:Open Agentic Web Challenge
 LOCATION:Online
 DESCRIPTION:https://cognizant-agenticweb.devpost.com/\n\nMás información:
-  https://todothon.volmer.es/evento/open-agentic-web-challenge-2026
+  https://todothon.es/evento/open-agentic-web-challenge-2026
 URL:https://cognizant-agenticweb.devpost.com/
 END:VEVENT
 END:VCALENDAR

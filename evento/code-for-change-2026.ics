@@ -7,13 +7,13 @@ X-WR-CALNAME:Code for Change
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31794@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261202
 SUMMARY:Code for Change
 LOCATION:Online
 DESCRIPTION:https://code-for-change-global.devpost.com/\n\nMás informació
- n: https://todothon.volmer.es/evento/code-for-change-2026
+ n: https://todothon.es/evento/code-for-change-2026
 URL:https://code-for-change-global.devpost.com/
 END:VEVENT
 END:VCALENDAR

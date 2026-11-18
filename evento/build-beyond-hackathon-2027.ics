@@ -7,13 +7,13 @@ X-WR-CALNAME:Build Beyond Hackathon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31535@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270316
 SUMMARY:Build Beyond Hackathon
 LOCATION:Online
 DESCRIPTION:https://build-beyond.devpost.com/\n\nMás información: https:/
- /todothon.volmer.es/evento/build-beyond-hackathon-2027
+ /todothon.es/evento/build-beyond-hackathon-2027
 URL:https://build-beyond.devpost.com/
 END:VEVENT
 END:VCALENDAR

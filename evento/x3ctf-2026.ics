@@ -7,13 +7,13 @@ X-WR-CALNAME:x3CTF 2026
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3450@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:x3CTF 2026
 LOCATION:Online
-DESCRIPTION:https://x3c.tf/\n\nMás información: https://todothon.volmer.e
- s/evento/x3ctf-2026
+DESCRIPTION:https://x3c.tf/\n\nMás información: https://todothon.es/event
+ o/x3ctf-2026
 URL:https://x3c.tf/
 END:VEVENT
 END:VCALENDAR

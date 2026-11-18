@@ -7,13 +7,13 @@ X-WR-CALNAME:IdeaLab Hacks
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31993@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261201
 SUMMARY:IdeaLab Hacks
 LOCATION:Online
 DESCRIPTION:https://idealab-hacks.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/idealab-hacks-2026
+ //todothon.es/evento/idealab-hacks-2026
 URL:https://idealab-hacks.devpost.com/
 END:VEVENT
 END:VCALENDAR

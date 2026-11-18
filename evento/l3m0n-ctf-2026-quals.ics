@@ -7,13 +7,13 @@ X-WR-CALNAME:L3m0n CTF 2026 (Quals)
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ctftime-3485@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:L3m0n CTF 2026 (Quals)
 LOCATION:Online
-DESCRIPTION:https://l3m0nctf.xyz/\n\nMás información: https://todothon.vo
- lmer.es/evento/l3m0n-ctf-2026-quals
+DESCRIPTION:https://l3m0nctf.xyz/\n\nMás información: https://todothon.es
+ /evento/l3m0n-ctf-2026-quals
 URL:https://l3m0nctf.xyz/
 END:VEVENT
 END:VCALENDAR

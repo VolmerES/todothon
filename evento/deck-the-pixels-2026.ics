@@ -7,13 +7,13 @@ X-WR-CALNAME:Deck the Pixels
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31973@todothon.es
-DTSTAMP:20261118T144904Z
+DTSTAMP:20261118T152914Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261208
 SUMMARY:Deck the Pixels
 LOCATION:Online
 DESCRIPTION:https://deckthepixels.devpost.com/\n\nMás información: https:
- //todothon.volmer.es/evento/deck-the-pixels-2026
+ //todothon.es/evento/deck-the-pixels-2026
 URL:https://deckthepixels.devpost.com/
 END:VEVENT
 END:VCALENDAR
