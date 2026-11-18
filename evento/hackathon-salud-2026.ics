@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackathon Salud 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ia-hackathon-salud-2026-2026-12-15@todothon.es
+DTSTAMP:20261118T155523Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Hackathon Salud 2026
+LOCATION:Hospital Universitario Ramón y Cajal\, Madrid
+DESCRIPTION:https://hackathonsalud.com/final-del-hackathon-salud-2026/\n\nM
+ ás información: https://todothon.es/evento/hackathon-salud-2026
+URL:https://hackathonsalud.com/final-del-hackathon-salud-2026/
+END:VEVENT
+END:VCALENDAR

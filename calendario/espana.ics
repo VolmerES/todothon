@@ -6,8 +6,32 @@ METHOD:PUBLISH
 X-WR-CALNAME:Todothon · España
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
+UID:ia-mjam26-2026-11-20@todothon.es
+DTSTAMP:20261118T155523Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:MJAM26
+LOCATION:CEEIM\, C. Campus Universitario\, 7\, 30100 Espinardo\, Murcia
+DESCRIPTION:https://itch.io/jam/mjam26\n\nMás información: https://todoth
+ on.es/evento/mjam26-2026
+URL:https://itch.io/jam/mjam26
+END:VEVENT
+BEGIN:VEVENT
+UID:ia-i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026-202
+ 6-11-26@todothon.es
+DTSTAMP:20261118T155523Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261204
+SUMMARY:I Hackathon de Tecnologías Accesibles e Inclusivas (Alicante 2026)
+LOCATION:Parque Científico de Alicante
+DESCRIPTION:https://hackathonaccesibilidad.es/\n\nMás información: https:
+ //todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-al
+ icante-2026
+URL:https://hackathonaccesibilidad.es/
+END:VEVENT
+BEGIN:VEVENT
 UID:mlh-01a1169b-c4ad-5d41-61cf-deccaa37655c@todothon.es
-DTSTAMP:20261118T155049Z
+DTSTAMP:20261118T155523Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:HackEPS
@@ -15,5 +39,16 @@ LOCATION:Lleida\, Lleida\, Spain
 DESCRIPTION:https://hackeps.dev/\n\nMás información: https://todothon.es/
  evento/hackeps-2026
 URL:https://hackeps.dev/
+END:VEVENT
+BEGIN:VEVENT
+UID:ia-hackathon-salud-2026-2026-12-15@todothon.es
+DTSTAMP:20261118T155523Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Hackathon Salud 2026
+LOCATION:Hospital Universitario Ramón y Cajal\, Madrid
+DESCRIPTION:https://hackathonsalud.com/final-del-hackathon-salud-2026/\n\nM
+ ás información: https://todothon.es/evento/hackathon-salud-2026
+URL:https://hackathonsalud.com/final-del-hackathon-salud-2026/
 END:VEVENT
 END:VCALENDAR

@@ -5,4 +5,15 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Todothon · Ideatón
 X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ia-erua-ideathon-2026-2026-12-09@todothon.es
+DTSTAMP:20261118T155523Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261211
+SUMMARY:ERUA iDeaThon 2026
+LOCATION:Online
+DESCRIPTION:https://ecos.erua-eui.eu/info/erua-ideathon/ideathon2026/\n\nM
+ ás información: https://todothon.es/evento/erua-ideathon-2026
+URL:https://ecos.erua-eui.eu/info/erua-ideathon/ideathon2026/
+END:VEVENT
 END:VCALENDAR
