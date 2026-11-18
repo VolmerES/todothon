@@ -6,7 +6,14 @@ import { UA } from './lib.mjs';
 const URL_PENDIENTES = process.env.PENDIENTES_URL || 'https://todothon.volmer.es/api/pendientes.json';
 const RUTA = new URL('../data/manuales.json', import.meta.url);
 
-const r = await fetch(URL_PENDIENTES, { headers: { 'User-Agent': UA, 'Cache-Control': 'no-cache' } });
+// El formulario vive en el mismo hosting con los dos dominios; se lee del subdominio, que ya resuelve siempre.
+let r;
+try {
+  r = await fetch(URL_PENDIENTES, { headers: { 'User-Agent': UA, 'Cache-Control': 'no-cache' } });
+} catch (err) {
+  console.error(`No se han podido leer los pendientes: ${err.message}`);
+  process.exit(0);
+}
 if (r.status === 404) { console.log('Sin pendientes todavía.'); process.exit(0); }
 if (!r.ok) { console.error(`No se han podido leer los pendientes: HTTP ${r.status}`); process.exit(0); }
 

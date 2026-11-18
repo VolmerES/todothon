@@ -1,6 +1,6 @@
 // Utilidades compartidas por los recolectores.
 
-export const UA = 'Todothon/0.1 (+https://todothon.volmer.es)';
+export const UA = 'Todothon/0.1 (+https://todothon.es)';
 
 export async function traer(url, { json = false, cabeceras = {} } = {}) {
   const r = await fetch(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8', ...cabeceras } });

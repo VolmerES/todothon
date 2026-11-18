@@ -12,6 +12,7 @@ const texto = [e.nombre, e.organizador, e.ciudad, ...(e.temas || []), tipo.nombr
   class="tarjeta"
   href={`/evento/${e.slug}`}
   data-evento
+  data-slug={e.slug}
   data-tipo={e.tipo}
   data-modalidad={e.modalidad}
   data-ciudad={ciudadCorta(e).toLowerCase()}

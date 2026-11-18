@@ -1,5 +1,5 @@
 # Cada día: recoge los eventos, guarda los datos en main, compila la web y la sube a la rama `web`.
-# Hostinger publica la rama `web` sola en cada push (todothon.volmer.es).
+# Hostinger publica la rama `web` sola en cada push (todothon.es, y todothon.volmer.es como alias).
 #
 # Si alguna fuente que daba eventos se queda a cero o falla, la web se publica igual con lo que haya
 # y la ejecución termina en rojo: GitHub manda un correo. Es el único aviso que hay que mirar.

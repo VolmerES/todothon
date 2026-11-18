@@ -24,6 +24,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
@@ -76,8 +77,13 @@ button, input, select { font: inherit; color: inherit; }
   display: inline-block; min-width: 2.9em; text-align: center;
   background: var(--rosa); color: var(--sobre-color);
   border: 3px solid var(--linea); box-shadow: 3px 3px 0 var(--sombra);
-  padding: 0 8px; transform: rotate(-3deg);
+  padding: 0 8px; transform: rotate(var(--giro, -3deg));
+  transition: transform .35s cubic-bezier(.34, 1.8, .64, 1);
 }
+.pie__marca { font-weight: 800; color: var(--texto); }
+/* Las palabras que van cambiando se tuercen cada vez hacia un lado (lo pone Base.astro en --giro). */
+[data-rota="plurales"] { transition: transform .35s cubic-bezier(.34, 1.8, .64, 1); }
+@media (prefers-reduced-motion: reduce) { .logo__palabra, [data-rota="plurales"] { transition: none; } }
 .logo__resto { margin-left: 4px; }
 .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-weight: 600; }
 .nav a { text-decoration: none; padding: 10px 4px; }
@@ -103,21 +109,6 @@ button, input, select { font: inherit; color: inherit; }
 .aviso[hidden] { display: none; }
 
 /* Banner de donación ------------------------------------------------------ */
-.donar {
-  margin: 8px 0 0;
-  background: var(--lima); color: var(--sobre-color);
-  border: 3px solid var(--linea); border-radius: var(--radio);
-  padding: 14px 18px;
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
-  transform: rotate(-0.5deg);
-}
-.donar p { margin: 0; font-weight: 600; max-width: 780px; }
-.donar a {
-  background: var(--texto); color: var(--lima); text-decoration: none;
-  font-weight: 800; padding: 12px 20px; border-radius: 999px; min-height: 44px;
-  display: inline-flex; align-items: center;
-}
-
 /* Pie --------------------------------------------------------------------- */
 .pie { margin-top: 72px; border-top: 3px solid var(--linea); padding: 28px 0 48px; font-size: 15px; color: var(--suave); }
 .pie__fila { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }

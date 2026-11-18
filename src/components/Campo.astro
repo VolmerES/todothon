@@ -1,0 +1,106 @@
+---
+// Un campo del buscador con desplegable propio, en estilo pegatina (los <select> del navegador no se
+// pueden decorar). El comportamiento (teclado, abrir, filtrar, contar) lo monta el script de la portada.
+//  - libre: se puede escribir texto además de elegir una opción (Dónde, Tema).
+//  - Sin libre: solo se elige (Cuándo, Qué).
+export interface Opcion { valor: string; texto: string; color?: string }
+interface Props {
+  nombre: string;
+  etiqueta: string;
+  placeholder: string;
+  opciones: Opcion[];
+  libre?: boolean;
+}
+const { nombre, etiqueta, placeholder, opciones, libre = false } = Astro.props;
+---
+<div class="campo" data-campo={nombre} data-libre={libre ? '' : undefined}>
+  <label class="campo__etiqueta" for={`f-${nombre}`}>{etiqueta}</label>
+  <div class="campo__fila">
+    <input
+      id={`f-${nombre}`}
+      class="campo__texto"
+      role="combobox"
+      aria-expanded="false"
+      aria-controls={`l-${nombre}`}
+      aria-autocomplete={libre ? 'list' : 'none'}
+      readonly={!libre}
+      placeholder={placeholder}
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <button type="button" class="campo__borrar" aria-label={`Borrar ${etiqueta.toLowerCase()}`} hidden>×</button>
+    <span class="campo__flecha" aria-hidden="true"></span>
+  </div>
+  <input type="hidden" name={nombre} />
+  <ul id={`l-${nombre}`} class="lista" role="listbox" aria-label={etiqueta} popover="manual">
+    {opciones.map((o, i) => (
+      <li role="option" id={`o-${nombre}-${i}`} data-valor={o.valor} data-texto={o.texto} aria-selected="false">
+        {o.color && <i class="lista__punto" style={`background: ${o.color}`}></i>}
+        <span class="lista__texto">{o.texto}</span>
+        <span class="lista__n" data-n></span>
+      </li>
+    ))}
+    <li class="lista__nada" role="presentation" hidden>{libre ? 'Ninguna opción. Pulsa Intro para buscarlo tal cual.' : 'Nada por aquí.'}</li>
+  </ul>
+</div>
+
+<style>
+  .campo {
+    position: relative; display: flex; flex-direction: column; gap: 2px;
+    padding: 12px 18px 10px; background: var(--tarjeta); cursor: text;
+    transition: background .12s ease;
+  }
+  .campo:focus-within { background: color-mix(in srgb, var(--lima) 22%, var(--tarjeta)); box-shadow: inset 0 -5px 0 var(--rosa); }
+  .campo__etiqueta { font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; cursor: inherit; }
+  .campo__fila { display: flex; align-items: center; gap: 8px; }
+  .campo__texto {
+    flex: 1; min-width: 0; border: 0; background: transparent; outline: none;
+    font-size: 19px; font-weight: 600; padding: 4px 0; min-height: 38px; text-overflow: ellipsis;
+  }
+  .campo__texto::placeholder { color: var(--suave); font-weight: 400; opacity: .8; }
+  .campo:not([data-libre]) { cursor: pointer; }
+  .campo:not([data-libre]) .campo__texto { cursor: pointer; caret-color: transparent; }
+  .campo__borrar {
+    flex: none; width: 30px; height: 30px; display: grid; place-items: center; padding: 0;
+    border: 2px solid var(--linea); border-radius: 50%; background: var(--fondo);
+    font-size: 18px; font-weight: 800; line-height: 1; cursor: pointer;
+  }
+  .campo__borrar:hover { background: var(--rosa); }
+  .campo__flecha {
+    flex: none; width: 11px; height: 11px; margin: 0 4px 5px;
+    border-right: 3px solid var(--linea); border-bottom: 3px solid var(--linea);
+    transform: rotate(45deg); transition: transform .15s ease;
+  }
+  .campo__texto[aria-expanded="true"] ~ .campo__flecha { transform: translateY(5px) rotate(-135deg); }
+
+  /* La lista va en la capa superior (popover): así no la recorta el borde redondeado del buscador. */
+  .lista {
+    position: fixed; inset: auto; margin: 0; padding: 6px; list-style: none;
+    max-height: 340px; overflow: auto; overscroll-behavior: contain;
+    background: var(--tarjeta); color: var(--texto);
+    border: 3px solid var(--linea); border-radius: var(--radio); box-shadow: 6px 6px 0 var(--sombra);
+    font-family: var(--letra);
+  }
+  .lista[popover]:popover-open { animation: salta .14s ease-out; }
+  @keyframes salta { from { opacity: 0; transform: translateY(-6px) rotate(-1deg); } }
+  @media (prefers-reduced-motion: reduce) { .lista[popover]:popover-open { animation: none; } }
+  .lista li[role="option"] {
+    display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px;
+    border-radius: 10px; font-weight: 600; cursor: pointer;
+  }
+  .lista li[role="option"]:hover { background: color-mix(in srgb, var(--lima) 45%, var(--tarjeta)); }
+  .lista li[aria-selected="true"] { background: var(--lima); font-weight: 800; }
+  .lista li.activa { background: var(--texto); color: var(--fondo); }
+  .lista li.vacia { opacity: .45; }
+  .lista__texto { flex: 1; min-width: 0; }
+  .lista__punto { flex: none; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--linea); }
+  .lista__n {
+    flex: none; font-family: var(--mono); font-size: 13px; font-weight: 800;
+    border: 2px solid currentColor; border-radius: 999px; padding: 0 8px; min-width: 2.4em; text-align: center;
+  }
+  .lista__nada { padding: 10px 12px; color: var(--suave); font-size: 15px; }
+  .lista li[hidden], .campo__borrar[hidden] { display: none; }
+
+  /* Navegadores sin popover: la lista cuelga del campo y el buscador deja de recortar. */
+  :global(.sin-popover) .lista { position: absolute; top: calc(100% + 6px); left: 0; z-index: 50; min-width: 100%; }
+</style>

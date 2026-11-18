@@ -43,3 +43,24 @@ export const TIPOS: Record<string, { nombre: string; color: string }> = {
   ctf: { nombre: 'CTF', color: '#B8A6FF' },
   otro: { nombre: 'Otro', color: 'var(--tarjeta)' },
 };
+
+// Temas del buscador, en español. Las fuentes los dan en inglés («Machine Learning/AI»…), así que cada
+// tema busca varias palabras en el texto del evento (nombre, organizador, temas), ya sin tildes.
+export const TEMAS: { clave: string; nombre: string; patron: string }[] = [
+  { clave: 'ia', nombre: 'IA y machine learning', patron: 'machine learning|\bai\b|\bia\b|inteligencia artificial|\bllm|genai|\bagent' },
+  { clave: 'principiantes', nombre: 'Para principiantes', patron: 'beginner|principiante|first.?time|novato' },
+  { clave: 'social', nombre: 'Impacto social', patron: 'social good|impacto|sostenib|climat|clima|\bods\b|sdg|green' },
+  { clave: 'educacion', nombre: 'Educación', patron: 'educa|edtech' },
+  { clave: 'salud', nombre: 'Salud', patron: 'health|salud|medic|\bbio' },
+  { clave: 'web', nombre: 'Web y apps', patron: '\bweb\b|mobile|\bapps?\b' },
+  { clave: 'datos', nombre: 'Datos', patron: '\bdata|datos|database|datath' },
+  { clave: 'seguridad', nombre: 'Ciberseguridad', patron: 'cyber|ciber|security|seguridad|\bctf\b' },
+  { clave: 'juegos', nombre: 'Videojuegos', patron: 'gaming|game|juego|\bjam\b' },
+  { clave: 'fintech', nombre: 'Fintech y blockchain', patron: 'fintech|blockchain|crypto|web3|financ' },
+  { clave: 'diseno', nombre: 'Diseño', patron: 'design|diseno|\bux\b|\bui\b' },
+  { clave: 'hardware', nombre: 'Hardware, IoT y robots', patron: '\biot\b|hardware|robot|arduino|maker' },
+  { clave: 'nocode', nombre: 'No-code', patron: 'no.?code|low.?code' },
+  { clave: 'xr', nombre: 'Realidad virtual', patron: 'ar/vr|\bvr\b|\bxr\b|realidad (virtual|aumentada)' },
+  { clave: 'cuantica', nombre: 'Computación cuántica', patron: 'quantum|cuantic' },
+  { clave: 'espacio', nombre: 'Espacio', patron: '\bspace\b|espacio|\bnasa\b|satelit' },
+];

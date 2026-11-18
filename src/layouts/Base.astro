@@ -42,6 +42,7 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
       <nav class="nav" aria-label="Principal">
         <a href="/#buscar">Explorar</a>
         <a href="/?vista=mapa#resultados">Mapa</a>
+        <a href="/sobre">Sobre</a>
         <a href={URL_TELEGRAM} rel="noopener">Telegram</a>
         <a class="boton boton--negro" href="/publicar">Publica tu evento</a>
         <button type="button" class="boton-terminal" data-terminal>&gt;_ modo terminal</button>
@@ -55,8 +56,8 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
 
   <footer class="pie">
     <div class="envoltorio pie__fila">
-      <p>Todothon es un proyecto sin ánimo de lucro, hecho por y para la comunidad. Los datos salen de las webs de cada evento: comprueba siempre la información en la web oficial.</p>
-      <p><a href={URL_DONAR} rel="noopener">Invitar a 1 €</a> · <a href={URL_REPO} rel="noopener">Código en GitHub</a> · <a href="/publicar">Publicar un evento</a></p>
+      <p><span class="pie__marca">Todothon</span> · sin ánimo de lucro, de la comunidad.</p>
+      <p><a href="/sobre">Sobre el proyecto</a> · <a href={URL_DONAR} rel="noopener">Invitar a 1 €</a> · <a href={URL_REPO} rel="noopener">Código en GitHub</a> · <a href="/publicar">Publicar un evento</a></p>
     </div>
     <div class="envoltorio pie__firma">
       <p>Desarrollado con cariño (y pocas horas de sueño) por <a class="firma" href={AUTOR.url} rel="author noopener">{AUTOR.nombre}</a></p>
@@ -72,10 +73,24 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
     const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!quieto) {
       let i = 0;
+      let giroPrevio = 0;
+      // Cada palabra nueva se pega torcida hacia un lado distinto (entre 3° y 8°, alternando el sentido).
+      const nuevoGiro = () => {
+        const sentido = giroPrevio > 0 ? -1 : 1;
+        giroPrevio = sentido * (3 + Math.random() * 5);
+        return `${giroPrevio.toFixed(1)}deg`;
+      };
       setInterval(() => {
         i++;
-        document.querySelectorAll<HTMLElement>('[data-rota="palabras"]').forEach((el) => { el.textContent = PALABRAS[i % PALABRAS.length]; });
-        document.querySelectorAll<HTMLElement>('[data-rota="plurales"]').forEach((el) => { el.textContent = PLURALES[i % PLURALES.length]; });
+        const giro = nuevoGiro();
+        document.querySelectorAll<HTMLElement>('[data-rota="palabras"]').forEach((el) => {
+          el.textContent = PALABRAS[i % PALABRAS.length];
+          el.style.setProperty('--giro', giro);
+        });
+        document.querySelectorAll<HTMLElement>('[data-rota="plurales"]').forEach((el) => {
+          el.textContent = PLURALES[i % PLURALES.length];
+          el.style.setProperty('--giro', `${(-parseFloat(giro) / 2).toFixed(1)}deg`);
+        });
       }, 1600);
     }
 

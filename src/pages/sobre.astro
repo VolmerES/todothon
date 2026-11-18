@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import Donar from '../components/Donar.astro';
+import { AUTOR, URL_REPO, URL_TELEGRAM } from '../config';
+import datos from '../data/eventos.json';
+
+const eventos = datos as unknown as { fuente: string; pais: string | null }[];
+const fuentes = new Set(eventos.flatMap((e) => String(e.fuente).split(', ')));
+const enEspana = eventos.filter((e) => e.pais === 'ES').length;
+---
+<Base titulo="Sobre el proyecto · Todothon" descripcion="Qué es Todothon, de dónde salen los datos y cómo ayudar. Sin ánimo de lucro, de la comunidad y con el código abierto.">
+  <section class="envoltorio sobre">
+    <p class="antetitulo">Sobre el proyecto</p>
+    <h1>Hecho por y para <span class="resalte">la comunidad</span></h1>
+    <p class="entradilla">
+      Todothon junta en un solo buscador todos los hackathones, datathones, ideatones, game jams y CTF de España,
+      y los online a los que puedes apuntarte desde aquí. Es un proyecto <strong>sin ánimo de lucro</strong>.
+    </p>
+
+    <ul class="cifras" aria-label="Todothon en cifras">
+      <li><strong>{eventos.length}</strong> eventos ahora mismo</li>
+      <li><strong>{enEspana}</strong> en España</li>
+      <li><strong>{fuentes.size}</strong> fuentes</li>
+      <li><strong>1</strong> vez al día se actualiza</li>
+    </ul>
+
+    <div class="bloques">
+      <article class="bloque">
+        <h2>De dónde salen los datos</h2>
+        <p>
+          Cada mañana un robot repasa las webs donde se publican estos eventos (Devpost, MLH, CTFtime, itch.io,
+          Eventbrite, dev.events…), se queda con los que tienen formato de hackathon, junta los repetidos y los sitúa en el mapa.
+          Los que nos mandan los organizadores se revisan a mano antes de salir.
+        </p>
+        <p class="importante">
+          Los datos salen de las webs de cada evento: <strong>comprueba siempre la información en la web oficial</strong>{' '}
+          antes de apuntarte o de hacer la maleta.
+        </p>
+      </article>
+
+      <article class="bloque">
+        <h2>¿Falta tu evento?</h2>
+        <p>Publícalo gratis y sin crear cuenta. Lo revisamos y sale en la web y en los calendarios.</p>
+        <p><a class="boton boton--negro" href="/publicar">Publica tu evento</a></p>
+      </article>
+
+      <article class="bloque">
+        <h2>Código abierto</h2>
+        <p>
+          Todo el código está en GitHub, con licencia MIT. Si ves un fallo, una fuente que falta o algo que mejorar,
+          abre una incidencia o un pull request.
+        </p>
+        <p><a class="boton" href={URL_REPO} rel="noopener">Ver el código</a></p>
+      </article>
+
+      <article class="bloque">
+        <h2>Entérate antes que nadie</h2>
+        <p>Suscribe tu calendario a los eventos que te interesan, o sigue el canal de Telegram.</p>
+        <p class="botones">
+          <a class="boton" href="/publicar#calendarios">Calendarios</a>
+          <a class="boton" href={URL_TELEGRAM} rel="noopener">Telegram</a>
+        </p>
+      </article>
+    </div>
+
+    <h2 class="sobre__apoyo">¿Quieres echar una mano?</h2>
+    <Donar />
+
+    <p class="autor">
+      Lo ha hecho <a href={AUTOR.url} rel="author noopener">{AUTOR.nombre}</a>, con cariño y pocas horas de sueño.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .sobre { padding-top: 32px; display: flex; flex-direction: column; gap: 18px; }
+  .antetitulo { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); }
+  h1 { margin: 0; font-size: clamp(38px, 6.5vw, 68px); line-height: 1.02; font-weight: 800; letter-spacing: -2px; }
+  .resalte {
+    display: inline-block; background: var(--rosa); color: var(--sobre-color);
+    border: 3px solid var(--linea); border-radius: var(--radio); padding: 0 12px;
+    box-shadow: 5px 5px 0 var(--sombra); transform: rotate(-1.5deg);
+  }
+  .entradilla { margin: 0; font-size: 20px; color: var(--suave); max-width: 720px; }
+  .cifras { display: flex; flex-wrap: wrap; gap: 14px; margin: 14px 0 10px; padding: 0; list-style: none; }
+  .cifras li {
+    background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio);
+    box-shadow: 4px 4px 0 var(--sombra); padding: 10px 16px; font-weight: 600;
+  }
+  .cifras li:nth-child(odd) { transform: rotate(-1.5deg); }
+  .cifras li:nth-child(even) { transform: rotate(1.2deg); }
+  .cifras strong { font-size: 26px; font-weight: 800; margin-right: 4px; }
+  .bloques { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 22px; margin-top: 10px; }
+  .bloque {
+    background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande);
+    box-shadow: 6px 6px 0 var(--sombra); padding: 20px 22px;
+  }
+  .bloque h2 { margin: 0 0 8px; font-size: 24px; font-weight: 800; letter-spacing: -.5px; }
+  .bloque p { margin: 0 0 12px; }
+  .bloque p:last-child { margin-bottom: 0; }
+  .importante { background: var(--ambar); border: 2px solid var(--linea); border-radius: 10px; padding: 10px 12px; }
+  .botones { display: flex; flex-wrap: wrap; gap: 10px; }
+  .sobre__apoyo { margin: 36px 0 6px; font-size: 30px; font-weight: 800; letter-spacing: -1px; }
+  .autor { margin-top: 28px; font-weight: 600; }
+</style>

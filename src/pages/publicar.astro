@@ -54,7 +54,7 @@ const ACCION = '/api/publicar.php';
     </form>
 
     <h2>Recibe los eventos sin entrar en la web</h2>
-    <ul class="calendarios">
+    <ul class="calendarios" id="calendarios">
       <li><a class="boton" href="/calendario/todo.ics">Calendario con todo</a></li>
       <li><a class="boton" href="/calendario/espana.ics">Solo España</a></li>
       <li><a class="boton" href="/calendario/online.ics">Solo online</a></li>
@@ -70,7 +70,7 @@ const ACCION = '/api/publicar.php';
   h2 { margin: 56px 0 16px; font-size: 30px; letter-spacing: -.5px; }
   .resalte {
     display: inline-block; background: var(--lima); border: 3px solid var(--linea); border-radius: var(--radio);
-    padding: 0 12px; box-shadow: 5px 5px 0 var(--sombra); transform: rotate(1.5deg);
+    padding: 0 12px; box-shadow: 5px 5px 0 var(--sombra); transform: rotate(var(--giro, 1.5deg));
   }
   .entradilla { font-size: 19px; color: var(--suave); margin: 0 0 28px; }
   .formulario {

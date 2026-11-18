@@ -1,0 +1,68 @@
+---
+// Banner para invitar a 1 €: una moneda-pegatina, en qué se gasta y el botón a Ko-fi.
+import { URL_DONAR } from '../config';
+---
+<aside class="donar" aria-label="Apoya Todothon">
+  <div class="donar__moneda" aria-hidden="true"><span>1&nbsp;€</span></div>
+  <div class="donar__texto">
+    <p class="donar__titulo">Sin anuncios, sin inversores, sin letra pequeña.</p>
+    <p>Todothon es de la comunidad. Si te ha salvado un finde, un euro ayuda a pagar lo que cuesta tenerlo en marcha:</p>
+    <ul class="donar__gastos">
+      <li>Servidor</li>
+      <li>Dominio</li>
+      <li>API</li>
+    </ul>
+  </div>
+  <a class="donar__boton" href={URL_DONAR} rel="noopener">Invitar a 1 € <span aria-hidden="true">→</span></a>
+</aside>
+
+<style>
+  .donar {
+    position: relative; margin: 8px 0 0;
+    display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 16px 22px;
+    padding: 22px 22px 22px 18px;
+    background: var(--lima); color: var(--sobre-color);
+    border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 8px 8px 0 var(--sombra);
+    transform: rotate(-0.6deg);
+  }
+  /* Cinta adhesiva arriba, como el resto de pegatinas. */
+  .donar::before {
+    content: ''; position: absolute; top: -14px; left: 50%; width: 110px; height: 26px;
+    background: var(--cinta); transform: translateX(-50%) rotate(2deg); border: 1px solid rgba(0, 0, 0, .15);
+  }
+  .donar__moneda {
+    width: 92px; height: 92px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--ambar); border: 3px solid var(--linea); box-shadow: 4px 4px 0 var(--sombra);
+    outline: 3px dashed rgba(17, 17, 17, .45); outline-offset: -12px;
+    font-size: 26px; font-weight: 800; letter-spacing: -1px; transform: rotate(-12deg);
+    transition: transform .2s ease;
+  }
+  .donar:hover .donar__moneda { transform: rotate(8deg) scale(1.05); }
+  .donar__texto p { margin: 0; font-weight: 600; }
+  .donar__titulo { font-size: 22px; font-weight: 800 !important; line-height: 1.15; margin-bottom: 4px !important; }
+  .donar__gastos { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; padding: 0; list-style: none; }
+  .donar__gastos li {
+    background: var(--tarjeta); border: 2px solid var(--linea); border-radius: 999px;
+    padding: 2px 12px; font-family: var(--mono); font-size: 13px; font-weight: 800;
+  }
+  .donar__gastos li:nth-child(1) { transform: rotate(-2deg); }
+  .donar__gastos li:nth-child(2) { transform: rotate(1.5deg); }
+  .donar__gastos li:nth-child(3) { transform: rotate(-1deg); }
+  .donar__boton {
+    grid-column: 1 / -1; justify-self: start;
+    display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px;
+    background: var(--texto); color: var(--lima); text-decoration: none; font-weight: 800; font-size: 18px;
+    border-radius: 999px; box-shadow: 4px 4px 0 var(--rosa); transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .donar__boton:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--rosa); }
+  @media (min-width: 760px) {
+    .donar { grid-template-columns: auto 1fr auto; padding: 22px 28px 22px 22px; }
+    .donar__boton { grid-column: auto; justify-self: end; }
+  }
+  @media (max-width: 420px) {
+    .donar__moneda { width: 68px; height: 68px; font-size: 20px; outline-offset: -9px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .donar__moneda, .donar__boton { transition: none; }
+  }
+</style>
