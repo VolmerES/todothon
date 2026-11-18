@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base titulo="No está aquí · Todothon" descripcion="Esta página no existe.">
+  <section class="envoltorio perdido">
+    <p class="codigo">404</p>
+    <h1>Este <span class="resalte" data-rota="plurales">hackathon</span> ya no está aquí</h1>
+    <p>Puede que el evento haya terminado o que el enlace esté mal.</p>
+    <a class="boton boton--rosa" href="/">Ver todos los eventos</a>
+  </section>
+</Base>
+
+<style>
+  .perdido { padding: 48px 16px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+  .codigo {
+    margin: 0; font-family: var(--mono); font-weight: 800; font-size: 20px;
+    background: var(--ambar); border: 3px solid var(--linea); box-shadow: 4px 4px 0 var(--sombra);
+    padding: 4px 14px; transform: rotate(-3deg);
+  }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; max-width: 900px; }
+  .resalte { display: inline-block; background: var(--lima); border: 3px solid var(--linea); border-radius: var(--radio); padding: 0 12px; box-shadow: 5px 5px 0 var(--sombra); transform: rotate(1.5deg); }
+  p { margin: 0; font-size: 19px; color: var(--suave); }
+</style>
