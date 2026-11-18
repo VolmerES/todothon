@@ -3,6 +3,7 @@
    solo tendrá que redefinirlas bajo [data-theme="terminal"]. */
 
 :root {
+  --rebote: cubic-bezier(.34, 1.56, .64, 1);
   --fondo: #FFF8E7;
   --texto: #111111;
   --tarjeta: #FFFFFF;
@@ -62,9 +63,13 @@ button, input, select { font: inherit; color: inherit; }
   border: 2px solid var(--linea); border-radius: 999px;
   background: var(--tarjeta); color: var(--texto);
   font-weight: 700; text-decoration: none; cursor: pointer;
-  transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 0 0 var(--sombra);
+  transition: transform .2s var(--rebote), box-shadow .2s var(--rebote), background-color .15s ease, color .15s ease;
 }
-.boton:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--sombra); }
+/* Al pasar por encima la pegatina se despega un poco del papel; al pulsar se aplasta contra él. */
+.boton:hover { transform: translate(-2px, -3px) rotate(-1.5deg); box-shadow: 4px 5px 0 var(--sombra); }
+.boton:nth-child(even):hover { transform: translate(-2px, -3px) rotate(1.5deg); }
+.boton:active { transform: translate(1px, 1px) scale(.95); box-shadow: 0 0 0 var(--sombra); transition-duration: .06s; }
 .boton--negro { background: var(--texto); color: var(--fondo); }
 .boton--rosa { background: var(--rosa); color: var(--sobre-color); border-width: 3px; }
 .boton[aria-pressed="true"] { background: var(--texto); color: var(--fondo); }
@@ -78,16 +83,16 @@ button, input, select { font: inherit; color: inherit; }
   background: var(--rosa); color: var(--sobre-color);
   border: 3px solid var(--linea); box-shadow: 3px 3px 0 var(--sombra);
   padding: 0 8px; transform: rotate(var(--giro, -3deg));
-  transition: transform .35s cubic-bezier(.34, 1.8, .64, 1);
 }
 .pie__marca { font-weight: 800; color: var(--texto); }
-/* Las palabras que van cambiando se tuercen cada vez hacia un lado (lo pone Base.astro en --giro). */
-[data-rota="plurales"] { transition: transform .35s cubic-bezier(.34, 1.8, .64, 1); }
-@media (prefers-reduced-motion: reduce) { .logo__palabra, [data-rota="plurales"] { transition: none; } }
 .logo__resto { margin-left: 4px; }
 .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-weight: 600; }
 .nav a { text-decoration: none; padding: 10px 4px; }
-.nav a:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 4px; }
+.nav a:not(.boton) {
+  background: linear-gradient(var(--rosa), var(--rosa)) left calc(100% - 6px) / 0 4px no-repeat;
+  transition: background-size .25s var(--rebote);
+}
+.nav a:not(.boton):hover { background-size: 100% 4px; }
 .boton-terminal {
   min-height: 44px; padding: 8px 14px; cursor: pointer;
   background: var(--lima); color: var(--sobre-color);
@@ -122,3 +127,47 @@ button, input, select { font: inherit; color: inherit; }
   transition: transform .12s ease;
 }
 .firma:hover { transform: rotate(0) scale(1.05); }
+
+/* Movimiento --------------------------------------------------------------
+   Todo es «pegatina»: las cosas se estampan, se despegan y se aplastan.
+   Con «reducir movimiento» activado no hay animaciones, solo cambios de estado. */
+.boton-terminal { transition: transform .2s var(--rebote), box-shadow .2s var(--rebote); }
+.boton-terminal:active { transform: translate(4px, 4px) rotate(3deg); box-shadow: 0 0 0 var(--sombra); transition-duration: .06s; }
+.logo__palabra { transform-origin: 50% 60%; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* La palabra que cambia: la vieja se despega y la nueva se estampa. Las clases las pone Base.astro. */
+  .despega { animation: despega .16s ease-in forwards; }
+  .pega { animation: pega .45s var(--rebote); }
+  @keyframes despega { to { transform: translateY(-10px) rotate(calc(var(--giro, 0deg) * -2)) scale(.8); opacity: 0; } }
+  @keyframes pega {
+    0% { transform: rotate(calc(var(--giro, 0deg) * 3)) scale(1.6); opacity: 0; }
+    55% { transform: rotate(var(--giro, 0deg)) scale(.92); opacity: 1; }
+    100% { transform: rotate(var(--giro, 0deg)) scale(1); }
+  }
+  .logo:hover .logo__palabra:not(.pega):not(.despega) { animation: temblor .4s ease-in-out; }
+
+  .boton[aria-pressed="true"] { animation: sello .35s var(--rebote); }
+  @keyframes sello {
+    0% { scale: 1.25; rotate: -6deg; }
+    55% { scale: .92; rotate: 2deg; }
+    100% { scale: 1; rotate: 0deg; }
+  }
+
+  .boton-terminal:hover { animation: temblor .45s ease-in-out; }
+  @keyframes temblor {
+    0%, 100% { rotate: 0deg; }
+    25% { rotate: -4deg; }
+    50% { rotate: 3deg; }
+    75% { rotate: -2deg; }
+  }
+
+  .aviso:not([hidden]) { animation: aviso .4s var(--rebote); }
+  @keyframes aviso { from { scale: 1.5; opacity: 0; } 60% { scale: .95; opacity: 1; } }
+
+  /* Lo que entra en pantalla cae como una pegatina recién puesta. */
+  .entra { animation: entra .5s var(--rebote) both; animation-delay: var(--retraso, 0s); }
+  @keyframes entra { from { translate: 0 18px; rotate: -2deg; opacity: 0; } }
+
+  .firma:hover { animation: temblor .4s ease-in-out; }
+}

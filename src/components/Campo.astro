@@ -65,7 +65,11 @@ const { nombre, etiqueta, placeholder, opciones, libre = false } = Astro.props;
     border: 2px solid var(--linea); border-radius: 50%; background: var(--fondo);
     font-size: 18px; font-weight: 800; line-height: 1; cursor: pointer;
   }
-  .campo__borrar:hover { background: var(--rosa); }
+  .campo__borrar { transition: transform .25s var(--rebote), background-color .15s ease; }
+  .campo__borrar:hover { background: var(--rosa); transform: rotate(90deg) scale(1.1); }
+  .campo__borrar:active { transform: rotate(90deg) scale(.85); }
+  .lista li[role="option"] { transition: background-color .1s ease, translate .15s var(--rebote); }
+  .lista li[role="option"]:hover, .lista li.activa { translate: 4px 0; }
   .campo__flecha {
     flex: none; width: 11px; height: 11px; margin: 0 4px 5px;
     border-right: 3px solid var(--linea); border-bottom: 3px solid var(--linea);

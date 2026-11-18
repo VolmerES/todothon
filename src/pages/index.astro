@@ -55,13 +55,13 @@ const puntos = eventos
 ---
 <Base>
   <section class="envoltorio portada">
-    <p class="antetitulo">España + online · se actualiza cada día</p>
-    <h1>¿A qué <span class="resalte" data-rota="plurales">{PLURALES[0]}</span> te apuntas este finde?</h1>
-    <p class="entradilla">Todos los hackathones, datathones, ideatones, game jams y CTF de España (y los online), en un solo buscador.</p>
+    <p class="antetitulo entra">España + online · se actualiza cada día</p>
+    <h1 class="entra" style="--retraso: .06s">¿A qué <span class="resalte" data-rota="plurales">{PLURALES[0]}</span> te apuntas este finde?</h1>
+    <p class="entradilla entra" style="--retraso: .12s">Todos los hackathones, datathones, ideatones, game jams y CTF de España (y los online), en un solo buscador.</p>
   </section>
 
   <section class="envoltorio" id="buscar" aria-label="Buscador">
-    <form class="buscador" data-buscador role="search" data-temas={JSON.stringify(TEMAS)}>
+    <form class="buscador entra" style="--retraso: .2s" data-buscador role="search" data-temas={JSON.stringify(TEMAS)}>
       <Campo nombre="donde" etiqueta="Dónde" placeholder="Madrid, online…" opciones={opcionesDonde} libre />
       <Campo nombre="cuando" etiqueta="Cuándo" placeholder="Cuando sea" opciones={opcionesCuando} />
       <Campo nombre="que" etiqueta="Qué" placeholder="Todo vale" opciones={opcionesQue} />
@@ -72,7 +72,7 @@ const puntos = eventos
       </button>
     </form>
 
-    <div class="chips" role="group" aria-label="Filtros">
+    <div class="chips entra" style="--retraso: .3s" role="group" aria-label="Filtros">
       <button type="button" class="boton" aria-pressed="false" data-chip="espana">En España</button>
       <button type="button" class="boton" aria-pressed="false" data-chip="presencial">Presencial</button>
       <button type="button" class="boton" aria-pressed="false" data-chip="online">Online</button>
@@ -145,11 +145,16 @@ const puntos = eventos
     display: inline-flex; align-items: center; justify-content: center; gap: 10px;
     min-height: 68px; border: 0; cursor: pointer;
     background: var(--rosa); color: var(--sobre-color); font-size: 20px; font-weight: 800;
-    transition: background .12s ease;
+    transition: background .15s ease;
   }
   .buscador__boton:hover { background: var(--lima); }
-  .buscador__boton svg { transition: transform .15s ease; }
-  .buscador__boton:hover svg { transform: rotate(-12deg) scale(1.1); }
+  .buscador__boton:active span { display: inline-block; transform: scale(.9); }
+  .buscador__boton svg { transition: transform .3s var(--rebote); }
+  .buscador__boton:hover svg { transform: rotate(-18deg) scale(1.2); }
+  @media (prefers-reduced-motion: no-preference) {
+    .buscador__boton:hover svg { animation: lupa .7s ease-in-out infinite alternate; }
+    @keyframes lupa { to { translate: 3px -2px; } }
+  }
 
   .chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
   .resultados { margin-top: 32px; }
@@ -161,8 +166,15 @@ const puntos = eventos
     transform: rotate(-2deg);
   }
   .limpiar[hidden] { display: none; }
+  .limpiar { transition: transform .2s var(--rebote); }
+  .limpiar:hover { transform: rotate(2deg) scale(1.06); }
+  @media (prefers-reduced-motion: no-preference) {
+    .limpiar:not([hidden]) { animation: sello .35s var(--rebote); }
+  }
   .vistas { display: flex; border: 2px solid var(--linea); border-radius: 999px; overflow: hidden; }
   .vistas button { border: 0; background: var(--tarjeta); padding: 10px 20px; min-height: 44px; font-weight: 700; cursor: pointer; }
+  .vistas button { transition: background-color .2s ease, color .2s ease; }
+  .vistas button:active { transform: scale(.94); }
   .vistas button[aria-pressed="true"] { background: var(--texto); color: var(--fondo); }
   .rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 32px 28px; }
   .vacio { font-size: 18px; font-weight: 600; }
@@ -199,6 +211,7 @@ const puntos = eventos
   const limpiar = document.querySelector<HTMLButtonElement>('[data-limpiar]')!;
   const chips = new Set<string>();
   let vista = 'tarjetas';
+  let primera = true; // en la primera pasada también entran las de arriba
 
   const temas = new Map<string, RegExp>(
     (JSON.parse(form.dataset.temas || '[]') as { clave: string; patron: string }[])
@@ -429,11 +442,22 @@ const puntos = eventos
   function filtrar() {
     const s = estado();
     let n = 0;
+    let nuevas = 0;
     for (const i of items) {
+      const antes = !i.el.hidden;
       i.ok = pasa(i, s);
       i.el.hidden = !i.ok;
       if (i.ok) n++;
+      if (i.ok && (!antes || primera) && nuevas < 12) {
+        // Las que entran en la lista caen como pegatinas, una detrás de otra.
+        i.el.classList.remove('entra');
+        void i.el.offsetWidth;
+        i.el.style.setProperty('--retraso', `${(primera ? 0.3 : 0) + nuevas * 0.04}s`);
+        i.el.classList.add('entra');
+        nuevas++;
+      }
     }
+    primera = false;
     cuenta.textContent = String(n);
     cuentaTexto.textContent = n === 1 ? 'evento encontrado' : 'eventos encontrados';
     vacio.hidden = n > 0 || vista === 'mapa';
@@ -594,6 +618,13 @@ const puntos = eventos
     transition: transform .12s ease;
   }
   .chincheta:hover span, .chincheta:focus span { transform: rotate(-45deg) scale(1.15); }
+  @media (prefers-reduced-motion: no-preference) {
+    .chincheta span { animation: chincheta .45s var(--rebote) both; }
+    @keyframes chincheta { from { translate: 0 -28px; opacity: 0; } 70% { opacity: 1; } }
+    .grupo-pegatina span { animation: grupo .4s var(--rebote) both; }
+    @keyframes grupo { from { scale: .3; opacity: 0; } }
+    .popup-pegatina { animation: grupo .3s var(--rebote); }
+  }
   .grupo-pegatina span {
     display: grid; place-items: center; width: 100%; height: 100%;
     background: var(--lima); color: var(--sobre-color); font: 800 17px var(--letra);

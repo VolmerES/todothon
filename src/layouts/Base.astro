@@ -80,18 +80,25 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
         giroPrevio = sentido * (3 + Math.random() * 5);
         return `${giroPrevio.toFixed(1)}deg`;
       };
+      // La vieja se despega (.despega) y, al acabar, la nueva se estampa (.pega). Los estilos, en global.css.
+      const cambiar = (el: HTMLElement, palabra: string, giro: string) => {
+        el.classList.remove('pega');
+        el.classList.add('despega');
+        setTimeout(() => {
+          el.textContent = palabra;
+          el.style.setProperty('--giro', giro);
+          el.classList.remove('despega');
+          void el.offsetWidth; // reinicia la animación
+          el.classList.add('pega');
+        }, 160);
+      };
       setInterval(() => {
         i++;
         const giro = nuevoGiro();
-        document.querySelectorAll<HTMLElement>('[data-rota="palabras"]').forEach((el) => {
-          el.textContent = PALABRAS[i % PALABRAS.length];
-          el.style.setProperty('--giro', giro);
-        });
-        document.querySelectorAll<HTMLElement>('[data-rota="plurales"]').forEach((el) => {
-          el.textContent = PLURALES[i % PLURALES.length];
-          el.style.setProperty('--giro', `${(-parseFloat(giro) / 2).toFixed(1)}deg`);
-        });
-      }, 1600);
+        document.querySelectorAll<HTMLElement>('[data-rota="palabras"]').forEach((el) => cambiar(el, PALABRAS[i % PALABRAS.length], giro));
+        document.querySelectorAll<HTMLElement>('[data-rota="plurales"]').forEach((el) =>
+          cambiar(el, PLURALES[i % PLURALES.length], `${(-parseFloat(giro) / 2).toFixed(1)}deg`));
+      }, 2200);
     }
 
     // Modo terminal: el botón existe, pero de momento solo avisa de que está en construcción.

@@ -41,9 +41,15 @@ const texto = [e.nombre, e.organizador, e.ciudad, ...(e.temas || []), tipo.nombr
     display: flex; flex-direction: column; gap: 18px; padding: 18px;
     background: var(--tarjeta); color: var(--texto); text-decoration: none;
     border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra);
-    transition: transform .12s ease, box-shadow .12s ease;
+    transition: transform .25s var(--rebote), box-shadow .25s var(--rebote);
   }
-  .tarjeta:hover { transform: translate(-2px, -2px) rotate(-.4deg); box-shadow: 9px 9px 0 var(--sombra); }
+  .tarjeta:hover { transform: translate(-3px, -4px) rotate(-.6deg); box-shadow: 10px 11px 0 var(--sombra); }
+  .tarjeta:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--sombra); transition-duration: .06s; }
+  /* Al pasar por encima, el cartel se endereza y la etiqueta del tipo da un saltito. */
+  .tarjeta :global(.cartel__marco) { transition: transform .3s var(--rebote); }
+  .tarjeta:hover :global(.cartel__marco) { transform: rotate(0deg) scale(1.02); }
+  .tarjeta__tipo { transition: transform .3s var(--rebote); }
+  .tarjeta:hover .tarjeta__tipo { transform: rotate(-4deg) scale(1.1); }
   .tarjeta[hidden] { display: none; }
   .tarjeta__cartel { position: relative; }
   .tarjeta__tipo {

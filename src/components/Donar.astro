@@ -38,6 +38,16 @@ import { URL_DONAR } from '../config';
     transition: transform .2s ease;
   }
   .donar:hover .donar__moneda { transform: rotate(8deg) scale(1.05); }
+  @media (prefers-reduced-motion: no-preference) {
+    /* La moneda da una vuelta al pasar por encima del banner, y el botón late de vez en cuando. */
+    .donar:hover .donar__moneda span { animation: moneda .8s var(--rebote); }
+    @keyframes moneda { from { transform: rotateY(0); } to { transform: rotateY(360deg); } }
+    .donar__moneda span { display: inline-block; }
+    .donar__boton { animation: late 4s ease-in-out 2s infinite; }
+    .donar__boton:hover { animation: none; }
+    @keyframes late { 0%, 88%, 100% { scale: 1; } 92% { scale: 1.08; } 96% { scale: .98; } }
+  }
+  .donar__boton:active { transform: translate(2px, 2px); box-shadow: 0 0 0 var(--rosa); transition-duration: .06s; }
   .donar__texto p { margin: 0; font-weight: 600; }
   .donar__titulo { font-size: 22px; font-weight: 800 !important; line-height: 1.15; margin-bottom: 4px !important; }
   .donar__gastos { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; padding: 0; list-style: none; }
