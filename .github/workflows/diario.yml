@@ -61,6 +61,15 @@ jobs:
         continue-on-error: true
         run: npm run recoger
 
+      # Sin los secretos TELEGRAM_TOKEN y TELEGRAM_CANAL no publica nada.
+      - name: Anunciar en Telegram
+        if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CANAL: ${{ secrets.TELEGRAM_CANAL }}
+        run: node scripts/telegram.mjs
+
       - name: Guardar los datos en main
         if: github.event_name != 'push'
         run: |
