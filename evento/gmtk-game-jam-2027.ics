@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GMTK Game Jam 2027
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-gmtk-2027@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20270811
+DTEND;VALUE=DATE:20270816
+SUMMARY:GMTK Game Jam 2027
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/gmtk-2027\n\nMás información: https://tod
+ othon.volmer.es/evento/gmtk-game-jam-2027
+URL:https://itch.io/jam/gmtk-2027
+END:VEVENT
+END:VCALENDAR

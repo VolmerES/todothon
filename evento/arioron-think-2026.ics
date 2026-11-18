@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Arioron Think 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32066@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261218
+SUMMARY:Arioron Think 2026
+LOCATION:Online
+DESCRIPTION:https://arioron-think-2026.devpost.com/\n\nMás información: h
+ ttps://todothon.volmer.es/evento/arioron-think-2026
+URL:https://arioron-think-2026.devpost.com/
+END:VEVENT
+END:VCALENDAR

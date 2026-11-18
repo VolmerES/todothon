@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Inceptrix 3.0
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32017@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261225
+SUMMARY:Inceptrix 3.0
+LOCATION:Online
+DESCRIPTION:https://inceptrix-hackathon.devpost.com/\n\nMás información: 
+ https://todothon.volmer.es/evento/inceptrix-3-0-2026
+URL:https://inceptrix-hackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR

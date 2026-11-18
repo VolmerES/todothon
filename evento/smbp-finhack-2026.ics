@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SMBP FinHack
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32155@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261121
+SUMMARY:SMBP FinHack
+LOCATION:Online
+DESCRIPTION:https://smbp-finhack.devpost.com/\n\nMás información: https:/
+ /todothon.volmer.es/evento/smbp-finhack-2026
+URL:https://smbp-finhack.devpost.com/
+END:VEVENT
+END:VCALENDAR

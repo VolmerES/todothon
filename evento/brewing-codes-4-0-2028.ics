@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Brewing Codes 4.0
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-29135@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20280312
+DTEND;VALUE=DATE:20280328
+SUMMARY:Brewing Codes 4.0
+LOCATION:Online
+DESCRIPTION:https://brewing-codes-4-0.devpost.com/\n\nMás información: ht
+ tps://todothon.volmer.es/evento/brewing-codes-4-0-2028
+URL:https://brewing-codes-4-0.devpost.com/
+END:VEVENT
+END:VCALENDAR

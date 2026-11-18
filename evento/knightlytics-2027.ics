@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Knightlytics
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32149@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270412
+SUMMARY:Knightlytics
+LOCATION:Online
+DESCRIPTION:https://knightlytics.devpost.com/\n\nMás información: https:/
+ /todothon.volmer.es/evento/knightlytics-2027
+URL:https://knightlytics.devpost.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CSC Winter Sparkathon
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31682@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261201
+SUMMARY:CSC Winter Sparkathon
+LOCATION:Online
+DESCRIPTION:https://csc-winter-sparkathon.devpost.com/\n\nMás información
+ : https://todothon.volmer.es/evento/csc-winter-sparkathon-2026
+URL:https://csc-winter-sparkathon.devpost.com/
+END:VEVENT
+END:VCALENDAR

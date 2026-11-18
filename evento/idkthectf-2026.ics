@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:idktheCTF 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ctftime-3429@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261229
+SUMMARY:idktheCTF 2026
+LOCATION:Online
+DESCRIPTION:http://ctf.idktheflag.sh/\n\nMás información: https://todotho
+ n.volmer.es/evento/idkthectf-2026
+URL:http://ctf.idktheflag.sh/
+END:VEVENT
+END:VCALENDAR

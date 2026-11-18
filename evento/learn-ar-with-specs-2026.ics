@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Learn AR with SPECS
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32079@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261208
+SUMMARY:Learn AR with SPECS
+LOCATION:Online
+DESCRIPTION:https://learn-specs.devpost.com/\n\nMás información: https://
+ todothon.volmer.es/evento/learn-ar-with-specs-2026
+URL:https://learn-specs.devpost.com/
+END:VEVENT
+END:VCALENDAR

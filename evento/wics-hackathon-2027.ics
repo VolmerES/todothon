@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WiCS Hackathon
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31522@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270303
+SUMMARY:WiCS Hackathon
+LOCATION:Online
+DESCRIPTION:https://wics-hackathon.devpost.com/\n\nMás información: https
+ ://todothon.volmer.es/evento/wics-hackathon-2027
+URL:https://wics-hackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR

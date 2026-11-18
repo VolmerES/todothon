@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AccessED Hacks
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31795@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261221
+SUMMARY:AccessED Hacks
+LOCATION:Online
+DESCRIPTION:https://accessed-hacks.devpost.com/\n\nMás información: https
+ ://todothon.volmer.es/evento/accessed-hacks-2026
+URL:https://accessed-hacks.devpost.com/
+END:VEVENT
+END:VCALENDAR

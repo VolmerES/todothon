@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pixel Forge MEGA JAM | $30k Prizes + Cash !
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-pixel-forge-mega-jam@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261209
+SUMMARY:Pixel Forge MEGA JAM | $30k Prizes + Cash !
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/pixel-forge-mega-jam\n\nMás información: 
+ https://todothon.volmer.es/evento/pixel-forge-mega-jam-30k-prizes-cash-202
+ 6
+URL:https://itch.io/jam/pixel-forge-mega-jam
+END:VEVENT
+END:VCALENDAR

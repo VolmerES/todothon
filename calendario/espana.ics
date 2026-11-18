@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · España
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:mlh-01a1169b-c4ad-5d41-61cf-deccaa37655c@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261130
+SUMMARY:HackEPS
+LOCATION:Lleida\, Lleida\, Spain
+DESCRIPTION:https://hackeps.dev/\n\nMás información: https://todothon.vol
+ mer.es/evento/hackeps-2026
+URL:https://hackeps.dev/
+END:VEVENT
+END:VCALENDAR

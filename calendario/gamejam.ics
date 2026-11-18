@@ -1,0 +1,163 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Game jam
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-month-of-horror-3@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261221
+SUMMARY:Month of Horror #3: Endless Ocean
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/month-of-horror-3\n\nMás información: htt
+ ps://todothon.volmer.es/evento/month-of-horror-3-endless-ocean-2026
+URL:https://itch.io/jam/month-of-horror-3
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-harvest@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261208
+SUMMARY:Harvest
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/harvest\n\nMás información: https://todot
+ hon.volmer.es/evento/harvest-2026
+URL:https://itch.io/jam/harvest
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-game-writing-sig-arcjam-2026@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261124
+SUMMARY:Arcjam 2026
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/game-writing-sig-arcjam-2026\n\nMás inform
+ ación: https://todothon.volmer.es/evento/arcjam-2026
+URL:https://itch.io/jam/game-writing-sig-arcjam-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-pixel-forge-mega-jam@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261209
+SUMMARY:Pixel Forge MEGA JAM | $30k Prizes + Cash !
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/pixel-forge-mega-jam\n\nMás información: 
+ https://todothon.volmer.es/evento/pixel-forge-mega-jam-30k-prizes-cash-202
+ 6
+URL:https://itch.io/jam/pixel-forge-mega-jam
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-3x3x3-jam@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261204
+SUMMARY:3x3x3 Jam
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/3x3x3-jam\n\nMás información: https://tod
+ othon.volmer.es/evento/3x3x3-jam-2026
+URL:https://itch.io/jam/3x3x3-jam
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-rpg-latam-jam-2026@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261231
+SUMMARY:RPG LATAM JAM 2026
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/rpg-latam-jam-2026\n\nMás información: ht
+ tps://todothon.volmer.es/evento/rpg-latam-jam-2026
+URL:https://itch.io/jam/rpg-latam-jam-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-the-eye-jam3@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261214
+SUMMARY:The Eye Jam III: Folk Horror
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/the-eye-jam3\n\nMás información: https://
+ todothon.volmer.es/evento/the-eye-jam-iii-folk-horror-2026
+URL:https://itch.io/jam/the-eye-jam3
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-procjam@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261214
+SUMMARY:PROCJAM - The Procedural Generation Jam
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/procjam\n\nMás información: https://todot
+ hon.volmer.es/evento/procjam-the-procedural-generation-jam-2026
+URL:https://itch.io/jam/procjam
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-gamedevtv-holiday-jam-2026@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261215
+SUMMARY:GameDev.tv Holiday Jam 2026
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/gamedevtv-holiday-jam-2026\n\nMás informac
+ ión: https://todothon.volmer.es/evento/gamedev-tv-holiday-jam-2026
+URL:https://itch.io/jam/gamedevtv-holiday-jam-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-the-mfg-gamblers-jam@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261213
+SUMMARY:The MFG Gambler&#039\;s Jam
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/the-mfg-gamblers-jam\n\nMás información: 
+ https://todothon.volmer.es/evento/the-mfg-gambler-039-s-jam-2026
+URL:https://itch.io/jam/the-mfg-gamblers-jam
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-godot-wild-jam-100@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261221
+SUMMARY:Godot Wild Jam #100
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/godot-wild-jam-100\n\nMás información: ht
+ tps://todothon.volmer.es/evento/godot-wild-jam-100-2026
+URL:https://itch.io/jam/godot-wild-jam-100
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-brackeys-17@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270222
+SUMMARY:Brackeys Game Jam 2027.1
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/brackeys-17\n\nMás información: https://t
+ odothon.volmer.es/evento/brackeys-game-jam-2027-1
+URL:https://itch.io/jam/brackeys-17
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-gmtk-2027@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20270811
+DTEND;VALUE=DATE:20270816
+SUMMARY:GMTK Game Jam 2027
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/gmtk-2027\n\nMás información: https://tod
+ othon.volmer.es/evento/gmtk-game-jam-2027
+URL:https://itch.io/jam/gmtk-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:itch-gbjam-15@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270921
+SUMMARY:GBJAM 15
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/gbjam-15\n\nMás información: https://todo
+ thon.volmer.es/evento/gbjam-15-2027
+URL:https://itch.io/jam/gbjam-15
+END:VEVENT
+END:VCALENDAR

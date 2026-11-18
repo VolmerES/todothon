@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Brackeys Game Jam 2027.1
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-brackeys-17@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270222
+SUMMARY:Brackeys Game Jam 2027.1
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/brackeys-17\n\nMás información: https://t
+ odothon.volmer.es/evento/brackeys-game-jam-2027-1
+URL:https://itch.io/jam/brackeys-17
+END:VEVENT
+END:VCALENDAR

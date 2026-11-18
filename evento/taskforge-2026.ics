@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Taskforge
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-31798@todothon.es
+DTSTAMP:20261118T122606Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261125
+SUMMARY:Taskforge
+LOCATION:Online
+DESCRIPTION:https://taskforge.devpost.com/\n\nMás información: https://to
+ dothon.volmer.es/evento/taskforge-2026
+URL:https://taskforge.devpost.com/
+END:VEVENT
+END:VCALENDAR
