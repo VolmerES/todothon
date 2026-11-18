@@ -1,7 +1,7 @@
 // Datos de la web que se cambian a mano.
 
-// Página de Ko-fi para las donaciones. PENDIENTE: crear la cuenta y poner aquí la dirección buena.
-export const URL_DONAR = 'https://ko-fi.com/todothon';
+// Página de Ko-fi para las donaciones (la misma que la de los juegos de volmer.es/juegos).
+export const URL_DONAR = 'https://ko-fi.com/juanbautistadev';
 
 // Canal de Telegram con los eventos nuevos. PENDIENTE: crearlo.
 export const URL_TELEGRAM = 'https://t.me/todothon';

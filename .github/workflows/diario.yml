@@ -1,0 +1,89 @@
+# Cada día: recoge los eventos, guarda los datos en main, compila la web y la sube a la rama `web`.
+# Hostinger publica la rama `web` sola en cada push (todothon.volmer.es).
+#
+# Si alguna fuente que daba eventos se queda a cero o falla, la web se publica igual con lo que haya
+# y la ejecución termina en rojo: GitHub manda un correo. Es el único aviso que hay que mirar.
+name: Actualizar y publicar
+
+on:
+  schedule:
+    - cron: '17 5 * * *'   # 06:17 en España (invierno)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Identidad del bot
+        run: |
+          git config user.name "todothon-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Eventos enviados desde el formulario → pull request
+        if: github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/importar-pendientes.mjs
+          if ! git diff --quiet data/manuales.json; then
+            git switch -c eventos-enviados
+            git commit -qam "Eventos enviados desde el formulario"
+            git push -qf origin eventos-enviados
+            gh pr view eventos-enviados --json state -q .state 2>/dev/null | grep -q OPEN || \
+              gh pr create --head eventos-enviados --base main \
+                --title "Eventos enviados desde el formulario" \
+                --body "Eventos que han llegado por el formulario «Publica tu evento». Revísalos (que no sean spam y que la web oficial sea buena) y fusiona para publicarlos."
+            git switch main
+          fi
+
+      - name: Recoger eventos
+        id: recoger
+        continue-on-error: true
+        run: npm run recoger
+
+      - name: Guardar los datos en main
+        if: github.event_name != 'push'
+        run: |
+          git add src/data/eventos.json data/
+          if ! git diff --cached --quiet; then
+            git commit -qm "Datos del $(date -u +%F)"
+            git push -q origin HEAD:main
+          fi
+
+      - run: npm run build
+
+      - name: Subir la web a la rama web
+        working-directory: dist
+        run: |
+          git init -q -b web
+          git config user.name "todothon-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Web del $(date -u '+%F %H:%M') (${GITHUB_SHA::7})"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" web
+
+      - name: Avisar si alguna fuente ha fallado
+        if: steps.recoger.outcome == 'failure'
+        run: |
+          echo "::error::Alguna fuente ha fallado o se ha quedado a cero. Mira data/informe.json."
+          exit 1
