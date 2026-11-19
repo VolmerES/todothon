@@ -4,6 +4,15 @@ AddCharset utf-8 .ics .json
 
 ErrorDocument 404 /404.html
 
+# Una sola dirección para Google: todothon.volmer.es y www.todothon.es → todothon.es (301).
+# /api/ se queda donde está: la Action diaria llama a api/traer.php por todothon.volmer.es.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_URI} !^/api/
+  RewriteCond %{HTTP_HOST} ^(todothon\.volmer\.es|www\.todothon\.es)$ [NC]
+  RewriteRule ^(.*)$ https://todothon.es/$1 [R=301,L]
+</IfModule>
+
 # Caché larga para lo que Astro genera con hash en el nombre.
 <IfModule mod_headers.c>
   <FilesMatch "^.*\.[0-9A-Za-z_-]{8}\.(js|css)$">
