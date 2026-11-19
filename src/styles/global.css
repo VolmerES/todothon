@@ -27,6 +27,9 @@
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
+/* Las pegatinas van giradas y con cinta: alguna esquina asoma por el borde. «clip» lo recorta sin romper
+   la cabecera fija del móvil (con «hidden» dejaría de pegarse arriba). */
+html, body { overflow-x: clip; }
 body {
   margin: 0;
   background: var(--fondo);
@@ -173,4 +176,58 @@ button, input, select { font: inherit; color: inherit; }
   @keyframes entra { from { translate: 0 18px; rotate: -2deg; opacity: 0; } }
 
   .firma:hover { animation: temblor .4s ease-in-out; }
+}
+
+/* Menú del móvil ------------------------------------------------------------
+   Hasta 860 px la navegación se esconde detrás de una pegatina «Menú». Al abrirla, el panel cubre la
+   pantalla y cada enlace es una pegatina grande, torcida hacia un lado, fácil de pulsar con el pulgar. */
+.menu-boton { display: none; }
+.sin-scroll, .sin-scroll body { overflow: hidden; }
+
+@media (max-width: 860px) {
+  .cabecera { position: sticky; top: 0; z-index: 900; background: var(--fondo); padding: 12px 0; border-bottom: 3px solid transparent; transition: border-color .2s ease; }
+  .cabecera__fila { flex-wrap: nowrap; }
+  .logo { font-size: 24px; position: relative; z-index: 2; }
+  .menu-boton {
+    position: relative; z-index: 2;
+    display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 8px 16px; cursor: pointer;
+    background: var(--lima); color: var(--sobre-color); font-weight: 800; font-size: 16px;
+    border: 3px solid var(--linea); border-radius: 999px; box-shadow: 4px 4px 0 var(--sombra);
+    transform: rotate(2deg); transition: transform .2s var(--rebote), box-shadow .2s var(--rebote), background-color .15s ease;
+  }
+  .menu-boton:active { transform: translate(3px, 3px) rotate(2deg); box-shadow: 1px 1px 0 var(--sombra); }
+  .menu-boton__barras { display: grid; gap: 4px; width: 20px; }
+  .menu-boton__barras span { height: 3px; background: currentColor; border-radius: 2px; transition: transform .25s var(--rebote), opacity .15s ease; }
+  [data-abierto] .menu-boton { background: var(--rosa); transform: rotate(-2deg); }
+  [data-abierto] .menu-boton__barras span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  [data-abierto] .menu-boton__barras span:nth-child(2) { opacity: 0; }
+  [data-abierto] .menu-boton__barras span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav {
+    position: fixed; inset: 0; z-index: 1; display: none;
+    flex-direction: column; align-items: stretch; flex-wrap: nowrap; gap: 14px;
+    padding: 96px 20px max(28px, env(safe-area-inset-bottom)); overflow-y: auto; overscroll-behavior: contain;
+    background: var(--fondo);
+    background-image: radial-gradient(var(--linea) 1px, transparent 1px); background-size: 22px 22px;
+  }
+  [data-abierto] .nav { display: flex; }
+  .nav a:not(.boton) {
+    display: block; padding: 14px 20px; font-size: 26px; font-weight: 800; letter-spacing: -.5px;
+    background: var(--tarjeta); color: var(--texto); border: 3px solid var(--linea); border-radius: var(--radio);
+    box-shadow: 5px 5px 0 var(--sombra);
+  }
+  .nav a:not(.boton):nth-child(odd) { transform: rotate(-1.2deg); }
+  .nav a:not(.boton):nth-child(even) { transform: rotate(1deg); margin-left: 14px; }
+  .nav a:not(.boton):active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--sombra); }
+  .nav .boton { min-height: 56px; font-size: 19px; margin-top: 8px; }
+  .nav .boton-terminal { align-self: flex-start; }
+}
+@media (max-width: 860px) and (prefers-reduced-motion: no-preference) {
+  [data-abierto] .nav > * { animation: entra .45s var(--rebote) both; }
+  [data-abierto] .nav > :nth-child(2) { animation-delay: .04s; }
+  [data-abierto] .nav > :nth-child(3) { animation-delay: .08s; }
+  [data-abierto] .nav > :nth-child(4) { animation-delay: .12s; }
+  [data-abierto] .nav > :nth-child(5) { animation-delay: .16s; }
+  [data-abierto] .nav > :nth-child(6) { animation-delay: .2s; }
+  [data-abierto] .nav > :nth-child(7) { animation-delay: .24s; }
 }

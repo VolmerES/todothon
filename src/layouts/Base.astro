@@ -38,12 +38,17 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
   <script is:inline>try { if (localStorage.getItem('todothon-tema') === 'terminal') document.documentElement.dataset.theme = 'terminal'; } catch {}</script>
 </head>
 <body>
-  <header class="cabecera">
+  <header class="cabecera" data-cabecera>
     <div class="envoltorio cabecera__fila">
       <a class="logo" href="/" aria-label="Todothon, inicio">
         <span class="logo__palabra" data-rota="palabras" aria-hidden="true">{PALABRAS[0]}</span><span class="logo__resto" aria-hidden="true">thon</span>
       </a>
-      <nav class="nav" aria-label="Principal">
+      <!-- En el móvil, el menú se abre con esta pegatina; en el ordenador no se ve. -->
+      <button type="button" class="menu-boton" aria-expanded="false" aria-controls="menu-principal" data-menu-boton>
+        <span class="menu-boton__barras" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span data-menu-texto>Menú</span>
+      </button>
+      <nav class="nav" id="menu-principal" aria-label="Principal">
         <a href="/#buscar">Explorar</a>
         <a href="/?vista=mapa#resultados">Mapa</a>
         <a href="/guias">Guías</a>
@@ -119,6 +124,25 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
           cambiar(el, PLURALES[i % PLURALES.length], `${(-parseFloat(giro) / 2).toFixed(1)}deg`));
       }, 2200);
     }
+
+    // Menú del móvil: abre y cierra el panel, bloquea el scroll de detrás y se cierra con Esc o al elegir algo.
+    const cabecera = document.querySelector<HTMLElement>('[data-cabecera]')!;
+    const botonMenu = cabecera.querySelector<HTMLButtonElement>('[data-menu-boton]')!;
+    const textoMenu = cabecera.querySelector<HTMLElement>('[data-menu-texto]')!;
+    function menu(abrir: boolean) {
+      cabecera.toggleAttribute('data-abierto', abrir);
+      document.documentElement.classList.toggle('sin-scroll', abrir);
+      botonMenu.setAttribute('aria-expanded', String(abrir));
+      textoMenu.textContent = abrir ? 'Cerrar' : 'Menú';
+    }
+    botonMenu.addEventListener('click', () => menu(!cabecera.hasAttribute('data-abierto')));
+    cabecera.querySelectorAll('.nav a').forEach((a) => a.addEventListener('click', () => menu(false)));
+    cabecera.querySelector('[data-terminal]')?.addEventListener('click', () => menu(false));
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Escape' && cabecera.hasAttribute('data-abierto')) { menu(false); botonMenu.focus(); }
+    });
+    // Si se gira el móvil o se agranda la ventana con el menú abierto, que no se quede bloqueado.
+    matchMedia('(min-width: 861px)').addEventListener('change', (m) => { if (m.matches) menu(false); });
 
     // Avisos flotantes. El modo terminal está en components/Consola.astro.
     const aviso = document.querySelector<HTMLElement>('[data-aviso]');

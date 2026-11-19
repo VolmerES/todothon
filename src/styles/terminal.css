@@ -111,3 +111,6 @@
     100% { filter: none; transform: none; }
   }
 }
+
+/* Con el menú del móvil abierto, la consola no tapa los enlaces. */
+.sin-scroll .consola { display: none !important; }

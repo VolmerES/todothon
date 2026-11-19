@@ -133,10 +133,12 @@ const puntos = eventos
     box-shadow: 8px 8px 0 var(--sombra); overflow: hidden;
   }
   .buscador:global(.sin-popover) { overflow: visible; }
-  @media (min-width: 560px) {
-    .buscador { grid-template-columns: 1fr 1fr; }
-    .buscador__boton { grid-column: 1 / -1; }
+  /* En el móvil, dos campos por fila: el buscador ocupa la mitad de alto. */
+  @media (min-width: 340px) {
+    .buscador { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   }
+  .buscador__boton { grid-column: 1 / -1; }
+  @media (max-width: 559px) { .buscador .buscador__boton { min-height: 56px; font-size: 18px; } }
   @media (min-width: 980px) {
     .buscador { grid-template-columns: 1.15fr 1fr 1fr 1.15fr auto; }
     .buscador__boton { grid-column: auto; padding: 0 30px; }
@@ -157,6 +159,16 @@ const puntos = eventos
   }
 
   .chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+  /* En el móvil los filtros van en una sola fila que se desliza con el dedo, de borde a borde. */
+  @media (max-width: 640px) {
+    .chips {
+      flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none;
+      margin: 18px -16px; padding: 4px 16px 10px; scroll-padding-inline: 16px;
+      mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 28px), transparent 100%);
+    }
+    .chips::-webkit-scrollbar { display: none; }
+    .chips > * { flex: none; scroll-snap-align: start; }
+  }
   .resultados { margin-top: 32px; }
   .resultados__barra { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px; }
   .resultados__cuenta { margin: 0; font-size: 18px; font-weight: 600; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }

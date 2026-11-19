@@ -59,9 +59,11 @@
     plegar.textContent = plegada ? '▲' : '_';
     plegar.setAttribute('aria-expanded', String(!plegada));
     plegar.setAttribute('aria-label', plegada ? 'Abrir la consola' : 'Plegar la consola');
-    guardar('todothon-consola', plegada ? 'plegada' : null);
+    guardar('todothon-consola', plegada ? 'plegada' : 'abierta');
   });
-  if (leer('todothon-consola') === 'plegada') plegar.click();
+  // En el móvil empieza plegada (ocupa media pantalla); luego se respeta lo que elija cada uno.
+  const preferencia = leer('todothon-consola');
+  if (preferencia === 'plegada' || (preferencia === null && matchMedia('(max-width: 640px)').matches)) plegar.click();
 
   // --- Datos (solo se piden al entrar en modo terminal) --------------------------------------------
   let datos: Datos | null = null;
