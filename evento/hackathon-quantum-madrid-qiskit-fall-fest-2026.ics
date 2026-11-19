@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ia-hackathon-quantum-madrid-qiskit-fall-fest-2026-2026-11-27@todothon.e
  s
-DTSTAMP:20261119T074015Z
+DTSTAMP:20261119T074118Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:Hackathon Quantum Madrid - Qiskit Fall Fest 2026

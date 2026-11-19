@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ia-o-camino-dos-datos-ii-datathon-universitario-udc-2026-11-25@todothon
  .es
-DTSTAMP:20261119T074015Z
+DTSTAMP:20261119T074118Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20270204
 SUMMARY:O Camiño dos Datos (II Datathon universitario\, UDC)
