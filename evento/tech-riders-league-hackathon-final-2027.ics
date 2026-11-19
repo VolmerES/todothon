@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Tech Riders League | Hackathon Final
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:luma-evt-lqBgUD9WX1tg5aW@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Tech Riders League | Hackathon Final
+LOCATION:Tajamar FP+ | Grado Medio\, Grado Superior y Másteres en Madrid\,
+  C. de Pío Felipe\, 12\, Puente de Vallecas\, 28038 Madrid\, España
+DESCRIPTION:https://luma.com/gg7e7g5o\n\nMás información: https://todotho
+ n.es/evento/tech-riders-league-hackathon-final-2027
+URL:https://luma.com/gg7e7g5o
+END:VEVENT
+END:VCALENDAR

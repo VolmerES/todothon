@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackathon: Hack the Map
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:meetup-317459204@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Hackathon: Hack the Map
+LOCATION:Capitole Consulting\, Carrer de Balmes\, 89\, Planta 7\, Eixample\
+ , 08008 Barcelona\, Spain\, Barcelona
+DESCRIPTION:https://www.meetup.com/python-barcelona/events/317459204/\n\nM
+ ás información: https://todothon.es/evento/hackathon-hack-the-map-2026
+URL:https://www.meetup.com/python-barcelona/events/317459204/
+END:VEVENT
+END:VCALENDAR

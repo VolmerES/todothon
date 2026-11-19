@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hack The Box Meetup: Conecta CTF
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:meetup-317221910@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Hack The Box Meetup: Conecta CTF
+LOCATION:ETS de Ingeniería de Sistemas Informáticos (ETSISI-upm)\, Campus
+  Sur de la UPM\, C. de Alan Turing\, s/n\, Puente de Vallecas\, 28031 Madr
+ id\, Spain\, Madrid
+DESCRIPTION:https://www.meetup.com/meetup-group-ffiltyls/events/317221910/\
+ n\nMás información: https://todothon.es/evento/hack-the-box-meetup-conec
+ ta-ctf-2026
+URL:https://www.meetup.com/meetup-group-ffiltyls/events/317221910/
+END:VEVENT
+END:VCALENDAR

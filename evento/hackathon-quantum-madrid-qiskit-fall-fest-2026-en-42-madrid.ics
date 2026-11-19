@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackathon Quantum Madrid - Qiskit Fall Fest 2026 en 42 Madrid
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:meetup-317205956@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Hackathon Quantum Madrid - Qiskit Fall Fest 2026 en 42 Madrid
+LOCATION:42 Madrid\, Distrito Telefónica\, Edificio Norte 3\, 28050\, Fuen
+ carral-El Pardo\, 28050 Madrid\, Spain\, Madrid
+DESCRIPTION:https://www.meetup.com/quantummadrid/events/317205956/\n\nMás 
+ información: https://todothon.es/evento/hackathon-quantum-madrid-qiskit-f
+ all-fest-2026-en-42-madrid
+URL:https://www.meetup.com/quantummadrid/events/317205956/
+END:VEVENT
+END:VCALENDAR

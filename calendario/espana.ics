@@ -6,8 +6,22 @@ METHOD:PUBLISH
 X-WR-CALNAME:Todothon · España
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
+UID:meetup-317221910@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Hack The Box Meetup: Conecta CTF
+LOCATION:ETS de Ingeniería de Sistemas Informáticos (ETSISI-upm)\, Campus
+  Sur de la UPM\, C. de Alan Turing\, s/n\, Puente de Vallecas\, 28031 Madr
+ id\, Spain\, Madrid
+DESCRIPTION:https://www.meetup.com/meetup-group-ffiltyls/events/317221910/\
+ n\nMás información: https://todothon.es/evento/hack-the-box-meetup-conec
+ ta-ctf-2026
+URL:https://www.meetup.com/meetup-group-ffiltyls/events/317221910/
+END:VEVENT
+BEGIN:VEVENT
 UID:ia-mjam26-2026-11-20@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:MJAM26
@@ -18,7 +32,7 @@ URL:https://itch.io/jam/mjam26
 END:VEVENT
 BEGIN:VEVENT
 UID:eventbrite-2003206203680@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Hackathon - PMI Barcelona
@@ -32,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ia-o-camino-dos-datos-ii-datathon-universitario-udc-2026-11-25@todothon
  .es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20270204
 SUMMARY:O Camiño dos Datos (II Datathon universitario\, UDC)
@@ -44,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ia-i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026-202
  6-11-26@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261204
 SUMMARY:I Hackathon de Tecnologías Accesibles e Inclusivas (Alicante 2026)
@@ -55,8 +69,21 @@ DESCRIPTION:https://hackathonaccesibilidad.es/\n\nMás información: https:
 URL:https://hackathonaccesibilidad.es/
 END:VEVENT
 BEGIN:VEVENT
+UID:meetup-317205956@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Hackathon Quantum Madrid - Qiskit Fall Fest 2026 en 42 Madrid
+LOCATION:42 Madrid\, Distrito Telefónica\, Edificio Norte 3\, 28050\, Fuen
+ carral-El Pardo\, 28050 Madrid\, Spain\, Madrid
+DESCRIPTION:https://www.meetup.com/quantummadrid/events/317205956/\n\nMás 
+ información: https://todothon.es/evento/hackathon-quantum-madrid-qiskit-f
+ all-fest-2026-en-42-madrid
+URL:https://www.meetup.com/quantummadrid/events/317205956/
+END:VEVENT
+BEGIN:VEVENT
 UID:manual-hackathon-dades-vall-hebron-2026@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:Hackathon de dades de Vall d'Hebron
@@ -69,21 +96,8 @@ URL:https://www.vallhebron.com/innovacio/setmana-de-la-innovacio/hackathon-
  de-dades-de-vall-dhebron
 END:VEVENT
 BEGIN:VEVENT
-UID:ia-hackathon-quantum-madrid-qiskit-fall-fest-2026-2026-11-27@todothon.e
- s
-DTSTAMP:20261119T081424Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261130
-SUMMARY:Hackathon Quantum Madrid - Qiskit Fall Fest 2026
-LOCATION:Distrito Telefónica\, Edificio Norte 3\, 28050 Madrid (42 Madrid\
- , Fundación Telefónica)
-DESCRIPTION:https://quantummadrid.github.io/\n\nMás información: https://
- todothon.es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026
-URL:https://quantummadrid.github.io/
-END:VEVENT
-BEGIN:VEVENT
 UID:mlh-01a1169b-c4ad-5d41-61cf-deccaa37655c@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:HackEPS
@@ -93,8 +107,20 @@ DESCRIPTION:https://hackeps.dev/\n\nMás información: https://todothon.es/
 URL:https://hackeps.dev/
 END:VEVENT
 BEGIN:VEVENT
+UID:meetup-317459204@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Hackathon: Hack the Map
+LOCATION:Capitole Consulting\, Carrer de Balmes\, 89\, Planta 7\, Eixample\
+ , 08008 Barcelona\, Spain\, Barcelona
+DESCRIPTION:https://www.meetup.com/python-barcelona/events/317459204/\n\nM
+ ás información: https://todothon.es/evento/hackathon-hack-the-map-2026
+URL:https://www.meetup.com/python-barcelona/events/317459204/
+END:VEVENT
+BEGIN:VEVENT
 UID:devevents-barcelona-hackathon-2026-2026-12-11@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:Barcelona Hackathon 2026
@@ -106,7 +132,7 @@ URL:https://dev.events/conferences/barcelona-hackathon-2026-8m03sfmf
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-hackathon-salud-2026-2026-12-15@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:Hackathon Salud 2026
@@ -117,7 +143,7 @@ URL:https://hackathonsalud.com/final-del-hackathon-salud-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-global-game-jam-2027-sedes-en-espana-2027-01-25@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270201
 SUMMARY:Global Game Jam 2027 (sedes en España)
@@ -128,7 +154,7 @@ URL:https://globalgamejam.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:eventbrite-2004863390370@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270201
 SUMMARY:Gamejam Alicante 2027
@@ -142,7 +168,7 @@ URL:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tickets-2004
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-ise-hackathon-2027-2027-02-02@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20270202
 DTEND;VALUE=DATE:20270203
 SUMMARY:ISE Hackathon 2027
@@ -154,7 +180,7 @@ URL:https://www.iseurope.org/ise-hackathon
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-barcelona-hackathon-2027-2027-02-12@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270215
 SUMMARY:Barcelona Hackathon 2027
@@ -165,7 +191,7 @@ URL:https://www.barcelonahackathon.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-hackon-2027-2027-02-19@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20270219
 DTEND;VALUE=DATE:20270221
 SUMMARY:HackOn 2027
@@ -176,7 +202,7 @@ URL:https://hackon.es/
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-talent-arena-ctf-2027-2027-03-01@todothon.es
-DTSTAMP:20261119T081424Z
+DTSTAMP:20261119T082859Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270304
 SUMMARY:Talent Arena CTF 2027
@@ -184,5 +210,17 @@ LOCATION:Fira Montjuïc (Barcelona)\, Hall 8
 DESCRIPTION:https://talentarena.tech/capture-the-flag/\n\nMás información
  : https://todothon.es/evento/talent-arena-ctf-2027
 URL:https://talentarena.tech/capture-the-flag/
+END:VEVENT
+BEGIN:VEVENT
+UID:luma-evt-lqBgUD9WX1tg5aW@todothon.es
+DTSTAMP:20261119T082859Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Tech Riders League | Hackathon Final
+LOCATION:Tajamar FP+ | Grado Medio\, Grado Superior y Másteres en Madrid\,
+  C. de Pío Felipe\, 12\, Puente de Vallecas\, 28038 Madrid\, España
+DESCRIPTION:https://luma.com/gg7e7g5o\n\nMás información: https://todotho
+ n.es/evento/tech-riders-league-hackathon-final-2027
+URL:https://luma.com/gg7e7g5o
 END:VEVENT
 END:VCALENDAR
