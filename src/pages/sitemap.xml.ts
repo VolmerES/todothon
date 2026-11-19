@@ -9,7 +9,7 @@ export const GET: APIRoute = ({ site }) => {
   const eventos = datos as unknown as Evento[];
   const hoy = new Date().toISOString().slice(0, 10);
   const rutas: [string, string][] = [
-    ['/', hoy], ['/sobre', hoy], ['/publicar', hoy], ['/guias', hoy],
+    ['/', hoy], ['/sobre', hoy], ['/publicar', hoy], ['/guias', hoy], ['/cada-ano', hoy],
     ...[...PAGINAS_TIPO, ...paginasCiudad(eventos)].map((p): [string, string] => [`/${p.slug}`, hoy]),
     ...GUIAS.map((g): [string, string] => [`/guias/${g.slug}`, g.fecha]),
     ...eventos.map((e): [string, string] => [`/evento/${e.slug}`, hoy]),

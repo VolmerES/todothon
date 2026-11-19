@@ -1,0 +1,118 @@
+---
+// Calendario de los que se repiten cada año, mes a mes (src/data/anuales.json, mantenido a mano).
+// Si la próxima edición ya está anunciada (está en eventos.json), la tarjeta lleva a su ficha.
+import Base from '../layouts/Base.astro';
+import { TIPOS } from '../config';
+import { rangoFechas, type Evento } from '../lib/formato';
+import anuales from '../data/anuales.json';
+import datos from '../data/eventos.json';
+
+type Anual = (typeof anuales)[number];
+const eventos = datos as unknown as Evento[];
+const sinTildes = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+const proxima = (a: Anual) => eventos
+  .filter((e) => new RegExp(a.buscar, 'i').test(sinTildes(e.nombre)))
+  .sort((x, y) => (x.inicio || '9').localeCompare(y.inicio || '9'))[0] || null;
+
+const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+const mesActual = new Date().getUTCMonth() + 1;
+// Empieza por el mes en curso: lo que interesa es lo que viene.
+const orden = Array.from({ length: 12 }, (_, i) => ((mesActual - 1 + i) % 12) + 1);
+const porMes = orden.map((m) => ({ m, lista: (anuales as Anual[]).filter((a) => a.meses[0] === m) })).filter((x) => x.lista.length);
+const abiertos = (anuales as Anual[]).filter((a) => proxima(a)).length;
+
+const ld = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: 'Hackathones, game jams y CTF que se celebran cada año en España',
+  itemListElement: (anuales as Anual[]).map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: a.nombre, url: a.web || undefined })),
+};
+---
+<Base titulo="Cada año: los hackathones, game jams y CTF que se repiten en España · Todothon" descripcion="Calendario mes a mes de los hackathones, datathones, game jams y CTF que se celebran cada año en España y online: HackUPC, HackEPS, Global Game Jam, Datathon FME y más.">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} />
+  <section class="envoltorio anuales">
+    <p class="antetitulo">{anuales.length} citas fijas · {abiertos} ya con fecha</p>
+    <h1>Los que vuelven <span class="resalte">cada año</span></h1>
+    <p class="entradilla">
+      Hay hackathones que no fallan: cada año, más o menos en la misma época. Apúntatelos para no enterarte tarde.
+      Cuando se anuncia la nueva edición, la tarjeta te lleva directa a la ficha.
+    </p>
+
+    <nav class="saltos" aria-label="Ir al mes">
+      {porMes.map(({ m }) => <a href={`#mes-${m}`} class:list={{ ahora: m === mesActual }}>{MESES[m - 1].slice(0, 3)}</a>)}
+    </nav>
+
+    {porMes.map(({ m, lista }) => (
+      <section class="mes" id={`mes-${m}`} aria-labelledby={`t-mes-${m}`}>
+        <h2 id={`t-mes-${m}`}><span class="mes__nombre">{MESES[m - 1]}</span>{m === mesActual && <span class="mes__ahora">este mes</span>}</h2>
+        <ul class="lista">
+          {lista.map((a, i) => {
+            const p = proxima(a);
+            const tipo = TIPOS[a.tipo] || TIPOS.otro;
+            return (
+              <li class="anual" style={`--giro: ${i % 2 ? 0.7 : -0.7}deg`}>
+                <span class="anual__tipo" style={`background: ${tipo.color}`}>{a.tipo === 'otro' ? 'Reto' : tipo.nombre}</span>
+                <h3>{a.nombre}</h3>
+                <p class="anual__meta">{a.donde} · {a.cuando}{a.desde && ` · desde ${a.desde}`}</p>
+                <p class="anual__desc">{a.descripcion}</p>
+                <div class="anual__acciones">
+                  {p
+                    ? <a class="boton boton--rosa" href={`/evento/${p.slug}`}>Próxima: {rangoFechas(p.inicio, p.fin)} →</a>
+                    : <span class="anual__pendiente">Próxima edición sin anunciar</span>}
+                  {a.web && <a class="anual__web" href={a.web} rel="noopener">Web oficial ↗</a>}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    ))}
+
+    <p class="nota">
+      ¿Falta alguno que se repita cada año? <a href="/publicar">Cuéntanoslo</a>. Y para saber de qué va cada cosa, mira
+      <a href="/guias/hackathones-cada-ano">la guía de los que no te puedes perder</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .anuales { padding-top: 32px; display: flex; flex-direction: column; gap: 18px; }
+  .antetitulo { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; }
+  .resalte {
+    display: inline-block; padding: 0 12px; background: var(--azul); color: var(--sobre-color); border: 3px solid var(--linea);
+    border-radius: var(--radio); box-shadow: 5px 5px 0 var(--sombra); transform: rotate(-1.5deg);
+  }
+  .entradilla { margin: 0; font-size: 20px; color: var(--suave); max-width: 720px; }
+  /* Botones para saltar de mes: en el móvil, una fila que se desliza. */
+  .saltos { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 4px 2px 10px; margin-top: 6px; }
+  .saltos::-webkit-scrollbar { display: none; }
+  .saltos a {
+    flex: none; padding: 4px 12px; border: 2px solid var(--linea); border-radius: 999px; background: var(--tarjeta);
+    color: var(--texto); text-decoration: none; font-family: var(--mono); font-weight: 800; font-size: 14px;
+  }
+  .saltos a.ahora { background: var(--lima); color: var(--sobre-color); }
+  .mes { scroll-margin-top: 90px; }
+  .mes h2 { display: flex; align-items: center; gap: 12px; margin: 22px 0 14px; font-size: 30px; letter-spacing: -.5px; }
+  .mes__ahora {
+    font-family: var(--mono); font-size: 13px; padding: 2px 10px; background: var(--rosa); color: var(--sobre-color);
+    border: 2px solid var(--linea); border-radius: 999px; transform: rotate(-3deg);
+  }
+  .lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 24px; }
+  .anual {
+    position: relative; display: flex; flex-direction: column; gap: 8px; padding: 22px 20px 18px;
+    background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande);
+    box-shadow: 6px 6px 0 var(--sombra); transform: rotate(var(--giro));
+  }
+  .anual__tipo {
+    position: absolute; top: -14px; right: 16px; padding: 2px 12px; font-weight: 800; font-size: 14px;
+    color: var(--sobre-color); border: 2px solid var(--linea); border-radius: 999px; transform: rotate(3deg);
+  }
+  .anual h3 { margin: 0; font-size: 24px; line-height: 1.1; letter-spacing: -.5px; }
+  .anual__meta { margin: 0; font-family: var(--mono); font-size: 13px; color: var(--suave); }
+  .anual__desc { margin: 0; flex: 1; }
+  .anual__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 6px; }
+  .anual__acciones .boton { min-height: 40px; padding: 6px 14px; font-size: 15px; }
+  .anual__pendiente { font-family: var(--mono); font-size: 13px; color: var(--suave); }
+  .anual__web { font-weight: 700; color: var(--texto); }
+  .nota { margin-top: 24px; color: var(--suave); }
+  .nota a { color: var(--texto); font-weight: 700; }
+</style>

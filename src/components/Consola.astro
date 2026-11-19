@@ -109,7 +109,7 @@
     const a = sinTildes(arg).replace(/^\/+|\/+$/g, '').replace(/\s+/g, '-');
     const fijas: Record<string, string> = {
       '': '/', '~': '/', 'inicio': '/', 'home': '/', 'mapa': '/?vista=mapa#resultados', 'map': '/?vista=mapa#resultados',
-      'guias': '/guias', 'sobre': '/sobre', 'about': '/sobre', 'publicar': '/publicar',
+      'guias': '/guias', 'anuales': '/cada-ano', 'cada-ano': '/cada-ano', 'calendario': '/cada-ano', 'sobre': '/sobre', 'about': '/sobre', 'publicar': '/publicar',
       'online': '/hackathones-online', 'espana': '/hackathones-espana', 'hackathones': '/hackathones-espana', 'hackathon': '/hackathones-espana',
       'gamejam': '/game-jams', 'gamejams': '/game-jams', 'jams': '/game-jams', 'datathon': '/datathones', 'ideaton': '/ideatones', 'ideatones': '/ideatones',
     };
@@ -127,7 +127,7 @@
     ['next', 'los próximos en España'],
     ['grep <texto>', 'busca por nombre, ciudad u organizador'],
     ['open <n>', 'abre el evento n de la última lista'],
-    ['cd <sitio>', 've a una página: madrid, game-jams, mapa, guias, ~'],
+    ['cd <sitio>', 've a una página: madrid, game-jams, mapa, anuales, guias, ~'],
     ['clear', 'limpia la pantalla'],
     ['exit', 'vuelve al modo pegatina'],
   ];
