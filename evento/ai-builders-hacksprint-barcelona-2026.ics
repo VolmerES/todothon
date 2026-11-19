@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Builders Hacksprint Barcelona
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-12-04-ai-builders-hacksprint-barcelona@todothon.es
+DTSTAMP:20261119T143308Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:AI Builders Hacksprint Barcelona
+LOCATION:La dirección se da a los apuntados\, La dirección se da a los ap
+ untados\, Barcelona
+DESCRIPTION:https://luma.com/zdqgsiob\n\nMás información: https://todotho
+ n.es/evento/ai-builders-hacksprint-barcelona-2026
+URL:https://luma.com/zdqgsiob
+END:VEVENT
+END:VCALENDAR

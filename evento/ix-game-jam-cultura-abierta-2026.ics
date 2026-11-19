@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IX Game Jam Cultura Abierta 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-11-20-ix-game-jam-cultura-abierta-2026@todothon.es
+DTSTAMP:20261119T143307Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:IX Game Jam Cultura Abierta 2026
+LOCATION:Facultad de Informática UCM\, Facultad de Informática UCM\, C. d
+ el Prof. José García Santesmases 9\, Madrid
+DESCRIPTION:https://saraoia.com/evento/2026-11-20-ix-game-jam-cultura-abier
+ ta-2026\n\nMás información: https://todothon.es/evento/ix-game-jam-cultu
+ ra-abierta-2026
+URL:https://saraoia.com/evento/2026-11-20-ix-game-jam-cultura-abierta-2026
+END:VEVENT
+END:VCALENDAR

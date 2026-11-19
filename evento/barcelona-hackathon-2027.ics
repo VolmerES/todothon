@@ -3,15 +3,15 @@ VERSION:2.0
 PRODID:-//Todothon//ES
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Barcelona Hackathon 2027
+X-WR-CALNAME:Barcelona Hackathon
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
-UID:ia-barcelona-hackathon-2027-2027-02-12@todothon.es
-DTSTAMP:20261119T142014Z
+UID:hackathonhub-barcelona-hackathon-barcelona-2027@todothon.es
+DTSTAMP:20261119T143308Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270215
-SUMMARY:Barcelona Hackathon 2027
-LOCATION:Barcelona
+SUMMARY:Barcelona Hackathon
+LOCATION:Barcelona\, Barcelona
 DESCRIPTION:https://www.barcelonahackathon.com/\n\nMás información: https
  ://todothon.es/evento/barcelona-hackathon-2027
 URL:https://www.barcelonahackathon.com/

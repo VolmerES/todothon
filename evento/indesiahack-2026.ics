@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IndesIAhack 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-11-25-indesiahack-2026@todothon.es
+DTSTAMP:20261119T143307Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261128
+SUMMARY:IndesIAhack 2026
+LOCATION:ETSIT-UPM (Edificio A)\, ETSIT-UPM (Edificio A)\, Avenida Complute
+ nse 30\, Madrid
+DESCRIPTION:https://indesiahack.org/\n\nMás información: https://todothon
+ .es/evento/indesiahack-2026
+URL:https://indesiahack.org/
+END:VEVENT
+END:VCALENDAR

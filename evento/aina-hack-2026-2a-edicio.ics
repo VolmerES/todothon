@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Aina Hack 2026 | 2a edició
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-12-11-aina-hack-2026-2a-edicio@todothon.es
+DTSTAMP:20261119T143308Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:Aina Hack 2026 | 2a edició
+LOCATION:COAC (Col·legi d'Arquitectes de Catalunya)\, COAC (Col·legi d'Ar
+ quitectes de Catalunya)\, Plaça Nova 5\, Barcelona
+DESCRIPTION:https://eurecat.org/calendari/aina-hack-2026/\n\nMás informaci
+ ón: https://todothon.es/evento/aina-hack-2026-2a-edicio
+URL:https://eurecat.org/calendari/aina-hack-2026/
+END:VEVENT
+END:VCALENDAR

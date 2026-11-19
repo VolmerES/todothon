@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MERGE Hackathon Madrid
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:hackathonhub-merge-hackathon-madrid-madrid-2026@todothon.es
+DTSTAMP:20261119T143307Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261130
+SUMMARY:MERGE Hackathon Madrid
+LOCATION:Madrid\, Madrid
+DESCRIPTION:https://www.mmerge.io/hackathon-2026\n\nMás información: http
+ s://todothon.es/evento/merge-hackathon-madrid-2026
+URL:https://www.mmerge.io/hackathon-2026
+END:VEVENT
+END:VCALENDAR

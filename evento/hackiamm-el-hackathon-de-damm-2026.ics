@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HackIAmm\, el Hackathon de Damm
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-11-26-hackiamm-el-hackathon-de-damm@todothon.es
+DTSTAMP:20261119T143307Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261129
+SUMMARY:HackIAmm\, el Hackathon de Damm
+LOCATION:Sala BrewUp Damm\, Sala BrewUp Damm\, Pier 01 Tech Barcelona\, Blo
+ que D 2A\, Barcelona
+DESCRIPTION:https://hackiamm.com/\n\nMás información: https://todothon.es
+ /evento/hackiamm-el-hackathon-de-damm-2026
+URL:https://hackiamm.com/
+END:VEVENT
+END:VCALENDAR

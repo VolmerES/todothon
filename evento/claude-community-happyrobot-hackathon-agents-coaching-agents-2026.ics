@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Claude Community × HappyRobot Hackathon — Agents coaching a
+ gents
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-11-28-claude-community-happyrobot-hackathon-agents-coachin
+ g-agents@todothon.es
+DTSTAMP:20261119T143307Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Claude Community × HappyRobot Hackathon — Agents coaching agents
+LOCATION:Oficina de HappyRobot en Madrid\, Oficina de HappyRobot en Madrid\
+ , Madrid
+DESCRIPTION:https://luma.com/claude-82uv\n\nMás información: https://todo
+ thon.es/evento/claude-community-happyrobot-hackathon-agents-coaching-agent
+ s-2026
+URL:https://luma.com/claude-82uv
+END:VEVENT
+END:VCALENDAR
