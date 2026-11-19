@@ -18,8 +18,10 @@ import * as gdg from './fuentes/gdg.mjs';
 import * as luma from './fuentes/luma.mjs';
 import * as meetup from './fuentes/meetup.mjs';
 import * as comunidadMadrid from './fuentes/comunidad-madrid.mjs';
+import * as saraoia from './fuentes/saraoia.mjs';
+import * as hackathonhub from './fuentes/hackathonhub.mjs';
 
-const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos, gdg, luma, meetup, comunidadMadrid];
+const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos, gdg, luma, meetup, comunidadMadrid, saraoia, hackathonhub];
 const RAIZ = new URL('..', import.meta.url);
 const ruta = (p) => new URL(p, RAIZ);
 
@@ -56,8 +58,19 @@ function mismoEvento(a, b) {
   const x = slug(a.nombre);
   const y = slug(b.nombre);
   const [corto, largo] = x.length <= y.length ? [x, y] : [y, x];
-  return corto.length >= 12 && largo.includes(corto);
+  if (corto.length >= 12 && largo.includes(corto)) return true;
+  // Mismo día, misma ciudad y alguna palabra poco común en común: «[ HACKATHON ] Quantum Madrid - Qiskit
+  // Fall Fest» y «Hackathon Quantum Madrid | Computación cuántica en 42» son el mismo.
+  const ciudad = (e) => slug(String(e.ciudad || '').split(',')[0]);
+  if (a.modalidad === 'online' || b.modalidad === 'online' || !ciudad(a) || ciudad(a) !== ciudad(b)) return false;
+  const raras = (e) => new Set(slug(e.nombre).split('-').filter((p) => p.length >= 5 && !COMUNES.has(p) && !ciudad(e).includes(p)));
+  const ra = raras(a);
+  return [...raras(b)].some((p) => ra.has(p));
 }
+const COMUNES = new Set(['hackathon', 'hackaton', 'hackathons', 'datathon', 'ideathon', 'gamejam', 'challenge', 'edicion',
+  'edicio', 'community', 'comunidad', 'meetup', 'innovacion', 'innovation', 'digital', 'tecnologia', 'tecnologias',
+  'universidad', 'universidades', 'datos', 'dades', 'sostenible', 'social', 'future', 'futuro', 'build', 'builders',
+  'online', 'presencial', 'espana', 'spain', '2026', '2027']);
 
 function juntarDuplicados(eventos) {
   const juntos = [];

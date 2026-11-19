@@ -30,6 +30,8 @@ export const FUENTES: { fuente: string; url: string }[] = [
   { fuente: 'Luma', url: 'https://luma.com' },
   { fuente: 'GDG', url: 'https://gdg.community.dev' },
   { fuente: 'Comunidad de Madrid', url: 'https://www.comunidad.madrid/actividades' },
+  { fuente: 'saraoia', url: 'https://saraoia.com/hackathons' },
+  { fuente: 'Hackathon Hub', url: 'https://hackathonhub.eu/hackathons/spain' },
   { fuente: '42', url: 'https://www.42network.org' },
   { fuente: 'Taikai', url: 'https://taikai.network' },
   { fuente: 'Global Game Jam', url: 'https://globalgamejam.org' },
