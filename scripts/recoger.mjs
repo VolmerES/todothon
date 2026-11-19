@@ -15,8 +15,10 @@ import * as eventbrite from './fuentes/eventbrite.mjs';
 import * as devevents from './fuentes/devevents.mjs';
 import * as cuarentaydos from './fuentes/42.mjs';
 import * as gdg from './fuentes/gdg.mjs';
+import * as luma from './fuentes/luma.mjs';
+import * as meetup from './fuentes/meetup.mjs';
 
-const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos, gdg];
+const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos, gdg, luma, meetup];
 const RAIZ = new URL('..', import.meta.url);
 const ruta = (p) => new URL(p, RAIZ);
 
@@ -45,17 +47,27 @@ async function geolocalizar(eventos) {
   await writeFile(ruta('data/geocache.json'), JSON.stringify(cache, null, 1));
 }
 
+// Dos eventos son el mismo si empiezan el mismo día y un nombre contiene al otro
+// («Hackathon Quantum Madrid» y «Hackathon Quantum Madrid en 42 Madrid»), o si tienen la misma web.
+function mismoEvento(a, b) {
+  if (a.url && b.url && a.url.replace(/\/$/, '') === b.url.replace(/\/$/, '')) return true;
+  if (a.inicio !== b.inicio) return false;
+  const x = slug(a.nombre);
+  const y = slug(b.nombre);
+  const [corto, largo] = x.length <= y.length ? [x, y] : [y, x];
+  return corto.length >= 12 && largo.includes(corto);
+}
+
 function juntarDuplicados(eventos) {
-  const porClave = new Map();
+  const juntos = [];
   for (const e of eventos) {
-    const clave = `${slug(e.nombre)}|${e.inicio}`;
-    const previo = porClave.get(clave);
-    if (!previo) { porClave.set(clave, e); continue; }
-    // Se queda el que tiene más datos; los huecos se rellenan con el otro.
+    const previo = juntos.find((p) => mismoEvento(p, e));
+    if (!previo) { juntos.push(e); continue; }
+    // Se queda el primero; los huecos se rellenan con el otro.
     for (const [k, v] of Object.entries(e)) if (previo[k] == null || (Array.isArray(previo[k]) && !previo[k].length)) previo[k] = v;
     previo.fuente = [...new Set(`${previo.fuente}, ${e.fuente}`.split(', '))].join(', ');
   }
-  return [...porClave.values()];
+  return juntos;
 }
 
 function ponerSlugs(eventos) {
