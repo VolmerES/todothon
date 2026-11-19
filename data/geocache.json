@@ -37,5 +37,38 @@
  "42 Madrid, Distrito Telefónica, Edificio Norte 3, 28050, Fuencarral-El Pardo, 28050 Madrid, Spain, Madrid": null,
  "ETS de Ingeniería de Sistemas Informáticos (ETSISI-upm), Campus Sur de la UPM, C. de Alan Turing, s/n, Puente de Vallecas, 28031 Madrid, Spain, Madrid": null,
  "Capitole Consulting, Carrer de Balmes, 89, Planta 7, Eixample, 08008 Barcelona, Spain, Barcelona": null,
- "Studio 42, Distrito Telefónica - Edificio Norte 3, Ronda de la Comunicación, s/n, 28050, Madrid": null
+ "Studio 42, Distrito Telefónica - Edificio Norte 3, Ronda de la Comunicación, s/n, 28050, Madrid": null,
+ "La Perrera Espazioa, La Perrera Espazioa, Bilbao": null,
+ "Facultad de Informática UCM, Facultad de Informática UCM, C. del Prof. José García Santesmases 9, Madrid": null,
+ "CEEIM, CEEIM, Campus Universitario de Espinardo 7, Espinardo": null,
+ "The Terminal Hub, The Terminal Hub, Valencia": null,
+ "Itnig Café, Itnig Café, C. de Pujades 100, Barcelona": null,
+ "ETSIT-UPM (Edificio A), ETSIT-UPM (Edificio A), Avenida Complutense 30, Madrid": null,
+ "Oficinas de Google, Oficinas de Google, Torre Picasso, Madrid": null,
+ "Sala BrewUp Damm, Sala BrewUp Damm, Pier 01 Tech Barcelona, Bloque D 2A, Barcelona": null,
+ "Etopia, Etopia, Centro de Emprendimiento e Innovación, Avenida de la Ciudad de Soria 8, Zaragoza": null,
+ "Parque Científico de Alicante, Parque Científico de Alicante, Campus de la Universidad de Alicante, San Vicente del Raspeig": null,
+ "Lláscares, Lláscares, Hub de la Economía Social y Circular (antiguo pozo Candín II), Langreo": null,
+ "Oficina de HappyRobot en Madrid, Oficina de HappyRobot en Madrid, Madrid": null,
+ "La dirección se da a los apuntados, La dirección se da a los apuntados, Barcelona": null,
+ "COAC (Col·legi d'Arquitectes de Catalunya), COAC (Col·legi d'Arquitectes de Catalunya), Plaça Nova 5, Barcelona": null,
+ "Campus Nord de la UPC, Campus Nord de la UPC, Barcelona": null,
+ "Oficina de Nova Talent en Madrid, Oficina de Nova Talent en Madrid, Madrid": null,
+ "TecnoAteneu Vilablareix, TecnoAteneu Vilablareix, Av. de Lluís Companys 61, Vilablareix": null,
+ "Malaga, Malaga": {
+  "lat": 36.7647913,
+  "lon": -4.4422005,
+  "nombre": "Málaga, Málaga-Costa del Sol, Málaga, Andalucía, España"
+ },
+ "Madrid, Madrid": {
+  "lat": 40.416782,
+  "lon": -3.703507,
+  "nombre": "Madrid, Comunidad de Madrid, España"
+ },
+ "Barcelona, Barcelona": {
+  "lat": 41.3825802,
+  "lon": 2.177073,
+  "nombre": "Barcelona, Barcelonès, Barcelona, Catalunya, España"
+ },
+ "COE Madrid, C/ Hacienda de Pavones nº350 (Moratalaz), 28030 Madrid": null
 }
