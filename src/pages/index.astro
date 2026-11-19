@@ -196,6 +196,9 @@ const puntos = eventos
 </style>
 
 <script>
+  import cssLeaflet from 'leaflet/dist/leaflet.css?url';
+  import cssCluster from 'leaflet.markercluster/dist/MarkerCluster.css?url';
+
   type Item = {
     el: HTMLElement; slug: string; tipo: string; modalidad: string; ciudad: string; es: boolean;
     inicio: string; fin: string; gratis: boolean; premio: boolean; texto: string; ok: boolean;
@@ -531,9 +534,16 @@ const puntos = eventos
   }
 
   async function cargarMapa() {
-    const [{ default: L }] = await Promise.all([import('leaflet'), import('leaflet/dist/leaflet.css')]);
+    // Los estilos del mapa van como <link> con su URL: el import dinámico de CSS fallaba al compilar
+    // (pedía un fichero que no se generaba) y el mapa no llegaba a pintarse en la web publicada.
+    for (const href of [cssLeaflet, cssCluster]) {
+      if (document.querySelector(`link[href="${href}"]`)) continue;
+      const enlace = Object.assign(document.createElement('link'), { rel: 'stylesheet', href });
+      document.head.append(enlace);
+    }
+    const { default: L } = await import('leaflet');
     (window as unknown as { L: typeof L }).L = L;
-    await Promise.all([import('leaflet.markercluster'), import('leaflet.markercluster/dist/MarkerCluster.css')]);
+    await import('leaflet.markercluster');
     Lf = L;
     const el = document.getElementById('mapa')!;
     const puntos: Punto[] = JSON.parse(el.dataset.puntos || '[]');
