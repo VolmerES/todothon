@@ -2092,29 +2092,31 @@
   "slug": "lakectf-quals-26-27-2026"
  },
  {
-  "id": "meetup-317205956",
-  "nombre": "Hackathon Quantum Madrid - Qiskit Fall Fest 2026 en 42 Madrid",
+  "id": "42-45485",
+  "nombre": "[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026",
   "tipo": "hackathon",
   "inicio": "2026-11-27",
-  "fin": "2026-11-27",
+  "fin": "2026-11-29",
   "plazo": null,
   "modalidad": "presencial",
   "ciudad": "Madrid",
-  "direccion": "42 Madrid, Distrito Telefónica, Edificio Norte 3, 28050, Fuencarral-El Pardo, 28050 Madrid, Spain, Madrid",
+  "direccion": "Studio 42, Distrito Telefónica - Edificio Norte 3, Ronda de la Comunicación, s/n, 28050, Madrid",
   "pais": "ES",
   "lat": null,
   "lon": null,
-  "url": "https://www.meetup.com/quantummadrid/events/317205956/",
+  "url": "http://www.42madrid.com/",
   "imagen": "https://secure.meetupstatic.com/photos/event/b/c/9/5/highres_537108277.jpeg",
-  "organizador": "Quantum Madrid by Entangle",
+  "organizador": "42 Madrid",
   "temas": [],
   "premio": null,
   "gratis": true,
-  "requisitos": [],
-  "descripcion": "**⚠️ La inscripción se hace solo en Eventbrite:** [https://www.eventbrite.es/e/hackathon-quantum-madrid-computacion-cuantica-en-42-madrid-tickets-2003446624786](https://www.eventbrite.es/e/hackathon-quantum-madrid-computacion-cuantica-en-42-madrid-tickets-2003446624786) Este año el hackathon es en 42 Madrid (Fundación Telefónica) y son ellos quienes gestionan las inscripciones con su Eventbrite. Apuntarte aquí en Meetup no te reserva plaza: para participar necesitas tu entrada de Eventbrite. Hackathon Quantum Madrid by Entangle Tech Hub · Qiskit Fall Fest 2026 Un fin de semana para aprender y ",
-  "fuente": "Meetup, Búsqueda IA",
-  "urlFuente": "https://www.meetup.com/quantummadrid/events/317205956/",
-  "slug": "hackathon-quantum-madrid-qiskit-fall-fest-2026-en-42-madrid"
+  "requisitos": [
+   "Pensado para estudiantes de 42: mira en la web del campus si está abierto a más gente"
+  ],
+  "descripcion": "Del 27 al 29 de noviembre, 42 Madrid acoge el **Hackathon Quantum Madrid - Qiskit Fall Fest 2026**, organizado junto a Quantum Madrid y Entangle Tech Hub. Durante todo el fin de semana podréis formar equipo y enfrentaros a retos de computación cuántica con Qiskit, desde nivel beginner hasta advanced, trabajando con simuladores y hardware cuántico real de IBM. Habrá materiales de introducción, mentoría y retos para diferentes niveles. - **Viernes 27** → kickoff, keynotes y formación de equipos - **Sábado 28** → hackathon + mentoría - **Domingo 29** → sprint final, demos, pitches y premios Ademá",
+  "fuente": "42, Meetup, Búsqueda IA",
+  "urlFuente": "https://profile.intra.42.fr/events/45485",
+  "slug": "hackathon-quantum-madrid-qiskit-fall-fest-2026"
  },
  {
   "fuente": "Todothon",
@@ -3075,7 +3077,7 @@
   "lat": null,
   "lon": null,
   "url": "https://checkpoint-1.devpost.com/",
-  "imagen": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/239/296/datas/medium_square.png",
+  "imagen": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/966/540/datas/medium_square.png",
   "organizador": "Checkpoint",
   "temas": [
    "Gaming",
