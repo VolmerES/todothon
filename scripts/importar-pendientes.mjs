@@ -17,7 +17,13 @@ try {
 if (r.status === 404) { console.log('Sin pendientes todavía.'); process.exit(0); }
 if (!r.ok) { console.error(`No se han podido leer los pendientes: HTTP ${r.status}`); process.exit(0); }
 
-const pendientes = await r.json();
+// Si no llega JSON (una página de error, una redirección…), no hay nada que importar: no se para la Action.
+let pendientes;
+try { pendientes = await r.json(); } catch {
+  console.error('Los pendientes no son JSON (¿página de error?): no se importa nada.');
+  process.exit(0);
+}
+if (!Array.isArray(pendientes)) process.exit(0);
 const manuales = JSON.parse(await readFile(RUTA, 'utf8'));
 const ids = new Set(manuales.map((e) => e.id));
 const hoy = new Date().toISOString().slice(0, 10);
