@@ -1,20 +1,20 @@
 {
- "fecha": "2026-11-18T16:00:49.938Z",
+ "fecha": "2026-11-19T07:35:50.486Z",
  "fuentes": {
   "42": 0,
   "devpost": 81,
   "mlh": 1,
   "ctftime": 21,
   "itch": 14,
-  "eventbrite": 0,
-  "devevents": 0,
+  "eventbrite": 2,
+  "devevents": 1,
+  "GDG": 0,
   "manuales": 0,
   "Búsqueda IA": 4
  },
  "avisos": [
-  "devevents ha fallado: https://dev.events/hackathons/EU/ES → HTTP 403",
-  "42 ha fallado: token de 42 → HTTP 403"
+  "42 ha fallado: https://todothon.volmer.es/api/traer.php?f=42 → HTTP 503"
  ],
- "total": 121,
- "espana": 4
+ "total": 124,
+ "espana": 7
 }
