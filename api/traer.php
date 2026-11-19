@@ -14,7 +14,6 @@ declare(strict_types=1);
 const UA = 'Todothon/0.1 (+https://todothon.es)';
 const CADUCA = 3 * 3600;
 const EVENTBRITE = ['hackathon', 'hackaton', 'datathon', 'ideathon', 'game-jam', 'ctf', 'buildathon'];
-const CMADRID = ['hackathon', 'hackaton', 'datathon', 'ideathon', 'game jam', 'ctf'];
 
 header('X-Robots-Tag: noindex');
 
@@ -87,14 +86,6 @@ if ($f === 'devevents') {
 } elseif ($f === 'eventbrite' && in_array($q, EVENTBRITE, true)) {
     $clave = "eventbrite-$q-$p";
     $url = "https://www.eventbrite.es/d/spain/$q/" . ($p > 1 ? "?page=$p" : '');
-} elseif ($f === 'cmadrid' && in_array($q, CMADRID, true)) {
-    // Buscador de la agenda de la Comunidad de Madrid.
-    $clave = 'cmadrid-' . preg_replace('/[^a-z]/', '', $q);
-    $url = 'https://www.comunidad.madrid/actividades?qt=' . rawurlencode($q);
-} elseif ($f === 'cmadrid-ficha' && preg_match('#^/actividades/20\d{2}/[a-z0-9-]{3,200}$#', $q)) {
-    // Una ficha de esa agenda (solo rutas /actividades/AAAA/nombre).
-    $clave = 'cmadrid-' . md5($q);
-    $url = 'https://www.comunidad.madrid' . $q;
 } elseif ($f === '42') {
     $clave = '42';
     $url = null;

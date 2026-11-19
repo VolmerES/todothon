@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CYBERGUARD: Innovación para la protección digital de las emp
+ resas
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:cm-cyberguard-innovacion-proteccion-digital-empresas@todothon.es
+DTSTAMP:20261119T144415Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261202
+SUMMARY:CYBERGUARD: Innovación para la protección digital de las empresas
+LOCATION:COE Madrid\, C/ Hacienda de Pavones nº350 (Moratalaz)\, 28030 Mad
+ rid
+DESCRIPTION:https://www.comunidad.madrid/actividades/2026/cyberguard-innova
+ cion-proteccion-digital-empresas\n\nMás información: https://todothon.es
+ /evento/cyberguard-innovacion-para-la-proteccion-digital-de-las-empresas-2
+ 026
+URL:https://www.comunidad.madrid/actividades/2026/cyberguard-innovacion-pro
+ teccion-digital-empresas
+END:VEVENT
+END:VCALENDAR

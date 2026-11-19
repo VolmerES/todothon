@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI BOOST: Inteligencia Artificial con impacto real en las empr
+ esas
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:cm-ai-boost-inteligencia-artificial-impacto-real-empresas@todothon.es
+DTSTAMP:20261119T144415Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261204
+SUMMARY:AI BOOST: Inteligencia Artificial con impacto real en las empresas
+LOCATION:COE Madrid\, C/ Hacienda de Pavones nº350 (Moratalaz)\, 28030 Mad
+ rid
+DESCRIPTION:https://www.comunidad.madrid/actividades/2026/ai-boost-intelige
+ ncia-artificial-impacto-real-empresas\n\nMás información: https://todoth
+ on.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empr
+ esas-2026
+URL:https://www.comunidad.madrid/actividades/2026/ai-boost-inteligencia-art
+ ificial-impacto-real-empresas
+END:VEVENT
+END:VCALENDAR
