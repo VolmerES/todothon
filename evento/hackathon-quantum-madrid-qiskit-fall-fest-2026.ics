@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:42-45485@todothon.es
+DTSTAMP:20261119T111620Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261130
+SUMMARY:[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026
+LOCATION:Studio 42\, Distrito Telefónica - Edificio Norte 3\, Ronda de la 
+ Comunicación\, s/n\, 28050\, Madrid
+DESCRIPTION:http://www.42madrid.com/\n\nMás información: https://todothon
+ .es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026
+URL:http://www.42madrid.com/
+END:VEVENT
+END:VCALENDAR
