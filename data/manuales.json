@@ -1,1 +1,32 @@
-[]
+[
+ {
+  "id": "manual-hackathon-dades-vall-hebron-2026",
+  "nombre": "Hackathon de dades de Vall d'Hebron",
+  "tipo": "datathon",
+  "inicio": "2026-11-27",
+  "fin": "2026-11-28",
+  "plazo": null,
+  "modalidad": "presencial",
+  "ciudad": "Barcelona",
+  "direccion": "Hospital Universitari Vall d'Hebron, Passeig de la Vall d'Hebron 119-129, 08035 Barcelona",
+  "pais": "ES",
+  "lat": null,
+  "lon": null,
+  "url": "https://www.vallhebron.com/innovacio/setmana-de-la-innovacio/hackathon-de-dades-de-vall-dhebron",
+  "imagen": null,
+  "organizador": "Hospital Universitari Vall d'Hebron",
+  "temas": [
+   "Salud",
+   "Datos",
+   "IA"
+  ],
+  "premio": null,
+  "gratis": true,
+  "requisitos": [
+   "Perfiles clínicos y técnicos (datos, ingeniería, IA); hay que enviar solicitud"
+  ],
+  "descripcion": "Hackathon hospitalaria de dos días: equipos multidisciplinares trabajan con datos sanitarios sobre retos reales del nuevo modelo de consultas ambulatorias.",
+  "fuente": "Todothon",
+  "urlFuente": "https://www.vallhebron.com/innovacio/setmana-de-la-innovacio/hackathon-de-dades-de-vall-dhebron"
+ }
+]

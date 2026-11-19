@@ -60,6 +60,8 @@ const ENFOQUES = [
   'universidades, escuelas de informática e ingeniería, asociaciones de estudiantes y campus de 42 (Madrid, Barcelona, Málaga, Urduliz)',
   'game jams y CTF (ciberseguridad) organizados en España: asociaciones, universidades, festivales y comunidades de videojuegos',
   'ayuntamientos, comunidades autónomas, diputaciones, cámaras de comercio, empresas, aceleradoras y datathones o ideatones de datos abiertos, salud, clima o impacto social',
+  'plataformas de entradas y comunidades: busca con consultas como «site:eventbrite.es hackathon», «site:luma.com hackathon Madrid», «site:lu.ma hackathon Barcelona» y «site:meetup.com hackathon España»',
+  'eventos anunciados en catalán, gallego o euskera (hackató, hackathon de dades, datató, hackathoia) y los de hospitales, centros de investigación y parques científicos',
 ];
 
 const peticion = (enfoque) => `Busca en la web hackathones, datathones, ideatones, game jams y CTF que se celebren en España

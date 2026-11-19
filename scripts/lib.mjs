@@ -19,7 +19,7 @@ export function traerHosting(parametros, opciones = {}) {
 }
 
 // Nombres con formato de hackathon. Sirve para filtrar fuentes generalistas (Eventbrite, dev.events…).
-export const FORMATO = /hack[aá]?th?[oó]n|hackathon|datat?h?[oó]n|ideat?h?[oó]n|game ?jam|gamejam|jam de (video)?juegos|\bctf\b|capture the flag|buildathon|makeathon|codeathon|\w{3,}thon\b|marat[oó]n de (c[oó]digo|programaci[oó]n|datos|ideas)/i;
+export const FORMATO = /hack[aá]?th?[oó]n|hackat[oó](?![a-zñ])|hackathoia|datat[oó](?![a-zñ])|marat[oó] de (codi|dades)|hackathon|datat?h?[oó]n|ideat?h?[oó]n|game ?jam|gamejam|jam de (video)?juegos|\bctf\b|capture the flag|buildathon|makeathon|codeathon|\w{3,}thon\b|marat[oó]n de (c[oó]digo|programaci[oó]n|datos|ideas)/i;
 
 // Todos los objetos schema.org de tipo *Event de los <script type="application/ld+json"> de una página.
 export function eventosLd(html) {
@@ -95,7 +95,7 @@ export function enEspana(texto = '') {
 export function tipoDe(texto = '', porDefecto = 'hackathon') {
   const t = texto.toLowerCase();
   if (/\bctf\b|capture the flag/.test(t)) return 'ctf';
-  if (/datath?[oó]n|data challenge/.test(t)) return 'datathon';
+  if (/datath?[oó]n|datat[oó](?![a-zñ])|data challenge|hackathon de dad(es|os)/.test(t)) return 'datathon';
   if (/ideath?[oó]n|idea(s)? challenge/.test(t)) return 'ideathon';
   if (/game ?jam|gamejam|jam de (video)?juegos|\bjam\b/.test(t)) return 'gamejam';
   if (/hack/.test(t)) return 'hackathon';
