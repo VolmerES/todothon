@@ -9,6 +9,8 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{REQUEST_URI} !^/api/
+  # Ni las páginas de error internas (un 404 de /api/ pasa por /404.html y no debe acabar en 301).
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
   RewriteCond %{HTTP_HOST} ^(todothon\.volmer\.es|www\.todothon\.es)$ [NC]
   RewriteRule ^(.*)$ https://todothon.es/$1 [R=301,L]
 </IfModule>
