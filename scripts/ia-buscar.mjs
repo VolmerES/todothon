@@ -13,7 +13,7 @@ import { zodOutputFormat } from '@anthropic-ai/sdk/helpers/zod';
 import { UA, slug, limpiarHtml, evento } from './lib.mjs';
 
 const MODELO = 'claude-haiku-5-5';
-const MAX_BUSQUEDAS = Number(process.env.IA_MAX_BUSQUEDAS || 8); // tope de búsquedas web por pasada
+const MAX_BUSQUEDAS = Number(process.env.IA_MAX_BUSQUEDAS || 5); // tope de búsquedas web en cada una de las pasadas
 // Precios en dólares (noviembre de 2026). Haiku 5.5: 0,10 / 0,50 por millón de tokens si la petición
 // tiene 100 000 tokens o menos, y 0,50 / 2,50 por encima. Búsqueda web: 10 $ por cada 1000.
 const PRECIO = { entrada: 0.1, salida: 0.5, entradaLarga: 0.5, salidaLarga: 2.5, busqueda: 0.01 };
@@ -50,18 +50,25 @@ const hoy = new Date().toISOString().slice(0, 10);
 const enSeisMeses = new Date(Date.now() + 200 * 864e5).toISOString().slice(0, 10);
 const actuales = await leerJson('src/data/eventos.json', []);
 const previos = (await leerJson('data/ia.json', [])).filter((e) => (e.fin || e.inicio) >= hoy);
-const conocidos = [...actuales.filter((e) => e.pais === 'ES' || e.fuente !== 'Devpost'), ...previos]
+// Solo los de España: la lista va en cada petición y, cuanto más corta, más barata.
+const conocidos = [...actuales.filter((e) => e.pais === 'ES' || e.fuente === 'Todothon'), ...previos]
   .map((e) => `- ${e.nombre} (${e.inicio})`);
 
-const peticion = `Busca en la web hackathones, datathones, ideatones, game jams y CTF que se celebren en España
+// Varias pasadas cortas, cada una centrada en un tipo de sitio: encuentran más que una larga y cada
+// petición se queda por debajo de 100 000 tokens (por encima, Haiku cobra cinco veces más).
+const ENFOQUES = [
+  'universidades, escuelas de informática e ingeniería, asociaciones de estudiantes y campus de 42 (Madrid, Barcelona, Málaga, Urduliz)',
+  'game jams y CTF (ciberseguridad) organizados en España: asociaciones, universidades, festivales y comunidades de videojuegos',
+  'ayuntamientos, comunidades autónomas, diputaciones, cámaras de comercio, empresas, aceleradoras y datathones o ideatones de datos abiertos, salud, clima o impacto social',
+];
+
+const peticion = (enfoque) => `Busca en la web hackathones, datathones, ideatones, game jams y CTF que se celebren en España
 (presenciales o híbridos) o que organicen entidades españolas en línea, con fecha entre ${hoy} y ${enSeisMeses}.
 
-Dónde suelen anunciarse y no los tenemos: universidades y sus escuelas de informática, ayuntamientos y comunidades
-autónomas, Google Developer Groups (GDG), los campus de 42 (Madrid, Barcelona, Málaga, Urduliz), Meetup, Luma,
-asociaciones de estudiantes, empresas y aceleradoras, y las game jams y CTF españoles.
+En esta búsqueda céntrate en: ${enfoque}.
 
 Ya tenemos estos, no los repitas:
-${conocidos.slice(0, 150).join('\n') || '(ninguno)'}
+${conocidos.slice(0, 120).join('\n') || '(ninguno)'}
 
 Reglas:
 - Solo eventos con formato de competición o maratón de desarrollo (no charlas, cursos ni ferias).
@@ -74,36 +81,55 @@ Reglas:
 // workspace no hace falta. El id va en el secreto ANTHROPIC_WORKSPACE_ID (no es secreto, pero así va junto).
 const workspace = process.env.ANTHROPIC_WORKSPACE_ID;
 const cliente = new Anthropic(workspace ? { defaultHeaders: { 'anthropic-workspace-id': workspace } } : {});
-const mensajes = [{ role: 'user', content: peticion }];
 const uso = { entrada: 0, salida: 0, busquedas: 0, coste: 0 };
-let respuesta;
-for (let vuelta = 0; vuelta < 4; vuelta++) {
-  respuesta = await cliente.messages.parse({
-    model: MODELO,
-    max_tokens: 16000,
-    messages: mensajes,
-    tools: [{
-      type: 'web_search_20250305', name: 'web_search', max_uses: MAX_BUSQUEDAS,
-      user_location: { type: 'approximate', country: 'ES', timezone: 'Europe/Madrid' },
-    }],
-    output_config: { format: zodOutputFormat(Esquema) },
-  });
-  const u = respuesta.usage;
-  const entrada = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
-  const larga = entrada > 100_000;
-  const busquedas = u.server_tool_use?.web_search_requests || 0;
-  uso.entrada += entrada;
-  uso.salida += u.output_tokens || 0;
-  uso.busquedas += busquedas;
-  uso.coste += (entrada * (larga ? PRECIO.entradaLarga : PRECIO.entrada) + (u.output_tokens || 0) * (larga ? PRECIO.salidaLarga : PRECIO.salida)) / 1e6
-    + busquedas * PRECIO.busqueda;
-  // El bucle de búsquedas del servidor tiene un límite; si se para a medias, se le deja seguir.
-  if (respuesta.stop_reason !== 'pause_turn') break;
-  mensajes.push({ role: 'assistant', content: respuesta.content });
+
+async function buscar(enfoque) {
+  const mensajes = [{ role: 'user', content: peticion(enfoque) }];
+  let respuesta;
+  for (let vuelta = 0; vuelta < 4; vuelta++) {
+    respuesta = await cliente.messages.parse({
+      model: MODELO,
+      max_tokens: 16000,
+      messages: mensajes,
+      tools: [{
+        type: 'web_search_20250305', name: 'web_search', max_uses: MAX_BUSQUEDAS,
+        user_location: { type: 'approximate', country: 'ES', timezone: 'Europe/Madrid' },
+      }],
+      output_config: { format: zodOutputFormat(Esquema) },
+    });
+    const u = respuesta.usage;
+    const entrada = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
+    const larga = entrada > 100_000;
+    const busquedas = u.server_tool_use?.web_search_requests || 0;
+    uso.entrada += entrada;
+    uso.salida += u.output_tokens || 0;
+    uso.busquedas += busquedas;
+    uso.coste += (entrada * (larga ? PRECIO.entradaLarga : PRECIO.entrada) + (u.output_tokens || 0) * (larga ? PRECIO.salidaLarga : PRECIO.salida)) / 1e6
+      + busquedas * PRECIO.busqueda;
+    // El bucle de búsquedas del servidor tiene un límite; si se para a medias, se le deja seguir.
+    if (respuesta.stop_reason !== 'pause_turn') break;
+    mensajes.push({ role: 'assistant', content: respuesta.content });
+  }
+  if (respuesta.stop_reason === 'refusal') { console.error(`Claude ha rechazado la búsqueda de «${enfoque}».`); return []; }
+  return respuesta.parsed_output?.eventos || [];
 }
 
-if (respuesta.stop_reason === 'refusal') throw new Error('Claude ha rechazado la petición.');
-const propuestos = respuesta.parsed_output?.eventos || [];
+const propuestos = [];
+for (const enfoque of ENFOQUES) {
+  try {
+    const lista = await buscar(enfoque);
+    console.log(`«${enfoque.split(',')[0]}…»: ${lista.length} propuestos`);
+    propuestos.push(...lista);
+  } catch (err) {
+    console.error(`Búsqueda «${enfoque.split(',')[0]}…» fallida: ${err.message}`);
+  }
+}
+// La misma web puede salir en dos pasadas.
+const vistos = new Set();
+for (let i = propuestos.length - 1; i >= 0; i--) {
+  const k = propuestos[i].url.replace(/\/$/, '');
+  if (vistos.has(k)) propuestos.splice(i, 1); else vistos.add(k);
+}
 console.log(`Claude propone ${propuestos.length} eventos (${uso.busquedas} búsquedas, ${uso.entrada} tokens de entrada, ${uso.salida} de salida, ${uso.coste.toFixed(4)} $).`);
 
 // --- Comprobación sin IA: la web existe, nombra el evento y las fechas cuadran -----------------------

@@ -1,9 +1,10 @@
 // Eventos de los campus de 42 en España (Madrid, Barcelona, Málaga, Urduliz…), de la API de la intranet.
 // Se queda con los que tienen formato de hackathon (tipo «hackathon» en 42, o el nombre lo dice).
 //
-// Necesita la aplicación «Todothon» de profile.intra.42.fr/oauth/applications: su UID y su secreto van
-// en los secretos del repo FT_CLIENT_ID y FT_CLIENT_SECRET. Sin ellos devuelve una lista vacía.
-import { UA, esperar, FORMATO, tipoDe, soloFecha, limpiarHtml, evento } from '../lib.mjs';
+// Necesita la aplicación «Todothon» de profile.intra.42.fr/oauth/applications. La API bloquea a GitHub,
+// así que en la Action se pide a través del hosting (public/api/traer.php), que lee el UID y el secreto
+// de todothon-secretos.php en el servidor. En local: variables FT_CLIENT_ID y FT_CLIENT_SECRET.
+import { UA, esperar, FORMATO, tipoDe, soloFecha, limpiarHtml, evento, traerHosting, VIA_HOSTING } from '../lib.mjs';
 
 export const nombre = '42';
 const API = 'https://api.intra.42.fr';
@@ -19,7 +20,10 @@ async function pedir(url, token) {
   throw new Error(`${url} → demasiadas peticiones`);
 }
 
-export async function recoger() {
+// [{ campus, eventos }] de los campus de España: directo a la API, o a través del hosting en la Action
+// (allí los secretos viven en el servidor, en todothon-secretos.php).
+async function campusYEventos() {
+  if (VIA_HOSTING) return traerHosting({ f: '42' }, { json: true });
   const id = process.env.FT_CLIENT_ID;
   const secreto = process.env.FT_CLIENT_SECRET;
   if (!id || !secreto) return [];
@@ -36,7 +40,14 @@ export async function recoger() {
   const ahora = new Date().toISOString();
   const salida = [];
   for (const c of campus.filter((x) => x.active !== false)) {
-    const eventos = await pedir(`${API}/v2/campus/${c.id}/events?range[end_at]=${ahora},2100-01-01T00:00:00Z&per_page=100&sort=begin_at`, token);
+    salida.push({ campus: c, eventos: await pedir(`${API}/v2/campus/${c.id}/events?range[end_at]=${ahora},2100-01-01T00:00:00Z&per_page=100&sort=begin_at`, token) });
+  }
+  return salida;
+}
+
+export async function recoger() {
+  const salida = [];
+  for (const { campus: c, eventos } of await campusYEventos()) {
     for (const e of eventos) {
       if (e.kind !== 'hackathon' && !FORMATO.test(e.name || '')) continue;
       const direccion = [e.location, c.address, c.zip, c.city].filter(Boolean).join(', ');

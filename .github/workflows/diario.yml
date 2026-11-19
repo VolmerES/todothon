@@ -60,8 +60,8 @@ jobs:
         id: recoger
         continue-on-error: true
         env:
-          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
-          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          # dev.events, Eventbrite y 42 bloquean a GitHub: se piden a través del hosting (api/traer.php).
+          TODOTHON_VIA_HOSTING: '1'
         run: npm run recoger
 
       # Sin los secretos TELEGRAM_TOKEN y TELEGRAM_CANAL no publica nada.

@@ -11,8 +11,8 @@ on:
   workflow_dispatch:
     inputs:
       busquedas:
-        description: Búsquedas web como mucho (cada una cuesta 1 céntimo)
-        default: '8'
+        description: Búsquedas web como mucho en cada una de las 3 pasadas (cada una cuesta 1 céntimo)
+        default: '5'
 
 permissions:
   contents: write
@@ -40,7 +40,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
-          IA_MAX_BUSQUEDAS: ${{ inputs.busquedas || '8' }}
+          IA_MAX_BUSQUEDAS: ${{ inputs.busquedas || '5' }}
         run: node scripts/ia-buscar.mjs
 
       - name: Guardar lo encontrado y publicar

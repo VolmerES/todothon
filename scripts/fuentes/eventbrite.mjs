@@ -1,6 +1,6 @@
 // Eventbrite: páginas de búsqueda de España, que llevan los eventos en JSON-LD.
 // Mezclan mucho evento de networking, así que solo entran los nombres con formato de hackathon.
-import { traer, esperar, eventosLd, desdeLd, FORMATO, enEspana } from '../lib.mjs';
+import { traer, traerHosting, VIA_HOSTING, esperar, eventosLd, desdeLd, FORMATO, enEspana } from '../lib.mjs';
 
 export const nombre = 'eventbrite';
 
@@ -12,7 +12,7 @@ export async function recoger() {
     for (let pagina = 1; pagina <= 3; pagina++) {
       const url = `https://www.eventbrite.es/d/spain/${q}/${pagina > 1 ? `?page=${pagina}` : ''}`;
       let html;
-      try { html = await traer(url); } catch { break; }
+      try { html = VIA_HOSTING ? await traerHosting({ f: 'eventbrite', q, p: pagina }) : await traer(url); } catch { break; }
       const lista = eventosLd(html);
       if (lista.length === 0) break;
       for (const x of lista) {

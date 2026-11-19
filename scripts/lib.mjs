@@ -10,6 +10,14 @@ export async function traer(url, { json = false, cabeceras = {} } = {}) {
 
 export const esperar = (ms) => new Promise((ok) => setTimeout(ok, ms));
 
+// Algunas webs (dev.events, Eventbrite, la API de 42) bloquean a los servidores de GitHub. En la Action
+// (TODOTHON_VIA_HOSTING=1) se piden a través de public/api/traer.php, que corre en el hosting.
+export const VIA_HOSTING = process.env.TODOTHON_VIA_HOSTING === '1';
+const HOSTING = process.env.TODOTHON_HOSTING || 'https://todothon.volmer.es';
+export function traerHosting(parametros, opciones = {}) {
+  return traer(`${HOSTING}/api/traer.php?${new URLSearchParams(parametros)}`, opciones);
+}
+
 // Nombres con formato de hackathon. Sirve para filtrar fuentes generalistas (Eventbrite, dev.events…).
 export const FORMATO = /hack[aá]?th?[oó]n|hackathon|datat?h?[oó]n|ideat?h?[oó]n|game ?jam|gamejam|jam de (video)?juegos|\bctf\b|capture the flag|buildathon|makeathon|codeathon|\w{3,}thon\b|marat[oó]n de (c[oó]digo|programaci[oó]n|datos|ideas)/i;
 
