@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ia-o-camino-dos-datos-ii-datathon-universitario-udc-2026-11-25@todothon
  .es
-DTSTAMP:20261119T081105Z
+DTSTAMP:20261119T081424Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20270204
 SUMMARY:O Camiño dos Datos (II Datathon universitario\, UDC)
@@ -18,8 +18,20 @@ DESCRIPTION:https://www.fic.udc.es/\n\nMás información: https://todothon.
 URL:https://www.fic.udc.es/
 END:VEVENT
 BEGIN:VEVENT
+UID:ia-more-than-a-hack-2027-talent-arena-2026-11-26@todothon.es
+DTSTAMP:20261119T081424Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20270115
+SUMMARY:More Than a Hack 2027 (Talent Arena)
+LOCATION:Online
+DESCRIPTION:https://landing.mobileworldcapital.com/more-than-a-hack-2027\n\
+ nMás información: https://todothon.es/evento/more-than-a-hack-2027-talen
+ t-arena-2026
+URL:https://landing.mobileworldcapital.com/more-than-a-hack-2027
+END:VEVENT
+BEGIN:VEVENT
 UID:manual-hackathon-dades-vall-hebron-2026@todothon.es
-DTSTAMP:20261119T081105Z
+DTSTAMP:20261119T081424Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:Hackathon de dades de Vall d'Hebron

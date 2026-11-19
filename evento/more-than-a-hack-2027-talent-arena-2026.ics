@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:More Than a Hack 2027 (Talent Arena)
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ia-more-than-a-hack-2027-talent-arena-2026-11-26@todothon.es
+DTSTAMP:20261119T081424Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20270115
+SUMMARY:More Than a Hack 2027 (Talent Arena)
+LOCATION:Online
+DESCRIPTION:https://landing.mobileworldcapital.com/more-than-a-hack-2027\n\
+ nMás información: https://todothon.es/evento/more-than-a-hack-2027-talen
+ t-arena-2026
+URL:https://landing.mobileworldcapital.com/more-than-a-hack-2027
+END:VEVENT
+END:VCALENDAR
