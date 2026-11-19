@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Creators AI Winter Challenge 
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32133@todothon.es
+DTSTAMP:20261119T072424Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261122
+SUMMARY:Creators AI Winter Challenge 
+LOCATION:Online
+DESCRIPTION:https://creators-ai-winter-challenge.devpost.com/\n\nMás infor
+ mación: https://todothon.es/evento/creators-ai-winter-challenge-2026
+URL:https://creators-ai-winter-challenge.devpost.com/
+END:VEVENT
+END:VCALENDAR

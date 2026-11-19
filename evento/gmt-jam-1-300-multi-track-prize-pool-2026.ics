@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GMT Jam #1 [$300 multi-track prize pool]
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-gmt-jam-1@todothon.es
+DTSTAMP:20261119T072424Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261130
+SUMMARY:GMT Jam #1 [$300 multi-track prize pool]
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/gmt-jam-1\n\nMás información: https://tod
+ othon.es/evento/gmt-jam-1-300-multi-track-prize-pool-2026
+URL:https://itch.io/jam/gmt-jam-1
+END:VEVENT
+END:VCALENDAR
