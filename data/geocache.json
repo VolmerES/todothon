@@ -26,5 +26,12 @@
   "lat": 43.3454621,
   "lon": -8.4138519,
   "nombre": "A Coruña, Galicia, España"
+ },
+ "Hospital Universitari Vall d'Hebron, Passeig de la Vall d'Hebron 119-129, 08035 Barcelona": null,
+ "Fira Barcelona Gran Vía, Av. Joan Carles I, 64, 08908, L'Hospitalet de Llobregat": null,
+ "Barcelona": {
+  "lat": 41.3825802,
+  "lon": 2.177073,
+  "nombre": "Barcelona, Barcelonès, Barcelona, Catalunya, España"
  }
 }
