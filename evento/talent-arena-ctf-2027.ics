@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Talent Arena CTF 2027
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ia-talent-arena-ctf-2027-2027-03-01@todothon.es
+DTSTAMP:20261119T074015Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270304
+SUMMARY:Talent Arena CTF 2027
+LOCATION:Fira Montjuïc (Barcelona)\, Hall 8
+DESCRIPTION:https://talentarena.tech/capture-the-flag/\n\nMás información
+ : https://todothon.es/evento/talent-arena-ctf-2027
+URL:https://talentarena.tech/capture-the-flag/
+END:VEVENT
+END:VCALENDAR
