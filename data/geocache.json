@@ -15,5 +15,16 @@
   "lon": -3.6938661,
   "nombre": "Hospital Universitario Ramón y Cajal., Calle de Antoniorrobles, Begoña, Valverde, Fuencarral, Fuencarral-El Pardo, Madrid, Comunidad de Madrid, 28034, España"
  },
- "CEEIM, C. Campus Universitario, 7, 30100 Espinardo, Murcia": null
+ "CEEIM, C. Campus Universitario, 7, 30100 Espinardo, Murcia": null,
+ "Distrito Telefónica, Edificio Norte 3, 28050 Madrid (42 Madrid, Fundación Telefónica)": null,
+ "Fira Montjuïc (Barcelona), Hall 8": {
+  "lat": 41.3719298,
+  "lon": 2.1517909,
+  "nombre": "Fira de Montjuïc, el Poble-sec, Sants-Montjuïc, Barcelona, Barcelonès, Barcelona, Catalunya, España"
+ },
+ "A Coruña": {
+  "lat": 43.3454621,
+  "lon": -8.4138519,
+  "nombre": "A Coruña, Galicia, España"
+ }
 }

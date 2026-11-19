@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-19T07:35:50.486Z",
+ "fecha": "2026-11-19T07:38:52.187Z",
  "fuentes": {
   "42": 0,
   "devpost": 81,
@@ -10,11 +10,11 @@
   "devevents": 1,
   "GDG": 0,
   "manuales": 0,
-  "Búsqueda IA": 4
+  "Búsqueda IA": 8
  },
  "avisos": [
   "42 ha fallado: https://todothon.volmer.es/api/traer.php?f=42 → HTTP 503"
  ],
- "total": 124,
- "espana": 7
+ "total": 128,
+ "espana": 11
 }
