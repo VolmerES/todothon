@@ -1,18 +1,21 @@
 // Agenda de la Comunidad de Madrid (comunidad.madrid/actividades): hackathones universitarios del COE,
 // de la Semana de la Ciencia, de hospitales… que no salen en ninguna plataforma.
 // El buscador de la agenda admite ?qt=<texto>; cada ficha trae el evento en JSON-LD (schema.org Event).
-import { traer, esperar, FORMATO, tipoDe, eventosLd, desdeLd, limpiarHtml } from '../lib.mjs';
+import { traer, esperar, FORMATO, tipoDe, eventosLd, desdeLd, limpiarHtml, traerHosting, VIA_HOSTING } from '../lib.mjs';
 
 export const nombre = 'Comunidad de Madrid';
 const WEB = 'https://www.comunidad.madrid';
 const BUSQUEDAS = ['hackathon', 'hackaton', 'datathon', 'ideathon', 'game jam', 'ctf'];
+// La web bloquea a los servidores de GitHub: en la Action se pide a través del hosting (api/traer.php).
+const buscar = (q) => (VIA_HOSTING ? traerHosting({ f: 'cmadrid', q }) : traer(`${WEB}/actividades?qt=${encodeURIComponent(q)}`));
+const ficha = (ruta) => (VIA_HOSTING ? traerHosting({ f: 'cmadrid-ficha', q: ruta }) : traer(`${WEB}${ruta}`));
 
 export async function recoger() {
   // 1. Fichas que salen al buscar cada palabra (el buscador mezcla alguna destacada que no tiene nada que ver;
   //    se filtran después leyendo la ficha).
   const fichas = new Set();
   for (const q of BUSQUEDAS) {
-    const html = await traer(`${WEB}/actividades?qt=${encodeURIComponent(q)}`);
+    const html = await buscar(q);
     for (const m of html.matchAll(/href="(\/actividades\/20\d{2}\/[^"#?]+)"/g)) fichas.add(m[1]);
     await esperar(400);
   }
@@ -20,7 +23,7 @@ export async function recoger() {
   // 2. Cada ficha: el evento en JSON-LD, y solo si el texto de la página habla de un hackathon (o similar).
   const salida = [];
   for (const ruta of fichas) {
-    const html = await traer(`${WEB}${ruta}`);
+    const html = await ficha(ruta);
     await esperar(400);
     const [ld] = eventosLd(html);
     if (!ld) continue;
