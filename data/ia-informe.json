@@ -1,6 +1,17 @@
 {
- "total": 0.1398,
+ "total": 0.3146,
  "pasadas": [
+  {
+   "fecha": "2026-11-19T07:38:34.322Z",
+   "modelo": "claude-haiku-5-5",
+   "busquedas": 15,
+   "tokensEntrada": 195922,
+   "tokensSalida": 10323,
+   "coste": 0.1748,
+   "propuestos": 4,
+   "aceptados": 4,
+   "descartados": []
+  },
   {
    "fecha": "2026-11-18T15:54:50.680Z",
    "modelo": "claude-haiku-5-5",
