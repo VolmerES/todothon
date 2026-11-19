@@ -27,8 +27,8 @@ export async function recoger() {
       if (!enlace) continue;
       const nombre = limpiarHtml(enlace[2]);
       const anfitrion = limpiarHtml(b.match(/Hosted by (.*?)<\/div>/)?.[1] || '');
-      const empieza = b.match(/class="date_countdown">([^<]+)</)?.[1];
-      const dura = b.match(/class="date_duration">([^<]+)</)?.[1];
+      const empieza = b.match(/class="date_countdown"[^>]*>([^<]+)</)?.[1];
+      const dura = b.match(/class="date_duration"[^>]*>([^<]+)</)?.[1];
       const apuntados = Number((b.match(/<span class="number">([\d,]+)<\/span> joined/)?.[1] || '0').replace(/,/g, ''));
       const img = b.match(/srcset="[^"]*?, (\S+) 2x"/)?.[1] || b.match(/<img[^>]+src="([^"]+)"/)?.[1] || null;
       if (apuntados < MIN_APUNTADOS && !ESPANOL.test(`${nombre} ${anfitrion}`)) continue;

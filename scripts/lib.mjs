@@ -133,7 +133,12 @@ export function slug(texto) {
 }
 
 export function limpiarHtml(t = '') {
-  return t.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
+  const nombradas = { amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', nbsp: ' ' };
+  return t.replace(/<[^>]+>/g, ' ')
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&(amp|quot|apos|lt|gt|nbsp);/g, (_, n) => nombradas[n])
+    .replace(/\s+/g, ' ').trim();
 }
 
 // Evento en el formato común. Todo lo que no se sabe va a null.
