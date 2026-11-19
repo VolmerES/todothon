@@ -1,0 +1,113 @@
+/* Todothon · modo terminal.
+   La misma web, pero en una pantalla de fósforo: fondo casi negro, texto lima y letra monoespaciada.
+   Las pegatinas siguen ahí (torcidas, con cinta y sombra dura), solo que ahora la sombra es de neón.
+   Todo sale de redefinir las variables de global.css; aquí solo van los retoques que no son color. */
+
+:root[data-theme="terminal"] {
+  --fondo: #0B0E08;
+  --texto: #C6F432;
+  --tarjeta: #12160D;
+  --linea: #C6F432;
+  --sombra: #C6F432;
+  --rosa: #FF4FA3;
+  --lima: #C6F432;
+  --ambar: #FFB000;
+  --azul: #7FB2FF;
+  --sobre-color: #0B0E08;
+  --suave: #8FAE3A;
+  --caliente: #FF7DC0;
+  --cinta: rgba(255, 79, 163, 0.75);
+  --radio: 6px;
+  --radio-grande: 10px;
+  --letra: 'JetBrains Mono', ui-monospace, monospace;
+  color-scheme: dark;
+}
+
+/* Líneas de barrido muy suaves por encima de todo, como un monitor viejo. */
+:root[data-theme="terminal"] body::after {
+  content: ''; position: fixed; inset: 0; z-index: 2000; pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(198, 244, 50, .035) 0 1px, transparent 1px 3px);
+}
+:root[data-theme="terminal"] body { font-size: 16px; letter-spacing: -.2px; }
+:root[data-theme="terminal"] h1,
+:root[data-theme="terminal"] h2 { letter-spacing: -1px; text-shadow: 0 0 18px rgba(198, 244, 50, .35); }
+:root[data-theme="terminal"] ::selection { background: var(--rosa); color: var(--sobre-color); }
+
+/* Pegatinas de color (lima, ámbar, rosa): en papel el texto ya era negro, aquí hay que decírselo,
+   porque el texto general ahora es lima y desaparecería sobre ellas. */
+:root[data-theme="terminal"] :is(.resalte, .codigo, .limpiar, .importante, .mensaje, .donar__moneda,
+  .fuentes h2 span, .lista li[aria-selected="true"], .campo__borrar:hover, .buscador__boton:hover, .ficha-mapa__ver) {
+  color: var(--sobre-color) !important; text-shadow: none;
+}
+
+/* El «>» delante de los títulos grandes, como una línea de comandos. */
+:root[data-theme="terminal"] main h1::before { content: '> '; color: var(--rosa); }
+
+/* Los carteles de los eventos se quedan en color, pero un poco apagados hasta pasar por encima. */
+:root[data-theme="terminal"] .tarjeta img,
+:root[data-theme="terminal"] .ficha img { filter: saturate(.75) brightness(.9); transition: filter .2s ease; }
+:root[data-theme="terminal"] .tarjeta:hover img { filter: none; }
+
+/* El mapa, en oscuro. */
+:root[data-theme="terminal"] .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9) saturate(.6); }
+:root[data-theme="terminal"] .leaflet-container { background: var(--fondo); }
+
+/* El botón de cambiar de modo, al revés: ahora es una pegatina rosa para volver al papel. */
+:root[data-theme="terminal"] .boton-terminal { background: var(--rosa); transform: rotate(-3deg); }
+
+/* --- La consola ---------------------------------------------------------- */
+.consola { display: none; }
+:root[data-theme="terminal"] .consola {
+  display: block; position: fixed; z-index: 1500; left: 16px; right: 16px; bottom: 16px;
+  max-width: 760px; margin: 0 auto;
+  background: var(--fondo); color: var(--texto);
+  border: 3px solid var(--linea); border-radius: var(--radio-grande);
+  box-shadow: 6px 6px 0 var(--rosa); transform: rotate(-.4deg);
+  font-family: var(--mono); font-size: 15px;
+}
+/* Cinta adhesiva arriba: sigue siendo una pegatina. */
+.consola::before {
+  content: ''; position: absolute; top: -13px; left: 28px; width: 90px; height: 22px;
+  background: var(--cinta); transform: rotate(-4deg);
+}
+.consola__barra {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 6px 12px; border-bottom: 2px dashed var(--suave); font-size: 13px; color: var(--suave);
+}
+.consola__plegar {
+  background: none; border: 2px solid var(--suave); border-radius: 6px; color: var(--texto);
+  font: inherit; font-weight: 800; padding: 0 8px; cursor: pointer; min-height: 28px;
+}
+.consola__salida {
+  margin: 0; padding: 10px 14px 0; max-height: 34vh; overflow-y: auto;
+  white-space: pre-wrap; word-break: break-word; line-height: 1.5;
+}
+.consola__salida:empty { display: none; }
+.consola__salida .rosa { color: var(--rosa); }
+.consola__salida .suave { color: var(--suave); }
+.consola__salida a { color: var(--texto); text-decoration-color: var(--rosa); }
+.consola__linea { display: flex; align-items: center; gap: 8px; padding: 10px 14px; }
+.consola__prompt { color: var(--rosa); font-weight: 800; white-space: nowrap; }
+.consola__entrada {
+  flex: 1; min-width: 0; background: none; border: 0; outline: 0; padding: 4px 0;
+  color: var(--texto); font: inherit; font-weight: 600; caret-color: var(--rosa);
+}
+.consola[data-plegada] .consola__salida,
+.consola[data-plegada] .consola__linea { display: none; }
+/* Que la consola no tape el final de la página. */
+:root[data-theme="terminal"] .pie { padding-bottom: 180px; }
+@media (max-width: 520px) {
+  :root[data-theme="terminal"] .consola { left: 8px; right: 8px; bottom: 8px; font-size: 14px; }
+  .consola__prompt span { display: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-theme="terminal"] .consola { animation: entra .45s var(--rebote) both; }
+  /* Al cambiar de modo, la página entera «se reinicia» como un monitor. */
+  :root.cambiando-tema body { animation: encender .35s ease-out; }
+  @keyframes encender {
+    0% { filter: brightness(3) contrast(2); transform: scaleY(.02); }
+    60% { filter: brightness(1.4); transform: scaleY(1.02); }
+    100% { filter: none; transform: none; }
+  }
+}

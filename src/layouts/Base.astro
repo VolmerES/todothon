@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import '../styles/terminal.css';
+import Consola from '../components/Consola.astro';
 import { URL_DONAR, URL_TELEGRAM, URL_REPO, PALABRAS, AUTOR } from '../config';
 
 interface Props {
@@ -32,6 +34,8 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@600;800&display=swap" />
   <slot name="head" />
+  <!-- El modo elegido se aplica antes de pintar nada, para que no parpadee al cargar. -->
+  <script is:inline>try { if (localStorage.getItem('todothon-tema') === 'terminal') document.documentElement.dataset.theme = 'terminal'; } catch {}</script>
 </head>
 <body>
   <header class="cabecera">
@@ -46,7 +50,7 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
         <a href="/sobre">Sobre</a>
         <a href={URL_TELEGRAM} rel="noopener">Telegram</a>
         <a class="boton boton--negro" href="/publicar">Publica tu evento</a>
-        <button type="button" class="boton-terminal" data-terminal>&gt;_ modo terminal</button>
+        <button type="button" class="boton-terminal" data-terminal aria-pressed="false">&gt;_ modo terminal</button>
       </nav>
     </div>
   </header>
@@ -79,6 +83,7 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
   </footer>
 
   <div class="aviso" role="status" aria-live="polite" hidden data-aviso></div>
+  <Consola />
 
   <script>
     import { PALABRAS, PLURALES } from '../config';
@@ -115,7 +120,7 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
       }, 2200);
     }
 
-    // Modo terminal: el botón existe, pero de momento solo avisa de que está en construcción.
+    // Avisos flotantes. El modo terminal está en components/Consola.astro.
     const aviso = document.querySelector<HTMLElement>('[data-aviso]');
     let temporizador: ReturnType<typeof setTimeout> | undefined;
     function avisar(texto: string) {
@@ -125,12 +130,10 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
       clearTimeout(temporizador);
       temporizador = setTimeout(() => { aviso.hidden = true; }, 3500);
     }
-    document.querySelectorAll('[data-terminal]').forEach((b) =>
-      b.addEventListener('click', () => avisar('> modo terminal: en construcción. Vuelve pronto_')));
-    // Huevo de pascua: escribir «sudo» en cualquier buscador.
+    // Huevo de pascua: escribir «sudo» en cualquier buscador (fuera de la consola).
     document.addEventListener('input', (ev) => {
       const t = ev.target as HTMLInputElement;
-      if (t?.tagName === 'INPUT' && /sudo/i.test(t.value)) avisar('> sudo: permiso denegado. El modo terminal está en construcción_');
+      if (t?.tagName === 'INPUT' && !t.closest('[data-consola]') && /sudo/i.test(t.value)) avisar('> sudo: permiso denegado. Prueba el modo terminal de arriba_');
     });
   </script>
 </body>

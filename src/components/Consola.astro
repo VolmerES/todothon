@@ -1,0 +1,224 @@
+---
+// Consola del modo terminal: una línea de comandos pegada abajo para moverse por la web
+// (ls, cd, grep, next…). Solo se ve con data-theme="terminal"; los estilos están en styles/terminal.css.
+---
+<section class="consola" aria-label="Consola de Todothon" data-consola>
+  <div class="consola__barra">
+    <span>todothon — bash — escribe <strong>help</strong></span>
+    <button type="button" class="consola__plegar" data-plegar aria-expanded="true" aria-label="Plegar la consola">_</button>
+  </div>
+  <pre class="consola__salida" aria-live="polite" data-salida></pre>
+  <form class="consola__linea" data-form autocomplete="off">
+    <label class="consola__prompt" for="consola-entrada"><span>invitado@todothon</span>:~$</label>
+    <input id="consola-entrada" class="consola__entrada" data-entrada spellcheck="false" autocapitalize="off" enterkeyhint="go" placeholder="help" />
+  </form>
+</section>
+
+<script>
+  import { TIPOS } from '../config';
+
+  type Ev = { s: string; n: string; t: string; i: string; f: string; c: string; es: number; o: string };
+  type Datos = { eventos: Ev[]; paginas: { s: string; n: string }[]; guias: { s: string; n: string }[] };
+
+  const raiz = document.documentElement;
+  const consola = document.querySelector<HTMLElement>('[data-consola]')!;
+  const salida = consola.querySelector<HTMLElement>('[data-salida]')!;
+  const entrada = consola.querySelector<HTMLInputElement>('[data-entrada]')!;
+  const plegar = consola.querySelector<HTMLButtonElement>('[data-plegar]')!;
+  const botones = document.querySelectorAll<HTMLButtonElement>('[data-terminal]');
+
+  const guardar = (k: string, v: string | null) => { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
+  const leer = (k: string) => { try { return localStorage.getItem(k); } catch { return null; } };
+
+  // --- Cambiar de modo -----------------------------------------------------------------------------
+  function ponerTema(tema: 'terminal' | 'pegatina', animar = true) {
+    if (animar) {
+      raiz.classList.add('cambiando-tema');
+      setTimeout(() => raiz.classList.remove('cambiando-tema'), 400);
+    }
+    raiz.dataset.theme = tema;
+    guardar('todothon-tema', tema === 'terminal' ? 'terminal' : null);
+    botones.forEach((b) => {
+      b.textContent = tema === 'terminal' ? '✦ modo pegatina' : '>_ modo terminal';
+      b.setAttribute('aria-pressed', String(tema === 'terminal'));
+    });
+    if (tema === 'terminal') {
+      cargar();
+      if (!salida.textContent) bienvenida();
+    }
+  }
+  botones.forEach((b) => b.addEventListener('click', () => {
+    const terminal = raiz.dataset.theme !== 'terminal';
+    ponerTema(terminal ? 'terminal' : 'pegatina');
+    if (terminal) entrada.focus({ preventScroll: true });
+  }));
+  if (raiz.dataset.theme === 'terminal') ponerTema('terminal', false);
+
+  plegar.addEventListener('click', () => {
+    const plegada = consola.toggleAttribute('data-plegada');
+    plegar.textContent = plegada ? '▲' : '_';
+    plegar.setAttribute('aria-expanded', String(!plegada));
+    plegar.setAttribute('aria-label', plegada ? 'Abrir la consola' : 'Plegar la consola');
+    guardar('todothon-consola', plegada ? 'plegada' : null);
+  });
+  if (leer('todothon-consola') === 'plegada') plegar.click();
+
+  // --- Datos (solo se piden al entrar en modo terminal) --------------------------------------------
+  let datos: Datos | null = null;
+  let pidiendo: Promise<Datos> | null = null;
+  function cargar() {
+    pidiendo ??= fetch('/consola.json').then((r) => r.json()).then((d: Datos) => (datos = d));
+    return pidiendo;
+  }
+
+  // --- Escribir en la consola ----------------------------------------------------------------------
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]!));
+  function escribir(html: string) {
+    salida.insertAdjacentHTML('beforeend', html + '\n');
+    // Que no crezca sin fin: se quitan las líneas más antiguas.
+    while (salida.childNodes.length > 400) salida.firstChild?.remove();
+    salida.scrollTop = salida.scrollHeight;
+  }
+  const dia = new Intl.DateTimeFormat('es-ES', { day: '2-digit', month: 'short', timeZone: 'UTC' });
+  const fecha = (s: string) => dia.format(new Date(`${s}T00:00:00Z`)).replace('.', '');
+  const nombreTipo = (t: string) => (TIPOS[t]?.nombre || 'Evento').toLowerCase();
+
+  let ultimaLista: Ev[] = [];
+  function listar(lista: Ev[], max = 10) {
+    ultimaLista = lista.slice(0, max);
+    if (!lista.length) return escribir('<span class="suave">(nada por aquí)</span>');
+    ultimaLista.forEach((e, n) => escribir(
+      `<span class="rosa">[${n + 1}]</span> ${fecha(e.i)}  ${esc(e.c.padEnd(12).slice(0, 12))}  <a href="/evento/${e.s}">${esc(e.n.slice(0, 54))}</a> <span class="suave">${nombreTipo(e.t)}</span>`));
+    if (lista.length > max) escribir(`<span class="suave">… y ${lista.length - max} más. Escribe «open N» para abrir uno.</span>`);
+    else escribir('<span class="suave">Escribe «open N» para abrir uno.</span>');
+  }
+
+  function bienvenida() {
+    escribir('<span class="rosa">todothon</span> v1.0 — hackathones, game jams y CTF de España, en tu terminal.');
+    escribir('<span class="suave">Escribe «help» para ver los comandos. «exit» vuelve al modo pegatina.</span>');
+  }
+
+  // --- Comandos ------------------------------------------------------------------------------------
+  const sinTildes = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const ir = (ruta: string) => { escribir(`<span class="suave">→ ${esc(ruta)}</span>`); location.href = ruta; };
+
+  // Busca a qué página corresponde algo como «madrid», «ctf», «game jams» o «guias».
+  function destino(arg: string, d: Datos): string | null {
+    const a = sinTildes(arg).replace(/^\/+|\/+$/g, '').replace(/\s+/g, '-');
+    const fijas: Record<string, string> = {
+      '': '/', '~': '/', 'inicio': '/', 'home': '/', 'mapa': '/?vista=mapa#resultados', 'map': '/?vista=mapa#resultados',
+      'guias': '/guias', 'sobre': '/sobre', 'about': '/sobre', 'publicar': '/publicar',
+      'online': '/hackathones-online', 'espana': '/hackathones-espana', 'hackathones': '/hackathones-espana', 'hackathon': '/hackathones-espana',
+      'gamejam': '/game-jams', 'gamejams': '/game-jams', 'jams': '/game-jams', 'datathon': '/datathones', 'ideaton': '/ideatones', 'ideatones': '/ideatones',
+    };
+    if (a in fijas) return fijas[a];
+    const p = d.paginas.find((x) => x.s === a || x.s === `hackathones-${a}`);
+    if (p) return `/${p.s}`;
+    const g = d.guias.find((x) => x.s === a || x.s.includes(a));
+    if (g && a.length > 2) return `/guias/${g.s}`;
+    return null;
+  }
+
+  const AYUDA: [string, string][] = [
+    ['ls', 'cuántos hay de cada tipo'],
+    ['ls madrid | ls ctf', 'los próximos de una ciudad o un tipo'],
+    ['next', 'los próximos en España'],
+    ['grep <texto>', 'busca por nombre, ciudad u organizador'],
+    ['open <n>', 'abre el evento n de la última lista'],
+    ['cd <sitio>', 've a una página: madrid, game-jams, mapa, guias, ~'],
+    ['clear', 'limpia la pantalla'],
+    ['exit', 'vuelve al modo pegatina'],
+  ];
+
+  async function ejecutar(linea: string) {
+    escribir(`<span class="rosa">$</span> ${esc(linea)}`);
+    const [cmd = '', ...resto] = linea.trim().split(/\s+/);
+    const arg = resto.join(' ');
+    const c = sinTildes(cmd);
+    if (!c) return;
+
+    if (['help', 'ayuda', '?', 'man'].includes(c)) {
+      AYUDA.forEach(([k, v]) => escribir(`  <span class="rosa">${esc(k.padEnd(20))}</span>${v}`));
+      return;
+    }
+    if (c === 'clear' || c === 'cls') { salida.textContent = ''; return; }
+    if (['exit', 'quit', 'logout', 'pegatina'].includes(c)) { escribir('Volviendo al papel… ✦'); setTimeout(() => ponerTema('pegatina'), 300); return; }
+    if (c === 'whoami') return escribir('alguien buscando su próximo finde de código ☕');
+    if (c === 'date') return escribir(new Date().toLocaleString('es-ES', { dateStyle: 'full', timeStyle: 'short' }));
+    if (c === 'pwd') return escribir(location.pathname);
+    if (c === 'echo') return escribir(esc(arg));
+    if (c === 'sudo') return escribir('<span class="rosa">sudo:</span> buen intento. Aquí todos somos invitados 😄');
+    if (c === 'rm') return escribir('<span class="rosa">rm:</span> no, no, no. Los hackathones no se borran.');
+    if (c === 'cat' && /todothon|readme/i.test(arg)) return escribir('Todothon junta en un sitio todos los hackathones, datathones, ideatones, game jams y CTF de España. Sin anuncios, de la comunidad. → cd sobre');
+    if (c === 'history') return historial.forEach((h, n) => escribir(`  ${String(n + 1).padStart(3)}  ${esc(h)}`));
+
+    const d = datos || (escribir('<span class="suave">cargando…</span>'), await cargar());
+    const futuros = d.eventos.filter((e) => e.f >= new Date().toISOString().slice(0, 10));
+
+    if (c === 'ls' || c === 'dir') {
+      if (!arg) {
+        const cuenta: Record<string, number> = {};
+        futuros.forEach((e) => { cuenta[e.t] = (cuenta[e.t] || 0) + 1; });
+        Object.entries(cuenta).sort((a, b) => b[1] - a[1]).forEach(([t, n]) =>
+          escribir(`  <span class="rosa">${String(n).padStart(4)}</span>  ${esc(TIPOS[t]?.nombre || t)}`));
+        escribir(`  <span class="rosa">${String(futuros.filter((e) => e.es).length).padStart(4)}</span>  en España`);
+        return escribir('<span class="suave">Prueba «ls madrid», «ls ctf» o «ls online».</span>');
+      }
+      const a = sinTildes(arg);
+      const tipo = Object.entries(TIPOS).find(([k, v]) => sinTildes(v.nombre).replace(/\s/g, '').startsWith(a.replace(/\s/g, '').replace(/e?s$/, '')) || k === a);
+      if (a === 'online') return listar(futuros.filter((e) => e.c === 'Online'));
+      if (a === 'espana' || a === 'es') return listar(futuros.filter((e) => e.es));
+      if (tipo) return listar(futuros.filter((e) => e.t === tipo[0]));
+      return listar(futuros.filter((e) => sinTildes(e.c).includes(a)));
+    }
+    if (['next', 'proximos', 'top'].includes(c)) return listar(futuros.filter((e) => e.es), 8);
+    if (c === 'grep' || c === 'buscar' || c === 'find') {
+      if (!arg) return escribir('uso: grep <texto>');
+      const a = sinTildes(arg);
+      return listar(futuros.filter((e) => sinTildes(`${e.n} ${e.c} ${e.o} ${nombreTipo(e.t)}`).includes(a)));
+    }
+    if (c === 'open' || c === 'abrir') {
+      const e = ultimaLista[Number(arg) - 1];
+      return e ? ir(`/evento/${e.s}`) : escribir('uso: open <n> (después de un ls, next o grep)');
+    }
+    if (c === 'cd') {
+      if (arg === '..' || arg === '-') { escribir('<span class="suave">← atrás</span>'); return history.back(); }
+      const ruta = destino(arg, d);
+      return ruta ? ir(ruta) : escribir(`cd: ${esc(arg)}: no existe. Prueba «cd madrid», «cd ctf» o «cd guias».`);
+    }
+    // Si escriben directamente un sitio («madrid», «mapa»), se entiende como cd.
+    const ruta = destino(linea, d);
+    if (ruta) return ir(ruta);
+    escribir(`${esc(cmd)}: orden no encontrada. Escribe «help».`);
+  }
+
+  // --- Entrada: historial con ↑/↓ y autocompletar con Tab ------------------------------------------
+  const historial: string[] = [];
+  let posicion = 0;
+  const ORDENES = ['help', 'ls', 'next', 'grep', 'open', 'cd', 'clear', 'exit', 'whoami', 'date', 'history'];
+  consola.querySelector('[data-form]')!.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const linea = entrada.value;
+    entrada.value = '';
+    if (linea.trim()) { historial.push(linea); posicion = historial.length; }
+    ejecutar(linea);
+  });
+  entrada.addEventListener('keydown', (ev) => {
+    if (ev.key === 'ArrowUp' && posicion > 0) { ev.preventDefault(); entrada.value = historial[--posicion]; }
+    else if (ev.key === 'ArrowDown') { ev.preventDefault(); posicion = Math.min(historial.length, posicion + 1); entrada.value = historial[posicion] || ''; }
+    else if (ev.key === 'Tab' && entrada.value && !entrada.value.includes(' ')) {
+      const op = ORDENES.filter((o) => o.startsWith(entrada.value.toLowerCase()));
+      if (op.length === 1) { ev.preventDefault(); entrada.value = op[0] + ' '; }
+      else if (op.length > 1) { ev.preventDefault(); escribir(`<span class="suave">${op.join('  ')}</span>`); }
+    } else if (ev.key === 'l' && ev.ctrlKey) { ev.preventDefault(); salida.textContent = ''; }
+  });
+  // «/» desde cualquier sitio de la página lleva a la consola (si no estás escribiendo en otro campo).
+  document.addEventListener('keydown', (ev) => {
+    if (raiz.dataset.theme !== 'terminal' || ev.key !== '/' || ev.ctrlKey || ev.metaKey) return;
+    const t = ev.target as HTMLElement;
+    if (t.closest('input, textarea, select, [contenteditable]')) return;
+    ev.preventDefault();
+    if (consola.hasAttribute('data-plegada')) plegar.click();
+    entrada.focus();
+  });
+</script>

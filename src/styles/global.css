@@ -1,6 +1,6 @@
 /* Todothon · estilo pegatina.
-   Todos los colores y radios son variables: el modo terminal (en construcción)
-   solo tendrá que redefinirlas bajo [data-theme="terminal"]. */
+   Todos los colores y radios son variables: el modo terminal (styles/terminal.css)
+   las redefine bajo [data-theme="terminal"]. */
 
 :root {
   --rebote: cubic-bezier(.34, 1.56, .64, 1);
