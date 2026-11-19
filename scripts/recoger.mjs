@@ -17,11 +17,11 @@ import * as cuarentaydos from './fuentes/42.mjs';
 import * as gdg from './fuentes/gdg.mjs';
 import * as luma from './fuentes/luma.mjs';
 import * as meetup from './fuentes/meetup.mjs';
-import * as comunidadMadrid from './fuentes/comunidad-madrid.mjs';
+// comunidad-madrid.mjs funciona en local, pero la web bloquea a GitHub y al hosting: no va en la Action.
 import * as saraoia from './fuentes/saraoia.mjs';
 import * as hackathonhub from './fuentes/hackathonhub.mjs';
 
-const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos, gdg, luma, meetup, comunidadMadrid, saraoia, hackathonhub];
+const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos, gdg, luma, meetup, saraoia, hackathonhub];
 const RAIZ = new URL('..', import.meta.url);
 const ruta = (p) => new URL(p, RAIZ);
 

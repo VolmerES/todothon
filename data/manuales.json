@@ -28,5 +28,57 @@
   "descripcion": "Hackathon hospitalaria de dos días: equipos multidisciplinares trabajan con datos sanitarios sobre retos reales del nuevo modelo de consultas ambulatorias.",
   "fuente": "Todothon",
   "urlFuente": "https://www.vallhebron.com/innovacio/setmana-de-la-innovacio/hackathon-de-dades-de-vall-dhebron"
+ },
+ {
+  "id": "cm-ai-boost-inteligencia-artificial-impacto-real-empresas",
+  "nombre": "AI BOOST: Inteligencia Artificial con impacto real en las empresas",
+  "tipo": "hackathon",
+  "inicio": "2026-12-02",
+  "fin": "2026-12-03",
+  "plazo": null,
+  "modalidad": "presencial",
+  "ciudad": "Madrid",
+  "direccion": "COE Madrid, C/ Hacienda de Pavones nº350 (Moratalaz), 28030 Madrid",
+  "pais": "ES",
+  "lat": null,
+  "lon": null,
+  "url": "https://www.comunidad.madrid/actividades/2026/ai-boost-inteligencia-artificial-impacto-real-empresas",
+  "imagen": "https://www.comunidad.madrid/docs/styles/3x1_1272w_1x/public/assets/2024/11/06/hackaton2.jpg?VersionId=mkymF5.XR5c_mQRDqSdV4aawjI5RPn0D&amp;itok=L1fQoiGV",
+  "organizador": "Comunidad de Madrid",
+  "temas": [],
+  "premio": "500 €, 300 € y 200 € + mentoría",
+  "gratis": true,
+  "requisitos": [
+   "Para estudiantes universitarios"
+  ],
+  "descripcion": "La Inteligencia Artificial ofrece enormes posibilidades para mejorar la competitividad empresarial, pero muchas pymes y organizaciones encuentran dificultades para identificar aplicaciones concretas que generen resultados tangibles.",
+  "fuente": "Todothon",
+  "urlFuente": "https://www.comunidad.madrid/actividades/2026/ai-boost-inteligencia-artificial-impacto-real-empresas"
+ },
+ {
+  "id": "cm-cyberguard-innovacion-proteccion-digital-empresas",
+  "nombre": "CYBERGUARD: Innovación para la protección digital de las empresas",
+  "tipo": "hackathon",
+  "inicio": "2026-11-30",
+  "fin": "2026-12-01",
+  "plazo": null,
+  "modalidad": "presencial",
+  "ciudad": "Madrid",
+  "direccion": "COE Madrid, C/ Hacienda de Pavones nº350 (Moratalaz), 28030 Madrid",
+  "pais": "ES",
+  "lat": null,
+  "lon": null,
+  "url": "https://www.comunidad.madrid/actividades/2026/cyberguard-innovacion-proteccion-digital-empresas",
+  "imagen": "https://www.comunidad.madrid/docs/styles/3x1_1272w_1x/public/assets/2024/11/06/hackaton2.jpg?VersionId=mkymF5.XR5c_mQRDqSdV4aawjI5RPn0D&amp;itok=L1fQoiGV",
+  "organizador": "Comunidad de Madrid",
+  "temas": [],
+  "premio": "500 €, 300 € y 200 € + mentoría",
+  "gratis": true,
+  "requisitos": [
+   "Para estudiantes universitarios"
+  ],
+  "descripcion": "La digitalización abre nuevas oportunidades para empresas, pymes y startups, pero también aumenta su exposición a riesgos como el phishing, el fraude, el robo de credenciales, la suplantación de identidad o la pérdida de información. Muchas organizaciones no disponen de recursos especializados para prevenir estas amenazas o responder eficazmente ante ellas.",
+  "fuente": "Todothon",
+  "urlFuente": "https://www.comunidad.madrid/actividades/2026/cyberguard-innovacion-proteccion-digital-empresas"
  }
 ]
