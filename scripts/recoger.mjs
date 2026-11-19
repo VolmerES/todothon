@@ -14,8 +14,9 @@ import * as itch from './fuentes/itch.mjs';
 import * as eventbrite from './fuentes/eventbrite.mjs';
 import * as devevents from './fuentes/devevents.mjs';
 import * as cuarentaydos from './fuentes/42.mjs';
+import * as gdg from './fuentes/gdg.mjs';
 
-const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos];
+const FUENTES = [devpost, mlh, ctftime, itch, eventbrite, devevents, cuarentaydos, gdg];
 const RAIZ = new URL('..', import.meta.url);
 const ruta = (p) => new URL(p, RAIZ);
 
