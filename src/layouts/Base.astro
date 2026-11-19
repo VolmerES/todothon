@@ -42,6 +42,7 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
       <nav class="nav" aria-label="Principal">
         <a href="/#buscar">Explorar</a>
         <a href="/?vista=mapa#resultados">Mapa</a>
+        <a href="/guias">Guías</a>
         <a href="/sobre">Sobre</a>
         <a href={URL_TELEGRAM} rel="noopener">Telegram</a>
         <a class="boton boton--negro" href="/publicar">Publica tu evento</a>
@@ -59,6 +60,19 @@ const canonica = new URL(Astro.url.pathname, Astro.site);
       <p><span class="pie__marca">Todothon</span> · sin ánimo de lucro, de la comunidad.</p>
       <p><a href="/sobre">Sobre el proyecto</a> · <a href={URL_DONAR} rel="noopener">Invitar a 1 €</a> · <a href={URL_REPO} rel="noopener">Código en GitHub</a> · <a href="/publicar">Publicar un evento</a></p>
     </div>
+    <nav class="envoltorio pie__busquedas" aria-label="Buscar por tipo y ciudad">
+      <a href="/hackathones-espana">Hackathones en España</a>
+      <a href="/hackathones-online">Hackathones online</a>
+      <a href="/game-jams">Game jams</a>
+      <a href="/ctf">CTF</a>
+      <a href="/datathones">Datathones</a>
+      <a href="/hackathones-madrid">Madrid</a>
+      <a href="/hackathones-barcelona">Barcelona</a>
+      <a href="/hackathones-valencia">Valencia</a>
+      <a href="/hackathones-sevilla">Sevilla</a>
+      <a href="/hackathones-bilbao">Bilbao</a>
+      <a href="/guias">Guías</a>
+    </nav>
     <div class="envoltorio pie__firma">
       <p>Desarrollado con cariño (y pocas horas de sueño) por <a class="firma" href={AUTOR.url} rel="author noopener">{AUTOR.nombre}</a></p>
     </div>

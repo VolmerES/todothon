@@ -118,6 +118,9 @@ button, input, select { font: inherit; color: inherit; }
 .pie { margin-top: 72px; border-top: 3px solid var(--linea); padding: 28px 0 48px; font-size: 15px; color: var(--suave); }
 .pie__fila { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
 .pie a { color: var(--texto); }
+.pie__busquedas { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 18px; font-size: 14px; }
+.pie__busquedas a { color: var(--suave); }
+.pie__busquedas a:hover { color: var(--texto); }
 .pie__firma p { margin: 20px 0 0; font-weight: 600; color: var(--texto); }
 .firma {
   display: inline-block; text-decoration: none; font-weight: 800;

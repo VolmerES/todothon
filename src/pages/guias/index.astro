@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import { GUIAS } from '../../lib/guias';
+import { PAGINAS_TIPO } from '../../lib/paginas';
+---
+<Base titulo="Guías: hackathones, game jams y CTF para empezar · Todothon" descripcion="Qué es un hackathon, cómo preparar el primero, qué es un CTF o una game jam: guías cortas y sin rollo para animarte a ir a tu primer evento.">
+  <section class="envoltorio guias">
+    <p class="antetitulo">Guías</p>
+    <h1>Para animarte a ir <span class="resalte">al primero</span></h1>
+    <p class="entradilla">Guías cortas y sin rollo: qué es cada cosa, qué llevar y cómo no agobiarse.</p>
+    <ul class="lista">
+      {GUIAS.map((g, i) => (
+        <li style={`--giro: ${i % 2 ? 0.8 : -0.8}deg`}>
+          <a href={`/guias/${g.slug}`}>
+            <span class="emoji" aria-hidden="true">{g.emoji}</span>
+            <strong>{g.titulo}</strong>
+            <span>{g.descripcion}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <nav class="relacionadas" aria-label="Eventos por tipo">
+      <h2>Buscar eventos</h2>
+      <ul>{PAGINAS_TIPO.map((p) => <li><a href={`/${p.slug}`}>{p.titulo.replace(/ \d{4}.*$/, '')}</a></li>)}</ul>
+    </nav>
+  </section>
+</Base>
+
+<style>
+  .guias { padding-top: 32px; display: flex; flex-direction: column; gap: 18px; }
+  .antetitulo { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; }
+  .resalte {
+    display: inline-block; padding: 0 12px; background: var(--ambar); border: 3px solid var(--linea);
+    border-radius: var(--radio); box-shadow: 5px 5px 0 var(--sombra); transform: rotate(1.5deg);
+  }
+  .entradilla { margin: 0 0 10px; font-size: 20px; color: var(--suave); }
+  .lista { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 24px; }
+  .lista a {
+    height: 100%; display: flex; flex-direction: column; gap: 8px; padding: 22px; text-decoration: none; color: var(--texto);
+    background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande);
+    box-shadow: 6px 6px 0 var(--sombra); transform: rotate(var(--giro));
+    transition: transform .15s var(--rebote), box-shadow .15s ease;
+  }
+  .lista a:hover { transform: rotate(0) translate(-2px, -2px); box-shadow: 9px 9px 0 var(--sombra); }
+  .lista strong { font-size: 22px; line-height: 1.15; }
+  .lista span:last-child { color: var(--suave); }
+  .emoji { font-size: 34px; }
+  h2 { margin: 20px 0 0; font-size: 26px; }
+  .relacionadas ul { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .relacionadas a {
+    display: inline-block; padding: 4px 14px; border: 2px solid var(--linea); border-radius: 999px;
+    background: var(--tarjeta); color: var(--texto); text-decoration: none; font-weight: 700; font-size: 15px;
+  }
+  .relacionadas a:hover { background: var(--lima); color: var(--sobre-color); }
+</style>

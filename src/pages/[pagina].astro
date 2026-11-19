@@ -1,0 +1,115 @@
+---
+// Páginas por tipo y por ciudad: /game-jams, /ctf, /hackathones-madrid… (definidas en lib/paginas.ts).
+import Base from '../layouts/Base.astro';
+import Tarjeta from '../components/Tarjeta.astro';
+import { URL_TELEGRAM } from '../config';
+import { PAGINAS_TIPO, paginasCiudad, type Pagina } from '../lib/paginas';
+import { GUIAS } from '../lib/guias';
+import type { Evento } from '../lib/formato';
+import datos from '../data/eventos.json';
+
+const eventos = datos as unknown as Evento[];
+const porFecha = (a: Evento, b: Evento) => (a.inicio || '9').localeCompare(b.inicio || '9');
+
+export function getStaticPaths() {
+  const todos = datos as unknown as Evento[];
+  return [...PAGINAS_TIPO, ...paginasCiudad(todos)].map((p) => ({ params: { pagina: p.slug }, props: { slug: p.slug } }));
+}
+
+const { slug } = Astro.props as { slug: string };
+const ciudades = paginasCiudad(eventos);
+const p = [...PAGINAS_TIPO, ...ciudades].find((x) => x.slug === slug) as Pagina;
+const lista = eventos.filter(p.filtro).sort(porFecha);
+// Si no hay ninguno, que la página no se quede vacía: los online más cercanos.
+const alternativa = lista.length ? [] : eventos.filter((e) => e.modalidad === 'online').sort(porFecha).slice(0, 6);
+const guia = p.guia ? GUIAS.find((g) => g.slug === p.guia) : null;
+
+// Enlaces a las demás páginas: ayudan a quien busca y a que Google las encuentre todas.
+const otrasTipo = PAGINAS_TIPO.filter((x) => x.slug !== slug);
+const otrasCiudad = ciudades.filter((x) => x.slug !== slug);
+
+const ld = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: p.titulo,
+  itemListElement: lista.slice(0, 50).map((e, i) => ({
+    '@type': 'ListItem', position: i + 1, url: new URL(`/evento/${e.slug}`, Astro.site).href, name: e.nombre,
+  })),
+};
+const [antes, despues] = p.titulo.split(p.resalte);
+---
+<Base titulo={`${p.titulo} · Todothon`} descripcion={p.descripcion}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} />
+  <section class="envoltorio landing">
+    <a class="volver" href="/">← Todos los eventos</a>
+    <p class="antetitulo">{lista.length ? `${lista.length} ${lista.length === 1 ? 'evento' : 'eventos'} · actualizado cada día` : 'Actualizado cada día'}</p>
+    <h1>{antes}<span class="resalte">{p.resalte}</span>{despues}</h1>
+    <p class="entradilla">{p.intro}</p>
+
+    {lista.length > 0 ? (
+      <div class="rejilla">{lista.map((e) => <Tarjeta evento={e} />)}</div>
+    ) : (
+      <>
+        <div class="vacio">
+          <p><strong>Ahora mismo no hay ninguno anunciado.</strong> Suelen anunciarse con pocas semanas de margen: vuelve pronto o
+          síguenos en <a href={URL_TELEGRAM} rel="noopener">Telegram</a> y te avisamos. ¿Organizas uno? <a href="/publicar">Publícalo gratis</a>.</p>
+        </div>
+        {alternativa.length > 0 && (
+          <>
+            <h2>Mientras tanto, estos son online</h2>
+            <div class="rejilla">{alternativa.map((e) => <Tarjeta evento={e} />)}</div>
+          </>
+        )}
+      </>
+    )}
+
+    {guia && (
+      <a class="guia-enlace" href={`/guias/${guia.slug}`}>
+        <span class="guia-enlace__etiqueta">Guía</span>
+        <strong>{guia.titulo}</strong>
+        <span>{guia.descripcion}</span>
+      </a>
+    )}
+
+    <nav class="relacionadas" aria-label="Más búsquedas">
+      <h2>Más búsquedas</h2>
+      <ul>
+        {otrasTipo.map((x) => <li><a href={`/${x.slug}`}>{x.titulo.replace(/ \d{4}.*$/, '')}</a></li>)}
+        {otrasCiudad.map((x) => <li><a href={`/${x.slug}`}>En {x.resalte}</a></li>)}
+      </ul>
+    </nav>
+  </section>
+</Base>
+
+<style>
+  .landing { padding-top: 32px; display: flex; flex-direction: column; gap: 18px; }
+  .volver { font-weight: 700; color: var(--texto); }
+  .antetitulo { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; max-width: 900px; }
+  .resalte {
+    display: inline-block; padding: 0 12px; background: var(--lima); border: 3px solid var(--linea);
+    border-radius: var(--radio); box-shadow: 5px 5px 0 var(--sombra); transform: rotate(-1.5deg);
+  }
+  .entradilla { margin: 0 0 14px; font-size: 20px; color: var(--suave); max-width: 720px; }
+  h2 { margin: 18px 0 0; font-size: 26px; letter-spacing: -.5px; }
+  .rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 32px 28px; }
+  .vacio {
+    padding: 20px 22px; background: var(--tarjeta); border: 3px solid var(--linea);
+    border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra); max-width: 760px;
+  }
+  .vacio p { margin: 0; }
+  .vacio a { color: var(--texto); font-weight: 700; }
+  .guia-enlace {
+    margin-top: 24px; display: flex; flex-direction: column; gap: 4px; max-width: 760px; padding: 20px 22px;
+    background: var(--ambar); color: var(--sobre-color); text-decoration: none; border: 3px solid var(--linea);
+    border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra); transform: rotate(-.5deg);
+    transition: transform .15s var(--rebote), box-shadow .15s ease;
+  }
+  .guia-enlace:hover { transform: rotate(0) translate(-2px, -2px); box-shadow: 8px 8px 0 var(--sombra); }
+  .guia-enlace__etiqueta { font-family: var(--mono); font-size: 13px; font-weight: 800; text-transform: uppercase; }
+  .guia-enlace strong { font-size: 22px; line-height: 1.15; }
+  .relacionadas ul { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .relacionadas a {
+    display: inline-block; padding: 4px 14px; border: 2px solid var(--linea); border-radius: 999px;
+    background: var(--tarjeta); color: var(--texto); text-decoration: none; font-weight: 700; font-size: 15px;
+  }
+  .relacionadas a:hover { background: var(--lima); color: var(--sobre-color); }
+</style>
