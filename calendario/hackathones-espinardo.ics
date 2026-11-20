@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Hackathones en Espinardo
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-11-20-mjam26@todothon.es
+DTSTAMP:20261120T074024Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:MJAM26
+LOCATION:CEEIM\, CEEIM\, Campus Universitario de Espinardo 7\, Espinardo
+DESCRIPTION:https://itch.io/jam/mjam26\n\nMás información: https://todoth
+ on.es/evento/mjam26-2026
+URL:https://itch.io/jam/mjam26
+END:VEVENT
+END:VCALENDAR

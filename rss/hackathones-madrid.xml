@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en Madrid</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-madrid.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en Madrid: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>IX Game Jam Cultura Abierta 2026</title>
+    <link>https://todothon.es/evento/ix-game-jam-cultura-abierta-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ix-game-jam-cultura-abierta-2026</guid>
+    <description>20–22 nov 2026 · Madrid · DEV y Acción Cultural Española, con la UCM</description>
+  </item>
+  <item>
+    <title>IndesIAhack 2026</title>
+    <link>https://todothon.es/evento/indesiahack-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/indesiahack-2026</guid>
+    <description>25–27 nov 2026 · Madrid · IndesIA con la Universidad Politécnica de Madrid</description>
+  </item>
+  <item>
+    <title>Hackaton universidades GCloud</title>
+    <link>https://todothon.es/evento/hackaton-universidades-gcloud-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackaton-universidades-gcloud-2026</guid>
+    <description>25 nov 2026 · Madrid · Devoteam</description>
+  </item>
+  <item>
+    <title>[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026</title>
+    <link>https://todothon.es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026</guid>
+    <description>27–29 nov 2026 · Madrid · 42 Madrid</description>
+  </item>
+  <item>
+    <title>MERGE Hackathon Madrid</title>
+    <link>https://todothon.es/evento/merge-hackathon-madrid-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/merge-hackathon-madrid-2026</guid>
+    <description>27–29 nov 2026 · Madrid · MERGE</description>
+  </item>
+  <item>
+    <title>Claude Community × HappyRobot Hackathon — Agents coaching agents</title>
+    <link>https://todothon.es/evento/claude-community-happyrobot-hackathon-agents-coaching-agents-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/claude-community-happyrobot-hackathon-agents-coaching-agents-2026</guid>
+    <description>28 nov 2026 · Madrid · Claude Community Events y HappyRobot</description>
+  </item>
+  <item>
+    <title>CYBERGUARD: Innovación para la protección digital de las empresas</title>
+    <link>https://todothon.es/evento/cyberguard-innovacion-para-la-proteccion-digital-de-las-empresas-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/cyberguard-innovacion-para-la-proteccion-digital-de-las-empresas-2026</guid>
+    <description>30 nov – 1 dic 2026 · Madrid · Comunidad de Madrid</description>
+  </item>
+  <item>
+    <title>AI BOOST: Inteligencia Artificial con impacto real en las empresas</title>
+    <link>https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</guid>
+    <description>2–3 dic 2026 · Madrid · Comunidad de Madrid</description>
+  </item>
+  <item>
+    <title>Claude Community × Nova Hackathon — Reinventing Networking</title>
+    <link>https://todothon.es/evento/claude-community-nova-hackathon-reinventing-networking-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/claude-community-nova-hackathon-reinventing-networking-2026</guid>
+    <description>11–13 dic 2026 · Madrid · Claude Community Events y Nova</description>
+  </item>
+  <item>
+    <title>Hackathon Salud 2026</title>
+    <link>https://todothon.es/evento/hackathon-salud-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-salud-2026</guid>
+    <description>15 dic 2026 · Madrid</description>
+  </item>
+  <item>
+    <title>Tech Riders League | Hackathon Final</title>
+    <link>https://todothon.es/evento/tech-riders-league-hackathon-final-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/tech-riders-league-hackathon-final-2027</guid>
+    <description>8 may 2027 · Madrid · Tech Riders</description>
+  </item>
+</channel>
+</rss>

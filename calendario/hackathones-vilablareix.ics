@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Hackathones en Vilablareix
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-12-12-hackday-d-ia-local@todothon.es
+DTSTAMP:20261120T074024Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Hackday d'IA Local
+LOCATION:TecnoAteneu Vilablareix\, TecnoAteneu Vilablareix\, Av. de Lluís 
+ Companys 61\, Vilablareix
+DESCRIPTION:https://luma.com/aub7iofx\n\nMás información: https://todotho
+ n.es/evento/hackday-d-ia-local-2026
+URL:https://luma.com/aub7iofx
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CodeTheCure Winter Hackathon
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32062@todothon.es
+DTSTAMP:20261120T074024Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20270107
+SUMMARY:CodeTheCure Winter Hackathon
+LOCATION:Online
+DESCRIPTION:https://codethecure-winter-hackathon.devpost.com/\n\nMás infor
+ mación: https://todothon.es/evento/codethecure-winter-hackathon-2026
+URL:https://codethecure-winter-hackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR

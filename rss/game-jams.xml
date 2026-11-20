@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Game jams</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/game-jams.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Game jams: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>Arcjam 2026</title>
+    <link>https://todothon.es/evento/arcjam-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/arcjam-2026</guid>
+    <description>20–23 nov 2026 · Online · Arcweave</description>
+  </item>
+  <item>
+    <title>GMT Jam #1 [$300 multi-track prize pool]</title>
+    <link>https://todothon.es/evento/gmt-jam-1-300-multi-track-prize-pool-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gmt-jam-1-300-multi-track-prize-pool-2026</guid>
+    <description>20–29 nov 2026 · Online · Gaming Mantralaya , Game Developers Oslo</description>
+  </item>
+  <item>
+    <title>IX Game Jam Cultura Abierta 2026</title>
+    <link>https://todothon.es/evento/ix-game-jam-cultura-abierta-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ix-game-jam-cultura-abierta-2026</guid>
+    <description>20–22 nov 2026 · Madrid · DEV y Acción Cultural Española, con la UCM</description>
+  </item>
+  <item>
+    <title>MJAM26</title>
+    <link>https://todothon.es/evento/mjam26-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/mjam26-2026</guid>
+    <description>20–22 nov 2026 · Espinardo · Xaviscript</description>
+  </item>
+  <item>
+    <title>Harvest</title>
+    <link>https://todothon.es/evento/harvest-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/harvest-2026</guid>
+    <description>22 nov – 4 dic 2026 · Online · augie , Hack Club</description>
+  </item>
+  <item>
+    <title>Pixel Forge MEGA JAM | $30k Prizes + Cash !</title>
+    <link>https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</guid>
+    <description>28 nov – 8 dic 2026 · Online · PIXEL FORGE</description>
+  </item>
+  <item>
+    <title>3x3x3 Jam</title>
+    <link>https://todothon.es/evento/3x3x3-jam-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/3x3x3-jam-2026</guid>
+    <description>30 nov – 3 dic 2026 · Online · Macrow</description>
+  </item>
+  <item>
+    <title>RPG LATAM JAM 2026</title>
+    <link>https://todothon.es/evento/rpg-latam-jam-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/rpg-latam-jam-2026</guid>
+    <description>1–30 dic 2026 · Online · manchae , M.A. GUAX , Bruno Prosaiko , Lucas Rolim</description>
+  </item>
+  <item>
+    <title>The Eye Jam III: Folk Horror</title>
+    <link>https://todothon.es/evento/the-eye-jam-iii-folk-horror-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/the-eye-jam-iii-folk-horror-2026</guid>
+    <description>3–13 dic 2026 · Online · SeeOne</description>
+  </item>
+  <item>
+    <title>PROCJAM - The Procedural Generation Jam</title>
+    <link>https://todothon.es/evento/procjam-the-procedural-generation-jam-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/procjam-the-procedural-generation-jam-2026</guid>
+    <description>4–13 dic 2026 · Online · PROCJAM</description>
+  </item>
+  <item>
+    <title>GameDev.tv Holiday Jam 2026</title>
+    <link>https://todothon.es/evento/gamedev-tv-holiday-jam-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gamedev-tv-holiday-jam-2026</guid>
+    <description>4–14 dic 2026 · Online · gamedevtv</description>
+  </item>
+  <item>
+    <title>The MFG Gambler&apos;s Jam</title>
+    <link>https://todothon.es/evento/the-mfg-gambler-s-jam-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/the-mfg-gambler-s-jam-2026</guid>
+    <description>5–12 dic 2026 · Online · augie , RetroCrow , Hack Club</description>
+  </item>
+  <item>
+    <title>Godot Wild Jam #100</title>
+    <link>https://todothon.es/evento/godot-wild-jam-100-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/godot-wild-jam-100-2026</guid>
+    <description>11–20 dic 2026 · Online · Godot Wild Jam</description>
+  </item>
+  <item>
+    <title>Global Game Jam 2027 (sedes en España)</title>
+    <link>https://todothon.es/evento/global-game-jam-2027-sedes-en-espana</link>
+    <guid isPermaLink="true">https://todothon.es/evento/global-game-jam-2027-sedes-en-espana</guid>
+    <description>25–31 ene 2027 · Lugar por confirmar · Global Game Jam, Inc.</description>
+  </item>
+  <item>
+    <title>Gamejam Alicante 2027</title>
+    <link>https://todothon.es/evento/gamejam-alicante-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gamejam-alicante-2027</guid>
+    <description>29–31 ene 2027 · San Vicente del Raspeig</description>
+  </item>
+  <item>
+    <title>Brackeys Game Jam 2027.1</title>
+    <link>https://todothon.es/evento/brackeys-game-jam-2027-1</link>
+    <guid isPermaLink="true">https://todothon.es/evento/brackeys-game-jam-2027-1</guid>
+    <description>14–21 feb 2027 · Online · Brackeys , Duxez , AquaXV , Yasahiro</description>
+  </item>
+  <item>
+    <title>GMTK Game Jam 2027</title>
+    <link>https://todothon.es/evento/gmtk-game-jam-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gmtk-game-jam-2027</guid>
+    <description>11–15 ago 2027 · Online · Game Maker&apos;s Toolkit</description>
+  </item>
+  <item>
+    <title>GBJAM 15</title>
+    <link>https://todothon.es/evento/gbjam-15-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gbjam-15-2027</guid>
+    <description>10–20 sept 2027 · Online · Polyducks</description>
+  </item>
+</channel>
+</rss>

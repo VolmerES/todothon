@@ -1,0 +1,447 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Hackathones de IA
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-30740@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20270116
+SUMMARY:Code for Humanity
+LOCATION:Online
+DESCRIPTION:https://code-for-humanity.devpost.com/\n\nMás información: ht
+ tps://todothon.es/evento/code-for-humanity-2026
+URL:https://code-for-humanity.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-30764@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20270115
+SUMMARY:Syntax Summit
+LOCATION:Online
+DESCRIPTION:https://syntax-summit.devpost.com/\n\nMás información: https:
+ //todothon.es/evento/syntax-summit-2026
+URL:https://syntax-summit.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31737@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261126
+SUMMARY:HackWithAditya
+LOCATION:Online
+DESCRIPTION:https://hackwithaditya.devpost.com/\n\nMás información: https
+ ://todothon.es/evento/hackwithaditya-2026
+URL:https://hackwithaditya.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-30789@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261222
+SUMMARY:Arbiter Hacks V1
+LOCATION:Online
+DESCRIPTION:https://arbiter-hacks-v1.devpost.com/\n\nMás información: htt
+ ps://todothon.es/evento/arbiter-hacks-v1-2026
+URL:https://arbiter-hacks-v1.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-26475@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261121
+SUMMARY:Dakar Bitcoin Hack by BTrust
+LOCATION:Online
+DESCRIPTION:https://dakar-bitcoin-hack-2026.devpost.com/\n\nMás informaci
+ ón: https://todothon.es/evento/dakar-bitcoin-hack-by-btrust-2026
+URL:https://dakar-bitcoin-hack-2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31572@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261223
+SUMMARY:Codegeist 2026: Build with context. Ship with confidence.
+LOCATION:Online
+DESCRIPTION:https://codegeist2026.devpost.com/\n\nMás información: https:
+ //todothon.es/evento/codegeist-2026-build-with-context-ship-with-confidenc
+ e
+URL:https://codegeist2026.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31907@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261128
+SUMMARY:Build Your First AI App
+LOCATION:Online
+DESCRIPTION:https://build-your-first-ai-app.devpost.com/\n\nMás informaci
+ ón: https://todothon.es/evento/build-your-first-ai-app-2026
+URL:https://build-your-first-ai-app.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31667@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261205
+SUMMARY:Kiroween 2026
+LOCATION:Online
+DESCRIPTION:https://kiroween.devpost.com/\n\nMás información: https://tod
+ othon.es/evento/kiroween-2026
+URL:https://kiroween.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31787@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261227
+SUMMARY:GenHacks
+LOCATION:Online
+DESCRIPTION:https://genhacks-open.devpost.com/\n\nMás información: https:
+ //todothon.es/evento/genhacks-2026
+URL:https://genhacks-open.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31960@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261203
+SUMMARY:ML Empowerment Build Challenge 4.0 - Prizes and Certificates for EV
+ ERYONE
+LOCATION:Online
+DESCRIPTION:https://ml-build-challenge-4.devpost.com/\n\nMás información:
+  https://todothon.es/evento/ml-empowerment-build-challenge-4-0-prizes-and-
+ certificates-for-everyon
+URL:https://ml-build-challenge-4.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31083@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261216
+SUMMARY:QNX Global Hackathon
+LOCATION:Online
+DESCRIPTION:https://qnx.devpost.com/\n\nMás información: https://todothon
+ .es/evento/qnx-global-hackathon-2026
+URL:https://qnx.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31642@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261212
+SUMMARY:AWS MSP AI Hackathon
+LOCATION:Online
+DESCRIPTION:https://aws-agentic-msp.devpost.com/\n\nMás información: http
+ s://todothon.es/evento/aws-msp-ai-hackathon-2026
+URL:https://aws-agentic-msp.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31480@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261219
+SUMMARY:AI Agents for Founders Challenge — HETIC 2026
+LOCATION:Online
+DESCRIPTION:https://ai-agents-founders-hetic-26.devpost.com/\n\nMás inform
+ ación: https://todothon.es/evento/ai-agents-for-founders-challenge-hetic-
+ 2026
+URL:https://ai-agents-founders-hetic-26.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32009@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261205
+SUMMARY:AI for Medicine: A Global Student Hackathon on the Future of Care
+LOCATION:Online
+DESCRIPTION:https://ai-for-medicine.devpost.com/\n\nMás información: http
+ s://todothon.es/evento/ai-for-medicine-a-global-student-hackathon-on-the-f
+ uture-of-care-2026
+URL:https://ai-for-medicine.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31994@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261211
+SUMMARY:AI OpenBuild
+LOCATION:Online
+DESCRIPTION:https://ai-openbuild.devpost.com/\n\nMás información: https:/
+ /todothon.es/evento/ai-openbuild-2026
+URL:https://ai-openbuild.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31972@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261208
+SUMMARY:SLAY HACKS
+LOCATION:Online
+DESCRIPTION:https://slayy-hacks.devpost.com/\n\nMás información: https://
+ todothon.es/evento/slay-hacks-2026
+URL:https://slayy-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31973@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261208
+SUMMARY:Deck the Pixels
+LOCATION:Online
+DESCRIPTION:https://deckthepixels.devpost.com/\n\nMás información: https:
+ //todothon.es/evento/deck-the-pixels-2026
+URL:https://deckthepixels.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32079@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261208
+SUMMARY:Learn AR with SPECS
+LOCATION:Online
+DESCRIPTION:https://learn-specs.devpost.com/\n\nMás información: https://
+ todothon.es/evento/learn-ar-with-specs-2026
+URL:https://learn-specs.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31808@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261201
+SUMMARY:#BuildHybridAI 2026
+LOCATION:Online
+DESCRIPTION:https://firebasehybridaihackathon.devpost.com/\n\nMás informac
+ ión: https://todothon.es/evento/buildhybridai-2026
+URL:https://firebasehybridaihackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32026@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Open Agentic Web Challenge
+LOCATION:Online
+DESCRIPTION:https://cognizant-agenticweb.devpost.com/\n\nMás información:
+  https://todothon.es/evento/open-agentic-web-challenge-2026
+URL:https://cognizant-agenticweb.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32024@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261212
+SUMMARY:Relate by Neo4j Hackathon
+LOCATION:Online
+DESCRIPTION:https://relate.devpost.com/\n\nMás información: https://todot
+ hon.es/evento/relate-by-neo4j-hackathon-2026
+URL:https://relate.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-30456@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261122
+SUMMARY:Bridge The Gap Hacks
+LOCATION:Online
+DESCRIPTION:https://sq-hacks.devpost.com/\n\nMás información: https://tod
+ othon.es/evento/bridge-the-gap-hacks-2026
+URL:https://sq-hacks.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31549@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261123
+SUMMARY:KUK VIRTUAL HACKATHON
+LOCATION:Online
+DESCRIPTION:https://kuk-virtual-hackathon.devpost.com/\n\nMás información
+ : https://todothon.es/evento/kuk-virtual-hackathon-2026
+URL:https://kuk-virtual-hackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31571@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20270113
+SUMMARY:Cloud9 x JetBrains: Sky's The Limit Hackathon 2026
+LOCATION:Online
+DESCRIPTION:https://cloud9.devpost.com/\n\nMás información: https://todot
+ hon.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026
+URL:https://cloud9.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32158@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:AI@UCF Semester Sprint
+LOCATION:Online
+DESCRIPTION:https://semester-sprint.devpost.com/\n\nMás información: http
+ s://todothon.es/evento/ai-ucf-semester-sprint-2026
+URL:https://semester-sprint.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31886@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20270202
+SUMMARY:Build with AI - Pico Space Program
+LOCATION:Online
+DESCRIPTION:https://pico-space-program.devpost.com/\n\nMás información: h
+ ttps://todothon.es/evento/build-with-ai-pico-space-program-2026
+URL:https://pico-space-program.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31775@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261125
+SUMMARY:OBSCURA: Satellite AI Research Challenge
+LOCATION:Online
+DESCRIPTION:https://obscura.devpost.com/\n\nMás información: https://todo
+ thon.es/evento/obscura-satellite-ai-research-challenge-2026
+URL:https://obscura.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31826@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261129
+SUMMARY:Global AI Builder’s Challenge
+LOCATION:Online
+DESCRIPTION:https://global-ai-builders-challenge.devpost.com/\n\nMás infor
+ mación: https://todothon.es/evento/global-ai-builder-s-challenge-2026
+URL:https://global-ai-builders-challenge.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31924@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20270201
+SUMMARY:HACKRISE'26 
+LOCATION:Online
+DESCRIPTION:https://hackrise-26.devpost.com/\n\nMás información: https://
+ todothon.es/evento/hackrise-26-2026
+URL:https://hackrise-26.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:cm-ai-boost-inteligencia-artificial-impacto-real-empresas@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261204
+SUMMARY:AI BOOST: Inteligencia Artificial con impacto real en las empresas
+LOCATION:COE Madrid\, C/ Hacienda de Pavones nº350 (Moratalaz)\, 28030 Mad
+ rid
+DESCRIPTION:https://www.comunidad.madrid/actividades/2026/ai-boost-intelige
+ ncia-artificial-impacto-real-empresas\n\nMás información: https://todoth
+ on.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empr
+ esas-2026
+URL:https://www.comunidad.madrid/actividades/2026/ai-boost-inteligencia-art
+ ificial-impacto-real-empresas
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32093@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261212
+SUMMARY:FRONTIER//26
+LOCATION:Online
+DESCRIPTION:https://frontier26.devpost.com/\n\nMás información: https://t
+ odothon.es/evento/frontier-26-2026
+URL:https://frontier26.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31297@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261213
+SUMMARY:BUILD 4 ALL
+LOCATION:Online
+DESCRIPTION:https://build4all.devpost.com/\n\nMás información: https://to
+ dothon.es/evento/build-4-all-2026
+URL:https://build4all.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32132@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261221
+SUMMARY:OVO Hack 48
+LOCATION:Online
+DESCRIPTION:https://ovo-hack-48.devpost.com/\n\nMás información: https://
+ todothon.es/evento/ovo-hack-48-2026
+URL:https://ovo-hack-48.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31222@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270111
+SUMMARY:checkpoint 1 — games for good
+LOCATION:Online
+DESCRIPTION:https://checkpoint-1.devpost.com/\n\nMás información: https:/
+ /todothon.es/evento/checkpoint-1-games-for-good-2027
+URL:https://checkpoint-1.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31882@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270112
+SUMMARY:CSAIC Hack-AI-Thon
+LOCATION:Online
+DESCRIPTION:https://csaic-hackaithon.devpost.com/\n\nMás información: htt
+ ps://todothon.es/evento/csaic-hack-ai-thon-2027
+URL:https://csaic-hackaithon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31827@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270214
+SUMMARY:AI for Human Impact: A Global BASIS Hackathon
+LOCATION:Online
+DESCRIPTION:https://basisglobalhackathon.devpost.com/\n\nMás información:
+  https://todothon.es/evento/ai-for-human-impact-a-global-basis-hackathon-2
+ 027
+URL:https://basisglobalhackathon.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-31148@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270404
+SUMMARY:KeanUHackThis 2027
+LOCATION:Online
+DESCRIPTION:https://keauhackthis-2027.devpost.com/\n\nMás información: ht
+ tps://todothon.es/evento/keanuhackthis-2027
+URL:https://keauhackthis-2027.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-32149@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270412
+SUMMARY:Knightlytics
+LOCATION:Online
+DESCRIPTION:https://knightlytics.devpost.com/\n\nMás información: https:/
+ /todothon.es/evento/knightlytics-2027
+URL:https://knightlytics.devpost.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:devpost-29135@todothon.es
+DTSTAMP:20261120T074023Z
+DTSTART;VALUE=DATE:20280312
+DTEND;VALUE=DATE:20280328
+SUMMARY:Brewing Codes 4.0
+LOCATION:Online
+DESCRIPTION:https://brewing-codes-4-0.devpost.com/\n\nMás información: ht
+ tps://todothon.es/evento/brewing-codes-4-0-2028
+URL:https://brewing-codes-4-0.devpost.com/
+END:VEVENT
+END:VCALENDAR

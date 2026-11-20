@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en Langreo</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-langreo.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en Langreo: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>Hackathon Lláscares INNOVABES 2026</title>
+    <link>https://todothon.es/evento/hackathon-llascares-innovabes-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-llascares-innovabes-2026</guid>
+    <description>27 nov 2026 · Langreo · ASATA</description>
+  </item>
+</channel>
+</rss>

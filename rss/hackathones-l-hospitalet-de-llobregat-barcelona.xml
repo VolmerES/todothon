@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en L&apos;Hospitalet de Llobregat (Barcelona)</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-l-hospitalet-de-llobregat-barcelona.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en L&apos;Hospitalet de Llobregat (Barcelona): hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>ISE Hackathon 2027</title>
+    <link>https://todothon.es/evento/ise-hackathon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ise-hackathon-2027</guid>
+    <description>2 feb 2027 · L&apos;Hospitalet de Llobregat (Barcelona) · ISE (Integrated Systems Europe) con universidades participantes como ESADE, UPF y UPC</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Hackathones en Bilbao
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-11-20-physical-ai-hackathon-bilbao@todothon.es
+DTSTAMP:20261120T074024Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Physical AI Hackathon Bilbao
+LOCATION:La Perrera Espazioa\, La Perrera Espazioa\, Bilbao
+DESCRIPTION:https://link.centralize.es/events/event-details/6ad217b8421be5f
+ 9ee8a9f5e\n\nMás información: https://todothon.es/evento/physical-ai-hac
+ kathon-bilbao-2026
+URL:https://link.centralize.es/events/event-details/6ad217b8421be5f9ee8a9f5
+ e
+END:VEVENT
+END:VCALENDAR

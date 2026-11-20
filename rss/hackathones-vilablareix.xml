@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en Vilablareix</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-vilablareix.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en Vilablareix: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>Hackday d&apos;IA Local</title>
+    <link>https://todothon.es/evento/hackday-d-ia-local-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackday-d-ia-local-2026</guid>
+    <description>12 dic 2026 · Vilablareix · GeeksCAT</description>
+  </item>
+</channel>
+</rss>

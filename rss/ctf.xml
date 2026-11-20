@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · CTF</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/ctf.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · CTF: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>EyesOpenCTF 7th edition</title>
+    <link>https://todothon.es/evento/eyesopenctf-7th-edition-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/eyesopenctf-7th-edition-2026</guid>
+    <description>20–22 nov 2026 · Online · EyesOpen_Security</description>
+  </item>
+  <item>
+    <title>GlacierCTF 2026</title>
+    <link>https://todothon.es/evento/glacierctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/glacierctf-2026</guid>
+    <description>20–21 nov 2026 · Online · LosFuzzys</description>
+  </item>
+  <item>
+    <title>WolvCTF 2026</title>
+    <link>https://todothon.es/evento/wolvctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/wolvctf-2026</guid>
+    <description>20–22 nov 2026 · Online · w01verines</description>
+  </item>
+  <item>
+    <title>Outback Overflow</title>
+    <link>https://todothon.es/evento/outback-overflow-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/outback-overflow-2026</guid>
+    <description>20–21 nov 2026 · Online · HSCC</description>
+  </item>
+  <item>
+    <title>Crate-CTF 2026</title>
+    <link>https://todothon.es/evento/crate-ctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/crate-ctf-2026</guid>
+    <description>21 nov 2026 · Online · Crate-CTF</description>
+  </item>
+  <item>
+    <title>RedReaper CTF</title>
+    <link>https://todothon.es/evento/redreaper-ctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/redreaper-ctf-2026</guid>
+    <description>27 nov 2026 · Online · RedReaper</description>
+  </item>
+  <item>
+    <title>N0v4CTF 2026</title>
+    <link>https://todothon.es/evento/n0v4ctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/n0v4ctf-2026</guid>
+    <description>27–28 nov 2026 · Online · NovaRun</description>
+  </item>
+  <item>
+    <title>LakeCTF Quals 26-27</title>
+    <link>https://todothon.es/evento/lakectf-quals-26-27-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/lakectf-quals-26-27-2026</guid>
+    <description>27–28 nov 2026 · Online · polygl0ts</description>
+  </item>
+  <item>
+    <title>L3m0n CTF 2026 (Quals)</title>
+    <link>https://todothon.es/evento/l3m0n-ctf-2026-quals</link>
+    <guid isPermaLink="true">https://todothon.es/evento/l3m0n-ctf-2026-quals</guid>
+    <description>28 nov 2026 · Online · L3m0n CTF</description>
+  </item>
+  <item>
+    <title>Black Hat India 2026 Official CTF</title>
+    <link>https://todothon.es/evento/black-hat-india-2026-official-ctf</link>
+    <guid isPermaLink="true">https://todothon.es/evento/black-hat-india-2026-official-ctf</guid>
+    <description>28–29 nov 2026 · Online · CTF7</description>
+  </item>
+  <item>
+    <title>TUCTF 2026</title>
+    <link>https://todothon.es/evento/tuctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/tuctf-2026</guid>
+    <description>4–6 dic 2026 · Online · ascii overflow</description>
+  </item>
+  <item>
+    <title>x3CTF 2026</title>
+    <link>https://todothon.es/evento/x3ctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/x3ctf-2026</guid>
+    <description>4–6 dic 2026 · Online · x3CTF</description>
+  </item>
+  <item>
+    <title>bi0sCTF 2026</title>
+    <link>https://todothon.es/evento/bi0sctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/bi0sctf-2026</guid>
+    <description>5–6 dic 2026 · Online · bi0s</description>
+  </item>
+  <item>
+    <title>niteCTF 2026</title>
+    <link>https://todothon.es/evento/nitectf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/nitectf-2026</guid>
+    <description>11–13 dic 2026 · Online · Cryptonite</description>
+  </item>
+  <item>
+    <title>BSides Algiers 2026</title>
+    <link>https://todothon.es/evento/bsides-algiers-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/bsides-algiers-2026</guid>
+    <description>17–19 dic 2026 · Online · sarrus</description>
+  </item>
+  <item>
+    <title>BackdoorCTF 2026</title>
+    <link>https://todothon.es/evento/backdoorctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/backdoorctf-2026</guid>
+    <description>19–20 dic 2026 · Online · InfoSecIITR</description>
+  </item>
+  <item>
+    <title>idktheCTF 2026</title>
+    <link>https://todothon.es/evento/idkthectf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/idkthectf-2026</guid>
+    <description>26–28 dic 2026 · Online · idktheflag</description>
+  </item>
+  <item>
+    <title>ASIS CTF Finals 2026</title>
+    <link>https://todothon.es/evento/asis-ctf-finals-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/asis-ctf-finals-2026</guid>
+    <description>27–28 dic 2026 · Online · ASIS</description>
+  </item>
+  <item>
+    <title>THE FINAL EXPLOIT CTF 2026—QUALIFIERS</title>
+    <link>https://todothon.es/evento/the-final-exploit-ctf-2026-qualifiers</link>
+    <guid isPermaLink="true">https://todothon.es/evento/the-final-exploit-ctf-2026-qualifiers</guid>
+    <description>29–31 dic 2026 · Online · OxV01D</description>
+  </item>
+  <item>
+    <title>GaianSpace Perihelion CTF 2027</title>
+    <link>https://todothon.es/evento/gaianspace-perihelion-ctf-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gaianspace-perihelion-ctf-2027</guid>
+    <description>2–3 ene 2027 · Online · GaianSpace</description>
+  </item>
+  <item>
+    <title>UofTCTF 2027</title>
+    <link>https://todothon.es/evento/uoftctf-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/uoftctf-2027</guid>
+    <description>9–11 ene 2027 · Online · UofTCTF</description>
+  </item>
+  <item>
+    <title>HackOn 2027</title>
+    <link>https://todothon.es/evento/hackon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackon-2027</guid>
+    <description>19–20 feb 2027 · Lugar por confirmar · URJC (alumnos voluntarios del Grado en Ingeniería de la Ciberseguridad)</description>
+  </item>
+  <item>
+    <title>Talent Arena CTF 2027</title>
+    <link>https://todothon.es/evento/talent-arena-ctf-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/talent-arena-ctf-2027</guid>
+    <description>1–3 mar 2027 · Barcelona · Talent Arena</description>
+  </item>
+  <item>
+    <title>JerseyCTF VII</title>
+    <link>https://todothon.es/evento/jerseyctf-vii-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/jerseyctf-vii-2027</guid>
+    <description>13–14 mar 2027 · Online · Highlander Hackers</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en España</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-espana.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en España: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>Physical AI Hackathon Bilbao</title>
+    <link>https://todothon.es/evento/physical-ai-hackathon-bilbao-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/physical-ai-hackathon-bilbao-2026</guid>
+    <description>20 nov 2026 · Bilbao · Bizkaia Gazteak, Diputación Foral de Bizkaia y Ayuntamiento de Bilbao</description>
+  </item>
+  <item>
+    <title>Hackathon - PMI Barcelona</title>
+    <link>https://todothon.es/evento/hackathon-pmi-barcelona-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-pmi-barcelona-2026</guid>
+    <description>21 nov 2026 · Barcelona · PMI Barcelona Student Clubs</description>
+  </item>
+  <item>
+    <title>CDTM VLC HACKS 2026</title>
+    <link>https://todothon.es/evento/cdtm-vlc-hacks-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/cdtm-vlc-hacks-2026</guid>
+    <description>21 nov 2026 · Valencia · CDTM Valencia</description>
+  </item>
+  <item>
+    <title>DevDay Exchange Community Hackathon: Barcelona</title>
+    <link>https://todothon.es/evento/devday-exchange-community-hackathon-barcelona-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/devday-exchange-community-hackathon-barcelona-2026</guid>
+    <description>21 nov 2026 · Barcelona · Codex Community + Itnig</description>
+  </item>
+  <item>
+    <title>AI FIRST Hackathon</title>
+    <link>https://todothon.es/evento/ai-first-hackathon-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-first-hackathon-2026</guid>
+    <description>24–25 nov 2026 · Malaga · Talent Land España</description>
+  </item>
+  <item>
+    <title>IndesIAhack 2026</title>
+    <link>https://todothon.es/evento/indesiahack-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/indesiahack-2026</guid>
+    <description>25–27 nov 2026 · Madrid · IndesIA con la Universidad Politécnica de Madrid</description>
+  </item>
+  <item>
+    <title>Hackaton universidades GCloud</title>
+    <link>https://todothon.es/evento/hackaton-universidades-gcloud-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackaton-universidades-gcloud-2026</guid>
+    <description>25 nov 2026 · Madrid · Devoteam</description>
+  </item>
+  <item>
+    <title>HackIAmm, el Hackathon de Damm</title>
+    <link>https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</guid>
+    <description>26–28 nov 2026 · Barcelona · Damm (LAB1876)</description>
+  </item>
+  <item>
+    <title>Hackathon Ciudades y movilidad sostenible</title>
+    <link>https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</guid>
+    <description>26 nov 2026 · Zaragoza · Mobility City + Ayuntamiento de Zaragoza (con Zebra Ventures)</description>
+  </item>
+  <item>
+    <title>I Hackathon de Tecnologías Accesibles e Inclusivas · Alicante 2026</title>
+    <link>https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</guid>
+    <description>26 nov – 1 dic 2026 · San Vicente del Raspeig · DXC Technology, ITI y Parque Científico de Alicante</description>
+  </item>
+  <item>
+    <title>[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026</title>
+    <link>https://todothon.es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026</guid>
+    <description>27–29 nov 2026 · Madrid · 42 Madrid</description>
+  </item>
+  <item>
+    <title>Hackathon Lláscares INNOVABES 2026</title>
+    <link>https://todothon.es/evento/hackathon-llascares-innovabes-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-llascares-innovabes-2026</guid>
+    <description>27 nov 2026 · Langreo · ASATA</description>
+  </item>
+  <item>
+    <title>MERGE Hackathon Madrid</title>
+    <link>https://todothon.es/evento/merge-hackathon-madrid-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/merge-hackathon-madrid-2026</guid>
+    <description>27–29 nov 2026 · Madrid · MERGE</description>
+  </item>
+  <item>
+    <title>HackEPS</title>
+    <link>https://todothon.es/evento/hackeps-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackeps-2026</guid>
+    <description>28–29 nov 2026 · Lleida · Major League Hacking</description>
+  </item>
+  <item>
+    <title>Hackathon: Hack the Map</title>
+    <link>https://todothon.es/evento/hackathon-hack-the-map-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-hack-the-map-2026</guid>
+    <description>28 nov 2026 · Barcelona · Python Barcelona Meetup</description>
+  </item>
+  <item>
+    <title>Claude Community × HappyRobot Hackathon — Agents coaching agents</title>
+    <link>https://todothon.es/evento/claude-community-happyrobot-hackathon-agents-coaching-agents-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/claude-community-happyrobot-hackathon-agents-coaching-agents-2026</guid>
+    <description>28 nov 2026 · Madrid · Claude Community Events y HappyRobot</description>
+  </item>
+  <item>
+    <title>CYBERGUARD: Innovación para la protección digital de las empresas</title>
+    <link>https://todothon.es/evento/cyberguard-innovacion-para-la-proteccion-digital-de-las-empresas-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/cyberguard-innovacion-para-la-proteccion-digital-de-las-empresas-2026</guid>
+    <description>30 nov – 1 dic 2026 · Madrid · Comunidad de Madrid</description>
+  </item>
+  <item>
+    <title>AI BOOST: Inteligencia Artificial con impacto real en las empresas</title>
+    <link>https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</guid>
+    <description>2–3 dic 2026 · Madrid · Comunidad de Madrid</description>
+  </item>
+  <item>
+    <title>AI Builders Hacksprint Barcelona</title>
+    <link>https://todothon.es/evento/ai-builders-hacksprint-barcelona-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-builders-hacksprint-barcelona-2026</guid>
+    <description>4 dic 2026 · Barcelona · Joshua Vasilda y Narci Joy</description>
+  </item>
+  <item>
+    <title>Barcelona Hackathon 2026</title>
+    <link>https://todothon.es/evento/barcelona-hackathon-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/barcelona-hackathon-2026</guid>
+    <description>11–13 dic 2026 · Barcelona</description>
+  </item>
+  <item>
+    <title>Aina Hack 2026 | 2a edició</title>
+    <link>https://todothon.es/evento/aina-hack-2026-2a-edicio</link>
+    <guid isPermaLink="true">https://todothon.es/evento/aina-hack-2026-2a-edicio</guid>
+    <description>11–12 dic 2026 · Barcelona · Generalitat de Catalunya y Eurecat</description>
+  </item>
+  <item>
+    <title>bitsxLaMarató 2026</title>
+    <link>https://todothon.es/evento/bitsxlamarato-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/bitsxlamarato-2026</guid>
+    <description>11–13 dic 2026 · Barcelona · FIB-UPC, Hackers@UPC, BSC e IDIBELL</description>
+  </item>
+  <item>
+    <title>Claude Community × Nova Hackathon — Reinventing Networking</title>
+    <link>https://todothon.es/evento/claude-community-nova-hackathon-reinventing-networking-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/claude-community-nova-hackathon-reinventing-networking-2026</guid>
+    <description>11–13 dic 2026 · Madrid · Claude Community Events y Nova</description>
+  </item>
+  <item>
+    <title>Hackday d&apos;IA Local</title>
+    <link>https://todothon.es/evento/hackday-d-ia-local-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackday-d-ia-local-2026</guid>
+    <description>12 dic 2026 · Vilablareix · GeeksCAT</description>
+  </item>
+  <item>
+    <title>Hackathon Salud 2026</title>
+    <link>https://todothon.es/evento/hackathon-salud-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-salud-2026</guid>
+    <description>15 dic 2026 · Madrid</description>
+  </item>
+  <item>
+    <title>ISE Hackathon 2027</title>
+    <link>https://todothon.es/evento/ise-hackathon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ise-hackathon-2027</guid>
+    <description>2 feb 2027 · L&apos;Hospitalet de Llobregat (Barcelona) · ISE (Integrated Systems Europe) con universidades participantes como ESADE, UPF y UPC</description>
+  </item>
+  <item>
+    <title>Barcelona Hackathon</title>
+    <link>https://todothon.es/evento/barcelona-hackathon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/barcelona-hackathon-2027</guid>
+    <description>12–14 feb 2027 · Barcelona · barcelonahackathon</description>
+  </item>
+  <item>
+    <title>Tech Riders League | Hackathon Final</title>
+    <link>https://todothon.es/evento/tech-riders-league-hackathon-final-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/tech-riders-league-hackathon-final-2027</guid>
+    <description>8 may 2027 · Madrid · Tech Riders</description>
+  </item>
+</channel>
+</rss>

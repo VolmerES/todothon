@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en Zaragoza</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-zaragoza.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en Zaragoza: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>Hackathon Ciudades y movilidad sostenible</title>
+    <link>https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</guid>
+    <description>26 nov 2026 · Zaragoza · Mobility City + Ayuntamiento de Zaragoza (con Zebra Ventures)</description>
+  </item>
+</channel>
+</rss>

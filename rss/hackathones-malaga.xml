@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en Málaga</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-malaga.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en Málaga: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>AI FIRST Hackathon</title>
+    <link>https://todothon.es/evento/ai-first-hackathon-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-first-hackathon-2026</guid>
+    <description>24–25 nov 2026 · Malaga · Talent Land España</description>
+  </item>
+</channel>
+</rss>

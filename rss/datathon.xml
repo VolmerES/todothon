@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Datathon</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/datathon.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Datathon: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>O Camiño dos Datos (II Datathon universitario, UDC)</title>
+    <link>https://todothon.es/evento/o-camino-dos-datos-ii-datathon-universitario-udc-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/o-camino-dos-datos-ii-datathon-universitario-udc-2026</guid>
+    <description>25 nov 2026 – 3 feb 2027 · A Coruña · Facultad de Informática de la Universidade da Coruña (UDC)</description>
+  </item>
+  <item>
+    <title>More Than a Hack 2027 (Talent Arena)</title>
+    <link>https://todothon.es/evento/more-than-a-hack-2027-talent-arena-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/more-than-a-hack-2027-talent-arena-2026</guid>
+    <description>26 nov 2026 – 14 ene 2027 · Online · Mobile World Capital Barcelona, Barça Innovation Hub y Metrica Sports</description>
+  </item>
+  <item>
+    <title>Hackathon de dades de Vall d&apos;Hebron</title>
+    <link>https://todothon.es/evento/hackathon-de-dades-de-vall-d-hebron-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-de-dades-de-vall-d-hebron-2026</guid>
+    <description>27–28 nov 2026 · Barcelona · Hospital Universitari Vall d&apos;Hebron</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en Barcelona</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-barcelona.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en Barcelona: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>Hackathon - PMI Barcelona</title>
+    <link>https://todothon.es/evento/hackathon-pmi-barcelona-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-pmi-barcelona-2026</guid>
+    <description>21 nov 2026 · Barcelona · PMI Barcelona Student Clubs</description>
+  </item>
+  <item>
+    <title>DevDay Exchange Community Hackathon: Barcelona</title>
+    <link>https://todothon.es/evento/devday-exchange-community-hackathon-barcelona-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/devday-exchange-community-hackathon-barcelona-2026</guid>
+    <description>21 nov 2026 · Barcelona · Codex Community + Itnig</description>
+  </item>
+  <item>
+    <title>HackIAmm, el Hackathon de Damm</title>
+    <link>https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</guid>
+    <description>26–28 nov 2026 · Barcelona · Damm (LAB1876)</description>
+  </item>
+  <item>
+    <title>Hackathon de dades de Vall d&apos;Hebron</title>
+    <link>https://todothon.es/evento/hackathon-de-dades-de-vall-d-hebron-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-de-dades-de-vall-d-hebron-2026</guid>
+    <description>27–28 nov 2026 · Barcelona · Hospital Universitari Vall d&apos;Hebron</description>
+  </item>
+  <item>
+    <title>Hackathon: Hack the Map</title>
+    <link>https://todothon.es/evento/hackathon-hack-the-map-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-hack-the-map-2026</guid>
+    <description>28 nov 2026 · Barcelona · Python Barcelona Meetup</description>
+  </item>
+  <item>
+    <title>AI Builders Hacksprint Barcelona</title>
+    <link>https://todothon.es/evento/ai-builders-hacksprint-barcelona-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-builders-hacksprint-barcelona-2026</guid>
+    <description>4 dic 2026 · Barcelona · Joshua Vasilda y Narci Joy</description>
+  </item>
+  <item>
+    <title>Barcelona Hackathon 2026</title>
+    <link>https://todothon.es/evento/barcelona-hackathon-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/barcelona-hackathon-2026</guid>
+    <description>11–13 dic 2026 · Barcelona</description>
+  </item>
+  <item>
+    <title>Aina Hack 2026 | 2a edició</title>
+    <link>https://todothon.es/evento/aina-hack-2026-2a-edicio</link>
+    <guid isPermaLink="true">https://todothon.es/evento/aina-hack-2026-2a-edicio</guid>
+    <description>11–12 dic 2026 · Barcelona · Generalitat de Catalunya y Eurecat</description>
+  </item>
+  <item>
+    <title>bitsxLaMarató 2026</title>
+    <link>https://todothon.es/evento/bitsxlamarato-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/bitsxlamarato-2026</guid>
+    <description>11–13 dic 2026 · Barcelona · FIB-UPC, Hackers@UPC, BSC e IDIBELL</description>
+  </item>
+  <item>
+    <title>Barcelona Hackathon</title>
+    <link>https://todothon.es/evento/barcelona-hackathon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/barcelona-hackathon-2027</guid>
+    <description>12–14 feb 2027 · Barcelona · barcelonahackathon</description>
+  </item>
+  <item>
+    <title>Talent Arena CTF 2027</title>
+    <link>https://todothon.es/evento/talent-arena-ctf-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/talent-arena-ctf-2027</guid>
+    <description>1–3 mar 2027 · Barcelona · Talent Arena</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Hackathones en Málaga
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:hackathonhub-hackathon-ia-first-malaga-2026@todothon.es
+DTSTAMP:20261120T074024Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261126
+SUMMARY:AI FIRST Hackathon
+LOCATION:Malaga\, Malaga
+DESCRIPTION:https://talent-land.es/hackathon/\n\nMás información: https:/
+ /todothon.es/evento/ai-first-hackathon-2026
+URL:https://talent-land.es/hackathon/
+END:VEVENT
+END:VCALENDAR
