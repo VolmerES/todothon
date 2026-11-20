@@ -103,6 +103,24 @@ if (!CANAL) {
   process.exit(0);
 }
 
+// Foto del canal (public/telegram/avatar.png). Hace falta que el bot sea administrador con permiso de
+// «Cambiar información». Solo se sube una vez por canal (se recuerda en data/telegram-bot.json).
+const perfil = await leerJson('data/telegram-bot.json', {});
+if (perfil.fotoCanal !== CANAL) {
+  try {
+    const foto = new FormData();
+    foto.append('chat_id', CANAL);
+    foto.append('photo', new Blob([await readFile(ruta('public/telegram/avatar.png'))], { type: 'image/png' }), 'avatar.png');
+    const r = await fetch(`https://api.telegram.org/bot${TOKEN}/setChatPhoto`, { method: 'POST', body: foto });
+    const j = await r.json().catch(() => ({}));
+    if (!j.ok) throw new Error(j.description || r.status);
+    await writeFile(ruta('data/telegram-bot.json'), JSON.stringify({ ...perfil, fotoCanal: CANAL }, null, 1) + '\n');
+    console.log(`Foto del canal ${CANAL} puesta.`);
+  } catch (err) {
+    console.error(`No se ha podido poner la foto del canal (¿el bot tiene permiso de cambiar la información?): ${err.message}`);
+  }
+}
+
 const previo = await leerJson('data/anunciados.json', null);
 const anunciados = new Set(previo || []);
 const hoy = new Date().toISOString().slice(0, 10);
