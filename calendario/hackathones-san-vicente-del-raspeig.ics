@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:saraoia-2026-11-26-i-hackathon-de-tecnologias-accesibles-e-inclusivas-a
  licante@todothon.es
-DTSTAMP:20261120T121324Z
+DTSTAMP:20261120T121642Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261202
 SUMMARY:I Hackathon de Tecnologías Accesibles e Inclusivas · Alicante 202
@@ -19,19 +19,5 @@ DESCRIPTION:https://hackathonaccesibilidad.es/\n\nMás información: https:
  //todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-al
  icante-2026
 URL:https://hackathonaccesibilidad.es/
-END:VEVENT
-BEGIN:VEVENT
-UID:eventbrite-2004863390370@todothon.es
-DTSTAMP:20261120T121324Z
-DTSTART;VALUE=DATE:20270129
-DTEND;VALUE=DATE:20270201
-SUMMARY:Gamejam Alicante 2027
-LOCATION:Parque Científico de la Universidad Alicante\, San Vicente del Ra
- speig\, 03690\, San Vicente del Raspeig
-DESCRIPTION:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tick
- ets-2004863390370\n\nMás información: https://todothon.es/evento/gamejam
- -alicante-2027
-URL:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tickets-2004
- 863390370
 END:VEVENT
 END:VCALENDAR
