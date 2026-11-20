@@ -67,7 +67,7 @@ if (!TOKEN) {
 // La descripción, el texto corto y los comandos se ponen desde aquí, no a mano en @BotFather. Solo se mandan
 // cuando cambia PERFIL.version (se recuerda en data/telegram-bot.json).
 const PERFIL = {
-  version: 1,
+  version: 2,
   descripcion: 'Todos los hackathones, datathones, game jams y CTF de España (y los online), en un solo sitio.\n\n'
     + 'Síguenos en el canal y te avisamos de cada evento nuevo. La web, con buscador y mapa: todothon.es',
   corta: 'Hackathones, game jams y CTF de España. Sin anuncios, de la comunidad. todothon.es',
@@ -91,7 +91,14 @@ if (perfilPrevio.version !== PERFIL.version) {
     await bot('setMyDescription', { description: PERFIL.descripcion, language_code: '' });
     await bot('setMyShortDescription', { short_description: PERFIL.corta, language_code: '' });
     await bot('setMyCommands', { commands: PERFIL.comandos });
-    await writeFile(ruta('data/telegram-bot.json'), JSON.stringify({ version: PERFIL.version, bot: `@${yo.username}` }, null, 1) + '\n');
+    // Foto del bot (setMyProfilePhoto: solo JPG, subida como fichero nuevo).
+    const foto = new FormData();
+    foto.append('photo', JSON.stringify({ type: 'static', photo: 'attach://avatar' }));
+    foto.append('avatar', new Blob([await readFile(ruta('public/telegram/avatar.jpg'))], { type: 'image/jpeg' }), 'avatar.jpg');
+    const r = await fetch(`https://api.telegram.org/bot${TOKEN}/setMyProfilePhoto`, { method: 'POST', body: foto });
+    const j = await r.json().catch(() => ({}));
+    if (!j.ok) console.error(`No se ha podido poner la foto del bot: ${j.description || r.status}`);
+    await writeFile(ruta('data/telegram-bot.json'), JSON.stringify({ ...perfilPrevio, version: PERFIL.version, bot: `@${yo.username}` }, null, 1) + '\n');
     console.log(`Perfil del bot @${yo.username} puesto (versión ${PERFIL.version}).`);
   } catch (err) {
     console.error(`No se ha podido poner el perfil del bot: ${err.message}`);
@@ -110,7 +117,7 @@ if (perfil.fotoCanal !== CANAL) {
   try {
     const foto = new FormData();
     foto.append('chat_id', CANAL);
-    foto.append('photo', new Blob([await readFile(ruta('public/telegram/avatar.png'))], { type: 'image/png' }), 'avatar.png');
+    foto.append('photo', new Blob([await readFile(ruta('public/telegram/avatar.jpg'))], { type: 'image/jpeg' }), 'avatar.jpg');
     const r = await fetch(`https://api.telegram.org/bot${TOKEN}/setChatPhoto`, { method: 'POST', body: foto });
     const j = await r.json().catch(() => ({}));
     if (!j.ok) throw new Error(j.description || r.status);
