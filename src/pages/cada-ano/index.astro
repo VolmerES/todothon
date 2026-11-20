@@ -1,18 +1,10 @@
 ---
 // Calendario de los que se repiten cada año, mes a mes (src/data/anuales.json, mantenido a mano).
 // Si la próxima edición ya está anunciada (está en eventos.json), la tarjeta lleva a su ficha.
-import Base from '../layouts/Base.astro';
-import { TIPOS } from '../config';
-import { rangoFechas, type Evento } from '../lib/formato';
-import anuales from '../data/anuales.json';
-import datos from '../data/eventos.json';
-
-type Anual = (typeof anuales)[number];
-const eventos = datos as unknown as Evento[];
-const sinTildes = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-const proxima = (a: Anual) => eventos
-  .filter((e) => new RegExp(a.buscar, 'i').test(sinTildes(e.nombre)))
-  .sort((x, y) => (x.inicio || '9').localeCompare(y.inicio || '9'))[0] || null;
+import Base from '../../layouts/Base.astro';
+import { TIPOS } from '../../config';
+import { rangoFechas } from '../../lib/formato';
+import { ANUALES as anuales, proximaDe as proxima, type Anual } from '../../lib/anuales';
 
 const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 const mesActual = new Date().getUTCMonth() + 1;
@@ -50,7 +42,7 @@ const ld = {
             return (
               <li class="anual" style={`--giro: ${i % 2 ? 0.7 : -0.7}deg`}>
                 <span class="anual__tipo" style={`background: ${tipo.color}`}>{a.tipo === 'otro' ? 'Reto' : tipo.nombre}</span>
-                <h3>{a.nombre}</h3>
+                <h3><a href={`/cada-ano/${a.clave}`}>{a.nombre}</a></h3>
                 <p class="anual__meta">{a.donde} · {a.cuando}{a.desde && ` · desde ${a.desde}`}</p>
                 <p class="anual__desc">{a.descripcion}</p>
                 <div class="anual__acciones">
@@ -107,6 +99,8 @@ const ld = {
     color: var(--sobre-color); border: 2px solid var(--linea); border-radius: 999px; transform: rotate(3deg);
   }
   .anual h3 { margin: 0; font-size: 24px; line-height: 1.1; letter-spacing: -.5px; }
+  .anual h3 a { color: var(--texto); text-decoration: none; }
+  .anual h3 a:hover { text-decoration: underline; text-decoration-color: var(--rosa); text-decoration-thickness: 3px; }
   .anual__meta { margin: 0; font-family: var(--mono); font-size: 13px; color: var(--suave); }
   .anual__desc { margin: 0; flex: 1; }
   .anual__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 6px; }

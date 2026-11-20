@@ -1,11 +1,12 @@
 ---
 import Cartel from './Cartel.astro';
 import { TIPOS } from '../config';
-import { rangoFechas, ciudadCorta, modalidadTexto, type Evento } from '../lib/formato';
+import { rangoFechas, ciudadCorta, modalidadTexto, plazoInfo, type Evento } from '../lib/formato';
 
 interface Props { evento: Evento }
 const { evento: e } = Astro.props;
 const tipo = TIPOS[e.tipo] || TIPOS.otro;
+const plazo = plazoInfo(e);
 const texto = [e.nombre, e.organizador, e.ciudad, ...(e.temas || []), tipo.nombre].filter(Boolean).join(' ').toLowerCase();
 ---
 <a
@@ -28,6 +29,7 @@ const texto = [e.nombre, e.organizador, e.ciudad, ...(e.temas || []), tipo.nombr
     <span class="tarjeta__tipo" style={`background: ${tipo.color}`}>{tipo.nombre}</span>
   </div>
   <div class="tarjeta__datos">
+    {plazo && <p class:list={['tarjeta__plazo', { urgente: plazo.urgente, cerrado: plazo.cerrado }]}>{plazo.texto}</p>}
     <h3>{e.nombre}</h3>
     <p class="tarjeta__cuando">{rangoFechas(e.inicio, e.fin)} · {ciudadCorta(e)}</p>
     <p class="tarjeta__extra">
@@ -61,5 +63,11 @@ const texto = [e.nombre, e.organizador, e.ciudad, ...(e.temas || []), tipo.nombr
   h3 { margin: 0; font-size: 21px; line-height: 1.2; font-weight: 800; overflow-wrap: anywhere; }
   p { margin: 0; }
   .tarjeta__cuando { color: var(--suave); font-size: 15px; }
+  .tarjeta__plazo {
+    align-self: flex-start; font-family: var(--mono); font-size: 12px; font-weight: 800; padding: 2px 10px;
+    background: var(--ambar); color: var(--sobre-color); border: 2px solid var(--linea); border-radius: 999px; transform: rotate(-1.5deg);
+  }
+  .tarjeta__plazo.urgente { background: var(--rosa); }
+  .tarjeta__plazo.cerrado { background: var(--tarjeta); color: var(--suave); border-style: dashed; }
   .tarjeta__extra { color: var(--caliente); font-weight: 700; font-size: 14px; }
 </style>

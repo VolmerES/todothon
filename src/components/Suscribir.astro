@@ -1,0 +1,36 @@
+---
+// «No te pierdas ninguno»: calendario que se actualiza solo (Google o el del móvil), RSS y Telegram,
+// para el filtro de la página en la que esté.
+import { URL_TELEGRAM } from '../config';
+interface Props { filtro: string; que: string }
+const { filtro, que } = Astro.props;
+const ics = new URL(`/calendario/${filtro}.ics`, Astro.site);
+const webcal = ics.href.replace(/^https?:/, 'webcal:');
+const google = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`;
+---
+<aside class="suscribir" aria-label="Avisos">
+  <p class="suscribir__titulo">🔔 No te pierdas ninguno</p>
+  <p class="suscribir__texto">Suscríbete a «{que}» y los nuevos aparecerán solos en tu calendario: se actualiza cada día.</p>
+  <div class="suscribir__botones">
+    <a class="boton boton--negro" href={google} rel="noopener">Google Calendar</a>
+    <a class="boton" href={webcal}>iPhone / Outlook</a>
+    <a class="boton" href={`/rss/${filtro}.xml`}>RSS</a>
+    <a class="boton" href={URL_TELEGRAM} rel="noopener">Telegram</a>
+  </div>
+</aside>
+
+<style>
+  .suscribir {
+    margin-top: 28px; max-width: 760px; padding: 20px 22px; position: relative;
+    background: var(--lima); color: var(--sobre-color);
+    border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra); transform: rotate(.4deg);
+  }
+  .suscribir::before {
+    content: ''; position: absolute; top: -13px; left: 40px; width: 90px; height: 22px;
+    background: var(--cinta); transform: rotate(-3deg);
+  }
+  .suscribir__titulo { margin: 0 0 4px; font-size: 22px; font-weight: 800; }
+  .suscribir__texto { margin: 0 0 14px; }
+  .suscribir__botones { display: flex; flex-wrap: wrap; gap: 10px; }
+  .suscribir .boton:not(.boton--negro) { color: var(--sobre-color); background: #fff; }
+</style>

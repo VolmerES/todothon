@@ -1,0 +1,87 @@
+---
+// Para quien organiza: cómo salir en Todothon (gratis), qué datos ayudan y una insignia para su web.
+import Base from '../layouts/Base.astro';
+const codigo = `<a href="https://todothon.es" title="Anunciado en Todothon"><img src="https://todothon.es/insignia.svg" alt="Anunciado en Todothon" width="220" height="64"></a>`;
+---
+<Base titulo="Para organizadores: publica tu hackathon gratis · Todothon" descripcion="¿Organizas un hackathon, datathon, game jam o CTF en España? Publícalo gratis en Todothon y llega a la gente que los busca. Sin registro y sin coste.">
+  <section class="envoltorio org">
+    <p class="antetitulo">Para organizadores</p>
+    <h1>Que tu hackathon <span class="resalte">se llene</span></h1>
+    <p class="entradilla">
+      Todothon es el sitio donde la gente busca hackathones, datathones, game jams y CTF en España. Publicar es
+      <strong>gratis</strong>, no hace falta registrarse y no hay letra pequeña.
+    </p>
+
+    <div class="pasos">
+      <article class="paso">
+        <span class="paso__n">1</span>
+        <h2>Publícalo</h2>
+        <p>Rellena el <a href="/publicar">formulario</a>: nombre, fechas, lugar y web oficial. Lo revisamos a mano y sale publicado en uno o dos días.</p>
+        <p class="nota">¿Ya está en Devpost, Eventbrite, Meetup o Luma? Seguramente lo recojamos solos. Si no aparece en un par de días, usa el formulario.</p>
+      </article>
+      <article class="paso">
+        <span class="paso__n">2</span>
+        <h2>Dale buenos datos</h2>
+        <ul>
+          <li><strong>El plazo de inscripción</strong>: sale destacado con cuenta atrás.</li>
+          <li><strong>Para quién es</strong>: estudiantes, principiantes, abierto a todo el mundo…</li>
+          <li><strong>Premios</strong> y si es gratis.</li>
+          <li><strong>Un cartel</strong> o imagen: las tarjetas con imagen se miran mucho más.</li>
+        </ul>
+      </article>
+      <article class="paso">
+        <span class="paso__n">3</span>
+        <h2>Lo movemos</h2>
+        <p>Sale en la portada, en el mapa, en la página de su ciudad y de su tipo, en los calendarios y RSS a los que se suscribe la gente y en el canal de Telegram.</p>
+        <p>Si se repite cada año, entra en <a href="/cada-ano">Cada año</a>, para que la gente lo espere.</p>
+      </article>
+    </div>
+
+    <section class="insignia">
+      <h2>Insignia para tu web</h2>
+      <p>Si quieres, pon esta pegatina en la web de tu evento. Ayuda a que más gente descubra Todothon (y otros eventos como el tuyo).</p>
+      <img src="/insignia.svg" alt="Anunciado en Todothon" width="220" height="64" />
+      <label for="codigo-insignia">Copia este código:</label>
+      <textarea id="codigo-insignia" readonly rows="3">{codigo}</textarea>
+    </section>
+
+    <p class="cierre">¿Algo más? ¿Un dato mal? Escríbenos desde el <a href="/publicar">formulario</a> o abre una incidencia en <a href="https://github.com/VolmerES/todothon" rel="noopener">GitHub</a>.</p>
+    <a class="boton boton--rosa" href="/publicar">Publicar mi evento →</a>
+  </section>
+</Base>
+
+<style>
+  .org { padding-top: 32px; display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
+  .antetitulo { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; }
+  .resalte {
+    display: inline-block; padding: 0 12px; background: var(--rosa); color: var(--sobre-color); border: 3px solid var(--linea);
+    border-radius: var(--radio); box-shadow: 5px 5px 0 var(--sombra); transform: rotate(-1.5deg);
+  }
+  .entradilla { margin: 0; font-size: 20px; color: var(--suave); max-width: 720px; }
+  .pasos { width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 24px; margin-top: 12px; }
+  .paso {
+    position: relative; padding: 26px 22px 20px; background: var(--tarjeta); border: 3px solid var(--linea);
+    border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra);
+  }
+  .paso:nth-child(2) { transform: rotate(.6deg); }
+  .paso__n {
+    position: absolute; top: -18px; left: 18px; width: 40px; height: 40px; display: grid; place-items: center;
+    background: var(--lima); color: var(--sobre-color); font-weight: 800; font-size: 20px;
+    border: 3px solid var(--linea); border-radius: 50%; transform: rotate(-8deg);
+  }
+  .paso h2 { margin: 0 0 8px; font-size: 24px; }
+  .paso p, .paso ul { margin: 0 0 10px; }
+  .paso ul { padding-left: 20px; }
+  .paso a, .cierre a { color: var(--texto); font-weight: 700; }
+  .nota { font-size: 15px; color: var(--suave); }
+  .insignia { margin-top: 18px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; max-width: 720px; }
+  .insignia h2 { margin: 0; font-size: 28px; }
+  .insignia p { margin: 0; }
+  .insignia label { font-weight: 800; font-size: 14px; }
+  .insignia textarea {
+    width: 100%; font-family: var(--mono); font-size: 13px; padding: 10px; resize: vertical;
+    background: var(--tarjeta); color: var(--texto); border: 2px solid var(--linea); border-radius: var(--radio);
+  }
+  .cierre { margin: 12px 0 0; }
+</style>

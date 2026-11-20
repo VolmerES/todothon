@@ -1,0 +1,82 @@
+---
+// «¿Vas a ir?» en la ficha de cada evento: dos pegatinas que se marcan y cuentan cuánta gente va y cuánta
+// busca equipo. Habla con /api/voy.php; sin conexión, simplemente no se ve.
+import { URL_TELEGRAM } from '../config';
+interface Props { slug: string }
+const { slug } = Astro.props;
+---
+<section class="voy" data-voy={slug} aria-label="¿Vas a ir?" hidden>
+  <p class="voy__titulo">¿Vas a ir?</p>
+  <div class="voy__botones">
+    <button type="button" class="voy__boton" data-tipo="voy" aria-pressed="false">🙋 Voy <span data-n="voy">0</span></button>
+    <button type="button" class="voy__boton" data-tipo="equipo" aria-pressed="false">🤝 Busco equipo <span data-n="equipo">0</span></button>
+  </div>
+  <p class="voy__equipo" data-equipo hidden>
+    Hay gente buscando equipo para este evento. Encontraos en el <a href={URL_TELEGRAM} rel="noopener">grupo de Telegram</a>.
+  </p>
+</section>
+
+<style>
+  .voy {
+    margin: 4px 0 8px; padding: 14px 16px; max-width: 560px;
+    border: 3px dashed var(--linea); border-radius: var(--radio-grande);
+  }
+  .voy__titulo { margin: 0 0 10px; font-weight: 800; font-size: 18px; }
+  .voy__botones { display: flex; flex-wrap: wrap; gap: 10px; }
+  .voy__boton {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 16px; cursor: pointer;
+    background: var(--tarjeta); color: var(--texto); font-weight: 800; font-size: 16px;
+    border: 3px solid var(--linea); border-radius: 999px; box-shadow: 3px 3px 0 var(--sombra);
+    transition: transform .2s var(--rebote), box-shadow .2s var(--rebote), background-color .15s ease;
+  }
+  .voy__boton:hover { transform: translate(-1px, -2px) rotate(-1.5deg); box-shadow: 4px 5px 0 var(--sombra); }
+  .voy__boton[aria-pressed="true"] { background: var(--lima); color: var(--sobre-color); transform: rotate(-2deg); }
+  .voy__boton[data-tipo="equipo"][aria-pressed="true"] { background: var(--azul); transform: rotate(2deg); }
+  .voy__boton span {
+    min-width: 1.8em; padding: 0 6px; text-align: center; font-family: var(--mono); font-size: 13px;
+    border: 2px solid currentColor; border-radius: 999px;
+  }
+  .voy__equipo { margin: 10px 0 0; font-size: 15px; }
+  .voy__equipo a { color: var(--texto); font-weight: 800; }
+</style>
+
+<script>
+  const API = '/api/voy.php';
+  // Un id aleatorio por navegador, para que cada uno cuente una vez y pueda desmarcarse. No identifica a nadie.
+  function quien(): string {
+    try {
+      let id = localStorage.getItem('todothon-quien');
+      if (!id) { id = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, '0')).join(''); localStorage.setItem('todothon-quien', id); }
+      return id;
+    } catch { return [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, '0')).join(''); }
+  }
+  const marcado = (slug: string, tipo: string) => { try { return localStorage.getItem(`todothon-${tipo}-${slug}`) === '1'; } catch { return false; } };
+  const guardar = (slug: string, tipo: string, si: boolean) => { try { si ? localStorage.setItem(`todothon-${tipo}-${slug}`, '1') : localStorage.removeItem(`todothon-${tipo}-${slug}`); } catch {} };
+
+  document.querySelectorAll<HTMLElement>('[data-voy]').forEach(async (caja) => {
+    const slug = caja.dataset.voy!;
+    const pintar = (c: { voy: number; equipo: number }) => {
+      caja.querySelectorAll<HTMLElement>('[data-n]').forEach((s) => { s.textContent = String(c[s.dataset.n as 'voy' | 'equipo'] ?? 0); });
+      caja.querySelector<HTMLElement>('[data-equipo]')!.hidden = !(c.equipo > 0);
+    };
+    try {
+      const r = await fetch(`${API}?slug=${encodeURIComponent(slug)}`);
+      if (!r.ok) return;
+      pintar(await r.json());
+    } catch { return; }
+    caja.hidden = false;
+    caja.querySelectorAll<HTMLButtonElement>('[data-tipo]').forEach((b) => {
+      const tipo = b.dataset.tipo!;
+      b.setAttribute('aria-pressed', String(marcado(slug, tipo)));
+      b.addEventListener('click', async () => {
+        const si = b.getAttribute('aria-pressed') !== 'true';
+        b.setAttribute('aria-pressed', String(si));
+        guardar(slug, tipo, si);
+        try {
+          const r = await fetch(API, { method: 'POST', body: new URLSearchParams({ slug, tipo, marcar: si ? '1' : '0', quien: quien() }) });
+          if (r.ok) pintar(await r.json());
+        } catch {}
+      });
+    });
+  });
+</script>

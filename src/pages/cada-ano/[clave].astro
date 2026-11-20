@@ -1,0 +1,88 @@
+---
+// Página de cada evento que se repite cada año (/cada-ano/hackupc…): qué es, cuándo suele ser, la próxima
+// edición si ya está anunciada y las anteriores que tengamos. Es la que sale al buscar «HackUPC 2027».
+import Base from '../../layouts/Base.astro';
+import Tarjeta from '../../components/Tarjeta.astro';
+import { TIPOS } from '../../config';
+import { rangoFechas } from '../../lib/formato';
+import { ANUALES, proximaDe, pasadasDe, type Anual } from '../../lib/anuales';
+
+export function getStaticPaths() {
+  return ANUALES.map((a) => ({ params: { clave: a.clave }, props: { clave: a.clave } }));
+}
+
+const { clave } = Astro.props as { clave: string };
+const a = ANUALES.find((x) => x.clave === clave) as Anual;
+const proxima = proximaDe(a);
+const pasadas = pasadasDe(a);
+const tipo = TIPOS[a.tipo] || TIPOS.otro;
+const anioQueViene = proxima?.inicio?.slice(0, 4) || String(new Date().getUTCFullYear() + (new Date().getUTCMonth() + 1 > Math.max(...a.meses) ? 1 : 0));
+const otros = ANUALES.filter((x) => x.clave !== clave && (x.tipo === a.tipo || x.meses.some((m) => a.meses.includes(m)))).slice(0, 6);
+const titulo = `${a.nombre} ${anioQueViene}: fechas, inscripción y ediciones anteriores`;
+---
+<Base titulo={`${titulo} · Todothon`} descripcion={`${a.nombre}: ${a.descripcion} Cuándo es (${a.cuando.toLowerCase()}), dónde, cómo apuntarse y ediciones anteriores.`}>
+  <article class="envoltorio anual">
+    <a class="volver" href="/cada-ano">← Todos los que vuelven cada año</a>
+    <span class="anual__tipo" style={`background: ${tipo.color}`}>{a.tipo === 'otro' ? 'Reto' : tipo.nombre}</span>
+    <h1>{a.nombre} <span class="resalte">{anioQueViene}</span></h1>
+    <p class="entradilla">{a.descripcion}</p>
+
+    <dl class="datos">
+      <div><dt>Cuándo suele ser</dt><dd>{a.cuando}</dd></div>
+      <div><dt>Dónde</dt><dd>{a.donde}</dd></div>
+      {a.desde && <div><dt>Desde</dt><dd>{a.desde}</dd></div>}
+      {a.web && <div><dt>Web oficial</dt><dd><a href={a.web} rel="noopener">{a.web.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')} ↗</a></dd></div>}
+    </dl>
+
+    <h2>Próxima edición</h2>
+    {proxima
+      ? <div class="rejilla"><Tarjeta evento={proxima} /></div>
+      : <p class="vacio">Todavía no está anunciada. Suele ser en <strong>{a.cuando.toLowerCase()}</strong>: en cuanto se publique, aparecerá aquí sola.</p>}
+
+    {pasadas.length > 0 && (
+      <>
+        <h2>Ediciones anteriores</h2>
+        <ul class="pasadas">
+          {pasadas.map((e) => <li><a href={`/evento/${e.slug}`}>{e.nombre}</a> · {rangoFechas(e.inicio, e.fin)}</li>)}
+        </ul>
+      </>
+    )}
+
+    {otros.length > 0 && (
+      <nav class="otros" aria-label="Parecidos">
+        <h2>También cada año</h2>
+        <ul>{otros.map((x) => <li><a href={`/cada-ano/${x.clave}`}>{x.nombre}</a> <span>· {x.cuando.toLowerCase()}</span></li>)}</ul>
+      </nav>
+    )}
+  </article>
+</Base>
+
+<style>
+  .anual { padding-top: 32px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+  .volver { font-weight: 700; color: var(--texto); }
+  .anual__tipo {
+    padding: 2px 12px; font-weight: 800; font-size: 14px; color: var(--sobre-color);
+    border: 2px solid var(--linea); border-radius: 999px; transform: rotate(-2deg);
+  }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; }
+  .resalte {
+    display: inline-block; padding: 0 12px; background: var(--azul); color: var(--sobre-color); border: 3px solid var(--linea);
+    border-radius: var(--radio); box-shadow: 5px 5px 0 var(--sombra); transform: rotate(1.5deg);
+  }
+  .entradilla { margin: 0; font-size: 20px; color: var(--suave); max-width: 720px; }
+  .datos {
+    margin: 0; display: grid; gap: 8px; width: 100%; max-width: 640px; padding: 18px 20px;
+    background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra);
+  }
+  .datos div { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 12px; }
+  .datos dt { font-weight: 800; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; padding-top: 3px; }
+  .datos dd { margin: 0; overflow-wrap: anywhere; }
+  .datos a { color: var(--texto); font-weight: 700; }
+  @media (max-width: 520px) { .datos div { grid-template-columns: 1fr; gap: 0; } }
+  h2 { margin: 20px 0 0; font-size: 28px; letter-spacing: -.5px; }
+  .rejilla { width: 100%; max-width: 380px; }
+  .vacio { margin: 0; max-width: 640px; }
+  .pasadas, .otros ul { margin: 0; padding-left: 20px; }
+  .pasadas a, .otros a { color: var(--texto); font-weight: 700; }
+  .otros span { color: var(--suave); }
+</style>

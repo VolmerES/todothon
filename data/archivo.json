@@ -1,0 +1,27 @@
+[
+ {
+  "id": "meetup-317221910",
+  "nombre": "Hack The Box Meetup: Conecta CTF",
+  "tipo": "ctf",
+  "inicio": "2026-11-19",
+  "fin": "2026-11-19",
+  "plazo": null,
+  "modalidad": "presencial",
+  "ciudad": "Madrid",
+  "direccion": "ETS de Ingeniería de Sistemas Informáticos (ETSISI-upm), Campus Sur de la UPM, C. de Alan Turing, s/n, Puente de Vallecas, 28031 Madrid, Spain, Madrid",
+  "pais": "ES",
+  "lat": null,
+  "lon": null,
+  "url": "https://www.meetup.com/meetup-group-ffiltyls/events/317221910/",
+  "imagen": "https://secure.meetupstatic.com/photos/event/d/c/7/3/highres_536276435.jpeg",
+  "organizador": "Hack The Box Meetup: Madrid, ES",
+  "temas": [],
+  "premio": null,
+  "gratis": true,
+  "requisitos": [],
+  "descripcion": "# Core Dumped CTF: ¡Nuestra primera competición! 🚩💻 [Actividad de UPM Conecta](https://www.upmconecta.es/FichaActividad.aspx?id=6478) [Forms de equipos](https://forms.gle/F3oZNgSJQzvGCZ3z9) Desde Core Dumped damos un paso más en nuestra misión de acercar la ciberseguridad a todo el mundo con la organización de **nuestra primera competición estilo CTF (*Capture The Flag*)**. A lo largo de la competición, los participantes tendréis la oportunidad de poner a prueba vuestras habilidades técnicas, enfrentaros a retos de seguridad informática y descubrir nuevas formas de analizar y resolver proble",
+  "fuente": "Meetup",
+  "urlFuente": "https://www.meetup.com/meetup-group-ffiltyls/events/317221910/",
+  "slug": "hack-the-box-meetup-conecta-ctf-2026"
+ }
+]

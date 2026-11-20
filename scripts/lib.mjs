@@ -151,3 +151,23 @@ export function evento(campos) {
     ...campos,
   };
 }
+
+// --- Plazo de inscripción ---------------------------------------------------
+// Casi ninguna fuente da el plazo como dato, pero muchas lo dicen en el texto: «inscripción hasta el 28 de
+// octubre», «apply by Nov. 18th»… Se saca de ahí. Si sale después del inicio, no vale.
+const MESES_ES = { enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10, noviembre: 11, diciembre: 12 };
+const MESES_EN = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12 };
+export function plazoDe(texto = '', inicio = null) {
+  if (!texto || !inicio) return null;
+  let dia, mes, anio;
+  const es = texto.match(/(?:inscripci[oó]n(?:es)?|plazo|registro|solicitudes|apúntate|apuntarse)[^.;]{0,50}?(?:hasta|antes del?|cierra[n]?(?: el)?|termina(?: el)?|finaliza(?: el)?)\s+(?:el\s+)?(\d{1,2})\s+de\s+([a-záé]+)(?:\s+(?:de\s+)?(\d{4}))?/i);
+  const en = texto.match(/(?:apply by|applications? (?:close|due)[a-z]*(?: on| by)?|registration (?:closes|deadline)[a-z]*(?: on| by|:)?|deadline(?: to apply)?:?)\s+([a-z]{3,9})\.?\s+(\d{1,2})(?:st|nd|rd|th)?(?:,?\s+(\d{4}))?/i);
+  if (es && MESES_ES[es[2].toLowerCase()]) [dia, mes, anio] = [Number(es[1]), MESES_ES[es[2].toLowerCase()], es[3]];
+  else if (en && MESES_EN[en[1].toLowerCase().slice(0, 3)]) [dia, mes, anio] = [Number(en[2]), MESES_EN[en[1].toLowerCase().slice(0, 3)], en[3]];
+  else return null;
+  if (!dia || dia > 31) return null;
+  let a = Number(anio || inicio.slice(0, 4));
+  const f = (y) => `${y}-${String(mes).padStart(2, '0')}-${String(dia).padStart(2, '0')}`;
+  if (!anio && f(a) > inicio) a -= 1; // «hasta el 28 de diciembre» para un evento de enero: es del año anterior
+  return f(a) <= inicio ? f(a) : null;
+}

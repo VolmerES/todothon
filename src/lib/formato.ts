@@ -48,3 +48,28 @@ export function diasHasta(s: string | null, hoy = new Date()): number | null {
   const h = Date.UTC(hoy.getUTCFullYear(), hoy.getUTCMonth(), hoy.getUTCDate());
   return Math.round((fecha(s).getTime() - h) / 86400000);
 }
+
+// Plazo de inscripción, para las tarjetas y la ficha. La web se recompila cada día, así que «quedan N días»
+// está al día. Sin plazo conocido no se dice nada.
+export function plazoInfo(e: Evento, hoy = new Date()): { texto: string; urgente: boolean; cerrado: boolean } | null {
+  if (!e.plazo) return null;
+  const n = diasHasta(e.plazo, hoy);
+  if (n === null) return null;
+  const empezado = (diasHasta(e.inicio, hoy) ?? 1) <= 0;
+  if (n < 0) return empezado ? null : { texto: 'Inscripción cerrada', urgente: false, cerrado: true };
+  const dia = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(`${e.plazo}T00:00:00Z`));
+  const quedan = n === 0 ? 'último día' : n === 1 ? 'queda 1 día' : `quedan ${n} días`;
+  return { texto: `Inscripción hasta el ${dia} · ${quedan}`, urgente: n <= 7, cerrado: false };
+}
+
+// Etiquetas de «para quién» y «qué hay», sacadas de los datos y del texto del evento.
+export function etiquetas(e: Evento): string[] {
+  const texto = `${e.nombre} ${e.descripcion || ''} ${(e.requisitos || []).join(' ')} ${(e.temas || []).join(' ')}`.toLowerCase();
+  const salida: string[] = [];
+  if (e.gratis) salida.push('Gratis');
+  if (e.premio || /premios? (de|en) |€|\$\s?\d|prize/.test(texto)) salida.push('Con premios');
+  if (/beginner|principiante|first.?time|novato|sin experiencia|no hace falta saber/.test(texto)) salida.push('Para principiantes');
+  if (/estudiante|universitari|student|alumn/.test(texto)) salida.push('Para estudiantes');
+  if (/menores|secundaria|bachillerato|high school|13 a 18|de 14 a/.test(texto)) salida.push('Para jóvenes');
+  return salida;
+}

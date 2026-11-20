@@ -1,0 +1,58 @@
+---
+// Archivo: los eventos de España que ya pasaron, por año y mes. Crece solo cada día (data/archivo.json).
+import Base from '../layouts/Base.astro';
+import { TIPOS } from '../config';
+import { rangoFechas, ciudadCorta } from '../lib/formato';
+import { ARCHIVO } from '../lib/anuales';
+
+const nombreMes = new Intl.DateTimeFormat('es-ES', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+const grupos = new Map<string, typeof ARCHIVO>();
+for (const e of ARCHIVO) {
+  const m = (e.inicio || '').slice(0, 7);
+  if (!grupos.has(m)) grupos.set(m, []);
+  grupos.get(m)!.push(e);
+}
+---
+<Base titulo="Archivo de hackathones en España · Todothon" descripcion="Los hackathones, datathones, game jams y CTF que ya se han celebrado en España, mes a mes. Para ver cuándo fue la última edición de cada uno.">
+  <section class="envoltorio archivo">
+    <p class="antetitulo">{ARCHIVO.length} {ARCHIVO.length === 1 ? 'evento' : 'eventos'} pasados</p>
+    <h1>El <span class="resalte">archivo</span></h1>
+    <p class="entradilla">
+      Los que ya se han celebrado en España. Sirve para saber cuándo fue la última edición de algo y esperar la siguiente.
+      Para los que se repiten, mira <a href="/cada-ano">Cada año</a>.
+    </p>
+    {ARCHIVO.length === 0 && <p>Todavía vacío: se llena solo a medida que pasan los eventos.</p>}
+    {[...grupos].map(([m, lista]) => (
+      <section class="mes">
+        <h2>{m ? nombreMes.format(new Date(`${m}-01T00:00:00Z`)).replace(' de ', ' ') : 'Sin fecha'}</h2>
+        <ul>
+          {lista.map((e) => (
+            <li>
+              <span class="tipo" style={`background: ${(TIPOS[e.tipo] || TIPOS.otro).color}`}>{(TIPOS[e.tipo] || TIPOS.otro).nombre}</span>
+              <a href={`/evento/${e.slug}`}>{e.nombre}</a>
+              <span class="meta">{rangoFechas(e.inicio, e.fin)} · {ciudadCorta(e)}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </section>
+</Base>
+
+<style>
+  .archivo { padding-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+  .antetitulo { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--suave); }
+  h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -2px; }
+  .resalte {
+    display: inline-block; padding: 0 12px; background: var(--tarjeta); color: var(--sobre-color); border: 3px solid var(--linea);
+    border-radius: var(--radio); box-shadow: 5px 5px 0 var(--sombra); transform: rotate(-1.5deg);
+  }
+  .entradilla { margin: 0; font-size: 20px; color: var(--suave); max-width: 720px; }
+  .entradilla a { color: var(--texto); font-weight: 700; }
+  h2 { margin: 18px 0 8px; font-size: 26px; text-transform: capitalize; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding-bottom: 10px; border-bottom: 2px dashed var(--linea); }
+  li a { color: var(--texto); font-weight: 800; font-size: 18px; }
+  .tipo { padding: 0 10px; font-size: 12px; font-weight: 800; color: var(--sobre-color); border: 2px solid var(--linea); border-radius: 999px; }
+  .meta { color: var(--suave); font-size: 15px; }
+</style>

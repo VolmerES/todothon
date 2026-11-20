@@ -6,7 +6,7 @@
 // - Si una fuente que antes daba eventos da 0 o falla, termina con error: GitHub Actions
 //   manda un correo y ese es el único aviso que hace falta mirar.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { UA, esperar, slug } from './lib.mjs';
+import { UA, esperar, slug, plazoDe } from './lib.mjs';
 import * as devpost from './fuentes/devpost.mjs';
 import * as mlh from './fuentes/mlh.mjs';
 import * as ctftime from './fuentes/ctftime.mjs';
@@ -84,8 +84,9 @@ function juntarDuplicados(eventos) {
   return juntos;
 }
 
-function ponerSlugs(eventos) {
-  const usados = new Set();
+// `reservados`: los slugs del archivo, para que un evento nuevo no pise la ficha de uno pasado.
+function ponerSlugs(eventos, reservados = new Set()) {
+  const usados = new Set(reservados);
   for (const e of eventos) {
     const anio = (e.inicio || '').slice(0, 4);
     let s = slug(e.nombre.includes(anio) ? e.nombre : `${e.nombre}-${anio}`) || e.id;
@@ -134,16 +135,31 @@ async function main() {
   todos.push(...deIa);
 
   const hoy = new Date().toISOString().slice(0, 10);
+
+  // Archivo: los de España que ya han pasado no se borran. Su ficha sigue en la web (marcada como pasada),
+  // sirve para ver cuándo fue la última edición y no rompe los enlaces que haya por ahí.
+  const archivo = await leerJson('data/archivo.json', []);
+  const archivados = new Set(archivo.map((e) => e.slug));
+  for (const e of previos) {
+    if (e.pais === 'ES' && e.slug && (e.fin || e.inicio || '9') < hoy && !archivados.has(e.slug)) {
+      archivo.push(e);
+      archivados.add(e.slug);
+    }
+  }
+  archivo.sort((a, b) => (b.inicio || '').localeCompare(a.inicio || ''));
+
   todos = todos.filter((e) => e.nombre && (e.fin || e.inicio || hoy) >= hoy);
   todos = juntarDuplicados(todos);
+  for (const e of todos) if (!e.plazo) e.plazo = plazoDe(`${e.nombre}. ${e.descripcion || ''}`, e.inicio);
   await geolocalizar(todos);
   todos.sort((a, b) => (a.inicio || '9999').localeCompare(b.inicio || '9999'));
-  ponerSlugs(todos);
+  ponerSlugs(todos, archivados);
 
   informe.total = todos.length;
   informe.espana = todos.filter((e) => e.pais === 'ES').length;
   await writeFile(ruta('src/data/eventos.json'), JSON.stringify(todos, null, 1));
   await writeFile(ruta('data/informe.json'), JSON.stringify(informe, null, 1));
+  await writeFile(ruta('data/archivo.json'), JSON.stringify(archivo, null, 1));
   console.log(`Total: ${informe.total} (en España: ${informe.espana})`);
 
   if (informe.avisos.length) {

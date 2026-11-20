@@ -2,14 +2,23 @@
 import Base from '../../layouts/Base.astro';
 import Cartel from '../../components/Cartel.astro';
 import { TIPOS } from '../../config';
-import { rangoFechas, ciudadCorta, modalidadTexto, type Evento } from '../../lib/formato';
-import datos from '../../data/eventos.json';
+import Voy from '../../components/Voy.astro';
+import { rangoFechas, ciudadCorta, modalidadTexto, plazoInfo, etiquetas, type Evento } from '../../lib/formato';
+import { EVENTOS, ARCHIVO, anualDe } from '../../lib/anuales';
 
+// Fichas de los próximos y de los que ya pasaron (el archivo), para no romper enlaces.
 export function getStaticPaths() {
-  return (datos as unknown as Evento[]).map((e) => ({ params: { slug: e.slug }, props: { evento: e } }));
+  const vistos = new Set(EVENTOS.map((e) => e.slug));
+  return [
+    ...EVENTOS.map((e) => ({ params: { slug: e.slug }, props: { evento: e, pasado: false } })),
+    ...ARCHIVO.filter((e) => !vistos.has(e.slug)).map((e) => ({ params: { slug: e.slug }, props: { evento: e, pasado: true } })),
+  ];
 }
 
-const { evento: e } = Astro.props as { evento: Evento };
+const { evento: e, pasado } = Astro.props as { evento: Evento; pasado: boolean };
+const plazo = plazoInfo(e);
+const chips = etiquetas(e);
+const anual = anualDe(e);
 const tipo = TIPOS[e.tipo] || TIPOS.otro;
 const cuando = rangoFechas(e.inicio, e.fin);
 const donde = e.modalidad === 'online' ? 'Online' : (e.direccion || e.ciudad || 'Lugar por confirmar');
@@ -36,6 +45,14 @@ const ld = {
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} />
   <article class="envoltorio ficha">
     <a class="volver" href="/#resultados">← Todos los eventos</a>
+    {pasado && (
+      <p class="ficha__pasado">
+        <strong>Este evento ya pasó.</strong>{' '}
+        {anual
+          ? <>Se celebra cada año: mira <a href={`/cada-ano/${anual.clave}`}>cuándo es la próxima edición de {anual.nombre}</a>.</>
+          : <>Mira los <a href="/#resultados">próximos eventos</a>.</>}
+      </p>
+    )}
     <div class="ficha__rejilla">
       <div class="ficha__cartel">
         <Cartel evento={e} grande />
@@ -43,6 +60,8 @@ const ld = {
       <div class="ficha__datos">
         <span class="ficha__tipo" style={`background: ${tipo.color}`}>{tipo.nombre}</span>
         <h1>{e.nombre}</h1>
+        {!pasado && plazo && <p class:list={['ficha__plazo', { urgente: plazo.urgente, cerrado: plazo.cerrado }]}>{plazo.texto}</p>}
+        {chips.length > 0 && <ul class="ficha__chips">{chips.map((c) => <li>{c}</li>)}</ul>}
         <dl>
           <div><dt>Cuándo</dt><dd>{cuando}</dd></div>
           <div><dt>Dónde</dt><dd>{donde}</dd></div>
@@ -53,10 +72,12 @@ const ld = {
           {e.requisitos?.length > 0 && <div><dt>Para quién</dt><dd>{e.requisitos.join(' · ')}</dd></div>}
           {e.temas?.length > 0 && <div><dt>Temas</dt><dd>{e.temas.join(' · ')}</dd></div>}
         </dl>
+        {!pasado && <Voy slug={e.slug} />}
+        {!pasado && anual && <p class="ficha__anual">📅 {anual.nombre} se celebra cada año. <a href={`/cada-ano/${anual.clave}`}>Ver ediciones anteriores</a></p>}
         <div class="ficha__acciones">
           {e.url && <a class="boton boton--rosa" href={e.url} rel="noopener">Ir a la web oficial ↗</a>}
-          {google && <a class="boton" href={google} rel="noopener">Añadir a Google Calendar</a>}
-          <a class="boton" href={`/evento/${e.slug}.ics`}>Descargar .ics</a>
+          {!pasado && google && <a class="boton" href={google} rel="noopener">Añadir a Google Calendar</a>}
+          {!pasado && <a class="boton" href={`/evento/${e.slug}.ics`}>Descargar .ics</a>}
         </div>
         {e.descripcion && <p class="ficha__desc">{e.descripcion}</p>}
         <p class="ficha__fuente">Dato sacado de {e.fuente}{e.urlFuente && <> (<a href={e.urlFuente} rel="noopener">ver origen</a>)</>}. Comprueba siempre la información en la web oficial. ¿Algo mal? <a href="/publicar">Avísanos</a>.</p>
@@ -95,6 +116,25 @@ const ld = {
     .ficha__mapa iframe { height: 280px; }
   }
   .ficha__acciones { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+  .ficha__pasado {
+    margin: 8px 0 0; padding: 12px 16px; max-width: 760px; background: var(--ambar); color: var(--sobre-color);
+    border: 3px solid var(--linea); border-radius: var(--radio); box-shadow: 4px 4px 0 var(--sombra); transform: rotate(-.4deg);
+  }
+  .ficha__pasado a { color: inherit; font-weight: 800; }
+  .ficha__plazo {
+    display: inline-block; margin: -6px 0 16px; padding: 4px 14px; font-family: var(--mono); font-weight: 800; font-size: 14px;
+    background: var(--ambar); color: var(--sobre-color); border: 2px solid var(--linea); border-radius: 999px; transform: rotate(-1deg);
+  }
+  .ficha__plazo.urgente { background: var(--rosa); }
+  .ficha__plazo.cerrado { background: var(--tarjeta); color: var(--suave); border-style: dashed; }
+  .ficha__chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; padding: 0; }
+  .ficha__chips li {
+    padding: 2px 12px; border: 2px solid var(--linea); border-radius: 999px; background: var(--lima); color: var(--sobre-color);
+    font-weight: 800; font-size: 14px;
+  }
+  .ficha__chips li:nth-child(even) { background: var(--azul); }
+  .ficha__anual { margin: 14px 0 0; font-weight: 600; }
+  .ficha__anual a { color: var(--texto); font-weight: 800; }
   .ficha__desc { white-space: pre-line; color: var(--suave); }
   .ficha__fuente { font-size: 14px; color: var(--suave); }
   .ficha__mapa iframe {

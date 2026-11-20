@@ -2,6 +2,7 @@
 // Páginas por tipo y por ciudad: /game-jams, /ctf, /hackathones-madrid… (definidas en lib/paginas.ts).
 import Base from '../layouts/Base.astro';
 import Tarjeta from '../components/Tarjeta.astro';
+import Suscribir from '../components/Suscribir.astro';
 import { URL_TELEGRAM } from '../config';
 import { PAGINAS_TIPO, paginasCiudad, type Pagina } from '../lib/paginas';
 import { GUIAS } from '../lib/guias';
@@ -60,6 +61,8 @@ const [antes, despues] = p.titulo.split(p.resalte);
         )}
       </>
     )}
+
+    <Suscribir filtro={p.slug} que={p.titulo.replace(/ \d{4}/, '')} />
 
     {guia && (
       <a class="guia-enlace" href={`/guias/${guia.slug}`}>

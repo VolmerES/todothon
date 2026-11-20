@@ -1,7 +1,11 @@
 // Páginas fijas por tipo y por ciudad («Game jams en España», «Hackathones en Madrid»…).
 // Son las que Google enseña cuando alguien busca eso: cada una lista los eventos que tocan y se
 // rehace sola cada día con los datos nuevos. Si una se queda sin eventos, enseña los online.
-import { ciudadCorta, type Evento } from './formato';
+import { ciudadCorta, etiquetas, type Evento } from './formato';
+import { TEMAS } from '../config';
+
+const IA = new RegExp(TEMAS.find((t) => t.clave === 'ia')!.patron, 'i');
+const textoDe = (e: Evento) => `${e.nombre} ${e.organizador || ''} ${(e.temas || []).join(' ')} ${e.descripcion || ''}`.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
 export interface Pagina {
   slug: string;
@@ -57,6 +61,28 @@ export const PAGINAS_TIPO: Pagina[] = [
     filtro: (e) => e.tipo === 'datathon',
   },
   {
+    slug: 'hackathones-ia',
+    titulo: `Hackathones de IA ${anio} en España y online`, resalte: 'IA',
+    descripcion: `Hackathones de inteligencia artificial, agentes y machine learning en España y online en ${anio}: fechas, premios y enlace a la inscripción.`,
+    intro: 'Agentes, modelos de lenguaje, visión artificial, machine learning… Todos los hackathones con la inteligencia artificial en el centro.',
+    filtro: (e) => IA.test(textoDe(e)) && (e.pais === 'ES' || e.modalidad !== 'presencial'),
+  },
+  {
+    slug: 'hackathones-principiantes',
+    titulo: `Hackathones para principiantes ${anio}`, resalte: 'principiantes',
+    descripcion: 'Hackathones y game jams pensados para gente que empieza: sin experiencia previa, con mentores y buen ambiente.',
+    intro: 'Si es tu primera vez, estos son los que lo ponen fácil: abiertos a gente sin experiencia, con mentores y talleres.',
+    filtro: (e) => etiquetas(e).includes('Para principiantes'),
+    guia: 'primer-hackathon',
+  },
+  {
+    slug: 'hackathones-con-premios',
+    titulo: `Hackathones con premios ${anio}`, resalte: 'premios',
+    descripcion: `Hackathones, datathones y CTF con premios en metálico, viajes o prácticas, en España y online en ${anio}.`,
+    intro: 'Premios en metálico, viajes, prácticas o créditos: los que tienen algo más que la gloria en juego.',
+    filtro: (e) => etiquetas(e).includes('Con premios') && (e.pais === 'ES' || e.modalidad !== 'presencial'),
+  },
+  {
     slug: 'ideatones',
     titulo: `Ideatones ${anio} en España y online`, resalte: 'Ideatones',
     descripcion: `Ideatones en España y online en ${anio}: retos de ideas y emprendimiento, sin necesidad de programar.`,
@@ -71,7 +97,10 @@ const CIUDADES_FIJAS = ['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Bilbao', 
 export function paginasCiudad(eventos: Evento[]): Pagina[] {
   const deEspana = eventos.filter((e) => e.pais === 'ES' && e.modalidad !== 'online');
   const conEventos = deEspana.map(ciudadCorta).filter((c) => c !== 'Lugar por confirmar');
-  const ciudades = [...new Set([...CIUDADES_FIJAS, ...conEventos])];
+  // Una sola página por ciudad aunque una fuente escriba «Malaga» y otra «Málaga»: gana la primera (las fijas, con tilde).
+  const porClave = new Map<string, string>();
+  for (const c of [...CIUDADES_FIJAS, ...conEventos]) if (!porClave.has(sinTildes(c))) porClave.set(sinTildes(c), c);
+  const ciudades = [...porClave.values()];
   return ciudades.map((c) => {
     const clave = sinTildes(c);
     return {
