@@ -68,9 +68,8 @@ if (!TOKEN) {
 // cuando cambia PERFIL.version (se recuerda en data/telegram-bot.json).
 const PERFIL = {
   version: 1,
-  descripcion: 'Todos los hackathones, datathones, game jams y CTF de España (y los online), en un solo sitio.
-
-Síguenos en el canal y te avisamos de cada evento nuevo. La web, con buscador y mapa: todothon.es',
+  descripcion: 'Todos los hackathones, datathones, game jams y CTF de España (y los online), en un solo sitio.\n\n'
+    + 'Síguenos en el canal y te avisamos de cada evento nuevo. La web, con buscador y mapa: todothon.es',
   corta: 'Hackathones, game jams y CTF de España. Sin anuncios, de la comunidad. todothon.es',
   comandos: [
     { command: 'start', description: 'Qué es Todothon' },
@@ -92,8 +91,7 @@ if (perfilPrevio.version !== PERFIL.version) {
     await bot('setMyDescription', { description: PERFIL.descripcion, language_code: '' });
     await bot('setMyShortDescription', { short_description: PERFIL.corta, language_code: '' });
     await bot('setMyCommands', { commands: PERFIL.comandos });
-    await writeFile(ruta('data/telegram-bot.json'), JSON.stringify({ version: PERFIL.version, bot: `@${yo.username}` }, null, 1) + '
-');
+    await writeFile(ruta('data/telegram-bot.json'), JSON.stringify({ version: PERFIL.version, bot: `@${yo.username}` }, null, 1) + '\n');
     console.log(`Perfil del bot @${yo.username} puesto (versión ${PERFIL.version}).`);
   } catch (err) {
     console.error(`No se ha podido poner el perfil del bot: ${err.message}`);
