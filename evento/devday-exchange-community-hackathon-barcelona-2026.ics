@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:saraoia-2026-11-21-devday-exchange-community-hackathon-barcelona@todoth
  on.es
-DTSTAMP:20261120T121642Z
+DTSTAMP:20261120T125633Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:DevDay Exchange Community Hackathon: Barcelona
