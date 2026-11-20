@@ -1,0 +1,56 @@
+---
+// Cartel de un evento que se repite cada año: su imagen (public/anuales/<clave>.webp) pegada como una
+// pegatina con cinta, o, si no tiene, un cartel tipográfico de su color con el mes en grande.
+import { TIPOS } from '../config';
+import type { Anual } from '../lib/anuales';
+
+interface Props { anual: Anual; grande?: boolean; giro?: string }
+const { anual: a, grande = false, giro = '-1.5deg' } = Astro.props;
+const tipo = TIPOS[a.tipo] || TIPOS.otro;
+const MESES = ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'];
+const EMOJI: Record<string, string> = { hackathon: '💻', datathon: '📊', ideathon: '💡', gamejam: '🎮', ctf: '🚩', otro: '🎄' };
+const mes = a.meses.map((m) => MESES[m - 1]).join(' · ');
+---
+<div class:list={['ca', { 'ca--grande': grande }]} style={`--giro: ${giro}`}>
+  <span class="ca__cinta" aria-hidden="true"></span>
+  <div class="ca__marco">
+    {a.imagen ? (
+      <img src={a.imagen} alt={`Imagen de ${a.nombre}`} width="800" height="420" loading={grande ? 'eager' : 'lazy'} decoding="async" />
+    ) : (
+      <div class="ca__auto" style={`background: ${tipo.color}`} aria-hidden="true">
+        <span class="ca__emoji">{EMOJI[a.tipo] || '✨'}</span>
+        <span class="ca__nombre">{a.nombre}</span>
+      </div>
+    )}
+  </div>
+  <span class="ca__mes" aria-hidden="true">{mes}</span>
+</div>
+
+<style>
+  .ca { position: relative; padding-top: 8px; }
+  .ca__marco {
+    background: #fff; padding: 8px; border: 2px solid var(--linea); box-shadow: 4px 4px 0 var(--sombra);
+    transform: rotate(var(--giro)); transition: transform .3s var(--rebote);
+  }
+  .ca__marco img, .ca__auto { display: block; width: 100%; height: auto; aspect-ratio: 800 / 420; object-fit: cover; }
+  .ca__auto {
+    position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; padding: 14px 16px;
+    color: var(--sobre-color);
+    background-image: radial-gradient(rgba(0, 0, 0, .18) 1.5px, transparent 1.5px) !important; background-size: 16px 16px !important;
+  }
+  .ca__emoji { position: absolute; top: 10px; right: 14px; font-size: 44px; transform: rotate(12deg); }
+  .ca__nombre { font-weight: 800; font-size: 34px; line-height: .95; letter-spacing: -1px; text-transform: uppercase; max-width: 85%; }
+  .ca--grande .ca__nombre { font-size: 58px; }
+  .ca--grande .ca__emoji { font-size: 72px; }
+  .ca__cinta {
+    position: absolute; z-index: 1; top: -2px; left: 50%; width: 84px; height: 22px; margin-left: -42px;
+    background: var(--cinta); transform: rotate(-4deg);
+  }
+  /* El mes, como una etiqueta de precio pegada en la esquina. */
+  .ca__mes {
+    position: absolute; z-index: 2; left: -8px; bottom: -12px; padding: 3px 10px;
+    font-family: var(--mono); font-weight: 800; font-size: 13px; letter-spacing: .5px;
+    background: var(--texto); color: var(--fondo); border: 2px solid var(--linea); border-radius: 6px; transform: rotate(-5deg);
+  }
+  .ca--grande .ca__mes { font-size: 16px; padding: 5px 14px; }
+</style>

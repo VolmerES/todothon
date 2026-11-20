@@ -3,6 +3,7 @@
 // edición si ya está anunciada y las anteriores que tengamos. Es la que sale al buscar «HackUPC 2027».
 import Base from '../../layouts/Base.astro';
 import Tarjeta from '../../components/Tarjeta.astro';
+import CartelAnual from '../../components/CartelAnual.astro';
 import { TIPOS } from '../../config';
 import { rangoFechas } from '../../lib/formato';
 import { ANUALES, proximaDe, pasadasDe, type Anual } from '../../lib/anuales';
@@ -27,12 +28,15 @@ const titulo = `${a.nombre} ${anioQueViene}: fechas, inscripción y ediciones an
     <h1>{a.nombre} <span class="resalte">{anioQueViene}</span></h1>
     <p class="entradilla">{a.descripcion}</p>
 
+    <div class="cabeza">
+    <div class="cabeza__cartel"><CartelAnual anual={a} grande giro="-2deg" /></div>
     <dl class="datos">
       <div><dt>Cuándo suele ser</dt><dd>{a.cuando}</dd></div>
       <div><dt>Dónde</dt><dd>{a.donde}</dd></div>
       {a.desde && <div><dt>Desde</dt><dd>{a.desde}</dd></div>}
       {a.web && <div><dt>Web oficial</dt><dd><a href={a.web} rel="noopener">{a.web.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')} ↗</a></dd></div>}
     </dl>
+    </div>
 
     <h2>Próxima edición</h2>
     {proxima
@@ -70,6 +74,9 @@ const titulo = `${a.nombre} ${anioQueViene}: fechas, inscripción y ediciones an
     border-radius: var(--radio); box-shadow: 5px 5px 0 var(--sombra); transform: rotate(1.5deg);
   }
   .entradilla { margin: 0; font-size: 20px; color: var(--suave); max-width: 720px; }
+  .cabeza { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: center; margin-top: 8px; }
+  @media (min-width: 860px) { .cabeza { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+  .cabeza__cartel { max-width: 560px; }
   .datos {
     margin: 0; display: grid; gap: 8px; width: 100%; max-width: 640px; padding: 18px 20px;
     background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra);

@@ -3,7 +3,8 @@
 // Si la próxima edición ya está anunciada (está en eventos.json), la tarjeta lleva a su ficha.
 import Base from '../../layouts/Base.astro';
 import { TIPOS } from '../../config';
-import { rangoFechas } from '../../lib/formato';
+import CartelAnual from '../../components/CartelAnual.astro';
+import { rangoFechas, diasHasta } from '../../lib/formato';
 import { ANUALES as anuales, proximaDe as proxima, type Anual } from '../../lib/anuales';
 
 const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
@@ -12,6 +13,16 @@ const mesActual = new Date().getUTCMonth() + 1;
 const orden = Array.from({ length: 12 }, (_, i) => ((mesActual - 1 + i) % 12) + 1);
 const porMes = orden.map((m) => ({ m, lista: (anuales as Anual[]).filter((a) => a.meses[0] === m) })).filter((x) => x.lista.length);
 const abiertos = (anuales as Anual[]).filter((a) => proxima(a)).length;
+// Arriba, los tres más cercanos que ya tienen fecha, con cuenta atrás.
+const yaVienen = (anuales as Anual[])
+  .map((a) => ({ a, p: proxima(a) }))
+  .filter((x) => x.p?.inicio)
+  .sort((x, y) => x.p!.inicio!.localeCompare(y.p!.inicio!))
+  .slice(0, 3);
+const cuenta = (inicio: string | null) => {
+  const n = diasHasta(inicio) ?? 0;
+  return n <= 0 ? '¡ya está aquí!' : n === 1 ? 'mañana' : `en ${n} días`;
+};
 
 const ld = {
   '@context': 'https://schema.org', '@type': 'ItemList', name: 'Hackathones, game jams y CTF que se celebran cada año en España',
@@ -28,6 +39,24 @@ const ld = {
       Cuando se anuncia la nueva edición, la tarjeta te lleva directa a la ficha.
     </p>
 
+    {yaVienen.length > 0 && (
+      <section class="vienen" aria-labelledby="t-vienen">
+        <h2 id="t-vienen">⏳ Lo próximo</h2>
+        <ul class="vienen__lista">
+          {yaVienen.map(({ a, p }, i) => (
+            <li>
+              <a class="vienen__tarjeta" href={`/evento/${p!.slug}`}>
+                <CartelAnual anual={a} giro={`${[-2, 1.5, -1][i]}deg`} />
+                <span class="vienen__cuenta">{cuenta(p!.inicio)}</span>
+                <strong>{a.nombre}</strong>
+                <span class="vienen__fecha">{rangoFechas(p!.inicio, p!.fin)} · {a.donde}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     <nav class="saltos" aria-label="Ir al mes">
       {porMes.map(({ m }) => <a href={`#mes-${m}`} class:list={{ ahora: m === mesActual }}>{MESES[m - 1].slice(0, 3)}</a>)}
     </nav>
@@ -41,6 +70,7 @@ const ld = {
             const tipo = TIPOS[a.tipo] || TIPOS.otro;
             return (
               <li class="anual" style={`--giro: ${i % 2 ? 0.7 : -0.7}deg`}>
+                <a class="anual__cartel" href={`/cada-ano/${a.clave}`} tabindex="-1" aria-hidden="true"><CartelAnual anual={a} giro={`${i % 2 ? 1.5 : -1.5}deg`} /></a>
                 <span class="anual__tipo" style={`background: ${tipo.color}`}>{a.tipo === 'otro' ? 'Reto' : tipo.nombre}</span>
                 <h3><a href={`/cada-ano/${a.clave}`}>{a.nombre}</a></h3>
                 <p class="anual__meta">{a.donde} · {a.cuando}{a.desde && ` · desde ${a.desde}`}</p>
@@ -94,8 +124,27 @@ const ld = {
     background: var(--tarjeta); border: 3px solid var(--linea); border-radius: var(--radio-grande);
     box-shadow: 6px 6px 0 var(--sombra); transform: rotate(var(--giro));
   }
+  .anual__cartel { display: block; margin: -4px -2px 10px; }
+  .anual:hover :global(.ca__marco) { transform: rotate(0deg) scale(1.02); }
+  .vienen h2 { margin: 18px 0 14px; font-size: 30px; letter-spacing: -.5px; }
+  .vienen__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 28px; }
+  .vienen__tarjeta {
+    position: relative; display: flex; flex-direction: column; gap: 6px; padding: 16px 16px 18px; height: 100%;
+    background: var(--lima); color: var(--sobre-color); text-decoration: none;
+    border: 3px solid var(--linea); border-radius: var(--radio-grande); box-shadow: 6px 6px 0 var(--sombra);
+    transition: transform .2s var(--rebote), box-shadow .2s var(--rebote);
+  }
+  .vienen li:nth-child(2) .vienen__tarjeta { background: var(--azul); }
+  .vienen li:nth-child(3) .vienen__tarjeta { background: var(--ambar); }
+  .vienen__tarjeta:hover { transform: translate(-2px, -3px) rotate(-.6deg); box-shadow: 9px 10px 0 var(--sombra); }
+  .vienen__tarjeta strong { font-size: 24px; line-height: 1.1; margin-top: 10px; }
+  .vienen__cuenta {
+    position: absolute; top: -14px; right: 14px; z-index: 3; padding: 3px 12px; font-family: var(--mono); font-weight: 800; font-size: 14px;
+    background: var(--rosa); color: var(--sobre-color); border: 2px solid var(--linea); border-radius: 999px; transform: rotate(4deg);
+  }
+  .vienen__fecha { font-family: var(--mono); font-size: 13px; }
   .anual__tipo {
-    position: absolute; top: -14px; right: 16px; padding: 2px 12px; font-weight: 800; font-size: 14px;
+    z-index: 3; position: absolute; top: -14px; right: 16px; padding: 2px 12px; font-weight: 800; font-size: 14px;
     color: var(--sobre-color); border: 2px solid var(--linea); border-radius: 999px; transform: rotate(3deg);
   }
   .anual h3 { margin: 0; font-size: 24px; line-height: 1.1; letter-spacing: -.5px; }
