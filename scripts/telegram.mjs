@@ -4,7 +4,8 @@
 // Lo lanza la Action diaria después de recoger. Necesita dos secretos del repo:
 //   TELEGRAM_TOKEN  el token del bot (de @BotFather)
 //   TELEGRAM_CANAL  el canal: @todothon o su id numérico (-100…)
-// Sin ellos no hace nada. Recuerda lo ya anunciado en data/anunciados.json.
+// Sin el token no hace nada; con el token y sin canal, solo deja el perfil del bot puesto.
+// Recuerda lo ya anunciado en data/anunciados.json.
 import { readFile, writeFile } from 'node:fs/promises';
 
 const TOKEN = process.env.TELEGRAM_TOKEN;
@@ -14,10 +15,6 @@ const MAXIMO = 8; // mensajes por día como mucho, para no inundar el canal
 const RAIZ = new URL('..', import.meta.url);
 const ruta = (p) => new URL(p, RAIZ);
 
-if (!TOKEN || !CANAL) {
-  console.log('Telegram sin configurar (faltan TELEGRAM_TOKEN o TELEGRAM_CANAL): no se publica nada.');
-  process.exit(0);
-}
 
 const TIPOS = { hackathon: 'Hackathon', datathon: 'Datathon', ideathon: 'Ideatón', gamejam: 'Game jam', ctf: 'CTF' };
 const EMOJI = { hackathon: '💻', datathon: '📊', ideathon: '💡', gamejam: '🎮', ctf: '🚩' };
@@ -61,6 +58,53 @@ async function anunciar(e) {
 }
 
 const eventos = await leerJson('src/data/eventos.json', []);
+if (!TOKEN) {
+  console.log('Telegram sin configurar (falta TELEGRAM_TOKEN): no se publica nada.');
+  process.exit(0);
+}
+
+// --- Perfil del bot ----------------------------------------------------------------------------------
+// La descripción, el texto corto y los comandos se ponen desde aquí, no a mano en @BotFather. Solo se mandan
+// cuando cambia PERFIL.version (se recuerda en data/telegram-bot.json).
+const PERFIL = {
+  version: 1,
+  descripcion: 'Todos los hackathones, datathones, game jams y CTF de España (y los online), en un solo sitio.
+
+Síguenos en el canal y te avisamos de cada evento nuevo. La web, con buscador y mapa: todothon.es',
+  corta: 'Hackathones, game jams y CTF de España. Sin anuncios, de la comunidad. todothon.es',
+  comandos: [
+    { command: 'start', description: 'Qué es Todothon' },
+    { command: 'web', description: 'Abrir todothon.es' },
+  ],
+};
+async function bot(metodo, cuerpo) {
+  const r = await fetch(`https://api.telegram.org/bot${TOKEN}/${metodo}`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(cuerpo),
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!j.ok) throw new Error(`${metodo}: ${j.description || r.status}`);
+  return j.result;
+}
+const perfilPrevio = await leerJson('data/telegram-bot.json', {});
+if (perfilPrevio.version !== PERFIL.version) {
+  try {
+    const yo = await bot('getMe', {});
+    await bot('setMyDescription', { description: PERFIL.descripcion, language_code: '' });
+    await bot('setMyShortDescription', { short_description: PERFIL.corta, language_code: '' });
+    await bot('setMyCommands', { commands: PERFIL.comandos });
+    await writeFile(ruta('data/telegram-bot.json'), JSON.stringify({ version: PERFIL.version, bot: `@${yo.username}` }, null, 1) + '
+');
+    console.log(`Perfil del bot @${yo.username} puesto (versión ${PERFIL.version}).`);
+  } catch (err) {
+    console.error(`No se ha podido poner el perfil del bot: ${err.message}`);
+  }
+}
+
+if (!CANAL) {
+  console.log('Falta TELEGRAM_CANAL: el bot está listo, pero no hay canal donde publicar.');
+  process.exit(0);
+}
+
 const previo = await leerJson('data/anunciados.json', null);
 const anunciados = new Set(previo || []);
 const hoy = new Date().toISOString().slice(0, 10);
