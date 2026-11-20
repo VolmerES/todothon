@@ -325,12 +325,6 @@
     <description>20–22 nov 2026 · Online · Science Innovation Association of XJTLU</description>
   </item>
   <item>
-    <title>EyesOpenCTF 7th edition</title>
-    <link>https://todothon.es/evento/eyesopenctf-7th-edition-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/eyesopenctf-7th-edition-2026</guid>
-    <description>20–22 nov 2026 · Online · EyesOpen_Security</description>
-  </item>
-  <item>
     <title>GlacierCTF 2026</title>
     <link>https://todothon.es/evento/glacierctf-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/glacierctf-2026</guid>
@@ -605,6 +599,12 @@
     <link>https://todothon.es/evento/evensonarisnord-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/evensonarisnord-2026</guid>
     <description>31 dic 2026 · Online · HoustonHacks2026</description>
+  </item>
+  <item>
+    <title>GaianSpace Perihelion CTF 2027</title>
+    <link>https://todothon.es/evento/gaianspace-perihelion-ctf-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gaianspace-perihelion-ctf-2027</guid>
+    <description>2–3 ene 2027 · Online · GaianSpace</description>
   </item>
 </channel>
 </rss>
