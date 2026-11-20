@@ -391,6 +391,12 @@
     <description>22 nov – 4 dic 2026 · Online · augie , Hack Club</description>
   </item>
   <item>
+    <title>STEM Innovation Challenge 2026</title>
+    <link>https://todothon.es/evento/stem-innovation-challenge-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/stem-innovation-challenge-2026</guid>
+    <description>24–27 nov 2026 · Online · Global STEM Innovation Initiative</description>
+  </item>
+  <item>
     <title>More Than a Hack 2027 (Talent Arena)</title>
     <link>https://todothon.es/evento/more-than-a-hack-2027-talent-arena-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/more-than-a-hack-2027-talent-arena-2026</guid>
@@ -599,12 +605,6 @@
     <link>https://todothon.es/evento/evensonarisnord-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/evensonarisnord-2026</guid>
     <description>31 dic 2026 · Online · HoustonHacks2026</description>
-  </item>
-  <item>
-    <title>GaianSpace Perihelion CTF 2027</title>
-    <link>https://todothon.es/evento/gaianspace-perihelion-ctf-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/gaianspace-perihelion-ctf-2027</guid>
-    <description>2–3 ene 2027 · Online · GaianSpace</description>
   </item>
 </channel>
 </rss>

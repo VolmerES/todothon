@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:STEM Innovation Challenge 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32188@todothon.es
+DTSTAMP:20261120T090148Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261128
+SUMMARY:STEM Innovation Challenge 2026
+LOCATION:Online
+DESCRIPTION:https://stem-innovation-challenge-2026.devpost.com/\n\nMás inf
+ ormación: https://todothon.es/evento/stem-innovation-challenge-2026
+URL:https://stem-innovation-challenge-2026.devpost.com/
+END:VEVENT
+END:VCALENDAR

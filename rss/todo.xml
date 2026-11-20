@@ -427,6 +427,12 @@
     <description>22 nov – 4 dic 2026 · Online · augie , Hack Club</description>
   </item>
   <item>
+    <title>STEM Innovation Challenge 2026</title>
+    <link>https://todothon.es/evento/stem-innovation-challenge-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/stem-innovation-challenge-2026</guid>
+    <description>24–27 nov 2026 · Online · Global STEM Innovation Initiative</description>
+  </item>
+  <item>
     <title>AI FIRST Hackathon</title>
     <link>https://todothon.es/evento/ai-first-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/ai-first-hackathon-2026</guid>
@@ -599,12 +605,6 @@
     <link>https://todothon.es/evento/frontier-26-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/frontier-26-2026</guid>
     <description>4–11 dic 2026 · Online · LoveHack</description>
-  </item>
-  <item>
-    <title>TUCTF 2026</title>
-    <link>https://todothon.es/evento/tuctf-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/tuctf-2026</guid>
-    <description>4–6 dic 2026 · Online · ascii overflow</description>
   </item>
 </channel>
 </rss>
