@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Undutmaning 2027
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ctftime-3481@todothon.es
+DTSTAMP:20261121T133648Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Undutmaning 2027
+LOCATION:Online
+DESCRIPTION:https://undutmaning.se/\n\nMás información: https://todothon.
+ es/evento/undutmaning-2027
+URL:https://undutmaning.se/
+END:VEVENT
+END:VCALENDAR

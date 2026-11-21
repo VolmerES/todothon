@@ -7,28 +7,10 @@
   <description>Todothon · Game jam: hackathones, game jams y CTF, actualizado cada día.</description>
   <language>es</language>
   <item>
-    <title>Arcjam 2026</title>
-    <link>https://todothon.es/evento/arcjam-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/arcjam-2026</guid>
-    <description>20–23 nov 2026 · Online · Arcweave</description>
-  </item>
-  <item>
-    <title>GMT Jam #1 [$300 multi-track prize pool]</title>
-    <link>https://todothon.es/evento/gmt-jam-1-300-multi-track-prize-pool-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/gmt-jam-1-300-multi-track-prize-pool-2026</guid>
-    <description>20–29 nov 2026 · Online · Gaming Mantralaya , Game Developers Oslo</description>
-  </item>
-  <item>
-    <title>IX Game Jam Cultura Abierta 2026</title>
-    <link>https://todothon.es/evento/ix-game-jam-cultura-abierta-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/ix-game-jam-cultura-abierta-2026</guid>
-    <description>20–22 nov 2026 · Madrid · DEV y Acción Cultural Española, con la UCM</description>
-  </item>
-  <item>
     <title>MJAM26</title>
     <link>https://todothon.es/evento/mjam26-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/mjam26-2026</guid>
-    <description>20–22 nov 2026 · Espinardo · Xaviscript</description>
+    <description>20–22 nov 2026 · Murcia · Xaviscript</description>
   </item>
   <item>
     <title>Harvest</title>
@@ -41,6 +23,12 @@
     <link>https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</guid>
     <description>28 nov – 8 dic 2026 · Online · PIXEL FORGE</description>
+  </item>
+  <item>
+    <title>Slapjam #3</title>
+    <link>https://todothon.es/evento/slapjam-3-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/slapjam-3-2026</guid>
+    <description>28–30 nov 2026 · Online · slapjam , Arashi , tobias</description>
   </item>
   <item>
     <title>3x3x3 Jam</title>

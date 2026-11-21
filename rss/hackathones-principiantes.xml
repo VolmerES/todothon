@@ -22,7 +22,7 @@
     <title>STEM2Connect AI Hackathon</title>
     <link>https://todothon.es/evento/stem2connect-ai-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/stem2connect-ai-hackathon-2026</guid>
-    <description>17 oct – 21 nov 2026 · Online · STEM2Connect</description>
+    <description>17 oct – 29 nov 2026 · Online · STEM2Connect</description>
   </item>
   <item>
     <title>SafeSpace Hacks - Judges Needed</title>
@@ -115,16 +115,16 @@
     <description>4 nov 2026 – 26 jun 2027 · Online · Binnovative</description>
   </item>
   <item>
-    <title>AI OpenBuild</title>
-    <link>https://todothon.es/evento/ai-openbuild-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/ai-openbuild-2026</guid>
-    <description>5 nov – 10 dic 2026 · Online · AI OpenBuild</description>
-  </item>
-  <item>
     <title>Code for Change</title>
     <link>https://todothon.es/evento/code-for-change-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/code-for-change-2026</guid>
     <description>5 nov – 1 dic 2026 · Online · HackathonForEveryone</description>
+  </item>
+  <item>
+    <title>AI OpenBuild</title>
+    <link>https://todothon.es/evento/ai-openbuild-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-openbuild-2026</guid>
+    <description>5 nov – 10 dic 2026 · Online · AI OpenBuild</description>
   </item>
   <item>
     <title>Inceptrix 3.0</title>
@@ -169,12 +169,6 @@
     <description>14–21 nov 2026 · Online · HackClub  ✓⃝</description>
   </item>
   <item>
-    <title>Bridge The Gap Hacks</title>
-    <link>https://todothon.es/evento/bridge-the-gap-hacks-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/bridge-the-gap-hacks-2026</guid>
-    <description>15–21 nov 2026 · Online · Bridge The Gap Hacks</description>
-  </item>
-  <item>
     <title>Teens in AI Global Challenge 2027</title>
     <link>https://todothon.es/evento/teens-in-ai-global-challenge-2027-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/teens-in-ai-global-challenge-2027-2026</guid>
@@ -205,22 +199,10 @@
     <description>20–22 nov 2026 · Online · Science Innovation Association of XJTLU</description>
   </item>
   <item>
-    <title>WolvCTF 2026</title>
-    <link>https://todothon.es/evento/wolvctf-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/wolvctf-2026</guid>
-    <description>20–22 nov 2026 · Online · w01verines</description>
-  </item>
-  <item>
     <title>EvoHacks 2</title>
     <link>https://todothon.es/evento/evohacks-2-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/evohacks-2-2026</guid>
     <description>21–22 nov 2026 · Online · EvoHacks</description>
-  </item>
-  <item>
-    <title>Crate-CTF 2026</title>
-    <link>https://todothon.es/evento/crate-ctf-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/crate-ctf-2026</guid>
-    <description>21 nov 2026 · Online · Crate-CTF</description>
   </item>
   <item>
     <title>CDTM VLC HACKS 2026</title>
@@ -232,7 +214,7 @@
     <title>STEM Innovation Challenge 2026</title>
     <link>https://todothon.es/evento/stem-innovation-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/stem-innovation-challenge-2026</guid>
-    <description>24–27 nov 2026 · Online · Global STEM Innovation Initiative</description>
+    <description>24–25 nov 2026 · Online · Global STEM Innovation Initiative</description>
   </item>
   <item>
     <title>N0v4CTF 2026</title>
@@ -275,6 +257,12 @@
     <link>https://todothon.es/evento/build-4-all-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/build-4-all-2026</guid>
     <description>5–12 dic 2026 · Online · CS4ALL</description>
+  </item>
+  <item>
+    <title>Hackstead: Winterfest</title>
+    <link>https://todothon.es/evento/hackstead-winterfest-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackstead-winterfest-2026</guid>
+    <description>6–20 dic 2026 · Online · Hackstead</description>
   </item>
   <item>
     <title>Arioron Think 2026</title>

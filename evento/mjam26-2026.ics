@@ -6,12 +6,12 @@ METHOD:PUBLISH
 X-WR-CALNAME:MJAM26
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
-UID:saraoia-2026-11-20-mjam26@todothon.es
-DTSTAMP:20261120T141119Z
+UID:ia-mjam26-2026-11-20@todothon.es
+DTSTAMP:20261121T133648Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:MJAM26
-LOCATION:CEEIM\, CEEIM\, Campus Universitario de Espinardo 7\, Espinardo
+LOCATION:CEEIM\, C. Campus Universitario\, 7\, 30100 Espinardo\, Murcia
 DESCRIPTION:https://itch.io/jam/mjam26\n\nMás información: https://todoth
  on.es/evento/mjam26-2026
 URL:https://itch.io/jam/mjam26

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackstead: Winterfest
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32161@todothon.es
+DTSTAMP:20261121T133648Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261221
+SUMMARY:Hackstead: Winterfest
+LOCATION:Online
+DESCRIPTION:https://hackstead.devpost.com/\n\nMás información: https://to
+ dothon.es/evento/hackstead-winterfest-2026
+URL:https://hackstead.devpost.com/
+END:VEVENT
+END:VCALENDAR

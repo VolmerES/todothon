@@ -43,12 +43,6 @@
     <description>20 oct – 21 dic 2026 · Online · Arbiter </description>
   </item>
   <item>
-    <title>Dakar Bitcoin Hack by BTrust</title>
-    <link>https://todothon.es/evento/dakar-bitcoin-hack-by-btrust-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/dakar-bitcoin-hack-by-btrust-2026</guid>
-    <description>26 oct – 20 nov 2026 · Online · Dakar Bitcoin Days</description>
-  </item>
-  <item>
     <title>Codegeist 2026: Build with context. Ship with confidence.</title>
     <link>https://todothon.es/evento/codegeist-2026-build-with-context-ship-with-confidence</link>
     <guid isPermaLink="true">https://todothon.es/evento/codegeist-2026-build-with-context-ship-with-confidence</guid>
@@ -103,16 +97,16 @@
     <description>4 nov – 18 dic 2026 · Online · HETIC</description>
   </item>
   <item>
-    <title>AI OpenBuild</title>
-    <link>https://todothon.es/evento/ai-openbuild-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/ai-openbuild-2026</guid>
-    <description>5 nov – 10 dic 2026 · Online · AI OpenBuild</description>
-  </item>
-  <item>
     <title>Code for Change</title>
     <link>https://todothon.es/evento/code-for-change-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/code-for-change-2026</guid>
     <description>5 nov – 1 dic 2026 · Online · HackathonForEveryone</description>
+  </item>
+  <item>
+    <title>AI OpenBuild</title>
+    <link>https://todothon.es/evento/ai-openbuild-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ai-openbuild-2026</guid>
+    <description>5 nov – 10 dic 2026 · Online · AI OpenBuild</description>
   </item>
   <item>
     <title>SLAY HACKS</title>
@@ -187,18 +181,6 @@
     <description>18–24 nov 2026 · Online · BTAJI CREW</description>
   </item>
   <item>
-    <title>GMT Jam #1 [$300 multi-track prize pool]</title>
-    <link>https://todothon.es/evento/gmt-jam-1-300-multi-track-prize-pool-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/gmt-jam-1-300-multi-track-prize-pool-2026</guid>
-    <description>20–29 nov 2026 · Online · Gaming Mantralaya , Game Developers Oslo</description>
-  </item>
-  <item>
-    <title>MJAM26</title>
-    <link>https://todothon.es/evento/mjam26-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/mjam26-2026</guid>
-    <description>20–22 nov 2026 · Espinardo · Xaviscript</description>
-  </item>
-  <item>
     <title>EvoHacks 2</title>
     <link>https://todothon.es/evento/evohacks-2-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/evohacks-2-2026</guid>
@@ -214,7 +196,7 @@
     <title>STEM Innovation Challenge 2026</title>
     <link>https://todothon.es/evento/stem-innovation-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/stem-innovation-challenge-2026</guid>
-    <description>24–27 nov 2026 · Online · Global STEM Innovation Initiative</description>
+    <description>24–25 nov 2026 · Online · Global STEM Innovation Initiative</description>
   </item>
   <item>
     <title>O Camiño dos Datos (II Datathon universitario, UDC)</title>
@@ -257,6 +239,12 @@
     <link>https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</guid>
     <description>2–3 dic 2026 · Madrid · Comunidad de Madrid</description>
+  </item>
+  <item>
+    <title>Hackstead: Winterfest</title>
+    <link>https://todothon.es/evento/hackstead-winterfest-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackstead-winterfest-2026</guid>
+    <description>6–20 dic 2026 · Online · Hackstead</description>
   </item>
   <item>
     <title>Ryze Hacks 2026</title>

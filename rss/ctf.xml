@@ -7,30 +7,6 @@
   <description>Todothon · CTF: hackathones, game jams y CTF, actualizado cada día.</description>
   <language>es</language>
   <item>
-    <title>GlacierCTF 2026</title>
-    <link>https://todothon.es/evento/glacierctf-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/glacierctf-2026</guid>
-    <description>20–21 nov 2026 · Online · LosFuzzys</description>
-  </item>
-  <item>
-    <title>WolvCTF 2026</title>
-    <link>https://todothon.es/evento/wolvctf-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/wolvctf-2026</guid>
-    <description>20–22 nov 2026 · Online · w01verines</description>
-  </item>
-  <item>
-    <title>Outback Overflow</title>
-    <link>https://todothon.es/evento/outback-overflow-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/outback-overflow-2026</guid>
-    <description>20–21 nov 2026 · Online · HSCC</description>
-  </item>
-  <item>
-    <title>Crate-CTF 2026</title>
-    <link>https://todothon.es/evento/crate-ctf-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/crate-ctf-2026</guid>
-    <description>21 nov 2026 · Online · Crate-CTF</description>
-  </item>
-  <item>
     <title>RedReaper CTF</title>
     <link>https://todothon.es/evento/redreaper-ctf-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/redreaper-ctf-2026</guid>
@@ -143,6 +119,12 @@
     <link>https://todothon.es/evento/jerseyctf-vii-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/jerseyctf-vii-2027</guid>
     <description>13–14 mar 2027 · Online · Highlander Hackers</description>
+  </item>
+  <item>
+    <title>Undutmaning 2027</title>
+    <link>https://todothon.es/evento/undutmaning-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/undutmaning-2027</guid>
+    <description>20 mar 2027 · Online · Undutmaning</description>
   </item>
 </channel>
 </rss>
