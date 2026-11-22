@@ -163,12 +163,6 @@
     <description>11 nov – 8 dic 2026 · Online · reddit</description>
   </item>
   <item>
-    <title>Teens Hack Houston Hackathon</title>
-    <link>https://todothon.es/evento/teens-hack-houston-hackathon-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/teens-hack-houston-hackathon-2026</guid>
-    <description>14–21 nov 2026 · Online · HackClub  ✓⃝</description>
-  </item>
-  <item>
     <title>Teens in AI Global Challenge 2027</title>
     <link>https://todothon.es/evento/teens-in-ai-global-challenge-2027-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/teens-in-ai-global-challenge-2027-2026</guid>
@@ -193,22 +187,28 @@
     <description>18–27 nov 2026 · Online · Small Money, Big Plan</description>
   </item>
   <item>
-    <title>CrossPointX 2026</title>
-    <link>https://todothon.es/evento/crosspointx-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/crosspointx-2026</guid>
-    <description>20–22 nov 2026 · Online · Science Innovation Association of XJTLU</description>
-  </item>
-  <item>
     <title>EvoHacks 2</title>
     <link>https://todothon.es/evento/evohacks-2-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/evohacks-2-2026</guid>
     <description>21–22 nov 2026 · Online · EvoHacks</description>
   </item>
   <item>
-    <title>CDTM VLC HACKS 2026</title>
-    <link>https://todothon.es/evento/cdtm-vlc-hacks-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/cdtm-vlc-hacks-2026</guid>
-    <description>21 nov 2026 · Valencia · CDTM Valencia</description>
+    <title>Glushkov 2026 GameDev Contest</title>
+    <link>https://todothon.es/evento/glushkov-2026-gamedev-contest</link>
+    <guid isPermaLink="true">https://todothon.es/evento/glushkov-2026-gamedev-contest</guid>
+    <description>21–23 nov 2026 · Online · GlushkovCompany</description>
+  </item>
+  <item>
+    <title>Engineering Without Limits</title>
+    <link>https://todothon.es/evento/engineering-without-limits-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/engineering-without-limits-2026</guid>
+    <description>22–24 nov 2026 · Online · Engineering Without Limits</description>
+  </item>
+  <item>
+    <title>Acodemic X KeebsforWater Global SDG Hackathon</title>
+    <link>https://todothon.es/evento/acodemic-x-keebsforwater-global-sdg-hackathon-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/acodemic-x-keebsforwater-global-sdg-hackathon-2026</guid>
+    <description>23–30 nov 2026 · Online · Hack Club</description>
   </item>
   <item>
     <title>STEM Innovation Challenge 2026</title>
@@ -287,6 +287,12 @@
     <link>https://todothon.es/evento/united-hacks-v8-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/united-hacks-v8-2027</guid>
     <description>8–10 ene 2027 · Online · Hack United</description>
+  </item>
+  <item>
+    <title>SunnyHacks Jan 2027</title>
+    <link>https://todothon.es/evento/sunnyhacks-jan-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/sunnyhacks-jan-2027</guid>
+    <description>25 ene – 1 feb 2027 · Online · SunnyHacks</description>
   </item>
   <item>
     <title>GNEC Hackathon 2027 Winter - Compete For UN-Affiliated/NGO Internships &amp; Prizes</title>

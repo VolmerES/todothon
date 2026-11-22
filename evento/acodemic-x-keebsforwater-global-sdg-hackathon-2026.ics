@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Acodemic X KeebsforWater Global SDG Hackathon
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32215@todothon.es
+DTSTAMP:20261122T132928Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261201
+SUMMARY:Acodemic X KeebsforWater Global SDG Hackathon
+LOCATION:Online
+DESCRIPTION:https://hackathon-draft-32215.devpost.com/\n\nMás información
+ : https://todothon.es/evento/acodemic-x-keebsforwater-global-sdg-hackathon
+ -2026
+URL:https://hackathon-draft-32215.devpost.com/
+END:VEVENT
+END:VCALENDAR

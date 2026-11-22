@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Glushkov 2026 GameDev Contest
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32210@todothon.es
+DTSTAMP:20261122T132928Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261124
+SUMMARY:Glushkov 2026 GameDev Contest
+LOCATION:Online
+DESCRIPTION:https://glushkov-2026-gamedev-contest.devpost.com/\n\nMás info
+ rmación: https://todothon.es/evento/glushkov-2026-gamedev-contest
+URL:https://glushkov-2026-gamedev-contest.devpost.com/
+END:VEVENT
+END:VCALENDAR

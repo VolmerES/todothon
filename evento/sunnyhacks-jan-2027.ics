@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SunnyHacks Jan 2027
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32213@todothon.es
+DTSTAMP:20261122T132928Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270202
+SUMMARY:SunnyHacks Jan 2027
+LOCATION:Online
+DESCRIPTION:https://sunnyhacks-jan-2027.devpost.com/\n\nMás información: 
+ https://todothon.es/evento/sunnyhacks-jan-2027
+URL:https://sunnyhacks-jan-2027.devpost.com/
+END:VEVENT
+END:VCALENDAR

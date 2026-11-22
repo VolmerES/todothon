@@ -5,15 +5,4 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Todothon · Hackathones en Valencia
 X-WR-TIMEZONE:Europe/Madrid
-BEGIN:VEVENT
-UID:saraoia-2026-11-21-cdtm-vlc-hacks-2026@todothon.es
-DTSTAMP:20261121T133648Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:CDTM VLC HACKS 2026
-LOCATION:The Terminal Hub\, The Terminal Hub\, Valencia
-DESCRIPTION:https://vlc.hacks.cdtm.com/apply\n\nMás información: https://
- todothon.es/evento/cdtm-vlc-hacks-2026
-URL:https://vlc.hacks.cdtm.com/apply
-END:VEVENT
 END:VCALENDAR
