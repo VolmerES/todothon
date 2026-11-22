@@ -1,12 +1,12 @@
 {
- "fecha": "2026-11-21T13:33:24.366Z",
+ "fecha": "2026-11-22T13:26:20.922Z",
  "fuentes": {
   "42": 1,
-  "devpost": 79,
+  "devpost": 81,
   "mlh": 1,
   "ctftime": 18,
-  "itch": 13,
-  "eventbrite": 2,
+  "itch": 12,
+  "eventbrite": 1,
   "devevents": 1,
   "GDG": 0,
   "Luma": 1,
@@ -17,6 +17,6 @@
   "Búsqueda IA": 12
  },
  "avisos": [],
- "total": 146,
- "espana": 34
+ "total": 144,
+ "espana": 31
 }
