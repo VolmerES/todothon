@@ -70,5 +70,17 @@
   "lon": 2.177073,
   "nombre": "Barcelona, Barcelonès, Barcelona, Catalunya, España"
  },
- "COE Madrid, C/ Hacienda de Pavones nº350 (Moratalaz), 28030 Madrid": null
+ "COE Madrid, C/ Hacienda de Pavones nº350 (Moratalaz), 28030 Madrid": null,
+ "AI Campus Barcelona, AI Campus Barcelona, C. de Jesús 3, Barcelona": null,
+ "TheCUBE Suanzes, TheCUBE Suanzes, Madrid": null,
+ "A Coruña, A Coruña": {
+  "lat": 43.3454621,
+  "lon": -8.4138519,
+  "nombre": "A Coruña, Galicia, España"
+ },
+ "Móstoles": {
+  "lat": 40.3238525,
+  "lon": -3.8649214,
+  "nombre": "Móstoles, Comunidad de Madrid, España"
+ }
 }

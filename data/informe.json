@@ -1,22 +1,25 @@
 {
- "fecha": "2026-11-22T13:26:20.922Z",
+ "fecha": "2026-11-23T15:19:54.348Z",
  "fuentes": {
   "42": 1,
-  "devpost": 81,
+  "devpost": 82,
   "mlh": 1,
-  "ctftime": 18,
-  "itch": 12,
+  "ctftime": 20,
+  "itch": 0,
   "eventbrite": 1,
   "devevents": 1,
   "GDG": 0,
   "Luma": 1,
   "Meetup": 2,
-  "saraoia": 18,
-  "Hackathon Hub": 9,
+  "saraoia": 17,
+  "Hackathon Hub": 11,
   "manuales": 3,
-  "Búsqueda IA": 12
+  "Búsqueda IA": 13
  },
- "avisos": [],
- "total": 144,
- "espana": 31
+ "avisos": [
+  "itch ha fallado: https://itch.io/jams/upcoming?page=3 → HTTP 429",
+  "itch ha pasado de 12 eventos a 0"
+ ],
+ "total": 151,
+ "espana": 34
 }
