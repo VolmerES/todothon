@@ -7,6 +7,12 @@
   <description>Todothon · CTF: hackathones, game jams y CTF, actualizado cada día.</description>
   <language>es</language>
   <item>
+    <title>SecAdmin CTF 2026 (MalwareGPT Edition)</title>
+    <link>https://todothon.es/evento/secadmin-ctf-2026-malwaregpt-edition</link>
+    <guid isPermaLink="true">https://todothon.es/evento/secadmin-ctf-2026-malwaregpt-edition</guid>
+    <description>26–28 nov 2026 · Online · SecAdmin</description>
+  </item>
+  <item>
     <title>RedReaper CTF</title>
     <link>https://todothon.es/evento/redreaper-ctf-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/redreaper-ctf-2026</guid>
@@ -85,6 +91,12 @@
     <description>27–28 dic 2026 · Online · ASIS</description>
   </item>
   <item>
+    <title>pothloe CTF 2026</title>
+    <link>https://todothon.es/evento/pothloe-ctf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/pothloe-ctf-2026</guid>
+    <description>27–29 dic 2026 · Online · pothloe cft</description>
+  </item>
+  <item>
     <title>THE FINAL EXPLOIT CTF 2026—QUALIFIERS</title>
     <link>https://todothon.es/evento/the-final-exploit-ctf-2026-qualifiers</link>
     <guid isPermaLink="true">https://todothon.es/evento/the-final-exploit-ctf-2026-qualifiers</guid>
@@ -107,6 +119,12 @@
     <link>https://todothon.es/evento/hackon-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackon-2027</guid>
     <description>19–20 feb 2027 · Lugar por confirmar · URJC (alumnos voluntarios del Grado en Ingeniería de la Ciberseguridad)</description>
+  </item>
+  <item>
+    <title>LA CTF 2027</title>
+    <link>https://todothon.es/evento/la-ctf-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/la-ctf-2027</guid>
+    <description>20–22 feb 2027 · Online · PBR</description>
   </item>
   <item>
     <title>Talent Arena CTF 2027</title>

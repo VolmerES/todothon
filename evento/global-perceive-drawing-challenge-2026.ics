@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Global Perceive Drawing Challenge  
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32218@todothon.es
+DTSTAMP:20261123T152314Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261221
+SUMMARY:Global Perceive Drawing Challenge  
+LOCATION:Online
+DESCRIPTION:https://perceive-drawing-challenge.devpost.com/\n\nMás informa
+ ción: https://todothon.es/evento/global-perceive-drawing-challenge-2026
+URL:https://perceive-drawing-challenge.devpost.com/
+END:VEVENT
+END:VCALENDAR

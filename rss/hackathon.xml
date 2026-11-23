@@ -88,7 +88,7 @@
     <title>Build Your First AI App</title>
     <link>https://todothon.es/evento/build-your-first-ai-app-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/build-your-first-ai-app-2026</guid>
-    <description>27 oct – 27 nov 2026 · Online · Yasir Insights</description>
+    <description>27 oct – 9 dic 2026 · Online · Yasir Insights</description>
   </item>
   <item>
     <title>CSC Winter Sparkathon</title>
@@ -109,9 +109,9 @@
     <description>1 nov – 26 dic 2026 · Online · Shail &amp; Sharaf</description>
   </item>
   <item>
-    <title>ML Empowerment Build Challenge 4.0 - Prizes and Certificates for EVERYONE</title>
-    <link>https://todothon.es/evento/ml-empowerment-build-challenge-4-0-prizes-and-certificates-for-everyon</link>
-    <guid isPermaLink="true">https://todothon.es/evento/ml-empowerment-build-challenge-4-0-prizes-and-certificates-for-everyon</guid>
+    <title>ML Empowerment Build Challenge 4.0 (250K IN PRIZES!)</title>
+    <link>https://todothon.es/evento/ml-empowerment-build-challenge-4-0-250k-in-prizes-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ml-empowerment-build-challenge-4-0-250k-in-prizes-2026</guid>
     <description>1 nov – 2 dic 2026 · Online · ML Empowerment Foundation</description>
   </item>
   <item>
@@ -241,12 +241,6 @@
     <description>11 nov – 11 dic 2026 · Online · Neo4j</description>
   </item>
   <item>
-    <title>KUK VIRTUAL HACKATHON</title>
-    <link>https://todothon.es/evento/kuk-virtual-hackathon-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/kuk-virtual-hackathon-2026</guid>
-    <description>15–22 nov 2026 · Online · Kelab UMNO Korea</description>
-  </item>
-  <item>
     <title>Teens in AI Global Challenge 2027</title>
     <link>https://todothon.es/evento/teens-in-ai-global-challenge-2027-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/teens-in-ai-global-challenge-2027-2026</guid>
@@ -292,7 +286,7 @@
     <title>Creators AI Winter Challenge </title>
     <link>https://todothon.es/evento/creators-ai-winter-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/creators-ai-winter-challenge-2026</guid>
-    <description>19–22 nov 2026 · Online · Creators AI </description>
+    <description>19–24 nov 2026 · Online · Creators AI </description>
   </item>
   <item>
     <title>Global AI Builder’s Challenge</title>
@@ -301,28 +295,22 @@
     <description>21–28 nov 2026 · Online · Refactor The World</description>
   </item>
   <item>
-    <title>EvoHacks 2</title>
-    <link>https://todothon.es/evento/evohacks-2-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/evohacks-2-2026</guid>
-    <description>21–22 nov 2026 · Online · EvoHacks</description>
-  </item>
-  <item>
     <title>Glushkov 2026 GameDev Contest</title>
     <link>https://todothon.es/evento/glushkov-2026-gamedev-contest</link>
     <guid isPermaLink="true">https://todothon.es/evento/glushkov-2026-gamedev-contest</guid>
     <description>21–23 nov 2026 · Online · GlushkovCompany</description>
   </item>
   <item>
-    <title>Engineering Without Limits</title>
-    <link>https://todothon.es/evento/engineering-without-limits-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/engineering-without-limits-2026</guid>
-    <description>22–24 nov 2026 · Online · Engineering Without Limits</description>
-  </item>
-  <item>
     <title>Acodemic X KeebsforWater Global SDG Hackathon</title>
     <link>https://todothon.es/evento/acodemic-x-keebsforwater-global-sdg-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/acodemic-x-keebsforwater-global-sdg-hackathon-2026</guid>
     <description>23–30 nov 2026 · Online · Hack Club</description>
+  </item>
+  <item>
+    <title>Global Perceive Drawing Challenge  </title>
+    <link>https://todothon.es/evento/global-perceive-drawing-challenge-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/global-perceive-drawing-challenge-2026</guid>
+    <description>23 nov – 20 dic 2026 · Online · Perceive</description>
   </item>
   <item>
     <title>STEM Innovation Challenge 2026</title>
@@ -367,6 +355,12 @@
     <description>26 nov – 1 dic 2026 · San Vicente del Raspeig · DXC Technology, ITI y Parque Científico de Alicante</description>
   </item>
   <item>
+    <title>Zero-G Hacks</title>
+    <link>https://todothon.es/evento/zero-g-hacks-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/zero-g-hacks-2026</guid>
+    <description>27–30 nov 2026 · Online · Zero-G CAD</description>
+  </item>
+  <item>
     <title>[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026</title>
     <link>https://todothon.es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackathon-quantum-madrid-qiskit-fall-fest-2026</guid>
@@ -407,6 +401,12 @@
     <link>https://todothon.es/evento/claude-community-happyrobot-hackathon-agents-coaching-agents-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/claude-community-happyrobot-hackathon-agents-coaching-agents-2026</guid>
     <description>28 nov 2026 · Madrid · Claude Community Events y HappyRobot</description>
+  </item>
+  <item>
+    <title>Dev3pack Barcelona Build Station: Construye, conecta y participa</title>
+    <link>https://todothon.es/evento/dev3pack-barcelona-build-station-construye-conecta-y-participa-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/dev3pack-barcelona-build-station-construye-conecta-y-participa-2026</guid>
+    <description>28 nov 2026 · Barcelona · Dev3pack</description>
   </item>
   <item>
     <title>HACKRISE&apos;26 </title>
@@ -505,6 +505,12 @@
     <description>14 dic 2026 – 17 ene 2027 · Online · Syntax Hacks Team</description>
   </item>
   <item>
+    <title>Hackathon Renfe Digital</title>
+    <link>https://todothon.es/evento/hackathon-renfe-digital-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-renfe-digital-2026</guid>
+    <description>14 dic 2026 · Madrid · Renfe</description>
+  </item>
+  <item>
     <title>Hackathon Salud 2026</title>
     <link>https://todothon.es/evento/hackathon-salud-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackathon-salud-2026</guid>
@@ -533,6 +539,18 @@
     <link>https://todothon.es/evento/evensonarisnord-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/evensonarisnord-2026</guid>
     <description>31 dic 2026 · Online · HoustonHacks2026</description>
+  </item>
+  <item>
+    <title>MACHINE AGE</title>
+    <link>https://todothon.es/evento/machine-age-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/machine-age-2027</guid>
+    <description>1 ene – 31 mar 2027 · Online · Paramam</description>
+  </item>
+  <item>
+    <title>JanHacks 2027</title>
+    <link>https://todothon.es/evento/janhacks-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/janhacks-2027</guid>
+    <description>1 ene – 1 mar 2027 · Online · JanHacks</description>
   </item>
   <item>
     <title>United Hacks V8</title>
@@ -587,24 +605,6 @@
     <link>https://todothon.es/evento/ai-for-human-impact-a-global-basis-hackathon-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/ai-for-human-impact-a-global-basis-hackathon-2027</guid>
     <description>6–13 feb 2027 · Online · BASIS Independent Silicon Valley</description>
-  </item>
-  <item>
-    <title>Barcelona Hackathon</title>
-    <link>https://todothon.es/evento/barcelona-hackathon-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/barcelona-hackathon-2027</guid>
-    <description>12–14 feb 2027 · Barcelona · barcelonahackathon</description>
-  </item>
-  <item>
-    <title>MEGA Hackathon 2027</title>
-    <link>https://todothon.es/evento/mega-hackathon-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/mega-hackathon-2027</guid>
-    <description>14–21 feb 2027 · Online · MegaHackathonLeague</description>
-  </item>
-  <item>
-    <title>WiCS Hackathon</title>
-    <link>https://todothon.es/evento/wics-hackathon-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/wics-hackathon-2027</guid>
-    <description>28 feb – 2 mar 2027 · Online · MLH</description>
   </item>
 </channel>
 </rss>

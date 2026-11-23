@@ -3,20 +3,18 @@ VERSION:2.0
 PRODID:-//Todothon//ES
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:ML Empowerment Build Challenge 4.0 - Prizes and Certificates f
- or EVERYONE
+X-WR-CALNAME:ML Empowerment Build Challenge 4.0 (250K IN PRIZES!)
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:devpost-31960@todothon.es
-DTSTAMP:20261122T132928Z
+DTSTAMP:20261123T152314Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261203
-SUMMARY:ML Empowerment Build Challenge 4.0 - Prizes and Certificates for EV
- ERYONE
+SUMMARY:ML Empowerment Build Challenge 4.0 (250K IN PRIZES!)
 LOCATION:Online
 DESCRIPTION:https://ml-build-challenge-4.devpost.com/\n\nMás información:
-  https://todothon.es/evento/ml-empowerment-build-challenge-4-0-prizes-and-
- certificates-for-everyon
+  https://todothon.es/evento/ml-empowerment-build-challenge-4-0-250k-in-pri
+ zes-2026
 URL:https://ml-build-challenge-4.devpost.com/
 END:VEVENT
 END:VCALENDAR

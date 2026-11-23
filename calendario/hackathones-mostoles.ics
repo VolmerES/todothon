@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Hackathones en Móstoles
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ia-hackathon-resolviendo-problemas-reales-de-empresas-sesion-22-de-abri
+ l--2027-04-22@todothon.es
+DTSTAMP:20261123T152314Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:Hackathon: resolviendo problemas reales de empresas (sesión 22 de 
+ abril de 2027)
+LOCATION:Móstoles
+DESCRIPTION:https://www.urjc.es/grado/9268-hackathon-resolviendo-problemas-
+ reales-de-empresas\n\nMás información: https://todothon.es/evento/hackat
+ hon-resolviendo-problemas-reales-de-empresas-sesion-22-de-abril-
+URL:https://www.urjc.es/grado/9268-hackathon-resolviendo-problemas-reales-d
+ e-empresas
+END:VEVENT
+END:VCALENDAR

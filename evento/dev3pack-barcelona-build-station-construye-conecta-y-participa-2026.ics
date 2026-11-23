@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dev3pack Barcelona Build Station: Construye\, conecta y partic
+ ipa
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2026-11-28-dev3pack-barcelona-build-station-construye-conecta-y
+ -partici@todothon.es
+DTSTAMP:20261123T152314Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Dev3pack Barcelona Build Station: Construye\, conecta y participa
+LOCATION:AI Campus Barcelona\, AI Campus Barcelona\, C. de Jesús 3\, Barce
+ lona
+DESCRIPTION:https://app.dev3pack.xyz/s/SPAIN\n\nMás información: https://
+ todothon.es/evento/dev3pack-barcelona-build-station-construye-conecta-y-pa
+ rticipa-2026
+URL:https://app.dev3pack.xyz/s/SPAIN
+END:VEVENT
+END:VCALENDAR

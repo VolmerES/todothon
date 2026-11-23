@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Zero-G Hacks
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32220@todothon.es
+DTSTAMP:20261123T152314Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261201
+SUMMARY:Zero-G Hacks
+LOCATION:Online
+DESCRIPTION:https://zero-g-hacks.devpost.com/\n\nMás información: https:/
+ /todothon.es/evento/zero-g-hacks-2026
+URL:https://zero-g-hacks.devpost.com/
+END:VEVENT
+END:VCALENDAR

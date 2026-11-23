@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en Móstoles</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-mostoles.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en Móstoles: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>Hackathon: resolviendo problemas reales de empresas (sesión 22 de abril de 2027)</title>
+    <link>https://todothon.es/evento/hackathon-resolviendo-problemas-reales-de-empresas-sesion-22-de-abril-</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-resolviendo-problemas-reales-de-empresas-sesion-22-de-abril-</guid>
+    <description>22 abr 2027 · Móstoles · Universidad Rey Juan Carlos</description>
+  </item>
+</channel>
+</rss>
