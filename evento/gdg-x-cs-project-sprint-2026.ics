@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GDG x CS Project Sprint
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32223@todothon.es
+DTSTAMP:20261123T161150Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261125
+SUMMARY:GDG x CS Project Sprint
+LOCATION:Online
+DESCRIPTION:https://gdg-project-sprint.devpost.com/\n\nMás información: h
+ ttps://todothon.es/evento/gdg-x-cs-project-sprint-2026
+URL:https://gdg-project-sprint.devpost.com/
+END:VEVENT
+END:VCALENDAR
