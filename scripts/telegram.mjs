@@ -10,7 +10,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 const TOKEN = process.env.TELEGRAM_TOKEN;
-const CANAL = process.env.TELEGRAM_CANAL;
+let CANAL = process.env.TELEGRAM_CANAL;
 const SITIO = 'https://todothon.es';
 const RAIZ = new URL('..', import.meta.url);
 const ruta = (p) => new URL(p, RAIZ);
@@ -87,8 +87,30 @@ if (perfilPrevio.version !== PERFIL.version) {
   }
 }
 
+// Sin TELEGRAM_CANAL, el canal es aquel en el que han hecho administrador al bot: se le pregunta a Telegram
+// (getUpdates guarda los avisos 24 horas) y se recuerda en data/telegram-bot.json para las siguientes veces.
 if (!CANAL) {
-  console.log('Falta TELEGRAM_CANAL: el bot está listo, pero no hay canal donde publicar.');
+  const guardado = await leerJson('data/telegram-bot.json', {});
+  CANAL = guardado.canal;
+  if (!CANAL) {
+    try {
+      const avisos = await bot('getUpdates', { allowed_updates: ['my_chat_member', 'channel_post'] });
+      const canales = avisos
+        .map((u) => (u.my_chat_member?.new_chat_member?.status === 'administrator' ? u.my_chat_member.chat : u.channel_post?.chat))
+        .filter((c) => c?.type === 'channel');
+      const c = canales.at(-1);
+      if (c) {
+        CANAL = c.username ? `@${c.username}` : String(c.id);
+        await writeFile(ruta('data/telegram-bot.json'), JSON.stringify({ ...guardado, canal: CANAL, canalTitulo: c.title }, null, 1) + '\n');
+        console.log(`Canal encontrado: «${c.title}» (${CANAL}). Queda guardado en data/telegram-bot.json.`);
+      }
+    } catch (err) {
+      console.error(`No se ha podido buscar el canal del bot: ${err.message}`);
+    }
+  }
+}
+if (!CANAL) {
+  console.log('Falta el canal: pon TELEGRAM_CANAL, o quita al bot del canal y vuelve a hacerlo administrador (Telegram solo guarda ese aviso 24 horas).');
   process.exit(0);
 }
 
