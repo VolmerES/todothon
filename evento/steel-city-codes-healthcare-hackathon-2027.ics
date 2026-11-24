@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Steel City Codes Healthcare Hackathon
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32031@todothon.es
+DTSTAMP:20261124T140802Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270116
+SUMMARY:Steel City Codes Healthcare Hackathon
+LOCATION:Online
+DESCRIPTION:https://scc-healthcare-hackathon.devpost.com/\n\nMás informaci
+ ón: https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027
+URL:https://scc-healthcare-hackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR
