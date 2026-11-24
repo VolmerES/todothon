@@ -1,11 +1,11 @@
 {
- "fecha": "2026-11-23T16:08:21.916Z",
+ "fecha": "2026-11-24T14:08:22.413Z",
  "fuentes": {
   "42": 1,
   "devpost": 83,
   "mlh": 1,
   "ctftime": 20,
-  "itch": 12,
+  "itch": 0,
   "eventbrite": 1,
   "devevents": 1,
   "GDG": 0,
@@ -16,7 +16,10 @@
   "manuales": 3,
   "Búsqueda IA": 13
  },
- "avisos": [],
+ "avisos": [
+  "itch ha fallado: https://itch.io/jams/upcoming?page=2 → HTTP 429",
+  "itch ha pasado de 12 eventos a 0"
+ ],
  "total": 152,
  "espana": 34
 }
