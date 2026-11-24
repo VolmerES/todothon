@@ -1,4 +1,5 @@
 {
  "version": 2,
- "bot": "@todothon_bot"
+ "bot": "@todothon_bot",
+ "fotoCanal": "@todothon"
 }

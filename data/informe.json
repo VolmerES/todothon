@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-24T14:08:22.413Z",
+ "fecha": "2026-11-24T14:10:57.045Z",
  "fuentes": {
   "42": 1,
   "devpost": 83,
@@ -17,9 +17,8 @@
   "Búsqueda IA": 13
  },
  "avisos": [
-  "itch ha fallado: https://itch.io/jams/upcoming?page=2 → HTTP 429",
-  "itch ha pasado de 12 eventos a 0"
+  "itch ha fallado: https://itch.io/jams/upcoming → HTTP 429"
  ],
- "total": 152,
+ "total": 140,
  "espana": 34
 }
