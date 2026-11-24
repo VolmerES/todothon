@@ -1,8 +1,8 @@
 {
- "fecha": "2026-11-24T14:10:57.045Z",
+ "fecha": "2026-11-24T15:58:25.691Z",
  "fuentes": {
   "42": 1,
-  "devpost": 83,
+  "devpost": 84,
   "mlh": 1,
   "ctftime": 20,
   "itch": 0,
@@ -12,13 +12,13 @@
   "Luma": 1,
   "Meetup": 2,
   "saraoia": 17,
-  "Hackathon Hub": 11,
+  "Hackathon Hub": 10,
   "manuales": 3,
   "Búsqueda IA": 13
  },
  "avisos": [
-  "itch ha fallado: https://itch.io/jams/upcoming → HTTP 429"
+  "itch ha fallado: https://itch.io/jams/upcoming?page=2 → HTTP 429"
  ],
  "total": 140,
- "espana": 34
+ "espana": 33
 }
