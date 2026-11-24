@@ -9,7 +9,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:saraoia-2026-11-28-claude-community-happyrobot-hackathon-agents-coachin
  g-agents@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Claude Community × HappyRobot Hackathon — Agents coaching agents

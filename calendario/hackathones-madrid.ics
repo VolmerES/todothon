@@ -7,7 +7,7 @@ X-WR-CALNAME:Todothon · Hackathones en Madrid
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:saraoia-2026-11-25-indesiahack-2026@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261128
 SUMMARY:IndesIAhack 2026
@@ -19,7 +19,7 @@ URL:https://indesiahack.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-11-25-hackaton-universidades-gcloud@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Hackaton universidades GCloud
@@ -31,7 +31,7 @@ URL:https://www.devoteam.com/es/eventos/hackaton-universidades-gcloud/
 END:VEVENT
 BEGIN:VEVENT
 UID:42-45485@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026
@@ -43,7 +43,7 @@ URL:http://www.42madrid.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:hackathonhub-merge-hackathon-madrid-madrid-2026@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:MERGE Hackathon Madrid
@@ -55,7 +55,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-11-28-claude-community-happyrobot-hackathon-agents-coachin
  g-agents@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Claude Community × HappyRobot Hackathon — Agents coaching agents
@@ -68,7 +68,7 @@ URL:https://luma.com/claude-82uv
 END:VEVENT
 BEGIN:VEVENT
 UID:cm-cyberguard-innovacion-proteccion-digital-empresas@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261202
 SUMMARY:CYBERGUARD: Innovación para la protección digital de las empresas
@@ -83,7 +83,7 @@ URL:https://www.comunidad.madrid/actividades/2026/cyberguard-innovacion-pro
 END:VEVENT
 BEGIN:VEVENT
 UID:cm-ai-boost-inteligencia-artificial-impacto-real-empresas@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261204
 SUMMARY:AI BOOST: Inteligencia Artificial con impacto real en las empresas
@@ -99,7 +99,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-12-11-claude-community-nova-hackathon-reinventing-networki
  ng@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:Claude Community × Nova Hackathon — Reinventing Networking
@@ -111,7 +111,7 @@ URL:https://luma.com/claude-xmxw
 END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-11-03-hackathon-renfe-digital@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:Hackathon Renfe Digital
@@ -122,7 +122,7 @@ URL:https://data.renfe.com/hackathon/
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-hackathon-salud-2026-2026-12-15@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:Hackathon Salud 2026
@@ -133,7 +133,7 @@ URL:https://hackathonsalud.com/final-del-hackathon-salud-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:luma-evt-lqBgUD9WX1tg5aW@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20270508
 DTEND;VALUE=DATE:20270509
 SUMMARY:Tech Riders League | Hackathon Final

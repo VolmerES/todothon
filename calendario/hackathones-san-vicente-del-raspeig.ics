@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:saraoia-2026-11-26-i-hackathon-de-tecnologias-accesibles-e-inclusivas-a
  licante@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261202
 SUMMARY:I Hackathon de Tecnologías Accesibles e Inclusivas · Alicante 202
@@ -22,7 +22,7 @@ URL:https://hackathonaccesibilidad.es/
 END:VEVENT
 BEGIN:VEVENT
 UID:eventbrite-2004863390370@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270201
 SUMMARY:Gamejam Alicante 2027

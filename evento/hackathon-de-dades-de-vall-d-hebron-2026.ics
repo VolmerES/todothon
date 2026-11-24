@@ -7,7 +7,7 @@ X-WR-CALNAME:Hackathon de dades de Vall d'Hebron
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:manual-hackathon-dades-vall-hebron-2026@todothon.es
-DTSTAMP:20261124T141014Z
+DTSTAMP:20261124T141421Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261129
 SUMMARY:Hackathon de dades de Vall d'Hebron
