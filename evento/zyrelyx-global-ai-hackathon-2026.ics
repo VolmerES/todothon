@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Zyrelyx Global AI Hackathon
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32231@todothon.es
+DTSTAMP:20261124T160142Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261208
+SUMMARY:Zyrelyx Global AI Hackathon
+LOCATION:Online
+DESCRIPTION:https://zyrelyx-global-ai-hackathon.devpost.com/\n\nMás inform
+ ación: https://todothon.es/evento/zyrelyx-global-ai-hackathon-2026
+URL:https://zyrelyx-global-ai-hackathon.devpost.com/
+END:VEVENT
+END:VCALENDAR
