@@ -9,12 +9,13 @@ const RUTA = new URL('../data/manuales.json', import.meta.url);
 // El formulario vive en el mismo hosting con los dos dominios; se lee del subdominio, que ya resuelve siempre.
 let r;
 try {
-  r = await fetch(URL_PENDIENTES, { headers: { 'User-Agent': UA, 'Cache-Control': 'no-cache' } });
+  // Sin seguir redirecciones: un 404 que acaba en 301 hacia la página de error es que no hay pendientes.
+  r = await fetch(URL_PENDIENTES, { headers: { 'User-Agent': UA, 'Cache-Control': 'no-cache' }, redirect: 'manual' });
 } catch (err) {
   console.error(`No se han podido leer los pendientes: ${err.message}`);
   process.exit(0);
 }
-if (r.status === 404) { console.log('Sin pendientes todavía.'); process.exit(0); }
+if (r.status === 404 || (r.status >= 300 && r.status < 400)) { console.log('Sin pendientes todavía.'); process.exit(0); }
 if (!r.ok) { console.error(`No se han podido leer los pendientes: HTTP ${r.status}`); process.exit(0); }
 
 // Si no llega JSON (una página de error, una redirección…), no hay nada que importar: no se para la Action.

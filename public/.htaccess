@@ -11,6 +11,8 @@ ErrorDocument 404 /404.html
   RewriteCond %{REQUEST_URI} !^/api/
   # Ni las páginas de error internas (un 404 de /api/ pasa por /404.html y no debe acabar en 301).
   RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  # En el LiteSpeed de Hostinger REDIRECT_STATUS no llega: se excluye la página de error por su nombre.
+  RewriteCond %{REQUEST_URI} !^/404\.html$
   RewriteCond %{HTTP_HOST} ^(todothon\.volmer\.es|www\.todothon\.es)$ [NC]
   RewriteRule ^(.*)$ https://todothon.es/$1 [R=301,L]
 </IfModule>
