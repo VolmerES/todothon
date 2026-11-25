@@ -253,12 +253,6 @@
     <description>15 nov 2026 – 25 ene 2027 · Online · VidOpt LLC</description>
   </item>
   <item>
-    <title>BuildyourOwnWebsite</title>
-    <link>https://todothon.es/evento/buildyourownwebsite-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/buildyourownwebsite-2026</guid>
-    <description>16–25 nov 2026 · Online · Roxten Studios</description>
-  </item>
-  <item>
     <title>Cloud9 x JetBrains: Sky&apos;s The Limit Hackathon 2026</title>
     <link>https://todothon.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026</guid>
@@ -605,6 +599,12 @@
     <link>https://todothon.es/evento/gaianspace-perihelion-ctf-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/gaianspace-perihelion-ctf-2027</guid>
     <description>2–3 ene 2027 · Online · GaianSpace</description>
+  </item>
+  <item>
+    <title>United Hacks V8</title>
+    <link>https://todothon.es/evento/united-hacks-v8-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/united-hacks-v8-2027</guid>
+    <description>8–10 ene 2027 · Online · Hack United</description>
   </item>
 </channel>
 </rss>

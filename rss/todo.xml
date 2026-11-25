@@ -253,12 +253,6 @@
     <description>15 nov 2026 – 25 ene 2027 · Online · VidOpt LLC</description>
   </item>
   <item>
-    <title>BuildyourOwnWebsite</title>
-    <link>https://todothon.es/evento/buildyourownwebsite-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/buildyourownwebsite-2026</guid>
-    <description>16–25 nov 2026 · Online · Roxten Studios</description>
-  </item>
-  <item>
     <title>Cloud9 x JetBrains: Sky&apos;s The Limit Hackathon 2026</title>
     <link>https://todothon.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/cloud9-x-jetbrains-sky-s-the-limit-hackathon-2026</guid>
@@ -605,6 +599,12 @@
     <link>https://todothon.es/evento/arioron-think-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/arioron-think-2026</guid>
     <description>10–17 dic 2026 · Online · Arioron</description>
+  </item>
+  <item>
+    <title>niteCTF 2026</title>
+    <link>https://todothon.es/evento/nitectf-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/nitectf-2026</guid>
+    <description>11–13 dic 2026 · Online · Cryptonite</description>
   </item>
 </channel>
 </rss>
