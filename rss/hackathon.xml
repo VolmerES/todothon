@@ -58,7 +58,7 @@
     <title>Taskforge</title>
     <link>https://todothon.es/evento/taskforge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/taskforge-2026</guid>
-    <description>17 oct – 24 nov 2026 · Online · HackathonForEveryone</description>
+    <description>17 oct – 10 dic 2026 · Online · HackathonForEveryone</description>
   </item>
   <item>
     <title>Green Shift Hacks</title>
@@ -163,16 +163,16 @@
     <description>4 nov 2026 – 26 jun 2027 · Online · Binnovative</description>
   </item>
   <item>
-    <title>Code for Change</title>
-    <link>https://todothon.es/evento/code-for-change-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/code-for-change-2026</guid>
-    <description>5 nov – 1 dic 2026 · Online · HackathonForEveryone</description>
-  </item>
-  <item>
     <title>AI OpenBuild</title>
     <link>https://todothon.es/evento/ai-openbuild-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/ai-openbuild-2026</guid>
     <description>5 nov – 10 dic 2026 · Online · AI OpenBuild</description>
+  </item>
+  <item>
+    <title>Code for Change</title>
+    <link>https://todothon.es/evento/code-for-change-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/code-for-change-2026</guid>
+    <description>5 nov – 1 dic 2026 · Online · HackathonForEveryone</description>
   </item>
   <item>
     <title>Inceptrix 3.0</title>
@@ -286,7 +286,7 @@
     <title>Creators AI Winter Challenge </title>
     <link>https://todothon.es/evento/creators-ai-winter-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/creators-ai-winter-challenge-2026</guid>
-    <description>19–24 nov 2026 · Online · Creators AI </description>
+    <description>19–25 nov 2026 · Online · Creators AI </description>
   </item>
   <item>
     <title>Global AI Builder’s Challenge</title>
@@ -310,7 +310,7 @@
     <title>STEM Innovation Challenge 2026</title>
     <link>https://todothon.es/evento/stem-innovation-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/stem-innovation-challenge-2026</guid>
-    <description>24–25 nov 2026 · Online · Global STEM Innovation Initiative</description>
+    <description>24–26 nov 2026 · Online · Global STEM Innovation Initiative</description>
   </item>
   <item>
     <title>IndesIAhack 2026</title>
@@ -347,6 +347,12 @@
     <link>https://todothon.es/evento/zero-g-hacks-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/zero-g-hacks-2026</guid>
     <description>27–30 nov 2026 · Online · Zero-G CAD</description>
+  </item>
+  <item>
+    <title>thanksgiving thank you hackathon</title>
+    <link>https://todothon.es/evento/thanksgiving-thank-you-hackathon-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/thanksgiving-thank-you-hackathon-2026</guid>
+    <description>27 nov – 1 dic 2026 · Online · shrimat koti</description>
   </item>
   <item>
     <title>[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026</title>
@@ -599,12 +605,6 @@
     <link>https://todothon.es/evento/hacktitan-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/hacktitan-2027</guid>
     <description>2–4 feb 2027 · Online · IWU</description>
-  </item>
-  <item>
-    <title>ISE Hackathon 2027</title>
-    <link>https://todothon.es/evento/ise-hackathon-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/ise-hackathon-2027</guid>
-    <description>2 feb 2027 · L&apos;Hospitalet de Llobregat (Barcelona) · ISE (Integrated Systems Europe) con universidades participantes como ESADE, UPF y UPC</description>
   </item>
 </channel>
 </rss>
