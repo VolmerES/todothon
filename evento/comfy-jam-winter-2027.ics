@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Comfy Jam: Winter🗻
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-comfy-jam-winter-2027@todothon.es
+DTSTAMP:20261126T152958Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270124
+SUMMARY:Comfy Jam: Winter🗻
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/comfy-jam-winter-2027\n\nMás información:
+  https://todothon.es/evento/comfy-jam-winter-2027
+URL:https://itch.io/jam/comfy-jam-winter-2027
+END:VEVENT
+END:VCALENDAR

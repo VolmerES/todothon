@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fanshawe Hacks
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32246@todothon.es
+DTSTAMP:20261126T152958Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261204
+SUMMARY:Fanshawe Hacks
+LOCATION:Online
+DESCRIPTION:https://fanshawe-hacks.devpost.com/\n\nMás información: https
+ ://todothon.es/evento/fanshawe-hacks-2026
+URL:https://fanshawe-hacks.devpost.com/
+END:VEVENT
+END:VCALENDAR

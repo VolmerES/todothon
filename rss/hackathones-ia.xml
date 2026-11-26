@@ -19,12 +19,6 @@
     <description>18 jul 2026 – 14 ene 2027 · Online · Student Organization</description>
   </item>
   <item>
-    <title>HackWithAditya</title>
-    <link>https://todothon.es/evento/hackwithaditya-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackwithaditya-2026</guid>
-    <description>16 oct – 25 nov 2026 · Online · Aditya University</description>
-  </item>
-  <item>
     <title>Arbiter Hacks V1</title>
     <link>https://todothon.es/evento/arbiter-hacks-v1-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/arbiter-hacks-v1-2026</guid>
@@ -151,6 +145,12 @@
     <description>21–28 nov 2026 · Online · Refactor The World</description>
   </item>
   <item>
+    <title>Fanshawe Hacks</title>
+    <link>https://todothon.es/evento/fanshawe-hacks-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/fanshawe-hacks-2026</guid>
+    <description>25 nov – 3 dic 2026 · Online · club</description>
+  </item>
+  <item>
     <title>Agents that act. Systems that answer.</title>
     <link>https://todothon.es/evento/agents-that-act-systems-that-answer-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/agents-that-act-systems-that-answer-2026</guid>
@@ -167,12 +167,6 @@
     <link>https://todothon.es/evento/zyrelyx-global-ai-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/zyrelyx-global-ai-hackathon-2026</guid>
     <description>1–7 dic 2026 · Online · Zyrelyx</description>
-  </item>
-  <item>
-    <title>HackTheFashion Global&apos;26</title>
-    <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
-    <description>1 dic 2026 – 15 ene 2027 · Online · AI SKILLS LAB KIET</description>
   </item>
   <item>
     <title>AI BOOST: Inteligencia Artificial con impacto real en las empresas</title>
@@ -197,6 +191,12 @@
     <link>https://todothon.es/evento/hackstead-winterfest-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackstead-winterfest-2026</guid>
     <description>6–20 dic 2026 · Online · Hackstead</description>
+  </item>
+  <item>
+    <title>HackTheFashion Global&apos;26</title>
+    <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
+    <description>8–31 dic 2026 · Online · AI SKILLS LAB KIET</description>
   </item>
   <item>
     <title>OVO Hack 48</title>

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Game Jam: Narrative Games about INSECTS!
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:meetup-317586421@todothon.es
+DTSTAMP:20261126T152958Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Game Jam: Narrative Games about INSECTS!
+LOCATION:Online
+DESCRIPTION:https://www.meetup.com/creative-hands/events/317586421/\n\nMás
+  información: https://todothon.es/evento/game-jam-narrative-games-about-i
+ nsects-2026
+URL:https://www.meetup.com/creative-hands/events/317586421/
+END:VEVENT
+END:VCALENDAR

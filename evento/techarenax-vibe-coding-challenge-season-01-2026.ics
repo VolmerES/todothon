@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TechArenaX Vibe Coding Challenge — Season 01
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32251@todothon.es
+DTSTAMP:20261126T152958Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261210
+SUMMARY:TechArenaX Vibe Coding Challenge — Season 01
+LOCATION:Online
+DESCRIPTION:https://techarenax-vcc-s01.devpost.com/\n\nMás información: h
+ ttps://todothon.es/evento/techarenax-vibe-coding-challenge-season-01-2026
+URL:https://techarenax-vcc-s01.devpost.com/
+END:VEVENT
+END:VCALENDAR

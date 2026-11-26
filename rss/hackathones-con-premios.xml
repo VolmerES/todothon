@@ -13,12 +13,6 @@
     <description>16 oct – 4 dic 2026 · Online · Hack4TodayOrg</description>
   </item>
   <item>
-    <title>HackWithAditya</title>
-    <link>https://todothon.es/evento/hackwithaditya-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackwithaditya-2026</guid>
-    <description>16 oct – 25 nov 2026 · Online · Aditya University</description>
-  </item>
-  <item>
     <title>SafeSpace Hacks - Judges Needed</title>
     <link>https://todothon.es/evento/safespace-hacks-judges-needed-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/safespace-hacks-judges-needed-2026</guid>
@@ -181,12 +175,6 @@
     <description>23 nov – 20 dic 2026 · Online · Perceive</description>
   </item>
   <item>
-    <title>STEM Innovation Challenge 2026</title>
-    <link>https://todothon.es/evento/stem-innovation-challenge-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/stem-innovation-challenge-2026</guid>
-    <description>24–26 nov 2026 · Online · Global STEM Innovation Initiative</description>
-  </item>
-  <item>
     <title>O Camiño dos Datos (II Datathon universitario, UDC)</title>
     <link>https://todothon.es/evento/o-camino-dos-datos-ii-datathon-universitario-udc-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/o-camino-dos-datos-ii-datathon-universitario-udc-2026</guid>
@@ -217,6 +205,12 @@
     <description>27–30 nov 2026 · Online · Zero-G CAD</description>
   </item>
   <item>
+    <title>Bezi Jam 15 [$400 Prizes] - UNREAL</title>
+    <link>https://todothon.es/evento/bezi-jam-15-400-prizes-unreal-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/bezi-jam-15-400-prizes-unreal-2026</guid>
+    <description>27–30 nov 2026 · Online · Bezi</description>
+  </item>
+  <item>
     <title>Pixel Forge MEGA JAM | $30k Prizes + Cash !</title>
     <link>https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</guid>
@@ -241,12 +235,6 @@
     <description>1–7 dic 2026 · Online · Zyrelyx</description>
   </item>
   <item>
-    <title>HackTheFashion Global&apos;26</title>
-    <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
-    <description>1 dic 2026 – 15 ene 2027 · Online · AI SKILLS LAB KIET</description>
-  </item>
-  <item>
     <title>AI BOOST: Inteligencia Artificial con impacto real en las empresas</title>
     <link>https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</guid>
@@ -257,6 +245,18 @@
     <link>https://todothon.es/evento/hackstead-winterfest-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackstead-winterfest-2026</guid>
     <description>6–20 dic 2026 · Online · Hackstead</description>
+  </item>
+  <item>
+    <title>TechArenaX Vibe Coding Challenge — Season 01</title>
+    <link>https://todothon.es/evento/techarenax-vibe-coding-challenge-season-01-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/techarenax-vibe-coding-challenge-season-01-2026</guid>
+    <description>6–9 dic 2026 · Online · TecharenaX</description>
+  </item>
+  <item>
+    <title>HackTheFashion Global&apos;26</title>
+    <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
+    <description>8–31 dic 2026 · Online · AI SKILLS LAB KIET</description>
   </item>
   <item>
     <title>Ryze Hacks 2026</title>
@@ -281,6 +281,12 @@
     <link>https://todothon.es/evento/cosmo-hacks-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/cosmo-hacks-2026</guid>
     <description>19 dic 2026 – 18 ene 2027 · Online · Cosmo Hacks</description>
+  </item>
+  <item>
+    <title>CrackleHacks</title>
+    <link>https://todothon.es/evento/cracklehacks-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/cracklehacks-2026</guid>
+    <description>20–30 dic 2026 · Online · Deific Studios</description>
   </item>
   <item>
     <title>evensonarisnord</title>

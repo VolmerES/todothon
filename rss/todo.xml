@@ -31,12 +31,6 @@
     <description>16 oct – 4 dic 2026 · Online · Hack4TodayOrg</description>
   </item>
   <item>
-    <title>HackWithAditya</title>
-    <link>https://todothon.es/evento/hackwithaditya-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackwithaditya-2026</guid>
-    <description>16 oct – 25 nov 2026 · Online · Aditya University</description>
-  </item>
-  <item>
     <title>STEM2Connect AI Hackathon</title>
     <link>https://todothon.es/evento/stem2connect-ai-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/stem2connect-ai-hackathon-2026</guid>
@@ -280,7 +274,7 @@
     <title>Creators AI Winter Challenge </title>
     <link>https://todothon.es/evento/creators-ai-winter-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/creators-ai-winter-challenge-2026</guid>
-    <description>19–25 nov 2026 · Online · Creators AI </description>
+    <description>19–27 nov 2026 · Online · Creators AI </description>
   </item>
   <item>
     <title>Global AI Builder’s Challenge</title>
@@ -301,22 +295,10 @@
     <description>23 nov – 20 dic 2026 · Online · Perceive</description>
   </item>
   <item>
-    <title>STEM Innovation Challenge 2026</title>
-    <link>https://todothon.es/evento/stem-innovation-challenge-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/stem-innovation-challenge-2026</guid>
-    <description>24–26 nov 2026 · Online · Global STEM Innovation Initiative</description>
-  </item>
-  <item>
-    <title>IndesIAhack 2026</title>
-    <link>https://todothon.es/evento/indesiahack-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/indesiahack-2026</guid>
-    <description>25–27 nov 2026 · Madrid · IndesIA con la Universidad Politécnica de Madrid</description>
-  </item>
-  <item>
-    <title>Hackaton universidades GCloud</title>
-    <link>https://todothon.es/evento/hackaton-universidades-gcloud-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackaton-universidades-gcloud-2026</guid>
-    <description>25 nov 2026 · Madrid · Devoteam</description>
+    <title>Fanshawe Hacks</title>
+    <link>https://todothon.es/evento/fanshawe-hacks-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/fanshawe-hacks-2026</guid>
+    <description>25 nov – 3 dic 2026 · Online · club</description>
   </item>
   <item>
     <title>O Camiño dos Datos (II Datathon universitario, UDC)</title>
@@ -383,6 +365,12 @@
     <link>https://todothon.es/evento/lakectf-quals-26-27-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/lakectf-quals-26-27-2026</guid>
     <description>27–28 nov 2026 · Online · polygl0ts</description>
+  </item>
+  <item>
+    <title>Bezi Jam 15 [$400 Prizes] - UNREAL</title>
+    <link>https://todothon.es/evento/bezi-jam-15-400-prizes-unreal-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/bezi-jam-15-400-prizes-unreal-2026</guid>
+    <description>27–30 nov 2026 · Online · Bezi</description>
   </item>
   <item>
     <title>[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026</title>
@@ -481,28 +469,28 @@
     <description>30 nov – 1 dic 2026 · Madrid · Comunidad de Madrid</description>
   </item>
   <item>
-    <title>305 CodeFest Edition December 2026 — 305Hackathons.vercel.app</title>
-    <link>https://todothon.es/evento/305-codefest-edition-december-2026-305hackathons-vercel-app</link>
-    <guid isPermaLink="true">https://todothon.es/evento/305-codefest-edition-december-2026-305hackathons-vercel-app</guid>
-    <description>1–31 dic 2026 · Online · COLORSTACKatFIU</description>
-  </item>
-  <item>
     <title>Zyrelyx Global AI Hackathon</title>
     <link>https://todothon.es/evento/zyrelyx-global-ai-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/zyrelyx-global-ai-hackathon-2026</guid>
     <description>1–7 dic 2026 · Online · Zyrelyx</description>
   </item>
   <item>
-    <title>HackTheFashion Global&apos;26</title>
-    <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
-    <description>1 dic 2026 – 15 ene 2027 · Online · AI SKILLS LAB KIET</description>
+    <title>305 CodeFest Edition December 2026 — 305Hackathons.vercel.app</title>
+    <link>https://todothon.es/evento/305-codefest-edition-december-2026-305hackathons-vercel-app</link>
+    <guid isPermaLink="true">https://todothon.es/evento/305-codefest-edition-december-2026-305hackathons-vercel-app</guid>
+    <description>1–31 dic 2026 · Online · COLORSTACKatFIU</description>
   </item>
   <item>
     <title>RPG LATAM JAM 2026</title>
     <link>https://todothon.es/evento/rpg-latam-jam-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/rpg-latam-jam-2026</guid>
     <description>1–30 dic 2026 · Online · manchae , M.A. GUAX , Bruno Prosaiko , Lucas Rolim</description>
+  </item>
+  <item>
+    <title>Game Jam: Narrative Games about INSECTS!</title>
+    <link>https://todothon.es/evento/game-jam-narrative-games-about-insects-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/game-jam-narrative-games-about-insects-2026</guid>
+    <description>1 dic 2026 · Online · Creative Hands</description>
   </item>
   <item>
     <title>AI BOOST: Inteligencia Artificial con impacto real en las empresas</title>
@@ -581,6 +569,18 @@
     <link>https://todothon.es/evento/hackstead-winterfest-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackstead-winterfest-2026</guid>
     <description>6–20 dic 2026 · Online · Hackstead</description>
+  </item>
+  <item>
+    <title>TechArenaX Vibe Coding Challenge — Season 01</title>
+    <link>https://todothon.es/evento/techarenax-vibe-coding-challenge-season-01-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/techarenax-vibe-coding-challenge-season-01-2026</guid>
+    <description>6–9 dic 2026 · Online · TecharenaX</description>
+  </item>
+  <item>
+    <title>HackTheFashion Global&apos;26</title>
+    <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
+    <description>8–31 dic 2026 · Online · AI SKILLS LAB KIET</description>
   </item>
   <item>
     <title>ERUA iDeaThon 2026</title>
