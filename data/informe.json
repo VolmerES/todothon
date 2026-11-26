@@ -1,22 +1,22 @@
 {
- "fecha": "2026-11-25T15:44:38.233Z",
+ "fecha": "2026-11-26T15:26:42.995Z",
  "fuentes": {
   "42": 1,
-  "devpost": 84,
+  "devpost": 85,
   "mlh": 1,
   "ctftime": 20,
-  "itch": 13,
+  "itch": 15,
   "eventbrite": 1,
   "devevents": 1,
   "GDG": 0,
   "Luma": 1,
-  "Meetup": 2,
-  "saraoia": 17,
+  "Meetup": 3,
+  "saraoia": 15,
   "Hackathon Hub": 10,
   "manuales": 3,
   "Búsqueda IA": 13
  },
  "avisos": [],
- "total": 153,
- "espana": 33
+ "total": 155,
+ "espana": 31
 }
