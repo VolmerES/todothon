@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hackathon AWS x SEA
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:meetup-317598343@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Hackathon AWS x SEA
+LOCATION:Universidad Carlos III de Madrid-Puerta de Toledo Campus\, Ronda d
+ e Toledo\, 1\, Centro\, 28005 Madrid\, Spain\, Madrid
+DESCRIPTION:https://www.meetup.com/aws-sbg-at-charles-iii-univ-of-madrid-co
+ lmenarejo-campus/events/317598343/\n\nMás información: https://todothon.
+ es/evento/hackathon-aws-x-sea-2026
+URL:https://www.meetup.com/aws-sbg-at-charles-iii-univ-of-madrid-colmenarej
+ o-campus/events/317598343/
+END:VEVENT
+END:VCALENDAR

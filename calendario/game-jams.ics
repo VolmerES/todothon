@@ -7,7 +7,7 @@ X-WR-CALNAME:Todothon · Game jams
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:itch-bezi-jam-15@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261201
 SUMMARY:Bezi Jam 15 [$400 Prizes] - UNREAL
@@ -18,7 +18,7 @@ URL:https://itch.io/jam/bezi-jam-15
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-pixel-forge-mega-jam@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261209
 SUMMARY:Pixel Forge MEGA JAM | $30k Prizes + Cash !
@@ -29,7 +29,7 @@ URL:https://itch.io/jam/pixel-forge-mega-jam
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-slapjam-ai-3@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261201
 SUMMARY:Slapjam #3
@@ -40,7 +40,7 @@ URL:https://itch.io/jam/slapjam-ai-3
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-3x3x3-jam@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261204
 SUMMARY:3x3x3 Jam
@@ -51,7 +51,7 @@ URL:https://itch.io/jam/3x3x3-jam
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-rpg-latam-jam-2026@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261231
 SUMMARY:RPG LATAM JAM 2026
@@ -62,7 +62,7 @@ URL:https://itch.io/jam/rpg-latam-jam-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:meetup-317586421@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:Game Jam: Narrative Games about INSECTS!
@@ -74,7 +74,7 @@ URL:https://www.meetup.com/creative-hands/events/317586421/
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-the-eye-jam3@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261214
 SUMMARY:The Eye Jam III: Folk Horror
@@ -85,7 +85,7 @@ URL:https://itch.io/jam/the-eye-jam3
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-procjam@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261214
 SUMMARY:PROCJAM - The Procedural Generation Jam
@@ -96,7 +96,7 @@ URL:https://itch.io/jam/procjam
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-gamedevtv-holiday-jam-2026@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261215
 SUMMARY:GameDev.tv Holiday Jam 2026
@@ -107,7 +107,7 @@ URL:https://itch.io/jam/gamedevtv-holiday-jam-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-7dfps@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261214
 SUMMARY:7dfps 2026
@@ -118,7 +118,7 @@ URL:https://itch.io/jam/7dfps
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-the-mfg-gamblers-jam@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261213
 SUMMARY:The MFG Gambler's Jam
@@ -129,7 +129,7 @@ URL:https://itch.io/jam/the-mfg-gamblers-jam
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-godot-wild-jam-100@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261221
 SUMMARY:Godot Wild Jam #100
@@ -140,7 +140,7 @@ URL:https://itch.io/jam/godot-wild-jam-100
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-comfy-jam-winter-2027@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270124
 SUMMARY:Comfy Jam: Winter🗻
@@ -151,7 +151,7 @@ URL:https://itch.io/jam/comfy-jam-winter-2027
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-global-game-jam-2027-sedes-en-espana-2027-01-25@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270201
 SUMMARY:Global Game Jam 2027 (sedes en España)
@@ -162,7 +162,7 @@ URL:https://globalgamejam.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:eventbrite-2004863390370@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270201
 SUMMARY:Gamejam Alicante 2027
@@ -175,8 +175,101 @@ URL:https://www.eventbrite.es/e/copia-de-gamejam-alicante-2027-tickets-2004
  863390370
 END:VEVENT
 BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-machanguito-jam-2027-tenerife@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 Machanguito Jam 2027 Tenerife
+LOCATION:Edificio Intech\, Edificio Intech\, C. Rectora María Luisa Tejedo
+ r Salguero 13\, San Cristóbal de La Laguna
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/ggj27-machanguito-jam-
+ 2027-tenerife\n\nMás información: https://todothon.es/evento/ggj27-macha
+ nguito-jam-2027-tenerife
+URL:https://globalgamejam.org/jam-sites/2027/ggj27-machanguito-jam-2027-ten
+ erife
+END:VEVENT
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-jaenjam-3@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 - JaénJam 3
+LOCATION:Edificio Moneo (antiguo Banco de España)\, Edificio Moneo (antigu
+ o Banco de España)\, Paseo de la Estación 57\, Jaén
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/ggj27-jaenjam-3\n\nMá
+ s información: https://todothon.es/evento/ggj27-jaenjam-3-2027
+URL:https://globalgamejam.org/jam-sites/2027/ggj27-jaenjam-3
+END:VEVENT
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-universidad-francisco-de-vitoria@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 Universidad Francisco de Vitoria
+LOCATION:Universidad Francisco de Vitoria\, Universidad Francisco de Vitori
+ a\, Edificio H\, primera planta\, Ctra. Pozuelo-Majadahonda km 1\,800\, Ma
+ drid
+DESCRIPTION:https://forms.cloud.microsoft/e/s2VspApNTX\n\nMás información
+ : https://todothon.es/evento/ggj27-universidad-francisco-de-vitoria-2027
+URL:https://forms.cloud.microsoft/e/s2VspApNTX
+END:VEVENT
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-gamedevs-asturias-x-esdac@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 GameDevs Asturias x ESDAC
+LOCATION:ESDAC-ESNE Asturias\, ESDAC-ESNE Asturias\, Plaza Fernando Álvare
+ z García\, Montecerrao\, Montecerrao
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/ggj27-gamedevs-asturia
+ s-x-esdac\n\nMás información: https://todothon.es/evento/ggj27-gamedevs-
+ asturias-x-esdac-2027
+URL:https://globalgamejam.org/jam-sites/2027/ggj27-gamedevs-asturias-x-esda
+ c
+END:VEVENT
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-florida-universitaria@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 Florida Universitaria
+LOCATION:Florida Universitaria\, Florida Universitaria\, Calle del Rei En J
+ aume I 2\, Valencia
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/ggj27-florida-universi
+ taria\n\nMás información: https://todothon.es/evento/ggj27-florida-unive
+ rsitaria-2027
+URL:https://globalgamejam.org/jam-sites/2027/ggj27-florida-universitaria
+END:VEVENT
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-global-game-jam-aragon-2027-sede-de-teruel@todothon.
+ es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:Global Game Jam Aragón 2027 - Sede de Teruel
+LOCATION:Edificio de Bellas Artes\, Edificio de Bellas Artes\, Facultad de 
+ Ciencias Sociales y Humanas\, Campus de Teruel (Universidad de Zaragoza)\,
+  Teruel
+DESCRIPTION:https://aydinteractivo.unizar.es/GGJ27.php\n\nMás información
+ : https://todothon.es/evento/global-game-jam-aragon-2027-sede-de-teruel
+URL:https://aydinteractivo.unizar.es/GGJ27.php
+END:VEVENT
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-gg27-gandia-game-jam@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GG27 - Gandia Game Jam
+LOCATION:Escuela Politécnica Superior de Gandia (UPV)\, Escuela Politécni
+ ca Superior de Gandia (UPV)\, Edificio G\, Carrer del Paranimf 1\, Valenci
+ a
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/gg27-gandia-game-jam\n
+ \nMás información: https://todothon.es/evento/gg27-gandia-game-jam-2027
+URL:https://globalgamejam.org/jam-sites/2027/gg27-gandia-game-jam
+END:VEVENT
+BEGIN:VEVENT
 UID:itch-brackeys-17@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270222
 SUMMARY:Brackeys Game Jam 2027.1
@@ -187,7 +280,7 @@ URL:https://itch.io/jam/brackeys-17
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-gmtk-2027@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270811
 DTEND;VALUE=DATE:20270816
 SUMMARY:GMTK Game Jam 2027
@@ -198,7 +291,7 @@ URL:https://itch.io/jam/gmtk-2027
 END:VEVENT
 BEGIN:VEVENT
 UID:itch-gbjam-15@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270910
 DTEND;VALUE=DATE:20270921
 SUMMARY:GBJAM 15

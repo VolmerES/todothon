@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Todothon · Hackathones en Alicante
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:ia-i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026-202
+ 6-11-26@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261204
+SUMMARY:I Hackathon de Tecnologías Accesibles e Inclusivas (Alicante 2026)
+LOCATION:Parque Científico de Alicante
+DESCRIPTION:https://hackathonaccesibilidad.es/\n\nMás información: https:
+ //todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-al
+ icante-2026
+URL:https://hackathonaccesibilidad.es/
+END:VEVENT
+END:VCALENDAR

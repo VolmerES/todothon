@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Global Game Jam Aragón 2027 - Sede de Teruel
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-global-game-jam-aragon-2027-sede-de-teruel@todothon.
+ es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:Global Game Jam Aragón 2027 - Sede de Teruel
+LOCATION:Edificio de Bellas Artes\, Edificio de Bellas Artes\, Facultad de 
+ Ciencias Sociales y Humanas\, Campus de Teruel (Universidad de Zaragoza)\,
+  Teruel
+DESCRIPTION:https://aydinteractivo.unizar.es/GGJ27.php\n\nMás información
+ : https://todothon.es/evento/global-game-jam-aragon-2027-sede-de-teruel
+URL:https://aydinteractivo.unizar.es/GGJ27.php
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GG27 - Gandia Game Jam
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-gg27-gandia-game-jam@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GG27 - Gandia Game Jam
+LOCATION:Escuela Politécnica Superior de Gandia (UPV)\, Escuela Politécni
+ ca Superior de Gandia (UPV)\, Edificio G\, Carrer del Paranimf 1\, Valenci
+ a
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/gg27-gandia-game-jam\n
+ \nMás información: https://todothon.es/evento/gg27-gandia-game-jam-2027
+URL:https://globalgamejam.org/jam-sites/2027/gg27-gandia-game-jam
+END:VEVENT
+END:VCALENDAR

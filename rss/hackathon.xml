@@ -253,7 +253,7 @@
     <description>17 nov 2026 – 12 ene 2027 · Online · Cloud9</description>
   </item>
   <item>
-    <title>Build with AI - Pico Space Program</title>
+    <title>Build with AI - PICO Space Program</title>
     <link>https://todothon.es/evento/build-with-ai-pico-space-program-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/build-with-ai-pico-space-program-2026</guid>
     <description>18 nov 2026 – 1 feb 2027 · Online · XR Bootcamp</description>
@@ -301,28 +301,16 @@
     <description>25 nov – 3 dic 2026 · Online · club</description>
   </item>
   <item>
-    <title>HackIAmm, el Hackathon de Damm</title>
-    <link>https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</guid>
-    <description>26–28 nov 2026 · Barcelona · Damm (LAB1876)</description>
+    <title>National Hackathon 2026: AWS Student Builder Group COMSATS Sahiwal × ILC×Devsinc</title>
+    <link>https://todothon.es/evento/national-hackathon-2026-aws-student-builder-group-comsats-sahiwal-ilc-</link>
+    <guid isPermaLink="true">https://todothon.es/evento/national-hackathon-2026-aws-student-builder-group-comsats-sahiwal-ilc-</guid>
+    <description>26–30 nov 2026 · Online · AWS SBG COMSATS Sahiwal</description>
   </item>
   <item>
-    <title>Hackathon Ciudades y movilidad sostenible</title>
-    <link>https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</guid>
-    <description>26 nov 2026 · Zaragoza · Mobility City + Ayuntamiento de Zaragoza (con Zebra Ventures)</description>
-  </item>
-  <item>
-    <title>I Hackathon de Tecnologías Accesibles e Inclusivas · Alicante 2026</title>
+    <title>I Hackathon de Tecnologías Accesibles e Inclusivas (Alicante 2026)</title>
     <link>https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</guid>
-    <description>26 nov – 1 dic 2026 · San Vicente del Raspeig · DXC Technology, ITI y Parque Científico de Alicante</description>
-  </item>
-  <item>
-    <title>Zero-G Hacks</title>
-    <link>https://todothon.es/evento/zero-g-hacks-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/zero-g-hacks-2026</guid>
-    <description>27–30 nov 2026 · Online · Zero-G CAD</description>
+    <description>26 nov – 3 dic 2026 · Alicante · DXC Technology, Instituto Tecnológico de Informática (ITI) y Universidad de Alicante</description>
   </item>
   <item>
     <title>thanksgiving thank you hackathon</title>
@@ -413,6 +401,18 @@
     <link>https://todothon.es/evento/frontier-26-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/frontier-26-2026</guid>
     <description>4–11 dic 2026 · Online · LoveHack</description>
+  </item>
+  <item>
+    <title>Zero-G Hacks</title>
+    <link>https://todothon.es/evento/zero-g-hacks-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/zero-g-hacks-2026</guid>
+    <description>4–7 dic 2026 · Online · Zero-G CAD</description>
+  </item>
+  <item>
+    <title>Hackathon AWS x SEA</title>
+    <link>https://todothon.es/evento/hackathon-aws-x-sea-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-aws-x-sea-2026</guid>
+    <description>4 dic 2026 · Madrid · AWS SBG at Charles III Univ of Madrid - Colmenarejo Campus</description>
   </item>
   <item>
     <title>AI Builders Hacksprint Barcelona</title>
@@ -526,7 +526,7 @@
     <title>CrackleHacks</title>
     <link>https://todothon.es/evento/cracklehacks-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/cracklehacks-2026</guid>
-    <description>20–30 dic 2026 · Online · Deific Studios</description>
+    <description>20–30 dic 2026 · Online · Hyperlattice</description>
   </item>
   <item>
     <title>evensonarisnord</title>
@@ -541,16 +541,16 @@
     <description>1 ene – 31 mar 2027 · Online · Paramam</description>
   </item>
   <item>
-    <title>Steel City Codes Healthcare Hackathon</title>
-    <link>https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</guid>
-    <description>1–15 ene 2027 · Online · Steel City Codes</description>
-  </item>
-  <item>
     <title>JanHacks 2027</title>
     <link>https://todothon.es/evento/janhacks-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/janhacks-2027</guid>
     <description>1 ene – 1 mar 2027 · Online · JanHacks</description>
+  </item>
+  <item>
+    <title>Steel City Codes Healthcare Hackathon</title>
+    <link>https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</guid>
+    <description>1–15 ene 2027 · Online · Steel City Codes</description>
   </item>
   <item>
     <title>United Hacks V8</title>

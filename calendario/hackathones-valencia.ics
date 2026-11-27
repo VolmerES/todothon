@@ -5,4 +5,30 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Todothon · Hackathones en Valencia
 X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-florida-universitaria@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 Florida Universitaria
+LOCATION:Florida Universitaria\, Florida Universitaria\, Calle del Rei En J
+ aume I 2\, Valencia
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/ggj27-florida-universi
+ taria\n\nMás información: https://todothon.es/evento/ggj27-florida-unive
+ rsitaria-2027
+URL:https://globalgamejam.org/jam-sites/2027/ggj27-florida-universitaria
+END:VEVENT
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-gg27-gandia-game-jam@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GG27 - Gandia Game Jam
+LOCATION:Escuela Politécnica Superior de Gandia (UPV)\, Escuela Politécni
+ ca Superior de Gandia (UPV)\, Edificio G\, Carrer del Paranimf 1\, Valenci
+ a
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/gg27-gandia-game-jam\n
+ \nMás información: https://todothon.es/evento/gg27-gandia-game-jam-2027
+URL:https://globalgamejam.org/jam-sites/2027/gg27-gandia-game-jam
+END:VEVENT
 END:VCALENDAR

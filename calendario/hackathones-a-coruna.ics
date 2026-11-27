@@ -8,7 +8,7 @@ X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:ia-o-camino-dos-datos-ii-datathon-universitario-udc-2026-11-25@todothon
  .es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20270204
 SUMMARY:O Camiño dos Datos (II Datathon universitario\, UDC)
@@ -18,14 +18,15 @@ DESCRIPTION:https://www.fic.udc.es/\n\nMás información: https://todothon.
 URL:https://www.fic.udc.es/
 END:VEVENT
 BEGIN:VEVENT
-UID:hackathonhub-hackudc-2027-a-coruna-2027@todothon.es
-DTSTAMP:20261126T152957Z
+UID:saraoia-2027-02-26-hackudc-2027@todothon.es
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270226
-DTEND;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270227
 SUMMARY:HackUDC 2027
-LOCATION:A Coruña\, A Coruña
-DESCRIPTION:https://hackudc.com/\n\nMás información: https://todothon.es/
- evento/hackudc-2027
-URL:https://hackudc.com/
+LOCATION:Facultade de Informática (FIC)\, Facultade de Informática (FIC)\
+ , Universidade da Coruña\, campus de Elviña\, A Coruña
+DESCRIPTION:https://os.hackudc.com/\n\nMás información: https://todothon.
+ es/evento/hackudc-2027
+URL:https://os.hackudc.com/
 END:VEVENT
 END:VCALENDAR

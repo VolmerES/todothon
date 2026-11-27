@@ -7,22 +7,10 @@
   <description>Todothon · Hackathones en España: hackathones, game jams y CTF, actualizado cada día.</description>
   <language>es</language>
   <item>
-    <title>HackIAmm, el Hackathon de Damm</title>
-    <link>https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</guid>
-    <description>26–28 nov 2026 · Barcelona · Damm (LAB1876)</description>
-  </item>
-  <item>
-    <title>Hackathon Ciudades y movilidad sostenible</title>
-    <link>https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</guid>
-    <description>26 nov 2026 · Zaragoza · Mobility City + Ayuntamiento de Zaragoza (con Zebra Ventures)</description>
-  </item>
-  <item>
-    <title>I Hackathon de Tecnologías Accesibles e Inclusivas · Alicante 2026</title>
+    <title>I Hackathon de Tecnologías Accesibles e Inclusivas (Alicante 2026)</title>
     <link>https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</guid>
-    <description>26 nov – 1 dic 2026 · San Vicente del Raspeig · DXC Technology, ITI y Parque Científico de Alicante</description>
+    <description>26 nov – 3 dic 2026 · Alicante · DXC Technology, Instituto Tecnológico de Informática (ITI) y Universidad de Alicante</description>
   </item>
   <item>
     <title>[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026</title>
@@ -77,6 +65,12 @@
     <link>https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/ai-boost-inteligencia-artificial-con-impacto-real-en-las-empresas-2026</guid>
     <description>2–3 dic 2026 · Madrid · Comunidad de Madrid</description>
+  </item>
+  <item>
+    <title>Hackathon AWS x SEA</title>
+    <link>https://todothon.es/evento/hackathon-aws-x-sea-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-aws-x-sea-2026</guid>
+    <description>4 dic 2026 · Madrid · AWS SBG at Charles III Univ of Madrid - Colmenarejo Campus</description>
   </item>
   <item>
     <title>AI Builders Hacksprint Barcelona</title>
@@ -142,7 +136,7 @@
     <title>HackUDC 2027</title>
     <link>https://todothon.es/evento/hackudc-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackudc-2027</guid>
-    <description>26–28 feb 2027 · A Coruña · GPUL</description>
+    <description>26 feb 2027 · A Coruña · GPUL</description>
   </item>
   <item>
     <title>Hackathon: resolviendo problemas reales de empresas (sesión 22 de abril de 2027)</title>

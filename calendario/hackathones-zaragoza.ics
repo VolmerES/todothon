@@ -5,19 +5,4 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Todothon · Hackathones en Zaragoza
 X-WR-TIMEZONE:Europe/Madrid
-BEGIN:VEVENT
-UID:saraoia-2026-11-26-hackathon-ciudades-y-movilidad-sostenible@todothon.e
- s
-DTSTAMP:20261126T152957Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:Hackathon Ciudades y movilidad sostenible
-LOCATION:Etopia\, Etopia\, Centro de Emprendimiento e Innovación\, Avenida
-  de la Ciudad de Soria 8\, Zaragoza
-DESCRIPTION:https://www.mobilitycity.es/explora/actividades/hackathon-ciuda
- des-y-movilidad-sostenible/\n\nMás información: https://todothon.es/even
- to/hackathon-ciudades-y-movilidad-sostenible-2026
-URL:https://www.mobilitycity.es/explora/actividades/hackathon-ciudades-y-mo
- vilidad-sostenible/
-END:VEVENT
 END:VCALENDAR

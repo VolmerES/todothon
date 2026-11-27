@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Todothon · Hackathones en San Cristóbal de La Laguna</title>
+  <link>https://todothon.es/</link>
+  <atom:link href="https://todothon.es/rss/hackathones-san-cristobal-de-la-laguna.xml" rel="self" type="application/rss+xml" />
+  <description>Todothon · Hackathones en San Cristóbal de La Laguna: hackathones, game jams y CTF, actualizado cada día.</description>
+  <language>es</language>
+  <item>
+    <title>GGJ27 Machanguito Jam 2027 Tenerife</title>
+    <link>https://todothon.es/evento/ggj27-machanguito-jam-2027-tenerife</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ggj27-machanguito-jam-2027-tenerife</guid>
+    <description>29–31 ene 2027 · San Cristóbal de La Laguna · ACADEVI</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GGJ27 Universidad Francisco de Vitoria
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-universidad-francisco-de-vitoria@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 Universidad Francisco de Vitoria
+LOCATION:Universidad Francisco de Vitoria\, Universidad Francisco de Vitori
+ a\, Edificio H\, primera planta\, Ctra. Pozuelo-Majadahonda km 1\,800\, Ma
+ drid
+DESCRIPTION:https://forms.cloud.microsoft/e/s2VspApNTX\n\nMás información
+ : https://todothon.es/evento/ggj27-universidad-francisco-de-vitoria-2027
+URL:https://forms.cloud.microsoft/e/s2VspApNTX
+END:VEVENT
+END:VCALENDAR

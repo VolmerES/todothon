@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GGJ27 - JaénJam 3
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-jaenjam-3@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 - JaénJam 3
+LOCATION:Edificio Moneo (antiguo Banco de España)\, Edificio Moneo (antigu
+ o Banco de España)\, Paseo de la Estación 57\, Jaén
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/ggj27-jaenjam-3\n\nMá
+ s información: https://todothon.es/evento/ggj27-jaenjam-3-2027
+URL:https://globalgamejam.org/jam-sites/2027/ggj27-jaenjam-3
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:GGJ27 GameDevs Asturias x ESDAC
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:saraoia-2027-01-29-ggj27-gamedevs-asturias-x-esdac@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:GGJ27 GameDevs Asturias x ESDAC
+LOCATION:ESDAC-ESNE Asturias\, ESDAC-ESNE Asturias\, Plaza Fernando Álvare
+ z García\, Montecerrao\, Montecerrao
+DESCRIPTION:https://globalgamejam.org/jam-sites/2027/ggj27-gamedevs-asturia
+ s-x-esdac\n\nMás información: https://todothon.es/evento/ggj27-gamedevs-
+ asturias-x-esdac-2027
+URL:https://globalgamejam.org/jam-sites/2027/ggj27-gamedevs-asturias-x-esda
+ c
+END:VEVENT
+END:VCALENDAR

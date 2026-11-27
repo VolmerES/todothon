@@ -13,22 +13,10 @@
     <description>25 nov 2026 – 3 feb 2027 · A Coruña · Facultad de Informática de la Universidade da Coruña (UDC)</description>
   </item>
   <item>
-    <title>HackIAmm, el Hackathon de Damm</title>
-    <link>https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackiamm-el-hackathon-de-damm-2026</guid>
-    <description>26–28 nov 2026 · Barcelona · Damm (LAB1876)</description>
-  </item>
-  <item>
-    <title>Hackathon Ciudades y movilidad sostenible</title>
-    <link>https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackathon-ciudades-y-movilidad-sostenible-2026</guid>
-    <description>26 nov 2026 · Zaragoza · Mobility City + Ayuntamiento de Zaragoza (con Zebra Ventures)</description>
-  </item>
-  <item>
-    <title>I Hackathon de Tecnologías Accesibles e Inclusivas · Alicante 2026</title>
+    <title>I Hackathon de Tecnologías Accesibles e Inclusivas (Alicante 2026)</title>
     <link>https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026</guid>
-    <description>26 nov – 1 dic 2026 · San Vicente del Raspeig · DXC Technology, ITI y Parque Científico de Alicante</description>
+    <description>26 nov – 3 dic 2026 · Alicante · DXC Technology, Instituto Tecnológico de Informática (ITI) y Universidad de Alicante</description>
   </item>
   <item>
     <title>[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026</title>
@@ -91,6 +79,12 @@
     <description>2–3 dic 2026 · Madrid · Comunidad de Madrid</description>
   </item>
   <item>
+    <title>Hackathon AWS x SEA</title>
+    <link>https://todothon.es/evento/hackathon-aws-x-sea-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackathon-aws-x-sea-2026</guid>
+    <description>4 dic 2026 · Madrid · AWS SBG at Charles III Univ of Madrid - Colmenarejo Campus</description>
+  </item>
+  <item>
     <title>AI Builders Hacksprint Barcelona</title>
     <link>https://todothon.es/evento/ai-builders-hacksprint-barcelona-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/ai-builders-hacksprint-barcelona-2026</guid>
@@ -148,7 +142,49 @@
     <title>Gamejam Alicante 2027</title>
     <link>https://todothon.es/evento/gamejam-alicante-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/gamejam-alicante-2027</guid>
-    <description>29–31 ene 2027 · San Vicente del Raspeig</description>
+    <description>29–31 ene 2027 · San Vicente del Raspeig · Multitec UA</description>
+  </item>
+  <item>
+    <title>GGJ27 Machanguito Jam 2027 Tenerife</title>
+    <link>https://todothon.es/evento/ggj27-machanguito-jam-2027-tenerife</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ggj27-machanguito-jam-2027-tenerife</guid>
+    <description>29–31 ene 2027 · San Cristóbal de La Laguna · ACADEVI</description>
+  </item>
+  <item>
+    <title>GGJ27 - JaénJam 3</title>
+    <link>https://todothon.es/evento/ggj27-jaenjam-3-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ggj27-jaenjam-3-2027</guid>
+    <description>29–31 ene 2027 · Jaén · JaénJam</description>
+  </item>
+  <item>
+    <title>GGJ27 Universidad Francisco de Vitoria</title>
+    <link>https://todothon.es/evento/ggj27-universidad-francisco-de-vitoria-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ggj27-universidad-francisco-de-vitoria-2027</guid>
+    <description>29–31 ene 2027 · Madrid · Grado en Creación y Narración de Videojuegos (UFV)</description>
+  </item>
+  <item>
+    <title>GGJ27 GameDevs Asturias x ESDAC</title>
+    <link>https://todothon.es/evento/ggj27-gamedevs-asturias-x-esdac-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ggj27-gamedevs-asturias-x-esdac-2027</guid>
+    <description>29–31 ene 2027 · Montecerrao · Game Devs Asturias y ESDAC-ESNE Asturias</description>
+  </item>
+  <item>
+    <title>GGJ27 Florida Universitaria</title>
+    <link>https://todothon.es/evento/ggj27-florida-universitaria-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/ggj27-florida-universitaria-2027</guid>
+    <description>29–31 ene 2027 · Valencia · Florida Universitaria</description>
+  </item>
+  <item>
+    <title>Global Game Jam Aragón 2027 - Sede de Teruel</title>
+    <link>https://todothon.es/evento/global-game-jam-aragon-2027-sede-de-teruel</link>
+    <guid isPermaLink="true">https://todothon.es/evento/global-game-jam-aragon-2027-sede-de-teruel</guid>
+    <description>29–31 ene 2027 · Teruel · Universidad de Zaragoza, ARADEV y Crimson Birds Studio</description>
+  </item>
+  <item>
+    <title>GG27 - Gandia Game Jam</title>
+    <link>https://todothon.es/evento/gg27-gandia-game-jam-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gg27-gandia-game-jam-2027</guid>
+    <description>29–31 ene 2027 · Valencia · Gandia Game Jam (UPV)</description>
   </item>
   <item>
     <title>ISE Hackathon 2027</title>
@@ -172,7 +208,7 @@
     <title>HackUDC 2027</title>
     <link>https://todothon.es/evento/hackudc-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackudc-2027</guid>
-    <description>26–28 feb 2027 · A Coruña · GPUL</description>
+    <description>26 feb 2027 · A Coruña · GPUL</description>
   </item>
   <item>
     <title>Talent Arena CTF 2027</title>

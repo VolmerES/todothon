@@ -193,12 +193,6 @@
     <description>23 nov – 20 dic 2026 · Online · Perceive</description>
   </item>
   <item>
-    <title>Zero-G Hacks</title>
-    <link>https://todothon.es/evento/zero-g-hacks-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/zero-g-hacks-2026</guid>
-    <description>27–30 nov 2026 · Online · Zero-G CAD</description>
-  </item>
-  <item>
     <title>N0v4CTF 2026</title>
     <link>https://todothon.es/evento/n0v4ctf-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/n0v4ctf-2026</guid>
@@ -233,6 +227,12 @@
     <link>https://todothon.es/evento/frontier-26-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/frontier-26-2026</guid>
     <description>4–11 dic 2026 · Online · LoveHack</description>
+  </item>
+  <item>
+    <title>Zero-G Hacks</title>
+    <link>https://todothon.es/evento/zero-g-hacks-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/zero-g-hacks-2026</guid>
+    <description>4–7 dic 2026 · Online · Zero-G CAD</description>
   </item>
   <item>
     <title>BUILD 4 ALL</title>
@@ -277,16 +277,16 @@
     <description>19 dic 2026 – 18 ene 2027 · Online · Cosmo Hacks</description>
   </item>
   <item>
-    <title>Steel City Codes Healthcare Hackathon</title>
-    <link>https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</guid>
-    <description>1–15 ene 2027 · Online · Steel City Codes</description>
-  </item>
-  <item>
     <title>JanHacks 2027</title>
     <link>https://todothon.es/evento/janhacks-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/janhacks-2027</guid>
     <description>1 ene – 1 mar 2027 · Online · JanHacks</description>
+  </item>
+  <item>
+    <title>Steel City Codes Healthcare Hackathon</title>
+    <link>https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</guid>
+    <description>1–15 ene 2027 · Online · Steel City Codes</description>
   </item>
   <item>
     <title>United Hacks V8</title>

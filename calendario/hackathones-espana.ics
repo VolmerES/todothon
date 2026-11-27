@@ -6,42 +6,13 @@ METHOD:PUBLISH
 X-WR-CALNAME:Todothon · Hackathones en España
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
-UID:saraoia-2026-11-26-hackiamm-el-hackathon-de-damm@todothon.es
-DTSTAMP:20261126T152957Z
+UID:ia-i-hackathon-de-tecnologias-accesibles-e-inclusivas-alicante-2026-202
+ 6-11-26@todothon.es
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261129
-SUMMARY:HackIAmm\, el Hackathon de Damm
-LOCATION:Sala BrewUp Damm\, Sala BrewUp Damm\, Pier 01 Tech Barcelona\, Blo
- que D 2A\, Barcelona
-DESCRIPTION:https://hackiamm.com/\n\nMás información: https://todothon.es
- /evento/hackiamm-el-hackathon-de-damm-2026
-URL:https://hackiamm.com/
-END:VEVENT
-BEGIN:VEVENT
-UID:saraoia-2026-11-26-hackathon-ciudades-y-movilidad-sostenible@todothon.e
- s
-DTSTAMP:20261126T152957Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:Hackathon Ciudades y movilidad sostenible
-LOCATION:Etopia\, Etopia\, Centro de Emprendimiento e Innovación\, Avenida
-  de la Ciudad de Soria 8\, Zaragoza
-DESCRIPTION:https://www.mobilitycity.es/explora/actividades/hackathon-ciuda
- des-y-movilidad-sostenible/\n\nMás información: https://todothon.es/even
- to/hackathon-ciudades-y-movilidad-sostenible-2026
-URL:https://www.mobilitycity.es/explora/actividades/hackathon-ciudades-y-mo
- vilidad-sostenible/
-END:VEVENT
-BEGIN:VEVENT
-UID:saraoia-2026-11-26-i-hackathon-de-tecnologias-accesibles-e-inclusivas-a
- licante@todothon.es
-DTSTAMP:20261126T152957Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261202
-SUMMARY:I Hackathon de Tecnologías Accesibles e Inclusivas · Alicante 202
- 6
-LOCATION:Parque Científico de Alicante\, Parque Científico de Alicante\, 
- Campus de la Universidad de Alicante\, San Vicente del Raspeig
+DTEND;VALUE=DATE:20261204
+SUMMARY:I Hackathon de Tecnologías Accesibles e Inclusivas (Alicante 2026)
+LOCATION:Parque Científico de Alicante
 DESCRIPTION:https://hackathonaccesibilidad.es/\n\nMás información: https:
  //todothon.es/evento/i-hackathon-de-tecnologias-accesibles-e-inclusivas-al
  icante-2026
@@ -49,7 +20,7 @@ URL:https://hackathonaccesibilidad.es/
 END:VEVENT
 BEGIN:VEVENT
 UID:42-45485@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:[ HACKATHON ] Quantum Madrid - Qiskit Fall Fest 2026
@@ -61,7 +32,7 @@ URL:http://www.42madrid.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-11-27-hackathon-llascares-innovabes-2026@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hackathon Lláscares INNOVABES 2026
@@ -74,7 +45,7 @@ URL:https://asata.es/hackathon-innovabes-2026-llascares-economia-social/
 END:VEVENT
 BEGIN:VEVENT
 UID:hackathonhub-merge-hackathon-madrid-madrid-2026@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:MERGE Hackathon Madrid
@@ -85,7 +56,7 @@ URL:https://www.mmerge.io/hackathon-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mlh-01a1169b-c4ad-5d41-61cf-deccaa37655c@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:HackEPS
@@ -96,7 +67,7 @@ URL:https://hackeps.dev/
 END:VEVENT
 BEGIN:VEVENT
 UID:meetup-317459204@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Hackathon: Hack the Map
@@ -109,7 +80,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-11-28-claude-community-happyrobot-hackathon-agents-coachin
  g-agents@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Claude Community × HappyRobot Hackathon — Agents coaching agents
@@ -123,7 +94,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-11-28-dev3pack-barcelona-build-station-construye-conecta-y
  -partici@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Dev3pack Barcelona Build Station: Construye\, conecta y participa
@@ -136,7 +107,7 @@ URL:https://app.dev3pack.xyz/s/SPAIN
 END:VEVENT
 BEGIN:VEVENT
 UID:cm-cyberguard-innovacion-proteccion-digital-empresas@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261202
 SUMMARY:CYBERGUARD: Innovación para la protección digital de las empresas
@@ -151,7 +122,7 @@ URL:https://www.comunidad.madrid/actividades/2026/cyberguard-innovacion-pro
 END:VEVENT
 BEGIN:VEVENT
 UID:cm-ai-boost-inteligencia-artificial-impacto-real-empresas@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261204
 SUMMARY:AI BOOST: Inteligencia Artificial con impacto real en las empresas
@@ -165,8 +136,22 @@ URL:https://www.comunidad.madrid/actividades/2026/ai-boost-inteligencia-art
  ificial-impacto-real-empresas
 END:VEVENT
 BEGIN:VEVENT
+UID:meetup-317598343@todothon.es
+DTSTAMP:20261127T151822Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Hackathon AWS x SEA
+LOCATION:Universidad Carlos III de Madrid-Puerta de Toledo Campus\, Ronda d
+ e Toledo\, 1\, Centro\, 28005 Madrid\, Spain\, Madrid
+DESCRIPTION:https://www.meetup.com/aws-sbg-at-charles-iii-univ-of-madrid-co
+ lmenarejo-campus/events/317598343/\n\nMás información: https://todothon.
+ es/evento/hackathon-aws-x-sea-2026
+URL:https://www.meetup.com/aws-sbg-at-charles-iii-univ-of-madrid-colmenarej
+ o-campus/events/317598343/
+END:VEVENT
+BEGIN:VEVENT
 UID:saraoia-2026-12-04-ai-builders-hacksprint-barcelona@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:AI Builders Hacksprint Barcelona
@@ -178,7 +163,7 @@ URL:https://luma.com/zdqgsiob
 END:VEVENT
 BEGIN:VEVENT
 UID:devevents-barcelona-hackathon-2026-2026-12-11@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:Barcelona Hackathon 2026
@@ -190,7 +175,7 @@ URL:https://dev.events/conferences/barcelona-hackathon-2026-8m03sfmf
 END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-12-11-aina-hack-2026-2a-edicio@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261213
 SUMMARY:Aina Hack 2026 | 2a edició
@@ -202,7 +187,7 @@ URL:https://eurecat.org/calendari/aina-hack-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-12-11-bitsxlamarato-2026@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:bitsxLaMarató 2026
@@ -214,7 +199,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-12-11-claude-community-nova-hackathon-reinventing-networki
  ng@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:Claude Community × Nova Hackathon — Reinventing Networking
@@ -226,7 +211,7 @@ URL:https://luma.com/claude-xmxw
 END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-12-12-hackday-d-ia-local@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Hackday d'IA Local
@@ -238,7 +223,7 @@ URL:https://luma.com/aub7iofx
 END:VEVENT
 BEGIN:VEVENT
 UID:saraoia-2026-11-03-hackathon-renfe-digital@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:Hackathon Renfe Digital
@@ -249,7 +234,7 @@ URL:https://data.renfe.com/hackathon/
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-hackathon-salud-2026-2026-12-15@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:Hackathon Salud 2026
@@ -260,7 +245,7 @@ URL:https://hackathonsalud.com/final-del-hackathon-salud-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-ise-hackathon-2027-2027-02-02@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270202
 DTEND;VALUE=DATE:20270203
 SUMMARY:ISE Hackathon 2027
@@ -272,7 +257,7 @@ URL:https://www.iseurope.org/ise-hackathon
 END:VEVENT
 BEGIN:VEVENT
 UID:hackathonhub-barcelona-hackathon-barcelona-2027@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270215
 SUMMARY:Barcelona Hackathon
@@ -282,20 +267,21 @@ DESCRIPTION:https://www.barcelonahackathon.com/\n\nMás información: https
 URL:https://www.barcelonahackathon.com/
 END:VEVENT
 BEGIN:VEVENT
-UID:hackathonhub-hackudc-2027-a-coruna-2027@todothon.es
-DTSTAMP:20261126T152957Z
+UID:saraoia-2027-02-26-hackudc-2027@todothon.es
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270226
-DTEND;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270227
 SUMMARY:HackUDC 2027
-LOCATION:A Coruña\, A Coruña
-DESCRIPTION:https://hackudc.com/\n\nMás información: https://todothon.es/
- evento/hackudc-2027
-URL:https://hackudc.com/
+LOCATION:Facultade de Informática (FIC)\, Facultade de Informática (FIC)\
+ , Universidade da Coruña\, campus de Elviña\, A Coruña
+DESCRIPTION:https://os.hackudc.com/\n\nMás información: https://todothon.
+ es/evento/hackudc-2027
+URL:https://os.hackudc.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ia-hackathon-resolviendo-problemas-reales-de-empresas-sesion-22-de-abri
  l--2027-04-22@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Hackathon: resolviendo problemas reales de empresas (sesión 22 de 
@@ -309,7 +295,7 @@ URL:https://www.urjc.es/grado/9268-hackathon-resolviendo-problemas-reales-d
 END:VEVENT
 BEGIN:VEVENT
 UID:luma-evt-lqBgUD9WX1tg5aW@todothon.es
-DTSTAMP:20261126T152957Z
+DTSTAMP:20261127T151822Z
 DTSTART;VALUE=DATE:20270508
 DTEND;VALUE=DATE:20270509
 SUMMARY:Tech Riders League | Hackathon Final
