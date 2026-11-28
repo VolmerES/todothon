@@ -265,16 +265,10 @@
     <description>18–30 nov 2026 · Online · BTAJI CREW</description>
   </item>
   <item>
-    <title>SMBP FinHack</title>
-    <link>https://todothon.es/evento/smbp-finhack-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/smbp-finhack-2026</guid>
-    <description>18–27 nov 2026 · Online · Small Money, Big Plan</description>
-  </item>
-  <item>
     <title>Creators AI Winter Challenge </title>
     <link>https://todothon.es/evento/creators-ai-winter-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/creators-ai-winter-challenge-2026</guid>
-    <description>19–27 nov 2026 · Online · Creators AI </description>
+    <description>19–29 nov 2026 · Online · Creators AI </description>
   </item>
   <item>
     <title>Global AI Builder’s Challenge</title>
@@ -325,6 +319,12 @@
     <description>29 nov 2026 – 31 ene 2027 · Online · Mulearn MBCCET </description>
   </item>
   <item>
+    <title>STEM For Tomorrow</title>
+    <link>https://todothon.es/evento/stem-for-tomorrow-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/stem-for-tomorrow-2026</guid>
+    <description>30 nov – 12 dic 2026 · Online · GlobalInnovationLeague</description>
+  </item>
+  <item>
     <title>Zyrelyx Global AI Hackathon</title>
     <link>https://todothon.es/evento/zyrelyx-global-ai-hackathon-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/zyrelyx-global-ai-hackathon-2026</guid>
@@ -371,6 +371,12 @@
     <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
     <description>8–31 dic 2026 · Online · AI SKILLS LAB KIET</description>
+  </item>
+  <item>
+    <title>PromptWarsXSyntaxSquad</title>
+    <link>https://todothon.es/evento/promptwarsxsyntaxsquad-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/promptwarsxsyntaxsquad-2026</guid>
+    <description>9 dic 2026 · Online · syntaxsquad</description>
   </item>
   <item>
     <title>Ryze Hacks 2026</title>
@@ -439,12 +445,6 @@
     <description>1–15 ene 2027 · Online · Steel City Codes</description>
   </item>
   <item>
-    <title>United Hacks V8</title>
-    <link>https://todothon.es/evento/united-hacks-v8-2027</link>
-    <guid isPermaLink="true">https://todothon.es/evento/united-hacks-v8-2027</guid>
-    <description>8–10 ene 2027 · Online · Hack United</description>
-  </item>
-  <item>
     <title>checkpoint 1 — games for good</title>
     <link>https://todothon.es/evento/checkpoint-1-games-for-good-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/checkpoint-1-games-for-good-2027</guid>
@@ -479,6 +479,12 @@
     <link>https://todothon.es/evento/hacktitan-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/hacktitan-2027</guid>
     <description>2–4 feb 2027 · Online · IWU</description>
+  </item>
+  <item>
+    <title>BurHacks - AI For The Little Things</title>
+    <link>https://todothon.es/evento/burhacks-ai-for-the-little-things-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/burhacks-ai-for-the-little-things-2027</guid>
+    <description>5–12 feb 2027 · Online · BurHacks</description>
   </item>
   <item>
     <title>AI for Human Impact: A Global BASIS Hackathon</title>

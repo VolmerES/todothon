@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Jam de l'Avent 2026 lite
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:itch-jam-de-lavent-2026@todothon.es
+DTSTAMP:20261128T142243Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261214
+SUMMARY:Jam de l'Avent 2026 lite
+LOCATION:Online
+DESCRIPTION:https://itch.io/jam/jam-de-lavent-2026\n\nMás información: ht
+ tps://todothon.es/evento/jam-de-l-avent-2026-lite
+URL:https://itch.io/jam/jam-de-lavent-2026
+END:VEVENT
+END:VCALENDAR

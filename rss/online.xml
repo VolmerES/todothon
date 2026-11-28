@@ -265,16 +265,10 @@
     <description>18–30 nov 2026 · Online · BTAJI CREW</description>
   </item>
   <item>
-    <title>SMBP FinHack</title>
-    <link>https://todothon.es/evento/smbp-finhack-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/smbp-finhack-2026</guid>
-    <description>18–27 nov 2026 · Online · Small Money, Big Plan</description>
-  </item>
-  <item>
     <title>Creators AI Winter Challenge </title>
     <link>https://todothon.es/evento/creators-ai-winter-challenge-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/creators-ai-winter-challenge-2026</guid>
-    <description>19–27 nov 2026 · Online · Creators AI </description>
+    <description>19–29 nov 2026 · Online · Creators AI </description>
   </item>
   <item>
     <title>Global AI Builder’s Challenge</title>
@@ -325,46 +319,10 @@
     <description>27 nov – 1 dic 2026 · Online · shrimat koti</description>
   </item>
   <item>
-    <title>N0v4CTF 2026</title>
-    <link>https://todothon.es/evento/n0v4ctf-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/n0v4ctf-2026</guid>
-    <description>27–28 nov 2026 · Online · NovaRun</description>
-  </item>
-  <item>
-    <title>LakeCTF Quals 26-27</title>
-    <link>https://todothon.es/evento/lakectf-quals-26-27-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/lakectf-quals-26-27-2026</guid>
-    <description>27–28 nov 2026 · Online · polygl0ts</description>
-  </item>
-  <item>
-    <title>Bezi Jam 15 [$400 Prizes] - UNREAL</title>
-    <link>https://todothon.es/evento/bezi-jam-15-400-prizes-unreal-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/bezi-jam-15-400-prizes-unreal-2026</guid>
-    <description>27–30 nov 2026 · Online · Bezi</description>
-  </item>
-  <item>
     <title>Agents that act. Systems that answer.</title>
     <link>https://todothon.es/evento/agents-that-act-systems-that-answer-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/agents-that-act-systems-that-answer-2026</guid>
     <description>28 nov – 1 dic 2026 · Online · studentchakra</description>
-  </item>
-  <item>
-    <title>L3m0n CTF 2026 (Quals)</title>
-    <link>https://todothon.es/evento/l3m0n-ctf-2026-quals</link>
-    <guid isPermaLink="true">https://todothon.es/evento/l3m0n-ctf-2026-quals</guid>
-    <description>28 nov 2026 · Online · L3m0n CTF</description>
-  </item>
-  <item>
-    <title>Black Hat India 2026 Official CTF</title>
-    <link>https://todothon.es/evento/black-hat-india-2026-official-ctf</link>
-    <guid isPermaLink="true">https://todothon.es/evento/black-hat-india-2026-official-ctf</guid>
-    <description>28–29 nov 2026 · Online · CTF7</description>
-  </item>
-  <item>
-    <title>Pixel Forge MEGA JAM | $30k Prizes + Cash !</title>
-    <link>https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/pixel-forge-mega-jam-30k-prizes-cash-2026</guid>
-    <description>28 nov – 8 dic 2026 · Online · PIXEL FORGE</description>
   </item>
   <item>
     <title>Slapjam #3</title>
@@ -379,10 +337,16 @@
     <description>29 nov 2026 – 31 ene 2027 · Online · Mulearn MBCCET </description>
   </item>
   <item>
-    <title>3x3x3 Jam</title>
-    <link>https://todothon.es/evento/3x3x3-jam-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/3x3x3-jam-2026</guid>
-    <description>30 nov – 3 dic 2026 · Online · Macrow</description>
+    <title>STEM For Tomorrow</title>
+    <link>https://todothon.es/evento/stem-for-tomorrow-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/stem-for-tomorrow-2026</guid>
+    <description>30 nov – 12 dic 2026 · Online · GlobalInnovationLeague</description>
+  </item>
+  <item>
+    <title>Jam de l&apos;Avent 2026 lite</title>
+    <link>https://todothon.es/evento/jam-de-l-avent-2026-lite</link>
+    <guid isPermaLink="true">https://todothon.es/evento/jam-de-l-avent-2026-lite</guid>
+    <description>30 nov – 13 dic 2026 · Online · Infokub Arcade</description>
   </item>
   <item>
     <title>Zyrelyx Global AI Hackathon</title>
@@ -395,6 +359,12 @@
     <link>https://todothon.es/evento/305-codefest-edition-december-2026-305hackathons-vercel-app</link>
     <guid isPermaLink="true">https://todothon.es/evento/305-codefest-edition-december-2026-305hackathons-vercel-app</guid>
     <description>1–31 dic 2026 · Online · COLORSTACKatFIU</description>
+  </item>
+  <item>
+    <title>3x3x3 Jam</title>
+    <link>https://todothon.es/evento/3x3x3-jam-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/3x3x3-jam-2026</guid>
+    <description>1–4 dic 2026 · Online · Macrow</description>
   </item>
   <item>
     <title>RPG LATAM JAM 2026</title>
@@ -491,6 +461,12 @@
     <link>https://todothon.es/evento/hackthefashion-global-26-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackthefashion-global-26-2026</guid>
     <description>8–31 dic 2026 · Online · AI SKILLS LAB KIET</description>
+  </item>
+  <item>
+    <title>PromptWarsXSyntaxSquad</title>
+    <link>https://todothon.es/evento/promptwarsxsyntaxsquad-2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/promptwarsxsyntaxsquad-2026</guid>
+    <description>9 dic 2026 · Online · syntaxsquad</description>
   </item>
   <item>
     <title>ERUA iDeaThon 2026</title>
@@ -605,6 +581,30 @@
     <link>https://todothon.es/evento/janhacks-2027</link>
     <guid isPermaLink="true">https://todothon.es/evento/janhacks-2027</guid>
     <description>1 ene – 1 mar 2027 · Online · JanHacks</description>
+  </item>
+  <item>
+    <title>Steel City Codes Healthcare Hackathon</title>
+    <link>https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/steel-city-codes-healthcare-hackathon-2027</guid>
+    <description>1–15 ene 2027 · Online · Steel City Codes</description>
+  </item>
+  <item>
+    <title>GaianSpace Perihelion CTF 2027</title>
+    <link>https://todothon.es/evento/gaianspace-perihelion-ctf-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/gaianspace-perihelion-ctf-2027</guid>
+    <description>2–3 ene 2027 · Online · GaianSpace</description>
+  </item>
+  <item>
+    <title>checkpoint 1 — games for good</title>
+    <link>https://todothon.es/evento/checkpoint-1-games-for-good-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/checkpoint-1-games-for-good-2027</guid>
+    <description>8–10 ene 2027 · Online · Checkpoint</description>
+  </item>
+  <item>
+    <title>CSAIC Hack-AI-Thon</title>
+    <link>https://todothon.es/evento/csaic-hack-ai-thon-2027</link>
+    <guid isPermaLink="true">https://todothon.es/evento/csaic-hack-ai-thon-2027</guid>
+    <description>8–11 ene 2027 · Online · Computer Science and AI Circle @ IISH</description>
   </item>
 </channel>
 </rss>

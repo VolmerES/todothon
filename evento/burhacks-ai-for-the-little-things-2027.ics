@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BurHacks - AI For The Little Things
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32255@todothon.es
+DTSTAMP:20261128T142243Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270213
+SUMMARY:BurHacks - AI For The Little Things
+LOCATION:Online
+DESCRIPTION:https://burhacks.devpost.com/\n\nMás información: https://tod
+ othon.es/evento/burhacks-ai-for-the-little-things-2027
+URL:https://burhacks.devpost.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Todothon//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PromptWarsXSyntaxSquad
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:devpost-32225@todothon.es
+DTSTAMP:20261128T142243Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:PromptWarsXSyntaxSquad
+LOCATION:Online
+DESCRIPTION:https://promptwarsxsyntaxsquad.devpost.com/\n\nMás informació
+ n: https://todothon.es/evento/promptwarsxsyntaxsquad-2026
+URL:https://promptwarsxsyntaxsquad.devpost.com/
+END:VEVENT
+END:VCALENDAR

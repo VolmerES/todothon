@@ -25,12 +25,6 @@
     <description>27–29 nov 2026 · Madrid · 42 Madrid</description>
   </item>
   <item>
-    <title>Hackathon Lláscares INNOVABES 2026</title>
-    <link>https://todothon.es/evento/hackathon-llascares-innovabes-2026</link>
-    <guid isPermaLink="true">https://todothon.es/evento/hackathon-llascares-innovabes-2026</guid>
-    <description>27 nov 2026 · Langreo · ASATA</description>
-  </item>
-  <item>
     <title>MERGE Hackathon Madrid</title>
     <link>https://todothon.es/evento/merge-hackathon-madrid-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/merge-hackathon-madrid-2026</guid>
@@ -41,6 +35,12 @@
     <link>https://todothon.es/evento/hackathon-de-dades-de-vall-d-hebron-2026</link>
     <guid isPermaLink="true">https://todothon.es/evento/hackathon-de-dades-de-vall-d-hebron-2026</guid>
     <description>27–28 nov 2026 · Barcelona · Hospital Universitari Vall d&apos;Hebron</description>
+  </item>
+  <item>
+    <title>HackEPS2026</title>
+    <link>https://todothon.es/evento/hackeps2026</link>
+    <guid isPermaLink="true">https://todothon.es/evento/hackeps2026</guid>
+    <description>28–29 nov 2026 · Universitat de Lleida · LleidaHack</description>
   </item>
   <item>
     <title>HackEPS</title>
